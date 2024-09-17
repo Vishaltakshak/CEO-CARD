@@ -149,7 +149,18 @@ p {
   }
   @media (max-width: 380px) {
 	.video-overlay1{
-	height: 40vh;
+	height: 55vh;
+
+	}
+	.video-details1 h1.homevideo-title1 {
+		margin-top: 50px;
+		
+		color: #fff;
+		font-size: 47px;
+		line-height: 45px;
+		font-weight: 700;
+		text-transform: none;
+		
 
 	}
 	
@@ -194,7 +205,7 @@ p {
 }
 
 .video-details1 h1.homevideo-title1 {
-	margin-top: 10px;
+
 	margin-bottom: 15px;
 	color: #fff;
 	font-size: 47px;
@@ -530,11 +541,13 @@ p {
 		width: 100%;
 		padding-left: 15px;
 		padding-right: 15px;
+		
 	}
 
 	.video-details1 h1.homevideo-title1 {
-		font-size: 17px;
+		font-size: 14px;
 		line-height: inherit;
+		padding-top: 5%;
 	}
 
 	.video-details1 p.homevideo-subtitle1 {

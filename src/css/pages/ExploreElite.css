@@ -42,12 +42,12 @@
 }
 @media only screen and (max-width: 2500px){
     .Explore-elite-text-con{
-        margin:0;
-        width:50vw;
+        margin:5%;
+        
     }
     .Hero-con-img{
-        height: 35vh;
-        width: 50vw;
+        height: 55vh;
+        width: 68vw;
     }
   }
   @media only screen  and (min-width:800px) and (max-width: 1000px){
@@ -60,12 +60,12 @@
 
   @media only screen  and (min-width:500px) and (max-width: 800px){
     .Explore-elite-text-con{
-        margin:0;
+        margin:3%;
         width:90vw;
     }
     
     .Hero-con-img{
-        height: 20vh;
+        height: 30vh;
         width: 100%;
        
     }

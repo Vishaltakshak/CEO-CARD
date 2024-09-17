@@ -60,7 +60,7 @@ const AfterLoginHeader = ({ allMenu }) => {
           <div className="div-sett">
             <div className="afterlogin-nav-header">
               {/* <div className="navbar-explore-upgrade d-xl-block d-lg-block d-md-none d-sm-none d-none"> */}
-                <Link className="btn btn-explore" to="/homeafterlogin">
+                <Link className="btn btn-explore" to="/exploreelite">
                   PREMINUM CARD
                 </Link>
               {/* </div> */}

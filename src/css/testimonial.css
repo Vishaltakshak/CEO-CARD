@@ -232,7 +232,7 @@ body {
   .testimonial {
       width: calc(25% - 150px); /* Width for one and a half cards */
       flex: 0 0 auto;
-      height: 18vh;
+      height: 27vh;
   }
 }
 @media (min-width: 768px) {

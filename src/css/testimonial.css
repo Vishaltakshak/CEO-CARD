@@ -230,9 +230,9 @@ body {
 }
 @media (max-width: 524px) {
   .testimonial {
-      width: calc(25% - 20px); /* Width for one and a half cards */
+      width: calc(25% - 150px); /* Width for one and a half cards */
       flex: 0 0 auto;
-      height: 27vh;
+      height: 18vh;
   }
 }
 @media (min-width: 768px) {

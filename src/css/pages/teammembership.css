@@ -1,0 +1,187 @@
+.boxed-page-content
+{
+    background-color: #fff;
+    margin-top: 90px;
+    padding: 25px;
+    margin-bottom: 20px;
+}
+.headerpage-title
+{
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    text-align: center;
+    color: #000;
+    text-transform: capitalize;
+}
+.headerpage-title-p
+{
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-weight: 400;
+    color: #000;
+}
+
+.employee-filed
+{
+    margin-top: 40px;
+}
+
+.employee-filed-form .form-control, 
+.employee-filed-form .form-control:focus {
+    border: 0;
+    font-size: 14px;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid #979797;
+    border-radius: 0;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    width: 100%;
+    padding-left: 0;
+}
+.employee-filed-form .form-mtop
+{
+    margin-top: 40px;
+}
+.employee-filed-form .btn-add-another-member-div
+{
+    padding: 0;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.employee-filed-form .btn-add-another-member
+{
+    font-size: 12px;
+    font-weight: 600;
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+    
+}
+.employee-filed-form .btn-add-another-member .btn-circle {
+    margin-right: 10px;
+    margin-left:0;
+    border-radius: 50%;
+    padding: 3px 8px;
+    background-color: #4b4b4b;
+    color: #FFF;
+}
+.employee-filed-form .checkbox-spacing
+{
+    padding-top: 40px;
+    padding-bottom: 40px;
+    border-top: 1px solid #EEE;
+}
+
+.employee-filed-form .checkbox-text,
+.employee-filed-form .radio-text {
+    font-size: 14px;
+    margin-bottom: 0px;
+    font-weight: 400;
+    color: #000;
+}
+.employee-filed-form .form-check-input {
+
+    border: 1px solid #a6a9ad;
+}
+
+.employee-filed-form .btn-purchase
+{
+    padding: 15px 40px;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 0;
+    border: none;
+    text-decoration: none;
+    width: 242px;
+    background-color: #037DC2 !important;
+    color: #fff;
+}
+.relationshiptext
+{
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color: #000;
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 767px) 
+{
+    .top-background {
+        background-size: initial !important;
+    }
+    .headerpage-title {
+        font-size: 18px;
+    }
+    .employee-filed-form .form-mtop {
+        margin-top: 20px;
+    }
+    .employee-filed-form .checkbox-spacing {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+
+
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (orientation: landscape) {
+
+    .top-background {
+        background-size: initial !important;
+    }
+    .headerpage-title {
+        font-size: 18px;
+    }
+    .employee-filed-form .form-mtop {
+        margin-top: 20px;
+    }
+    .employee-filed-form .checkbox-spacing {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+
+}
+
+
+
+
+@media (max-width: 1024px) and (min-width: 768px) {
+
+    .top-background {
+        background-size: initial !important;
+    }
+    .headerpage-title {
+        font-size: 18px;
+    }
+    .employee-filed-form .form-mtop {
+        margin-top: 20px;
+    }
+    .employee-filed-form .checkbox-spacing {
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+
+    .top-background {
+        background-size: 100% auto !important;
+    }
+    .headerpage-title {
+        font-size: 24px;
+    }
+    .employee-filed-form .form-mtop {
+        margin-top: 40px;
+    }
+    .employee-filed-form .checkbox-spacing {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}

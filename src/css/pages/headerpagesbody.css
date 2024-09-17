@@ -1,0 +1,12 @@
+.headerpages-container
+{
+    min-height: 100vh;
+    /* background: url(https://d2q86wmri3hsp2.cloudfront.net/assets/employee_background-66c390a75cf324b31373adb1a0818f93f0806977b3c817171cd0b94055bd6f44.png
+	) top center no-repeat; */
+    background-color: #EEE;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+.top-background {
+    background-size: 100% auto !important;
+}

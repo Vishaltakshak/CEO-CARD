@@ -1,0 +1,285 @@
+
+.reactivate-banner-container .reactivate-row
+{
+  background: url(https://d2q86wmri3hsp2.cloudfront.net/assets/rejoin/beach_birds_eye-46110dd39b83a96f79b1e4a3cf1685512c54907915d8b6e9a552264ab9efa2f4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 45px 0;
+  color: #FFF;
+}
+.reactivate-banner-container  .reactivate-row-column{
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-left:0;
+  padding-right:0;
+  display: flex;
+}
+.reactivate-banner-container  .reactivate-text-box
+{
+  padding: 40px 20px;
+}
+
+.reactivate-banner-container  .reactivate-text-box h1 {
+  font-size: 42px;
+  font-weight: normal;
+  padding: 10px 0;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+.reactivate-banner-container  .reactivate-text-box p {
+  font-size: 16px;
+  color:#ffffff;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+
+.reactivate-banner-container .reactivate-form-box
+{
+  border: 0.95px solid #E3E3E3;
+  border-radius: 6px;
+  background-color: #FFF;
+  padding: 0 30px 30px 30px;
+  color: #000;
+}
+
+.reactivate-banner-container .reactivate-form-box .reactivation-form-heading
+{
+  padding: 20px 0;
+  text-align: center;
+}
+
+.reactivate-banner-container .reactivate-form-box .reactivation-form-input {
+  padding: 15px;
+  margin: 0 auto 10px auto;
+  border: 1px solid #ccc;
+  background-color: #FFF;
+  height: 47px;
+  border-radius: 2.85px;
+  width: 100%;
+  color: #282828;
+}
+.reactivate-banner-container .reactivate-form-box .reactivation-form-input:focus
+{
+  border: 1px solid #000;
+}
+.reactivate-banner-container .reactivate-form-box .reactivation-form-input:focus
+{
+  box-shadow: none;
+}
+.reactivate-banner-container .reactivate-form-box .reactivation-date-fields {
+  display: flex;
+  margin: 0 -5px;
+}
+
+.reactivate-banner-container .reactivate-form-box .reactivation-date-fields .reactivation-form-input
+ {
+  flex: 1 1 0px;
+  margin: 0 5px;
+  -webkit-appearance:auto;
+}
+
+.reactivate-banner-container .reactivate-form-box .reactivation-submit {
+  background-color: #000;
+  width: 100%;
+  padding: 15px;
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 3px;
+}
+.reactivate-banner-container .reactivate-form-box .reactivation-note {
+  color: #000;
+  line-height: 1.8;
+  font-size: 10px;
+  font-weight: 400;
+  margin: 13px 0px;
+}
+
+
+
+.reactivate-brand-container
+{
+  padding:40px 0;
+}
+.reactivate-brand-container .title-box-width
+{
+  margin: 0 auto 40px auto;
+    max-width: 590px;
+    padding: 0 15px;
+}
+.reactivate-brand-container .reactive-membership-title
+{
+  font-size: 24px;
+  font-weight: 500;
+  text-align:center;
+  margin-top:10px;
+  color:#000;
+
+}
+.reactivate-brand-container .row-equal-height {
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.reactivate-brand-container img.reactivate-brand-logo
+{
+  width: 100%;
+}
+.reactivate-brand-container .brand-mb
+{
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 767px) 
+{
+  
+  .reactivate-banner-container  .reactivate-row-column
+  {
+    display: block;
+  }
+  .reactivate-banner-container  .reactivate-text-box h1 
+  {
+    font-size: 24px;
+    text-align: center;
+  }
+  .reactivate-banner-container .reactivate-text-box p {
+    font-size: 16px;
+    text-align: center;
+  }
+  .reactivate-banner-container .reactivate-row {
+    padding: 20px 15px;
+  }
+  .reactivate-banner-container .reactivate-text-box {
+    padding: 15px 15px;
+}
+.reactivate-banner-container .reactivate-form-box {
+  padding: 15px 15px;
+}
+.reactivate-banner-container .reactivate-form-box .reactivation-note {
+  color: #000;
+  text-align: center;
+}
+.reactivate-form-box .reactivation-form-input {
+  padding: 15px;
+  height: 47px;
+}
+
+
+
+
+}
+
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (orientation: landscape) {
+  .reactivate-banner-container  .reactivate-row-column
+  {
+    display: block;
+  }
+  .reactivate-banner-container  .reactivate-text-box h1 
+  {
+    font-size: 24px;
+    text-align: center;
+  }
+  .reactivate-banner-container .reactivate-text-box p {
+    font-size: 16px;
+    text-align: center;
+  }
+  .reactivate-banner-container .reactivate-row {
+    padding: 20px 15px;
+  }
+  .reactivate-banner-container .reactivate-text-box {
+    padding: 15px 15px;
+}
+.reactivate-banner-container .reactivate-form-box {
+  padding: 15px 15px;
+}
+.reactivate-banner-container .reactivate-form-box .reactivation-note {
+  color: #000;
+  text-align: center;
+}
+.reactivate-form-box .reactivation-form-input {
+  padding: 15px;
+  height: 47px;
+}
+  
+}
+
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  
+ 
+  .reactivate-banner-container  .reactivate-row-column
+  {
+    display: block;
+  }
+  .reactivate-banner-container  .reactivate-text-box h1 
+  {
+    font-size: 24px;
+    text-align: center;
+  }
+  .reactivate-banner-container .reactivate-text-box p {
+    font-size: 16px;
+    text-align: center;
+  }
+  .reactivate-banner-container .reactivate-row {
+    padding: 20px 15px;
+  }
+  .reactivate-banner-container .reactivate-text-box {
+    padding: 15px 15px;
+}
+.reactivate-banner-container .reactivate-form-box {
+  padding: 15px 15px;
+}
+.reactivate-banner-container .reactivate-form-box .reactivation-note {
+  color: #000;
+  text-align: center;
+}
+.reactivate-form-box .reactivation-form-input {
+  padding: 15px;
+  height: 47px;
+}
+
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+
+  .reactivate-banner-container  .reactivate-row-column
+  {
+    display: flex;
+  }
+  .reactivate-banner-container  .reactivate-text-box h1 
+  {
+    font-size: 42px;
+    text-align: left;
+  }
+  .reactivate-banner-container .reactivate-text-box p {
+    font-size: 16px;
+    text-align: left;
+  }
+  .reactivate-banner-container .reactivate-row {
+    padding: 45px 20px;
+  }
+  .reactivate-banner-container .reactivate-text-box {
+    padding: 40px 20px;
+}
+.reactivate-banner-container .reactivate-form-box {
+  padding: 15px 15px;
+}
+.reactivate-banner-container .reactivate-form-box .reactivation-note {
+  color: #000;
+  text-align: center;
+}
+.reactivate-form-box .reactivation-form-input {
+  padding: 15px;
+  height: 47px;
+}
+  
+
+
+}
+
+
+
+

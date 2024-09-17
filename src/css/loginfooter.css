@@ -1,0 +1,136 @@
+/* body {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: "Montserrat", sans-serif !important;
+}
+ */
+
+
+.login-footer {
+  height: 40vh;
+  /* background-color: #000; */
+  background-image: linear-gradient(to bottom, #f0f0f0, #4b4b4b);
+  text-align: center;
+  padding: 45px 0;
+  color: #0d0d0d;
+  overflow: hidden;
+}
+.login-footer p {
+  color: #000000;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.login-footer sub {
+  color: black;
+  font-size: 14px;
+}
+.login-footer .customsection-break {
+  width: 65px;
+  border-bottom: 2px solid #0c0c0c;
+  margin: 20px auto;
+  opacity: 0.7;
+}
+.login-footer .login-footer-ul li {
+  padding: 0 10px;
+  display: inline-block;
+}
+.login-footer .login-footer-ul li a {
+  font-size: 16px;
+  font-weight: 400;
+  color: black;
+}
+
+.login-footer .login-footer-social-link {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-left: 0;
+}
+.login-footer .login-footer-social-link > li {
+  padding: 0;
+  display: inline-block;
+}
+.login-footer .login-footer-social-link > li .btn-circle {
+  height: 39px;
+  width: 39px;
+  margin: 0 10px;
+  border-radius: 50%;
+  /* line-height: 39px; */
+  color: #fff;
+}
+.bg-blue {
+  background-color: #000000;
+}
+.login-footer .copyright-text {
+  font-size: 12px;
+}
+@media only screen and (max-width: 767px) {
+  .login-footer p {
+    font-size: 18px;
+  }
+  .login-footer sub {
+    font-size: 13px;
+  }
+  .login-footer .login-footer-ul li a {
+    font-size: 14px;
+  }
+
+  .login-footer .copyright-text {
+    font-size: 9px;
+  }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (orientation: landscape) {
+  .login-footer p {
+    font-size: 18px;
+  }
+  .login-footer sub {
+    font-size: 13px;
+  }
+  .login-footer .login-footer-ul li a {
+    font-size: 14px;
+  }
+
+  .login-footer .copyright-text {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  .login-footer p {
+    font-size: 18px;
+  }
+  .login-footer sub {
+    font-size: 13px;
+  }
+  .login-footer .login-footer-ul li a {
+    font-size: 14px;
+  }
+
+  .login-footer .copyright-text {
+    font-size: 9px;
+  }
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  .login-footer p {
+    font-size: 18px;
+  }
+  .login-footer sub {
+    font-size: 13px;
+  }
+  .login-footer .login-footer-ul li a {
+    font-size: 14px;
+  }
+
+  .login-footer .copyright-text {
+    font-size: 9px;
+  }
+}

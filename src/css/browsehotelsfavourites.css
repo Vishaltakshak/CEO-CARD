@@ -1,0 +1,367 @@
+
+.hotels-fav-container
+{
+  padding-top:50px;
+  padding-bottom:50px;
+  background-color: #000000;
+}
+.hotels-fav-container .hotels-fav-row-tab-inner
+{
+  padding-left: 15px;
+  padding-right: 15px;
+  position: relative;
+}
+.hotels-fav-row-tab .scroll-arrow
+{
+  position: absolute;
+  top: 0px;
+  width: 30px;
+  height:33px;
+  line-height: 33px;
+  background-color:#eeeeee;
+  display: none;
+  cursor:pointer;
+  z-index: 99;
+}
+.hotels-fav-row-tab
+{
+padding-left: 0;
+padding-right: 0;
+}
+.hotels-fav-row-tab .scroll-arrow.scroller-left
+{
+  left:0px;
+}
+.hotels-fav-row-tab .scroll-arrow.scroller-right
+{
+  right:0px;
+}
+
+.scroll-container
+{
+  padding-left: 5px;
+  padding-right: 5px;
+  /* overflow-x: scroll;
+  width: 100%;
+  padding-bottom: 15px; */
+}
+/* .scroll-inner-div 
+{
+  width: 1180px !important;
+} */
+.scroll-container .nav-tabs.hotels-nav-tabs
+{
+  border:none;
+  justify-content: center;
+}
+.scroll-container .nav-tabs.hotels-nav-tabs a.custom-nav-item
+{
+  color: #000;
+  background-color: white !important;
+  cursor: pointer;
+  padding:4px 12px !important;
+  font-weight:500;
+  font-size: 16px;
+  border-bottom: none;
+  text-transform: capitalize;
+  margin-bottom: 5px;
+}
+.scroll-container .nav-tabs.hotels-nav-tabs a.custom-nav-item:focus, 
+.scroll-container .nav-tabs.hotels-nav-tabs a.custom-nav-item:hover 
+{
+  color: #000;
+  border-bottom:none;
+}
+.scroll-container .nav-tabs.hotels-nav-tabs a.custom-nav-item.active, 
+.scroll-container .nav-tabs.hotels-nav-tabs a.custom-nav-item.active:focus, 
+.scroll-container .nav-tabs.hotels-nav-tabs a.custom-nav-item.active:hover {
+  color: #000000;
+  cursor: default;
+  background-color: rgb(255, 255, 255) !important;
+  border: 1px solid rgba(216, 216, 216, 0.65);
+  border-radius: 3px;
+  border-bottom:none;
+  border-bottom-color: transparent;
+}
+
+.benefits-block-parent.benefits-block-parent-favourites
+{
+padding-top:30px;
+background-color: #000000;
+}
+.btn-fav-view-more-box
+{
+  margin-top:30px;
+  justify-content:center;
+}
+.btn.btn-fav-view-more
+{
+  background-color: #686868;
+  color: #FFF;
+  padding: 15px 40px;
+  width:auto;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 0;
+  border: none;
+  text-decoration: none;
+}
+
+.hotels-fav-container .custom-tab-content
+{
+padding: 20px;
+}
+
+.hotels-fav-container .benefit-image-wrapper
+{
+margin-top:0;
+}
+@media only screen and (max-width: 767px) 
+{
+  .hotels-fav-container
+  {
+    padding-top:30px;
+  }
+  .hotels-fav-row-tab .scroll-arrow
+  {
+    display:block;
+    top: 8px;
+  width: 15px;
+  height:30px;
+  line-height: 30px;
+  }
+  .scroll-container {
+    overflow-x: scroll;
+    width: 100%;
+    padding-left:10px;
+    padding-right:10px;
+    padding-bottom: 15px;
+}
+
+.scroll-inner-div {
+  width: 1180px !important;
+}
+.hotels-fav-row-tab .scroll-arrow.scroller-left
+{
+  left:0px;
+}
+.hotels-fav-row-tab .scroll-arrow.scroller-right
+{
+  right: 0px;
+}
+.scroll-container .nav-tabs.hotels-nav-tabs a.custom-nav-item {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.scroll-container .nav-tabs.hotels-nav-tabs {
+  justify-content: left;
+}
+
+.benefits-block-parent.benefits-block-parent-favourites
+{
+padding-top:10px;
+}
+.btn-fav-view-more-box
+{
+  margin-top:20px;
+  justify-content:center;
+}
+.btn.btn-fav-view-more
+{
+  font-size: 12px;
+}
+.hotels-fav-container .custom-tab-content
+{
+padding: 10px;
+}
+
+
+
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (orientation: landscape) 
+{
+  
+  .hotels-fav-container
+  {
+    padding-top:30px;
+  }
+  .hotels-fav-row-tab .scroll-arrow
+  {
+    display:block;
+    top: 8px;
+  width: 15px;
+  height:30px;
+  line-height: 30px;
+  }
+  .scroll-container {
+    overflow-x: scroll;
+    width: 100%;
+    padding-left:10px;
+    padding-right:10px;
+    padding-bottom: 15px;
+}
+
+.scroll-inner-div {
+  width: 1180px !important;
+}
+.hotels-fav-row-tab .scroll-arrow.scroller-left
+{
+  left:0px;
+}
+.hotels-fav-row-tab .scroll-arrow.scroller-right
+{
+  right: 0px;
+}
+.scroll-container .nav-tabs.hotels-nav-tabs a.custom-nav-item {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.scroll-container .nav-tabs.hotels-nav-tabs {
+  justify-content: left;
+}
+
+.benefits-block-parent.benefits-block-parent-favourites
+{
+padding-top:10px;
+}
+.btn-fav-view-more-box
+{
+  margin-top:20px;
+  justify-content:center;
+}
+.btn.btn-fav-view-more
+{
+  font-size: 12px;
+}
+.hotels-fav-container .custom-tab-content
+{
+padding: 10px;
+}
+
+  
+
+}
+
+@media (max-width: 1024px) and (min-width: 768px) 
+{
+  .hotels-fav-container
+  {
+    padding-top:30px;
+  }
+  .hotels-fav-row-tab .scroll-arrow
+  {
+    display:none;
+    top: 8px;
+  width: 15px;
+  height:30px;
+  line-height: 30px;
+  }
+  .scroll-container {
+    overflow-x: hidden;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 15px;
+}
+
+.scroll-inner-div {
+  width: 100% !important;
+}
+.hotels-fav-row-tab .scroll-arrow.scroller-left
+{
+  left:0px;
+}
+.hotels-fav-row-tab .scroll-arrow.scroller-right
+{
+  right: 0px;
+}
+.scroll-container .nav-tabs.hotels-nav-tabs a.custom-nav-item {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.scroll-container .nav-tabs.hotels-nav-tabs {
+  justify-content: center;
+}
+
+.benefits-block-parent.benefits-block-parent-favourites
+{
+padding-top:10px;
+}
+.btn-fav-view-more-box
+{
+  margin-top:20px;
+  justify-content:center;
+}
+.btn.btn-fav-view-more
+{
+  font-size: 12px;
+}
+.hotels-fav-container .custom-tab-content
+{
+padding: 20px;
+}
+
+ 
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) 
+{
+  .hotels-fav-container
+  {
+    padding-top:30px;
+  }
+  .hotels-fav-row-tab .scroll-arrow
+  {
+    display:none;
+    top: 8px;
+  width: 15px;
+  height:30px;
+  line-height: 30px;
+  }
+  .scroll-container {
+    overflow-x: hidden;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 15px;
+}
+
+.scroll-inner-div {
+  width: 100% !important;
+}
+.hotels-fav-row-tab .scroll-arrow.scroller-left
+{
+  left:0px;
+}
+.hotels-fav-row-tab .scroll-arrow.scroller-right
+{
+  right: 0px;
+}
+.scroll-container .nav-tabs.hotels-nav-tabs a.custom-nav-item {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.scroll-container .nav-tabs.hotels-nav-tabs {
+  justify-content: center;
+}
+
+.benefits-block-parent.benefits-block-parent-favourites
+{
+padding-top:10px;
+}
+.btn-fav-view-more-box
+{
+  margin-top:20px;
+  justify-content:center;
+}
+.btn.btn-fav-view-more
+{
+  font-size: 12px;
+}
+.hotels-fav-container .custom-tab-content
+{
+padding: 20px;
+}
+
+}

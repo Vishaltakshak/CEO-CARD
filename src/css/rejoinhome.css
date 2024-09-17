@@ -1,0 +1,1055 @@
+
+.guest-banner-container
+{
+	position:relative;
+}
+.guest-banner-container .guest-image-container
+{
+	height: 400px;
+    overflow: hidden;
+}
+
+.guest-banner-container .guest-image-video-height
+{
+
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    background-size: cover;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    right: -100%;
+    bottom: -100%;
+    top: -100%;
+    left: -100%;
+    object-fit: cover;
+}
+
+
+.guest-banner-container .guest-preview-home-overlay
+{
+	background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.guest-banner-container .guest-preview-home-overlay.rejoin-overaly
+{
+	position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.guest-banner-container .guest-preview-home-overlay .guest-preview-home-overlay-content
+{
+	font-weight: 600;
+    max-width: 440px;
+    background-color: rgba(0, 0, 0, 0.74);
+    padding: 25px;
+}
+
+.guest-banner-container .guest-preview-home-overlay .guest-preview-home-overlay-content .guest-hero-title
+{
+	font-size: 28px;
+    margin-top: 0;
+    margin-bottom: 25px;
+	color:#fff;
+	font-weight: 600;
+}
+.guest-banner-container .guest-preview-home-overlay .guest-preview-home-overlay-content .guest-hero-subtitle
+{
+	font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 40px;
+	color:#fff;
+}
+
+.guest-banner-container .guest-preview-home-overlay .guest-preview-home-overlay-content .guest-preview-hero-button
+{
+    border-radius: 4px;
+    background-color: #FFFFFF;
+    color: #000;
+    padding: 10px 30px;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+}
+
+
+.guest-banner-container .guest-preview-home-overlay .guest-preview-home-overlay-content .rejoin-browse-benefit
+{
+	padding-top:10px;
+}
+.guest-banner-container .guest-preview-home-overlay .guest-preview-home-overlay-content .rejoin-browse-benefit a
+{
+	font-size:	14px;
+	font-weight:400;
+	text-decoration: underline;
+}
+
+
+.rejoin-popular-benefits
+{
+	padding-top:20px;
+	padding-bottom: 20px;
+}
+
+.rejoin-popular-benefits .rejoin-topic-heading
+{
+	font-size: 24px;
+    font-weight: 600;
+	margin-top:30px;
+	color:#000;
+	text-align:center;
+	margin-bottom:35px;
+	text-transform: capitalize;
+}
+
+.rejoin-popular-benefits .make-up-cost-inner-row .guest-preview-benefit-block
+{
+	width: 50%;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 40px;
+}
+
+.rejoin-popular-benefits .make-up-cost-inner-row .guest-preview-benefit-block .guest-preview-benefit-block-inner
+{
+	position: relative;
+    padding-top: 30px;
+}
+.rejoin-popular-benefits .make-up-cost-inner-row .guest-preview-benefit-block .guest-preview-benefit-block-inner .guest-preview-benefit-block-image-container
+{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    overflow-x: hidden;
+
+}
+
+.rejoin-popular-benefits .make-up-cost-inner-row .guest-preview-benefit-block .guest-preview-benefit-block-inner .guest-preview-benefit-block-image-container img {
+    width: 100%;
+}
+
+.rejoin-popular-benefits .make-up-cost-inner-row .guest-preview-benefit-block .guest-preview-benefit-block-inner .rejoin-benefit-block-info
+{
+	padding: 33px;
+    min-height: 250px;
+    width: 55%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 0 0 auto;
+    color: #FFF;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 19px;
+    font-weight: 300;
+	background-color: #000;
+}
+.rejoin-popular-benefits .make-up-cost-inner-row .guest-preview-benefit-block .guest-preview-benefit-block-inner .rejoin-benefit-block-info h3.rejoin-h3-heading 
+{
+	font-size: 16px;
+	color:#fff;
+    line-height: 21px;
+    margin: 0;
+    font-weight: 500;
+}
+.rejoin-popular-benefits .make-up-cost-inner-row .guest-preview-benefit-block .guest-preview-benefit-block-inner .rejoin-benefit-block-info h1.rejoin-h1-heading {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
+    letter-spacing: -0.3px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+	color:#fff;
+}
+.rejoin-popular-benefits .make-up-cost-inner-row .guest-preview-benefit-block .guest-preview-benefit-block-inner .rejoin-benefit-block-info .rejoin-p-heading
+{
+	font-size: 14px;
+	color:#fff;
+	line-height:normal;
+	margin-bottom:0;
+}
+.rejoin-popular-benefits .make-up-cost-inner-row .guest-preview-benefit-block .guest-preview-benefit-block-inner  .guest-preview-benefit-learn-more-link, 
+.rejoin-popular-benefits .make-up-cost-inner-row .guest-preview-benefit-block .guest-preview-benefit-block-inner .guest-preview-benefit-learn-more-link:hover, 
+.rejoin-popular-benefits .make-up-cost-inner-row .guest-preview-benefit-block .guest-preview-benefit-block-inner  .guest-preview-benefit-learn-more-link:focus {
+    color: #B6B6B6;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 18px;
+	text-decoration: underline;
+}
+
+
+.make-up-cost-cta
+{
+	margin-bottom: 40px;
+    text-align: center;
+}
+.make-up-cost-cta .make-up-cost-cta-bg
+{
+	padding: 30px; 
+	background-color: #F3F3F3;
+}
+.make-up-cost-cta .make-up-cost-cta-bg h1
+{
+	margin-top: 30px;
+	margin-bottom: 0;
+	color:#000;
+	text-transform: capitalize;
+	font-size: 24px;
+	font-weight: 600;
+}
+.make-up-cost-cta .make-up-cost-cta-bg p {
+    font-size: 18px;
+    margin-bottom: 18px;
+}
+
+.make-up-cost-cta .make-up-cost-cta-bg .guest-preview-make-up-cost-button {
+	padding: 15px 35px;
+	width: 242px;
+    font-size: 14px;
+    border-radius: 4px;
+    padding: 12px 30px;
+    background-color: #000;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+
+
+
+.guest-preview-midsection-div {
+    margin: 0 8.3333333%;
+    background-color: #F3F3F3;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+}
+.guest-preview-midsection-div .guest-preview-midsection-image-div
+{
+	width: 50%;
+    margin-right: 60px;
+}
+.guest-preview-midsection-div .guest-preview-midsection-image-div img
+{
+	width:100%;
+}
+.guest-preview-midsection-div .guest-preview-midsection-text-div
+{
+    width: 50%;
+    font-size: 14px;
+}
+.guest-preview-midsection-div .guest-preview-midsection-text-div h1 {
+    font-size: 24px;
+	margin-top:10px;
+	font-weight: 600;
+	color:#000;
+}
+
+.guest-preview-midsection-div .guest-preview-midsection-text-div .guest-preview-midsection-button {
+	padding: 15px 35px;
+	width: 242px;
+    font-size: 14px;
+    border-radius: 4px;
+    padding: 12px 30px;
+    background-color: #000;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+
+
+.rejoin-travel-benefits
+{
+	padding-top:20px;
+	padding-bottom:20px;
+}
+
+.rejoin-travel-benefits .rejoin-travel-benefits-heading h4.rejoin-travel-benefits-h4
+{
+	font-size: 16px;
+    font-weight: 500;
+	text-transform: uppercase;
+	margin-top: 10px;
+    margin-bottom: 10px;
+}
+.rejoin-travel-benefits .rejoin-travel-benefits-heading h3.rejoin-travel-benefits-h3
+{
+	font-size: 18px;
+    font-weight: 600;
+	text-transform: capitalize;
+	margin-top: 10px;
+    margin-bottom: 10px;
+}
+.rejoin-travel-benefits .rejoin-travel-benefits-heading a.rejoin-travel-benefits-anchor
+{
+	position: absolute; 
+	bottom: 0; 
+	right: 15px;
+}
+
+.rejoin-travel-benefits .row-equal-height {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+}
+.rejoin-travel-benefits .rejoin-benefit-column
+{
+	margin-bottom: 40px;
+}
+.rejoin-travel-benefits .rejoin-benefit-column .rejoin-benefit-image
+{
+	width: 100%;
+}
+.rejoin-travel-benefits .rejoin-benefit-column .rejoin-benefit-title-container h5
+{
+	font-weight: 700;
+	font-size: 14px;
+	color:#000;
+	text-transform: capitalize;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.rejoin-travel-benefits .rejoin-benefit-column .rejoin-benefit-description-container
+{
+	font-size: 12px;
+    min-height: 40px;
+	color:#000;
+}
+.rejoin-travel-benefits .rejoin-benefit-column .rejoin-benefit-redeem-container
+{
+	color:#8f8f8f;
+	margin-top:10px;
+	font-size:13px;
+}
+
+
+
+
+.rejoin-slick
+{
+	margin-bottom:40px;
+}
+.rejoin-slick .quote-column
+{
+	padding-left:15px;
+	padding-right:15px;
+}
+.rejoin-slick .quote-column-inner
+{
+	border: 1px solid #000;
+    padding: 30px;
+    height: 100%;
+}
+.rejoin-slick .quote-column-inner .circle-crop
+{
+	display: block; margin: 0 auto;
+	width: 100px;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+	margin-bottom:40px;
+	text-align: center;
+}
+.rejoin-slick .quote-column-inner .quote-text-bold
+{
+margin-top:10px;
+margin-bottom:40px;
+text-align: center;
+color:#000;
+font-weight: 600;
+font-size: 18px;
+}
+
+.rejoin-slick .quote-column-inner .quote-text-para
+{
+	font-size: 14px;margin-bottom:10px;
+	color:#000;
+	text-align:center;
+}
+
+
+.testimonial-block
+{
+	background-color:#f7f7f7 ;
+	padding-top:40px;
+	padding-bottom:40px;
+}
+
+.testimonial-block  .testimonial-title
+{
+	font-size: 24px;
+	font-weight: 600;
+	color:#000;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+.testimonial-block  .testimonial-image
+{
+	width: 100px;
+    margin: 15px auto 0 auto;
+}
+
+
+.rejoin-community
+{
+	background-color: #000;
+	padding-top:40px;
+	padding-bottom:40px;
+	margin-bottom:20px;
+}
+.rejoin-community .rejoin-community-left
+{
+	padding:15px;
+}
+.rejoin-community .rejoin-community-left h1
+{
+	font-size: 24px;
+    font-weight: 600;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	color: #fff;
+}
+.rejoin-community .rejoin-community-left p
+{
+	font-size: 14px;
+    font-weight: 300;
+	margin-top: 0px;
+	margin-bottom: 10px;
+	color: #fff;
+}
+.rejoin-community .btn-rejoin-community
+{
+	padding:10px 35px;
+	width: 242px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 0;
+    border: none;
+    text-decoration: none;
+	color: #fff;
+	border: 1px solid #fff;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.rejoin-community .rejoin-community-img
+{
+	width:100%
+}
+
+
+
+@media only screen and (max-width: 767px) {
+	.guest-banner-container .guest-image-container {
+		height: 365px;
+	}
+	
+	.guest-banner-container .guest-preview-home-overlay .guest-preview-home-overlay-content .guest-hero-title {
+		font-size: 24px;
+	}
+	.guest-banner-container .guest-preview-home-overlay .guest-preview-home-overlay-content .guest-hero-subtitle {
+		font-size: 16px;
+	}
+	.guest-banner-container .guest-preview-home-overlay .guest-preview-home-overlay-content .guest-preview-hero-button {
+		font-size: 14px;
+	}
+	.guest-banner-container .guest-preview-home-overlay .guest-preview-home-overlay-content .rejoin-browse-benefit a {
+		font-size: 14px;
+	}
+
+
+
+
+
+	.rejoin-popular-benefits .rejoin-topic-heading {
+		font-size: 18px;
+		margin-top: 30px;
+	}
+	.rejoin-popular-benefits .make-up-cost-inner-row .guest-preview-benefit-block {
+		width: 100%;
+		padding-bottom:20px;
+	}
+	.rejoin-popular-benefits .make-up-cost-inner-row .guest-preview-benefit-block .guest-preview-benefit-block-inner {
+		padding-top: 0;
+		overflow-y: hidden;
+	}
+	.rejoin-popular-benefits .make-up-cost-inner-row .guest-preview-benefit-block .guest-preview-benefit-block-inner .rejoin-benefit-block-info
+	{
+		line-height: 15px;
+        padding: 15px;
+        min-height: 200px;
+	}
+	.rejoin-popular-benefits .make-up-cost-inner-row .guest-preview-benefit-block:nth-child(odd) .rejoin-benefit-block-info {
+        margin: 0 auto 0 0;
+    }
+	.rejoin-popular-benefits .make-up-cost-inner-row .guest-preview-benefit-block .guest-preview-benefit-block-inner .guest-preview-benefit-block-image-container {
+		width: 100%;
+	}
+	.rejoin-popular-benefits .make-up-cost-inner-row .guest-preview-benefit-block .guest-preview-benefit-block-inner .rejoin-benefit-block-info h3.rejoin-h3-heading {
+		font-size: 16px;
+	}
+	.rejoin-popular-benefits .make-up-cost-inner-row .guest-preview-benefit-block .guest-preview-benefit-block-inner .rejoin-benefit-block-info h1.rejoin-h1-heading {
+		font-size: 16px;
+		line-height: 20px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	.rejoin-popular-benefits .make-up-cost-inner-row .guest-preview-benefit-block .guest-preview-benefit-block-inner .rejoin-benefit-block-info .rejoin-p-heading
+	{
+		font-size: 12px;
+		margin-bottom:0;
+	}
+
+
+
+
+	.make-up-cost-cta .make-up-cost-cta-bg {
+		padding: 20px;
+	}
+	.make-up-cost-cta .make-up-cost-cta-bg h1 {
+		
+		font-size: 19px;
+	}
+	.make-up-cost-cta .make-up-cost-cta-bg p {
+		font-size: 16px;
+	}
+	.make-up-cost-cta .make-up-cost-cta-bg .guest-preview-make-up-cost-button {
+		width: 242px;
+		font-size: 12px;
+	}
+
+
+
+
+	.guest-preview-midsection-div {
+		margin: 0 15px;
+		display: block;
+		padding:10px;
+		margin-bottom:20px;
+	}
+	.guest-preview-midsection-div .guest-preview-midsection-text-div {
+		width: 100%;
+		font-size: 14px;
+		text-align:center;
+	}
+	.guest-preview-midsection-div .guest-preview-midsection-text-div h1 {
+		font-size: 18px;
+	}
+	.guest-preview-midsection-div .guest-preview-midsection-text-div .guest-preview-midsection-button {
+	
+		width: 242px;
+		font-size: 12px;
+	}
+
+
+
+
+
+
+	.rejoin-travel-benefits .rejoin-travel-benefits-heading h4.rejoin-travel-benefits-h4 {
+		font-size: 14px;
+	}
+	.rejoin-travel-benefits .rejoin-travel-benefits-heading h3.rejoin-travel-benefits-h3 {
+		font-size: 14px;
+	}
+	.rejoin-travel-benefits .rejoin-benefit-column .rejoin-benefit-title-container h5 {
+		font-size: 14px;
+	}
+	.rejoin-travel-benefits .rejoin-benefit-column .rejoin-benefit-description-container {
+		font-size: 12px;
+	}
+
+	.rejoin-travel-benefits .rejoin-benefit-column .rejoin-benefit-redeem-container {
+		font-size: 13px;
+	}
+
+
+
+
+	.rejoin-slick
+	{
+		margin-bottom:40px;
+	}
+	.rejoin-slick .quote-column-inner
+	{
+		padding: 30px;
+	}
+	.rejoin-slick .quote-column-inner .circle-crop
+	{
+		width: 100px;
+		height: 100px;
+		margin-bottom:40px;
+	}
+	.rejoin-slick .quote-column-inner .quote-text-bold
+	{
+	margin-top:10px;
+	margin-bottom:40px;
+	font-size: 16px;
+	}
+	
+	.rejoin-slick .quote-column-inner .quote-text-para
+	{
+		font-size: 14px;
+		margin-bottom:10px;
+	}
+	
+	
+
+	.rejoin-community {
+		padding-top: 20px;
+		padding-bottom: 20px;
+		margin-bottom: 20px;
+	}
+	.rejoin-community .rejoin-community-left h1 {
+		font-size: 18px;
+	}
+	.rejoin-community .rejoin-community-left p {
+		font-size: 14px;
+	}
+
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (orientation: landscape) {
+
+	.guest-banner-container .guest-image-container {
+		height: 365px;
+	}
+	
+	.guest-banner-container .guest-preview-home-overlay .guest-preview-home-overlay-content .guest-hero-title {
+		font-size: 24px;
+	}
+	.guest-banner-container .guest-preview-home-overlay .guest-preview-home-overlay-content .guest-hero-subtitle {
+		font-size: 16px;
+	}
+	.guest-banner-container .guest-preview-home-overlay .guest-preview-home-overlay-content .guest-preview-hero-button {
+		font-size: 14px;
+	}
+	.guest-banner-container .guest-preview-home-overlay .guest-preview-home-overlay-content .rejoin-browse-benefit a {
+		font-size: 14px;
+	}
+
+	
+
+
+	.rejoin-popular-benefits .rejoin-topic-heading {
+		font-size: 18px;
+		margin-top: 30px;
+	}
+	.rejoin-popular-benefits .make-up-cost-inner-row .guest-preview-benefit-block {
+		width: 100%;
+	}
+	.rejoin-popular-benefits .make-up-cost-inner-row .guest-preview-benefit-block .guest-preview-benefit-block-inner {
+		padding-top: 0;
+		overflow-y: hidden;
+	}
+	.rejoin-popular-benefits .make-up-cost-inner-row .guest-preview-benefit-block .guest-preview-benefit-block-inner .rejoin-benefit-block-info
+	{
+		line-height: 15px;
+        padding: 15px;
+        min-height: 200px;
+	}
+	.rejoin-popular-benefits .make-up-cost-inner-row .guest-preview-benefit-block:nth-child(odd) .rejoin-benefit-block-info {
+        margin: 0 auto 0 0;
+    }
+	.rejoin-popular-benefits .make-up-cost-inner-row .guest-preview-benefit-block .guest-preview-benefit-block-inner .guest-preview-benefit-block-image-container {
+		width: 100%;
+	}
+	.rejoin-popular-benefits .make-up-cost-inner-row .guest-preview-benefit-block .guest-preview-benefit-block-inner .rejoin-benefit-block-info h3.rejoin-h3-heading {
+		font-size: 16px;
+	}
+	.rejoin-popular-benefits .make-up-cost-inner-row .guest-preview-benefit-block .guest-preview-benefit-block-inner .rejoin-benefit-block-info h1.rejoin-h1-heading {
+		font-size: 16px;
+		line-height: 20px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	.rejoin-popular-benefits .make-up-cost-inner-row .guest-preview-benefit-block .guest-preview-benefit-block-inner .rejoin-benefit-block-info .rejoin-p-heading
+	{
+		font-size: 12px;
+		margin-bottom:0;
+	}
+
+
+	.make-up-cost-cta .make-up-cost-cta-bg {
+		padding: 20px;
+	}
+	.make-up-cost-cta .make-up-cost-cta-bg h1 {
+		
+		font-size: 19px;
+	}
+	.make-up-cost-cta .make-up-cost-cta-bg p {
+		font-size: 16px;
+	}
+	.make-up-cost-cta .make-up-cost-cta-bg .guest-preview-make-up-cost-button {
+		width: 242px;
+		font-size: 12px;
+	}
+
+
+
+	.guest-preview-midsection-div {
+		margin: 0 15px;
+		display: block;
+		padding:10px;
+		margin-bottom:20px;
+	}
+	.guest-preview-midsection-div .guest-preview-midsection-text-div {
+		width: 100%;
+		font-size: 14px;
+		text-align:center;
+	}
+	.guest-preview-midsection-div .guest-preview-midsection-text-div h1 {
+		font-size: 18px;
+	}
+	.guest-preview-midsection-div .guest-preview-midsection-text-div .guest-preview-midsection-button {
+	
+		width: 242px;
+		font-size: 12px;
+	}
+
+
+	.rejoin-slick
+	{
+		margin-bottom:40px;
+	}
+	.rejoin-slick .quote-column-inner
+	{
+		padding: 30px;
+	}
+	.rejoin-slick .quote-column-inner .circle-crop
+	{
+		width: 100px;
+		height: 100px;
+		margin-bottom:40px;
+	}
+	.rejoin-slick .quote-column-inner .quote-text-bold
+	{
+	margin-top:10px;
+	margin-bottom:40px;
+	font-size: 16px;
+	}
+	
+	.rejoin-slick .quote-column-inner .quote-text-para
+	{
+		font-size: 14px;
+		margin-bottom:10px;
+	}
+	.rejoin-community {
+		padding-top: 20px;
+		padding-bottom: 20px;
+		margin-bottom: 20px;
+	}
+	.rejoin-community .rejoin-community-left h1 {
+		font-size: 18px;
+	}
+	.rejoin-community .rejoin-community-left p {
+		font-size: 14px;
+	}
+
+}
+
+
+@media (max-width: 1024px) and (min-width: 768px) {
+
+	.guest-banner-container .guest-image-container {
+		height: 365px;
+	}
+	
+	.guest-banner-container .guest-preview-home-overlay .guest-preview-home-overlay-content .guest-hero-title {
+		font-size: 24px;
+	}
+	.guest-banner-container .guest-preview-home-overlay .guest-preview-home-overlay-content .guest-hero-subtitle {
+		font-size: 16px;
+	}
+	.guest-banner-container .guest-preview-home-overlay .guest-preview-home-overlay-content .guest-preview-hero-button {
+		font-size: 14px;
+	}
+	.guest-banner-container .guest-preview-home-overlay .guest-preview-home-overlay-content .rejoin-browse-benefit a {
+		font-size: 14px;
+	}
+
+
+
+
+	.rejoin-popular-benefits .rejoin-topic-heading {
+		font-size: 18px;
+		margin-top: 30px;
+	}
+	.rejoin-popular-benefits .make-up-cost-inner-row .guest-preview-benefit-block {
+		width: 50%;
+	}
+	.rejoin-popular-benefits .make-up-cost-inner-row .guest-preview-benefit-block .guest-preview-benefit-block-inner {
+		padding-top: 30px;
+		position:relative;
+	}
+	.rejoin-popular-benefits .make-up-cost-inner-row .guest-preview-benefit-block .guest-preview-benefit-block-inner .rejoin-benefit-block-info
+	{
+		line-height: 15px;
+        padding: 15px;
+        min-height: 200px;
+	}
+	.rejoin-popular-benefits .make-up-cost-inner-row .guest-preview-benefit-block:nth-child(odd) .rejoin-benefit-block-info {
+        margin: 0 0 0 auto;
+    }
+	.rejoin-popular-benefits .make-up-cost-inner-row .guest-preview-benefit-block .guest-preview-benefit-block-inner .guest-preview-benefit-block-image-container {
+		width: 80%;
+	}
+	.rejoin-popular-benefits .make-up-cost-inner-row .guest-preview-benefit-block .guest-preview-benefit-block-inner .rejoin-benefit-block-info h3.rejoin-h3-heading {
+		font-size: 16px;
+	}
+	.rejoin-popular-benefits .make-up-cost-inner-row .guest-preview-benefit-block .guest-preview-benefit-block-inner .rejoin-benefit-block-info h1.rejoin-h1-heading {
+		font-size: 16px;
+		line-height: 20px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	.rejoin-popular-benefits .make-up-cost-inner-row .guest-preview-benefit-block .guest-preview-benefit-block-inner .rejoin-benefit-block-info .rejoin-p-heading
+	{
+		font-size: 12px;
+		margin-bottom:0;
+	}
+
+
+	.make-up-cost-cta .make-up-cost-cta-bg {
+		padding: 20px;
+	}
+	.make-up-cost-cta .make-up-cost-cta-bg h1 {
+		
+		font-size: 19px;
+	}
+	.make-up-cost-cta .make-up-cost-cta-bg p {
+		font-size: 16px;
+	}
+	.make-up-cost-cta .make-up-cost-cta-bg .guest-preview-make-up-cost-button {
+		width: 242px;
+		font-size: 12px;
+	}
+
+
+
+
+
+	.guest-preview-midsection-div {
+		margin: 0 15px;
+		display: block;
+		padding:10px;
+		margin-bottom:20px;
+	}
+	.guest-preview-midsection-div .guest-preview-midsection-text-div {
+		width: 100%;
+		font-size: 14px;
+		text-align:center;
+	}
+	.guest-preview-midsection-div .guest-preview-midsection-text-div h1 {
+		font-size: 18px;
+	}
+	.guest-preview-midsection-div .guest-preview-midsection-text-div .guest-preview-midsection-button {
+	
+		width: 242px;
+		font-size: 12px;
+	}
+
+
+
+
+
+	.rejoin-slick
+	{
+		margin-bottom:40px;
+	}
+	.rejoin-slick .quote-column-inner
+	{
+		padding: 30px;
+	}
+	.rejoin-slick .quote-column-inner .circle-crop
+	{
+		width: 100px;
+		height: 100px;
+		margin-bottom:40px;
+	}
+	.rejoin-slick .quote-column-inner .quote-text-bold
+	{
+	margin-top:10px;
+	margin-bottom:40px;
+	font-size: 16px;
+	}
+	
+	.rejoin-slick .quote-column-inner .quote-text-para
+	{
+		font-size: 14px;
+		margin-bottom:10px;
+	}
+	.rejoin-community {
+		padding-top: 20px;
+		padding-bottom: 20px;
+		margin-bottom: 20px;
+	}
+	.rejoin-community .rejoin-community-left h1 {
+		font-size: 18px;
+	}
+	.rejoin-community .rejoin-community-left p {
+		font-size: 14px;
+	}
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+	.guest-banner-container .guest-image-container {
+		height: 400px;
+	}
+	
+	.guest-banner-container .guest-preview-home-overlay .guest-preview-home-overlay-content .guest-hero-title {
+		font-size: 28px;
+	}
+	.guest-banner-container .guest-preview-home-overlay .guest-preview-home-overlay-content .guest-hero-subtitle {
+		font-size: 16px;
+	}
+	.guest-banner-container .guest-preview-home-overlay .guest-preview-home-overlay-content .guest-preview-hero-button {
+		font-size: 14px;
+	}
+	.guest-banner-container .guest-preview-home-overlay .guest-preview-home-overlay-content .rejoin-browse-benefit a {
+		font-size: 14px;
+	}
+
+
+
+
+
+	.rejoin-popular-benefits .rejoin-topic-heading {
+		font-size: 24px;
+		margin-top: 30px;
+	}
+	.rejoin-popular-benefits .make-up-cost-inner-row .guest-preview-benefit-block {
+		width: 50%;
+	}
+	.rejoin-popular-benefits .make-up-cost-inner-row .guest-preview-benefit-block .guest-preview-benefit-block-inner {
+		padding-top: 30px;
+		position:relative;
+	}
+	.rejoin-popular-benefits .make-up-cost-inner-row .guest-preview-benefit-block .guest-preview-benefit-block-inner .rejoin-benefit-block-info
+	{
+		line-height: 15px;
+        padding: 15px;
+        min-height: 200px;
+	}
+	.rejoin-popular-benefits .make-up-cost-inner-row .guest-preview-benefit-block:nth-child(odd) .rejoin-benefit-block-info {
+        margin: 0 0 0 auto;
+    }
+	.rejoin-popular-benefits .make-up-cost-inner-row .guest-preview-benefit-block .guest-preview-benefit-block-inner .guest-preview-benefit-block-image-container {
+		width: 70%;
+	}
+	.rejoin-popular-benefits .make-up-cost-inner-row .guest-preview-benefit-block .guest-preview-benefit-block-inner .rejoin-benefit-block-info h3.rejoin-h3-heading {
+		font-size: 16px;
+	}
+	.rejoin-popular-benefits .make-up-cost-inner-row .guest-preview-benefit-block .guest-preview-benefit-block-inner .rejoin-benefit-block-info h1.rejoin-h1-heading {
+		font-size: 16px;
+		line-height: 20px;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	.rejoin-popular-benefits .make-up-cost-inner-row .guest-preview-benefit-block .guest-preview-benefit-block-inner .rejoin-benefit-block-info .rejoin-p-heading
+	{
+		font-size: 12px;
+		margin-bottom:0;
+	}
+
+
+
+	.make-up-cost-cta .make-up-cost-cta-bg {
+		padding: 30px;
+	}
+	.make-up-cost-cta .make-up-cost-cta-bg h1 {
+		
+		font-size: 24px;
+	}
+	.make-up-cost-cta .make-up-cost-cta-bg p {
+		font-size: 18px;
+	}
+	.make-up-cost-cta .make-up-cost-cta-bg .guest-preview-make-up-cost-button {
+		width: 242px;
+		font-size: 14px;
+	}
+
+
+
+
+
+	.guest-preview-midsection-div {
+		margin: 0 8.3333333%;
+		display: flex;
+		padding:0 40px;
+		margin-bottom:20px;
+	}
+	.guest-preview-midsection-div .guest-preview-midsection-text-div {
+		width: 50%;
+		font-size: 14px;
+		text-align:left;
+	}
+	.guest-preview-midsection-div .guest-preview-midsection-text-div h1 {
+		font-size: 24px;
+	}
+	.guest-preview-midsection-div .guest-preview-midsection-text-div .guest-preview-midsection-button {
+	
+		width: 242px;
+		font-size: 14px;
+	}
+
+	
+
+
+	.rejoin-slick
+	{
+		margin-bottom:40px;
+	}
+	.rejoin-slick .quote-column-inner
+	{
+		padding: 30px;
+	}
+	.rejoin-slick .quote-column-inner .circle-crop
+	{
+		width: 100px;
+		height: 100px;
+		margin-bottom:40px;
+	}
+	.rejoin-slick .quote-column-inner .quote-text-bold
+	{
+	margin-top:10px;
+	margin-bottom:40px;
+	font-size: 18px;
+	}
+	
+	.rejoin-slick .quote-column-inner .quote-text-para
+	{
+		font-size: 14px;
+		margin-bottom:10px;
+	}
+
+	.rejoin-community {
+		padding-top: 40px;
+		padding-bottom: 40px;
+		margin-bottom: 20px;
+	}
+	.rejoin-community .rejoin-community-left h1 {
+		font-size: 24px;
+	}
+	.rejoin-community .rejoin-community-left p {
+		font-size: 14px;
+	}
+	
+}

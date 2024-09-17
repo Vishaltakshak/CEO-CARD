@@ -1,0 +1,501 @@
+.redesign-about-section-head {
+  background-image: linear-gradient(
+      180deg,
+      hsla(0, 0%, 70%, 0.57),
+      hsla(0, 0%, 70%, 0.57)
+    ),
+    url("../../public/assets/img/About/about-cards.jpg");
+  background-position: 0px 75%;
+  background-size: auto, cover;
+}
+.redesign-about-section-head {
+  display: flex;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(
+      180deg,
+      rgba(234, 234, 234, 0.259),
+      rgba(243, 240, 240, 0.244)
+    ),
+    url("../../public/assets/img/aboutus1.jpg");
+  background-position: 0 0 50% 60%;
+  background-size: auto, cover;
+  font-family: Montserrat, sans-serif;
+  color: #000;
+  text-align: center;
+}
+.redesign-about-hero-div {
+  width: 600px;
+  margin-top: 0;
+  margin-right: auto;
+  margin-left: auto;
+  align-self: center;
+  flex: 0 auto;
+  color: #000000;
+}
+.redesign-about-hero-h1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: Montserrat, sans-serif;
+  font-size: 47px;
+  line-height: 52px;
+  font-weight: 700;
+  text-transform: none;
+}
+/* comented by sk */
+/* p {
+  margin-bottom: 20px;
+  line-height: 26px;
+  font-size: 15px;
+} */
+.redesign-aboutvid-section {
+  display: flex;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  justify-content: center;
+  align-items: center;
+}
+
+.redesign-home-full-container {
+  max-width: 1170px;
+  margin-right: auto;
+  margin-left: auto;
+  align-self: center;
+  flex: 0 auto;
+}
+.redesign-about-cols {
+  display: flex;
+  align-items: center;
+}
+.redesign-about-vid-lightbox {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  box-shadow: 0 12px 12px -7px rgba(0, 0, 0, 0.1);
+}
+a {
+  cursor: pointer;
+  color: #000;
+}
+.redesign-about-half-paragraph {
+  width: auto;
+  font-family: Montserrat, sans-serif;
+  color: #000;
+  line-height: 22px;
+  font-weight: 300;
+  margin: 0 0 15px;
+}
+ul.feature-list
+{
+  font-size: 14px;
+  list-style-type: disclosure-closed;
+}
+p {
+  font-family: "Montserrat", sans-serif !important;
+}
+.redesign-review-stats {
+  
+  margin: 0 auto 5% auto;
+  color: white;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 90vw;
+  border-radius: 20px;
+  background-image: 
+        linear-gradient(
+            180deg,
+            rgba(0, 0, 0, 0.65), 
+            rgba(0, 0, 0, 0.6)
+        ),
+        url(../../public/assets/img/About/aboutUs-new2.jpg);
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.redesign-review-h6 {
+  font-size: 28px;
+  margin-bottom: 3px;
+  font-weight: 600;
+  font-family: Montserrat, sans-serif;
+  text-align: center;
+}
+.redesign-review-h7 {
+  margin-top: 0;
+  font-family: Montserrat, sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.text {
+  margin-top: 10px;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 43px;
+}
+
+/* 4th */
+.redesign-about-review-sections {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.redesign-home-full-container {
+  max-width: 1170px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.redesign-about-logo-div {
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  border-right: 1px solid #c9c9c9;
+  font-family: Montserrat, sans-serif;
+  text-align: center;
+}
+.redesign-about-icon1 {
+  display: block;
+  width: 80px;
+  height: 80px;
+  margin-right: auto;
+  margin-left: auto;
+  float: none;
+  /* background-image: url(../images/CNN.png); */
+  background-position: 50% 50%;
+  background-size: 65px;
+  background-repeat: no-repeat;
+  opacity: 1;
+}
+.redesign-about-quote {
+  position: relative;
+  overflow: hidden;
+  margin-left: 0;
+  color: grey;
+  font-size: 15px;
+  line-height: 21px;
+  font-weight: 400;
+}
+
+.redesign-about-icon3 {
+  display: block;
+  width: 80px;
+  height: 80px;
+  margin-right: auto;
+  margin-left: auto;
+  float: none;
+  /* background-image: url(../images/wsj.png); */
+  background-position: 50% 50%;
+  background-size: 105px;
+  background-repeat: no-repeat;
+  opacity: 1;
+}
+.redesign-about-icon4 {
+  display: block;
+  width: 80px;
+  height: 80px;
+  margin-right: auto;
+  margin-left: auto;
+  float: none;
+  background-position: 50% 50%;
+  background-size: 85px;
+  background-repeat: no-repeat;
+  opacity: 1;
+}
+.redesign-reviews-section-main {
+  padding-top: 59px;
+  padding-bottom: 59px;
+  background-color: rgba(236, 238, 243, 0.64);
+}
+.redesign-review-h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-family: Montserrat, sans-serif;
+  font-size: 32px;
+  line-height: 28px;
+  font-weight: 500;
+  text-align: center;
+  text-transform: none;
+}
+.redesign-reviews-subtext {
+  margin-bottom: 5px;
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+}
+.redesign-review {
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 15px 25px -7px rgba(0, 0, 0, 0.1);
+  padding: 20px 25px;
+}
+.redesign-review-p {
+  font-family: Montserrat, sans-serif;
+  font-size: 13px;
+  line-height: 1.42857143;    margin-bottom: 10px;
+}
+.redesign-review-author-div {
+  display: block;
+  margin-top: 20px;
+  flex-direction: row;
+  justify-content: center;
+}
+.redesign-review-photo {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+  float: left;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 auto;
+  -ms-flex: 0 auto;
+  flex: 0 auto;
+  border-radius: 100%;
+  /* background-image: url(../images/headshot-small.png); */
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.redesign-review-name {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 600;
+}
+.redesign-review-title {
+  font-family: Montserrat, sans-serif;
+  font-size: 11px;
+  line-height: 18px;
+}
+.redesign-review-big-div {
+  margin-top: 0;
+  margin-bottom: 0;
+  border-radius: 7px;
+  background-color: #fff;
+  background-position: 20px 20px;
+  background-size: 125px;
+  background-repeat: no-repeat;
+  box-shadow: 15px 0 25px -7px rgba(0, 0, 0, 0.15);
+  border-color: #ececec;
+  border-style: none;
+  border-width: 1px;
+}
+.redesign-review-big-left {
+  text-align: left;
+  display: inline-block;
+  max-width: 450px;
+  margin-left: 50px;
+  padding: 40px 25px;
+}
+.redesign-review-h4 {
+  /* font-family: Montserrat, sans-serif; */
+  font-size: 18px;
+  line-height: 35px;
+  font-weight: 200;
+}
+
+.redesign-review-h5 {
+  line-height: 21px;
+}
+.redesign-review-big-right {
+  display: block;
+  max-width: 300px;
+  margin-right: 60px;
+  margin-left: 50px;
+  float: right;
+  padding: 40px 25px;
+}
+.redesign-review-big-img {
+  width: 200px;
+  height: 200px;
+  float: left;
+  flex: 0 auto;
+  border-radius: 100%;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../../public/assets/img/About/nelson-big.png");
+}
+
+@media screen and (max-width: 645px) {
+  .redesign-review-big-right {
+    display: none;
+  }
+}
+.redesign-review-cta-section {
+  background-color: #fff;
+}
+.redesign-review-cta-div {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+.redesign-reviews-subtext {
+  margin-bottom: 5px;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+}
+.redesign-review-cta-h2 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 24px;
+  line-height: 28px;
+  /* font-weight: 300; */
+  text-align: center;
+  text-transform: none;
+}
+.black-button {
+  display: inline-block;
+  padding: 12px 30px;
+  background-color: #000;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  border-radius: 0;
+}
+.black-button:hover {
+  background-color: #000;
+  color: #ffffff;
+}
+/* .btn {
+  padding: 15px 40px;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 0;
+  border: none;
+  text-decoration: none;
+} */
+.redesign-review-title-span {
+  font-size: 13px;
+  line-height: 21px;
+}
+
+.redesign-home-div-left-events {
+  text-align: left;
+  padding: 0px 15px 15px 15px;
+}
+.about-us-keyoffering h1{
+  font-size: 3rem;
+  font-weight:700;
+  width: 25vw;
+  text-align: end;
+  text-align: right;
+}
+.about-us-keyoffering{
+  margin-right: 4%;
+}
+@media only screen and (min-device-width: 200px) and (max-device-width: 767px){
+  .key-offering-con{
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-us-keyoffering{
+    order: 1;
+    width: 70%;
+  }
+  .about-us-keyoffering h1{
+    text-align: center;
+    width: auto;
+    font-size:2rem;
+  }
+  .key-offering-list{
+    order: 2;
+  }
+}
+@media only screen and  (max-device-width:1005px) {
+  .about-us-keyoffering{
+    
+    width: 70%;
+  }
+  .about-us-keyoffering h1{
+    margin-right:4% ;
+    width: auto;
+    }
+  
+}
+
+.redesign-home-sub-hero {
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 24px;
+}
+.redesign-review-h4-para
+{
+    font-size: 24px;
+    line-height: 35px;
+    font-weight: 200;
+}
+.redesign-review-h4-name
+{
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 500;
+}
+.no-border-right
+{
+  border-right:none;
+}
+@media only screen and (max-width: 767px) {
+
+
+
+  .redesign-about-hero-h1 {
+    font-size: 18px;
+}
+.redesign-home-sub-hero {
+  font-size: 14px;
+}
+
+.redesign-aboutvid-section {
+  padding: 20px 15px;
+}
+.redesign-about-half-paragraph {
+  font-size: 13px;
+}
+.redesign-review-h6 {
+  font-size: 21px;
+}
+
+.redesign-about-logo-div {
+  border-right: none;
+}
+.redesign-home-full-container {
+  max-width: 100%;
+}
+.redesign-about-hero-div {
+  width: 100%;
+}
+.row-sett
+{
+  margin-left:0;
+  margin-right:0;
+}
+
+
+
+
+
+
+
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (orientation: landscape) {
+  .redesign-about-hero-h1 {
+    font-size: 24px;
+}
+.redesign-home-sub-hero {
+  font-size: 14px;
+}
+
+}

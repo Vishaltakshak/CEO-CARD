@@ -1,0 +1,89 @@
+.gradient-custom {
+  /* fallback for old browsers */
+  /* background: #f093fb; */
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(
+    to bottom right,
+    /* rgba(240, 147, 251, 1), */ rgba(245, 87, 108, 1)
+  );
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(
+    to bottom right,
+    /* rgba(240, 147, 251, 1), */ rgba(245, 87, 108, 1)
+  );
+}
+
+.card-registration .select-input.form-control[readonly]:not([disabled]) {
+  font-size: 1rem;
+  line-height: 2.15;
+  padding-left: 0.75em;
+  padding-right: 0.75em;
+}
+.card-registration .select-arrow {
+  top: 13px;
+}
+.section-layout {
+  overflow-y: scroll;
+}
+
+.img-ft {
+  /* position: fixed; */
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  /* background-color: yellow; */
+  color: white;
+}
+.heading {
+  /* border: 2px solid gray; */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+.bgform {
+  border: 0;
+  background-color: #e4e9ef;
+  border-radius: 0;
+}
+.btn-modify {
+  background-color: black;
+  color: white;
+  padding: 7px 0px;
+  height: 50px;
+}
+.btn-modify-submit {
+  background-color: #556066;
+  color: white;
+  padding: 9px 70px;
+}
+.bl {
+  /* border: 1px solid lightgray; */
+  padding: 0;
+  /* border-radius: 5px; */
+}
+.alignment {
+  text-align: center;
+}
+@media screen and (max-width: 480px) {
+  .head-rm {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .head-sign {
+    display: none !important;
+  }
+}
+.check {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 22px;
+}
+.checkbox-size {
+  width: 16px;
+  height: 16px;
+}

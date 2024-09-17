@@ -1,0 +1,54 @@
+.signatur-image {
+  border-radius: 10px;
+  width: 100%;
+}
+.signature-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0px 60px 10px;
+  background-color: white;
+  text-align: center;
+}
+
+.sugnature {
+  
+  /* max-width: 1170px;
+  margin-right: auto;
+  margin-left: auto;
+  align-self: center;
+  flex: 0 auto; */
+}
+.signature-title
+{
+  margin-top: 0px;
+    margin-bottom: 20px;
+    font-family: Montserrat, sans-serif;
+    color: #000;
+    font-weight: 500;
+    font-size: 18px;
+}
+.signature-paragraph {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  font-family: Montserrat, sans-serif;
+  color: #000;
+  line-height: 24px;
+  font-size:14px;
+  font-weight: 300;
+}
+.signature-section b, .signature-section strong {
+  font-weight: 700;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 767px) {
+  .signature-section {
+    padding: 40px 20px 40px 20px;
+  }
+}

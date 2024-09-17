@@ -1,0 +1,129 @@
+.suggestion-list .search-count
+{
+  font-size:14px;
+  color:#333;
+  margin-bottom:10px;
+  font-weight:500;
+  text-transform: inherit;
+}
+
+.suggestion-list .btn-view-map
+{
+  padding: 15px 40px;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 0;
+  text-align:center;
+  color: #000;
+  background-color: #FFF;
+  border: 1px solid #000;
+  width: 242px;
+}
+.suggestion-list .btn-view-map i.bi
+{
+ vertical-align: middle;
+}
+.suggestion-list  .suggestion-list-mb
+{
+margin-bottom:30px;
+}
+.suggestion-list  .para-align-left
+{
+text-align:left;
+}
+.suggestion-list  .btn-align-right
+{
+text-align:right;
+}
+.suggestion-list  .location-map
+{
+  display: none;
+  /* min-height: 400px; */
+  margin-bottom:30px;
+  float: right;
+}
+.suggestion-list  .location-map .location-map-height {
+  height: 100%;
+    width: 50%;
+    position: absolute;
+}
+
+
+@media only screen and (max-width: 767px) 
+{
+    
+  .suggestion-list .btn-view-map {
+    padding: 10px 15px;
+    font-size: 10px;
+    width: auto;
+}
+.suggestion-list .search-count {
+  font-size: 12px;
+}
+
+.suggestion-list .location-map .location-map-height {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+
+
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (orientation: landscape) 
+{
+  
+  .suggestion-list .btn-view-map {
+    padding: 10px 15px;
+    font-size: 10px;
+    width: auto;
+}
+.suggestion-list .search-count {
+  font-size: 12px;
+}
+
+.suggestion-list .location-map .location-map-height {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+}
+
+@media (max-width: 1024px) and (min-width: 768px) 
+{ 
+  
+  .suggestion-list .btn-view-map {
+    padding: 10px 15px;
+    font-size: 10px;
+    width: auto;
+}
+.suggestion-list .search-count {
+  font-size: 12px;
+}
+
+.suggestion-list .location-map .location-map-height {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) 
+{
+  .suggestion-list .btn-view-map {
+    padding: 10px 20px;
+    font-size: 12px;
+    width: auto;
+}
+.suggestion-list .search-count {
+  font-size: 14px;
+}
+
+.suggestion-list .location-map .location-map-height {
+  height: 100%;
+  width: 50%;
+  position: absolute;
+}
+}

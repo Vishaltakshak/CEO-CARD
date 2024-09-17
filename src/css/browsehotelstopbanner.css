@@ -1,0 +1,419 @@
+
+.browse-hotels-banner-container .hotels-banner
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(https://d2920d93lyqeaf.cloudfront.net/images/custom_pages/images/1/normal_mar-gst-pool10_copy_2.jpg?1716906180);
+  min-height: 400px;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+}
+.browse-hotels-banner-container .hotels-banner .hotels-banner-text {
+  color: #FFF;
+  text-align: center;
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+}
+
+.browse-hotels-banner-container .hotels-banner .hotels-banner-text h1.hotels-banner-title
+{
+    color:#ffffff;
+    font-size: 28px;
+      line-height: 35px;
+      margin-top: 10px;
+      font-weight: 600;
+      text-transform: uppercase;
+}
+.browse-hotels-banner-container .hotels-banner .hotels-banner-text h2.hotels-banner-subtitle
+{
+    color:#ffffff;
+    font-size: 20px;
+    font-weight: 600;
+      margin-top: 10px;
+      text-transform: capitalize;
+}
+.browse-hotels-banner-container .hotels-banner .hotels-banner-text p.hotels-banner-para
+ {
+  font-size: 16px;
+  line-height: 35px;
+  color:#ffffff;
+}
+
+
+.browse-hotels-banner-container .hotels-banner .hotel-browse-select-search-box .search-dropdown .search-btn
+{
+  position:relative;
+  width: 300px;
+  padding: 11px 24px 11px 8px;
+  border: none;
+  font-size: 14px;
+  border-radius: 5px;
+  color: #999;
+  border-bottom: none;
+  margin-top: 12px;
+  background: #ffffff;
+  text-align:left;
+}
+.browse-hotels-banner-container .hotels-banner .hotel-browse-select-search-box .search-dropdown .search-btn::after {
+  display: none;
+}
+
+.browse-hotels-banner-container .hotels-banner .hotel-browse-select-search-box .search-dropdown .search-btn-image
+{
+  margin-top: 15px;
+  position: absolute;
+  top: 0px;
+  right: 10px;
+  width:15px;
+}
+
+.browse-hotels-banner-container .hotels-banner .hotel-browse-select-search-box .search-dropdown-list
+{
+  width: 300px;
+}
+.browse-hotels-banner-container .hotels-banner .hotel-browse-select-search-box .search-dropdown-list .dropdown-item.dropdown-item-search-sett
+{
+  padding: 8px 5px;
+  border-bottom: none;
+}
+.browse-hotels-banner-container .hotels-banner .hotel-browse-select-search-box .search-dropdown-list .dropdown-item.dropdown-item-search-sett input
+{
+  height: 30px;
+  padding: 5px;
+  font-size: 14px;
+}
+.browse-hotels-banner-container .hotels-banner .hotel-browse-select-search-box .search-dropdown-list .dropdown-item.dropdown-item-search-sett input:fcus
+{
+  border: 1px solid #000;
+}
+.browse-hotels-banner-container .hotels-banner .hotel-browse-select-search-box .search-dropdown-list .dropdown-item.dropdown-item-search-sett img,
+.browse-hotels-banner-container .hotels-banner .hotel-browse-select-search-box .search-dropdown-list .dropdown-item.dropdown-item-search-sett i.bi
+{
+  position: absolute;
+    right: 15px;
+    margin-top: 8px;
+}
+.browse-hotels-banner-container .hotels-banner .hotel-browse-select-search-box .search-dropdown-list .dropdown-item
+{
+    padding: 8px 20px;
+    border-bottom: 1px solid #d5cece;
+    font-size: 14px;
+    color: #000;
+    text-transform: capitalize;
+    font-weight: 400;
+}
+.browse-hotels-banner-container .hotels-banner .hotel-browse-select-search-box .search-dropdown-list .dropdown-item:hover
+{
+    font-weight: 600;
+    background-color: transparent;
+}
+.browse-hotels-banner-container .hotels-banner .hotel-browse-select-search-box .search-dropdown-list .dropdown-item span i.bi
+{
+  float: right;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+
+.browse-hotels-banner-container .hotels-banner .hotel-browse-search-box img.search-image
+{
+    margin-top: 10px;
+    position: absolute;
+    top: -10px;
+    right: 10px;
+}
+.browse-hotels-banner-container .hotels-banner .hotel-browse-search-box .search-hotel-textbox
+ {
+  width: 300px;
+  padding: 11px 24px 11px 8px;
+  border: none;
+  font-size: 14px;
+  border-radius: 5px;
+  color: #999 ;
+  border-bottom: none;
+  margin-top: 12px;
+  background: #ffffff;
+}
+
+
+
+
+.hotels-banner-overlay {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 15px;
+  font-size: 12px;
+  color: #FFF;
+}
+.hotels-banner-overlay a{
+  color: #FFF;
+}
+.hotels-banner-overlay a, 
+.hotels-banner-overlay a:hover {
+  color: #FFF;
+  font-weight: 600;
+}
+
+
+@media only screen and (max-width: 767px) 
+{
+ 
+  .browse-hotels-banner-container .hotels-banner {
+   
+    min-height: 355px;
+    height:355px;
+}
+.browse-hotels-banner-container .hotels-banner .hotels-banner-text h1.hotels-banner-title {
+  font-size: 18px;
+  line-height: 22px;
+}
+.browse-hotels-banner-container .hotels-banner .hotels-banner-text h2.hotels-banner-subtitle {
+ 
+  font-size: 18px;
+}
+.browse-hotels-banner-container .hotels-banner .hotels-banner-text p.hotels-banner-para {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.browse-hotels-banner-container .hotels-banner .hotel-browse-select-search-box .search-dropdown .search-btn,
+.browse-hotels-banner-container .hotels-banner .hotel-browse-search-box .search-hotel-textbox
+ {
+  width: 300px;
+  max-width: 100%;
+}
+
+
+.city-search-mobile
+{
+  display:none;
+}
+.city-search-mobile
+{
+ 
+  width: 100%;
+    height: 100%;
+    z-index: 1000;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    padding-bottom: 30px;
+}
+.city-search-mobile.show-mob-destination-box
+{
+  display:block;
+}
+.city-search-mobile .city-search-mobile-close
+{
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+
+.city-search-mobile .city-list-search-mobile .region-text
+{
+  font-weight: 600;
+  font-size: 18px;
+  border-bottom: 1px solid #eee;
+  padding: 17px 0 7px 0;
+  color: #000;
+  text-transform: capitalize;
+}
+.city-search-mobile .city-list-search-mobile  .locale-select {
+  font-size: 14px;
+  border-bottom: 1px solid #eee;
+  padding: 7px 0;
+  color: #000;
+}
+.city-search-mobile .city-list-search-mobile  .locale-select i.bi{
+  float:right;
+  font-size: 12px;
+}
+.city-search-mobile .city-list-search-mobile
+{
+  text-align:left;
+  padding:10px 20px;
+}
+
+.hotels-banner-overlay {
+  right: initial;
+  margin: 0 auto;
+  font-size: 8px;
+}
+
+
+
+
+
+
+
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (orientation: landscape) 
+{
+  
+  .browse-hotels-banner-container .hotels-banner {
+   
+    min-height: 355px;
+    height:355px;
+}
+.browse-hotels-banner-container .hotels-banner .hotels-banner-text h1.hotels-banner-title {
+  font-size: 18px;
+  line-height: 22px;
+}
+.browse-hotels-banner-container .hotels-banner .hotels-banner-text h2.hotels-banner-subtitle {
+ 
+  font-size: 18px;
+}
+.browse-hotels-banner-container .hotels-banner .hotels-banner-text p.hotels-banner-para {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.browse-hotels-banner-container .hotels-banner .hotel-browse-select-search-box .search-dropdown .search-btn,
+.browse-hotels-banner-container .hotels-banner .hotel-browse-search-box .search-hotel-textbox
+ {
+  width: 300px;
+  max-width: 100%;
+}
+
+  
+.city-search-mobile
+{
+  display:none;
+}
+.city-search-mobile
+{
+ 
+  width: 100%;
+    height: 100%;
+    z-index: 1000;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    padding-bottom: 30px;
+}
+.city-search-mobile.show-mob-destination-box
+{
+  display:block;
+}
+.city-search-mobile .city-search-mobile-close
+{
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+
+.city-search-mobile .city-list-search-mobile .region-text
+{
+  font-weight: 600;
+  font-size: 18px;
+  border-bottom: 1px solid #eee;
+  padding: 17px 0 7px 0;
+  color: #000;
+  text-transform: capitalize;
+}
+.city-search-mobile .city-list-search-mobile  .locale-select {
+  font-size: 14px;
+  border-bottom: 1px solid #eee;
+  padding: 7px 0;
+  color: #000;
+}
+.city-search-mobile .city-list-search-mobile  .locale-select i.bi{
+  float:right;
+  font-size: 12px;
+}
+.city-search-mobile .city-list-search-mobile
+{
+  text-align:left;
+  padding:10px 20px;
+}
+.hotels-banner-overlay {
+  right: initial;
+  margin: 0 auto;
+  font-size: 8px;
+}
+
+}
+
+@media (max-width: 1024px) and (min-width: 768px) 
+{
+  .browse-hotels-banner-container .hotels-banner {
+   
+    min-height: 355px;
+    height:355px;
+}
+.browse-hotels-banner-container .hotels-banner .hotels-banner-text h1.hotels-banner-title {
+  font-size: 18px;
+  line-height: 22px;
+}
+.browse-hotels-banner-container .hotels-banner .hotels-banner-text h2.hotels-banner-subtitle {
+ 
+  font-size: 18px;
+}
+.browse-hotels-banner-container .hotels-banner .hotels-banner-text p.hotels-banner-para {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.browse-hotels-banner-container .hotels-banner .hotel-browse-select-search-box .search-dropdown .search-btn,
+.browse-hotels-banner-container .hotels-banner .hotel-browse-search-box .search-hotel-textbox
+ {
+  width: 300px;
+  max-width: 100%;
+}
+.hotels-banner-overlay {
+  right: initial;
+  margin: 0 auto;
+  font-size: 8px;
+}
+
+ 
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) 
+{
+  .browse-hotels-banner-container .hotels-banner {
+   
+    min-height: 355px;
+    height:355px;
+}
+.browse-hotels-banner-container .hotels-banner .hotels-banner-text h1.hotels-banner-title {
+  font-size: 28px;
+  line-height: 35px;
+}
+.browse-hotels-banner-container .hotels-banner .hotels-banner-text h2.hotels-banner-subtitle {
+ 
+  font-size: 20px;
+}
+.browse-hotels-banner-container .hotels-banner .hotels-banner-text p.hotels-banner-para {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.browse-hotels-banner-container .hotels-banner .hotel-browse-select-search-box .search-dropdown .search-btn,
+.browse-hotels-banner-container .hotels-banner .hotel-browse-search-box .search-hotel-textbox
+ {
+  width: 300px;
+  max-width: 300px;
+}
+.hotels-banner-overlay {
+  right: 0;
+  margin: 0 auto;
+  font-size: 8px;
+}
+
+}

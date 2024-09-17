@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="17px" height="18px" viewBox="0 0 17 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+    <title>Left nav pop out</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="6.0.0-Search-Functionality" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+        <g id="6.0.1-Open-search-bar" transform="translate(-335.000000, -35.000000)" stroke="#000000" stroke-width="2.32000017">
+            <g id="Left-nav-pop-out" transform="translate(343.495689, 44.495689) rotate(-45.000000) translate(-343.495689, -44.495689) translate(332.995689, 34.495689)">
+                <path d="M11,0 L11,19.7596799" id="Line"></path>
+                <path d="M20.8798399,9.87983993 L0.913053291,10.0869467" id="Line"></path>
+            </g>
+        </g>
+    </g>
+</svg>

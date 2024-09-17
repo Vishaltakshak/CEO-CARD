@@ -1,0 +1,199 @@
+/* body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	font-family: 'Montserrat', sans-serif !important;
+} */
+.Member-benefit-con-color{
+	background-color: #000000;
+
+}
+.benefits-block-parent
+{
+	background-color: #000000;
+	padding-top:40px;
+	overflow: hidden;
+	
+}
+
+.benefits-block-parent.benefits-block-parent-white
+{
+	overflow-x: hidden;
+	background-color: #000000;
+}
+.benefits-block-parent-white h1{
+	color: #ffffff;
+	font-weight: 700;
+}
+.benefits-block-parent .member-benefit-block
+{
+	margin-bottom:40px;
+	padding-top: 20px;
+	background-color: #000000;
+	margin: 2%;
+	width: 40%;
+}
+.benefits-block-parent  .member-benefit-block-parent
+{
+	margin-top:40px;
+	margin-bottom:0px;
+}
+.benefits-block-parent .member-benefit-block .benefit-image-wrapper
+{
+	position:relative;
+}
+.benefits-block-parent .member-benefit-block .benefit-image-wrapper .benefit-label
+{
+	font-size:15px;
+	position: absolute;
+    top: 10px;
+    left: 10px;
+    text-decoration: none;
+    background-color: #000;
+    color: #FFF;
+    padding: 4px 8px;
+    border-radius: 3px;
+    z-index: 10;
+    font-weight: 600;
+}
+.benefits-block-parent .member-benefit-block .benefit-image-wrapper .locked-benefit-label {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    text-decoration: none;
+    background-color: #000;
+	font-size:12px;
+    color: #FFF;
+    padding: 4px 8px;
+    border-radius: 3px;
+    z-index: 10;
+    font-weight: 600;
+}
+.benefits-block-parent .member-benefit-block .benefit-image-wrapper .primary-image {
+    position: absolute;
+    left: 0;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+}
+.benefits-block-parent .member-benefit-block .benefit-image-wrapper  .primary-image:hover {
+    opacity: 0;
+}
+
+
+.benefits-block-parent .member-benefit-block .benefit-image-wrapper img {
+    width: 100%;
+}
+
+.benefits-block-parent .member-benefit-block .benefit-title-container a h5 {
+	font-size:14px;
+	color:#ffffff;
+    font-weight: 700;
+	margin-top: 7px;
+    margin-bottom: 7px;
+}
+.benefits-block-parent .member-benefit-block .benefit-title-container .link-no-underline {
+    text-decoration: none;
+}
+.benefits-block-parent .member-benefit-block .benefit-description-container
+{
+    font-size: 13px;
+	color:#ffffff;
+    min-height: 40px;
+}
+.scroll-container {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.row-equal-height {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+}
+@media only screen and (max-width: 767px) {
+	.scroll-container {
+        overflow-x: scroll;
+        width: 100%;
+    }
+	.row-equal-height {
+		display: flex;
+		display: -webkit-flex;
+		flex-wrap: wrap;
+	}
+    .scroll-inner-div-6-benefits {
+        width: 1800px;
+    }
+	.benefits-block-parent .member-benefit-block .benefit-image-wrapper .benefit-label
+	{
+		font-size:10px;
+	}
+	.benefits-block-parent .member-benefit-block .benefit-title-container a h5 {
+		font-size: 14px;
+	}
+	.benefits-block-parent .member-benefit-block .benefit-description-container {
+		font-size: 14px;
+	}
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (orientation: landscape) {
+
+	.scroll-container {
+        overflow-x: scroll;
+        width: 100%;
+    }
+	.row-equal-height {
+		display: flex;
+		display: -webkit-flex;
+		flex-wrap: wrap;
+	}
+    .scroll-inner-div-6-benefits {
+        width: 1800px;
+    }
+	.benefits-block-parent .member-benefit-block .benefit-image-wrapper .benefit-label
+	{
+		font-size:10px;
+	}
+	.benefits-block-parent .member-benefit-block .benefit-title-container a h5 {
+		font-size: 14px;
+	}
+	.benefits-block-parent .member-benefit-block .benefit-description-container {
+		font-size: 14px;
+	}
+	
+}
+
+
+@media (max-width: 1024px) and (min-width: 768px) {
+
+	.benefits-block-parent .member-benefit-block .benefit-image-wrapper .benefit-label {
+		font-size: 20px;
+	}
+	.benefits-block-parent .member-benefit-block .benefit-title-container a h5 {
+		font-size: 16px;
+	}
+	.benefits-block-parent .member-benefit-block .benefit-description-container {
+		font-size: 14px;
+	}
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+
+	.benefits-block-parent .member-benefit-block .benefit-image-wrapper .benefit-label {
+		font-size: 20px;
+	}
+	.benefits-block-parent .member-benefit-block .benefit-title-container a h5 {
+		font-size: 16px;
+	}
+	.benefits-block-parent .member-benefit-block .benefit-description-container {
+		font-size: 14px;
+	}
+	
+}

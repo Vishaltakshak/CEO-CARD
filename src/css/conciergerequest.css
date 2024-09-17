@@ -1,0 +1,156 @@
+
+.footerpages-container .common-pages-text-request {
+    font-size: 28px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    text-transform: capitalize;
+}
+.conceirge-request-form label.request-label
+{
+    margin-bottom: 5px;
+    font-weight: 700;
+	font-size: 15px;
+	color:#ffffff;
+	text-transform: inherit;
+}
+.conceirge-request-form label.request-label span i.bi
+{
+	font-size: 8px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.footerpages-container .common-pages-form .category-inline-flex {
+    display: inline-flex !important;
+}
+.footerpages-container .common-pages-form .form-group input.form-control.request-input,
+.footerpages-container .common-pages-form .form-group select.form-control.request-select
+{
+	margin-bottom: 10px;
+	height:32px;
+	border-radius: 2px;
+	font-size: 14px;
+	color: #000000;
+	padding:5px 15px;
+}
+.footerpages-container .common-pages-form .form-group select.form-control.request-select
+{
+	-webkit-appearance: auto;
+    -moz-appearance: auto;
+}
+.footerpages-container .common-pages-form .form-group input.form-control.request-input:disabled,
+.footerpages-container .common-pages-form .form-group select.form-control.request-select:disabled,
+.footerpages-container .common-pages-form .form-control:disabled
+ {
+    background-color: #f8f8f8;
+}
+.footerpages-container .common-pages-form .dt-time-flex
+{
+display: flex;
+}
+.footerpages-container .common-pages-form .form-group input.form-control.request-input-dt-tme
+{
+	width: 180px;
+	margin-right: 5px;
+}
+.footerpages-container .common-pages-form .form-group select.form-control.request-select-dt-tme
+{
+	width: 50px;
+	margin-right: 5px;
+}
+
+.footerpages-container .common-pages-form .form-group select.form-control.request-select-day-dt-tme
+{
+	width: 100px;
+	margin-right: 5px;
+}
+.footerpages-container .common-pages-form .btn-submit-request {
+    background-color: #2a74e5;
+}
+.footerpages-container .common-pages-form .form-group select.form-control.category-select
+{
+	width: 250px;
+	margin-left: 5px;
+}
+
+
+
+
+@media only screen and (max-width: 767px) {
+	.footerpages-container .common-pages-text-request {
+		font-size: 20px;
+	}
+	.footerpages-container .common-pages-form .category-inline-flex {
+		display: block !important;
+	}
+	.footerpages-container .common-pages-form .form-group select.form-control.category-select {
+		width: 100%;
+		margin-left: 0;
+	}
+	.footerpages-container .common-pages-form .form-group input.form-control.request-input-dt-tme {
+		width: 155px;
+		margin-right: 2px;
+	}
+
+
+
+
+
+
+	
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (orientation: landscape) {
+
+	.footerpages-container .common-pages-text-request {
+		font-size: 20px;
+	}
+	.footerpages-container .common-pages-form .category-inline-flex {
+		display: block !important;
+	}
+	.footerpages-container .common-pages-form .form-group select.form-control.category-select {
+		width: 100%;
+		margin-left: 0;
+	}
+	.footerpages-container .common-pages-form .form-group input.form-control.request-input-dt-tme {
+		width: 155px;
+		margin-right: 2px;
+	}
+	
+}
+
+
+@media (max-width: 1024px) and (min-width: 768px) {
+
+	.footerpages-container .common-pages-text-request {
+		font-size: 20px;
+	}
+	.footerpages-container .common-pages-form .category-inline-flex {
+		display: block !important;
+	}
+	.footerpages-container .common-pages-form .form-group select.form-control.category-select {
+		width: 100%;
+		margin-left: 0;
+	}
+	.footerpages-container .common-pages-form .form-group input.form-control.request-input-dt-tme {
+		width: 155px;
+		margin-right: 2px;
+	}
+	
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+	.footerpages-container .common-pages-text-request {
+		font-size: 28px;
+	}
+	.footerpages-container .common-pages-form .category-inline-flex {
+		display: inline-flex !important;
+	}
+	.footerpages-container .common-pages-form .form-group select.form-control.category-select {
+		width: 250px;
+		margin-left: 5px;
+	}
+	.footerpages-container .common-pages-form .form-group input.form-control.request-input-dt-tme {
+		width: 165px;
+		margin-right: 5px;
+	}
+}

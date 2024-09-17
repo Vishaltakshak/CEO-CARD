@@ -1,0 +1,1407 @@
+body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+.btn,a {
+	font-family: 'Montserrat', sans-serif !important;
+}
+a, a:hover, a:focus {
+    cursor: pointer;
+    color: #ffffff;
+    text-decoration: none;
+}
+.navbar ul
+{
+    background-color: transparent;
+}
+.nav-container,
+.nav-container .navbar
+{
+	background-color: #222;
+    border-color: #080808;
+}
+.nav-container .navbar-brand 
+{
+    float: none;
+    display: inline-block !important;
+    /* padding: 15px; */
+    padding: 0px;
+    /* height: 50px; */
+    font-family: 'Montserrat', sans-serif !important;
+    line-height: 20px;
+    margin-left: 0;
+    margin-right: 0;
+}
+.nav-container .afterlogin-nav {
+    /* overflow-x: hidden; */
+    padding:0;
+}
+.nav-container .afterlogin-nav .navbar-explore-upgrade
+{
+	position: absolute;
+    left: 20px;
+    top: 20px;
+}
+.nav-container .afterlogin-nav .btn.btn-explore
+{
+	color: #fff;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 8px 20px;
+	display:inline-block;
+	margin-left: 10px;
+    line-height:normal;
+    margin-right: 10px;
+    background-color: #0C6DFF;
+	border-radius: 0;
+	border:none;
+	text-transform: uppercase;
+    
+    
+}
+.nav-container .div-sett
+{
+    width:100%;
+}
+
+/* .nav-container .afterlogin-nav .afterlogin-nav-header
+{
+	float: none;
+    
+} */
+
+.nav-container .afterlogin-nav .account-menu {
+    position: absolute;
+    top: 0;
+    right: 30px;
+}
+.nav-container .afterlogin-nav .logo-size-setting{
+    position: fixed;
+    top: 0;
+    left: 50%;
+}
+.nav-container .afterlogin-nav .logo-size-setting p
+{
+	/* width: 277px; */
+    font-size: 1rem;
+    color: white;
+    font-weight: 700;
+}
+.nav-container .afterlogin-nav .margin-top-15
+{
+margin-top:20px;
+}
+
+.nav-container .afterlogin-nav .navbar-brand {
+    float: none;
+    display: inline-block !important;
+}
+
+
+.nav-container .afterlogin-navbar-collapse ul li a.nav-link{
+    color: #ffffff;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 20px 10px;
+    margin-left:10px;
+    margin-right:10px;
+    font-weight: 500;
+    font-style: normal;
+}
+.nav-container .afterlogin-navbar-collapse ul li a.nav-link.active{
+    color: #ffffff;
+}
+
+/* .navbar .navbar-collapse {
+	text-align: center;
+  } */
+  .nav-container .account-menu li.account-menu-li
+  {
+      padding-right: 5px;
+      padding-left: 5px;
+  }
+
+
+  .nav-container .account-menu li.account-menu-li .custom-nav-dropdown  a
+{
+    text-decoration: none;
+    padding-right: 0;
+    padding-left: 0;
+    margin-right: 2px;
+    margin-left: 2px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    line-height: 20px;
+    color:#fff;
+    font-size:13px;
+    text-transform: capitalize;
+    font-weight:normal;
+    position: relative;
+    display: block;
+}
+
+.nav-container .thin-navbar .account-menu li.account-menu-li .custom-nav-dropdown a.dropdown-toggle:after
+{
+    display:none;
+}
+
+
+
+.nav-container .account-menu li.account-menu-li  span.user-icon i.bi
+{
+    font-size:20px;
+    vertical-align: middle;
+}
+
+.nav-container .account-menu li.account-menu-li ul.account-dropdown-menu
+{
+    right:0;
+    left: auto;
+    min-width: auto;
+    min-width: 260px;
+    border-radius:0;
+    border: 1px solid #e0e0e0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #fff;
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.nav-container .account-menu li.account-menu-li ul.account-dropdown-menu li a
+{
+    color: #000000;
+    text-transform: uppercase;
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    padding-top:5px;
+    padding-bottom:5px;
+    margin-left:0;
+    margin-right:0;
+    display:block
+}
+.nav-container .account-menu li.account-menu-li ul.account-dropdown-menu li a:hover
+{
+    background-color: #fff;
+}
+.nav-container .account-menu li.account-menu-li ul.account-dropdown-menu li.active a
+{
+    color:#037DC2;
+}
+.nav-container .account-menu li.account-menu-li a 
+{
+    padding:15px 0px;
+    text-decoration: none;
+    margin-left: 2px;
+    margin-right: 2px;
+    display: block;
+    position: relative;
+    font-size: 13px;
+    color: #ffffff;
+    line-height: 20px;
+}
+.nav-container .account-menu li.account-menu-li a:focus
+{
+    background-color: transparent;
+}
+.nav-container .account-menu li.account-menu-li a i
+{
+    font-size:20px;
+    color:#ffffff;
+    font-weight:bold;
+}
+.nav-container .account-menu .badge {
+    background-color: #ff206a;
+    padding: 3px 5px 4px 5px;
+    margin: -10px 2px 0 -5px;
+    font-size: 10px;
+    width: 15px;
+    position: relative;
+    min-width: 10px;
+    display: inline-block;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+.text-center-desktop
+{
+text-align:center;
+}
+/*sub category menu for desktop  */
+
+.submenu {
+    background-color: #f9f9f9;
+    border: solid 1px #eeeeee;
+    position: absolute;
+    top: 121px;
+    width: 100%;
+}
+.category-submenu {
+    z-index: 100;
+    padding: 30px 100px 0 100px;
+}
+.hidden-box
+{
+    display:none;
+}
+
+
+/* megha menu css */
+.navbar.afterlogin-nav .has-megamenu
+{
+    position:static!important;
+}
+.navbar.afterlogin-nav .megamenu
+{
+    left:0; right:0; width:100%; margin-top:0; border-radius: 0; 
+}
+.col-megamenu 
+{
+    margin-bottom:30px;
+}
+.col-megamenu .megamenu-heading
+{
+    color: #000000;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+.col-megamenu .megamenu-heading a
+{
+    text-decoration: none;
+    color: #000000;
+    padding: 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+.col-megamenu .megamenu-heading a:hover
+{
+    text-decoration: underline;
+}
+.col-megamenu .megamenu-heading-links p.megamenu-p
+{
+    margin-bottom: 0px;
+    margin-top:0px;
+    line-height:1.3;
+}
+.col-megamenu .megamenu-heading-links p.megamenu-p a
+{
+    font-size: 12px;
+    font-weight: 500;
+    color:#000000;
+    text-transform: capitalize;
+    padding:0;
+    text-decoration: none;
+}
+.col-megamenu .megamenu-heading-links p.megamenu-p a:hover
+{
+    color:#000000;
+    text-decoration: underline;
+}
+
+.col-megamenu .megamenu-heading-links a {
+    font-size: 13px;
+    font-weight: bold;
+    color: #000000;
+    text-transform: capitalize;
+    padding: 0;
+    text-decoration: none;
+}
+
+.col-megamenu .favorites-subcategory
+{
+    font-size: 13px;
+    font-weight: 700;
+    color: #8f8f8f;
+    text-transform: capitalize;
+    margin-top:5px;
+    margin-bottom:5px;
+}
+.col-megamenu .favorites-subcategory-person
+{
+    margin-top:5px;
+    margin-bottom:5px;
+}
+.col-megamenu .favorites-subcategory-person a
+{
+    font-size: 14px;
+    font-weight: 700;
+    color: #000000;
+    text-transform: capitalize;
+}
+
+.col-megamenu .favorites-subcategory-para
+{
+    font-size: 12px;
+    font-weight: 500;
+    color: #000000;
+    text-transform: capitalize;
+    margin-top:5px;
+    margin-bottom:5px;
+}
+
+.desktop-display-sett
+{
+    display:block;
+}
+.mobile-display-sett
+{
+    display:none;
+}
+/* .navbar.afterlogin-nav ul.beforelogin-navbar li.dropdown:hover >  .dropdown-menu.megamenu
+{
+    display: block;
+    margin-top: 0;
+}  */
+/* .nav-container .afterlogin-navbar-collapse ul li.has-megamenu a.dropdown-toggle::after
+{
+    display:none;
+}  */
+/* megha menu css */
+
+.nav-container .afterlogin-nav.thin-navbar
+{
+	position: fixed;
+	z-index: 1000;
+	width: 100%;top:0;
+}
+.nav-container .afterlogin-nav.thin-navbar .navbar-brand {
+   padding:5px 10px;
+}
+.nav-container .afterlogin-nav.thin-navbar .logo-size-setting {
+	float: left;
+	width: 35px;
+    z-index: 99;
+}
+.nav-container .afterlogin-nav.thin-navbar .text-center-desktop
+{
+	text-align:left;
+}
+
+.nav-container .afterlogin-nav.thin-navbar  .navbar-explore-upgrade
+{
+	display:none !important;
+}
+.nav-container .afterlogin-nav.thin-navbar  .thin-navbar-hide
+{
+	display:none !important;
+}
+
+.nav-container .afterlogin-nav.thin-navbar .afterlogin-navbar-collapse {
+	float: none;
+    width: 100%;
+    position: absolute;
+   
+    top: 10px;
+    left: auto;
+    right: auto;
+}
+.nav-container .afterlogin-nav.thin-navbar ul.beforelogin-navbar li a.nav-link {
+	margin: 0;
+	font-size: 11px !important;
+	padding:10px;
+}
+
+.nav-container .afterlogin-nav.thin-navbar .margin-top-15 {
+    margin-top: 0;
+}
+.nav-container .afterlogin-nav.thin-navbar .account-menu
+{
+z-index: 99;
+}
+.navbar.afterlogin-nav ul.beforelogin-navbar li.dropdown:hover >  .dropdown-menu.megamenu
+{
+      display: block;
+      margin-top: 0;
+} 
+
+
+.nav-container .afterlogin-navbar-collapse ul li.has-megamenu a.dropdown-toggle::after
+{
+    display:none;
+}
+
+/*sub category menu for desktop  */
+
+
+
+
+
+/* css for menu display after membership expired */
+.nav-container .afterlogin-nav .account-menu.membership-expired-menu
+{
+    margin-top:10px;
+}
+.nav-container .account-menu li.account-menu-li .btn-rejoin
+{
+    border: 1px solid #FFF;
+    background-color: transparent;
+    padding: 10px 20px !important;
+    color:#fff;
+    border-radius: 0;
+    font-weight: 500;
+    margin:0;
+    display: block;
+    position: relative;
+    font-size: 14px;
+    line-height: inherit;
+}
+.nav-container .afterlogin-nav.thin-navbar .account-menu li.account-menu-li .btn-rejoin
+{
+    padding: 8px 16px !important;
+    font-size: 10px;
+}
+.nav-container .afterlogin-nav.thin-navbar  .reactivate-user .reactivate-user-name
+{
+    font-size: 14px;
+}
+.nav-container .afterlogin-nav.thin-navbar .reactivate-user .reactivate-user-membership
+{
+    font-size: 12px;
+}
+.desktop-rejoin-btn
+{
+    display:block;
+}
+.mobile-rejoin-btn
+{
+    display:none;
+}
+.reactivate-user  .reactivate-user-name
+{
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: capitalize;
+    color:#fff;
+}
+.reactivate-user  .reactivate-user-membership
+{
+    font-size: 12px;
+    font-weight: 400;
+    text-transform: inherit;
+    color:#fff;
+    font-style: italic;
+}
+/* css for menu display after membership expired */
+
+
+@media (max-width: 990px) {
+    .nav-container .afterlogin-nav .btn.btn-explore {
+        
+        margin: -1% 1% 0% 5%;
+        left: 40%;
+    }
+}
+@media (max-width: 738px) {
+    .nav-container .afterlogin-nav .btn.btn-explore {
+        
+        margin: -1% 10% 0% 3rem;
+        
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+   
+	.nav-container .afterlogin-nav .logo-size-setting {
+        width: 50px;
+    }
+    .nav-container  .navbar-toggler
+    {
+        color:#ffffff;
+        line-height: inherit;
+        font-size:28px;
+        padding-left: 0;
+        margin: 0;
+        position: absolute;
+        border:none;
+        left: 0;
+        top: 0;
+    }
+    .nav-container  .navbar-toggler:focus
+    {
+        color:#ffffff;
+        box-shadow:none;
+    }
+    .nav-container .afterlogin-nav .account-menu ul.navbar-nav
+    {
+        padding-left: 0;
+        padding-right: 0;
+        display: -webkit-box;
+        padding-top: 0px;
+    }
+    .nav-container .afterlogin-nav .navbar-brand {
+        margin-right: 0;
+        height:auto;
+        padding: 0px;
+    }
+    .nav-container .afterlogin-nav .account-menu {
+        top: 0;
+        right: 0;
+    }
+    .nav-container .div-sett {
+        width: auto;
+    }
+    .nav-container .afterlogin-nav .margin-top-15 {
+        margin-top: 0px;
+    }
+    .nav-container {
+        padding: 10px 0;
+    }
+    .nav-container .afterlogin-nav {
+        position: relative;
+        width: 100%;
+        display: block;
+    }
+    .nav-container .afterlogin-navbar-collapse
+    {
+        border-top:1px solid #101010;
+    }
+    .nav-container .afterlogin-navbar-collapse ul li a.nav-link {
+        font-size: 14px;
+        padding: 10px 10px;
+        font-weight:400;
+        position:relative;
+    }
+    .menu-section-break
+    {
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        width: 95%;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .text-center-desktop
+    {
+        text-align:center;
+    }
+.nav-container .afterlogin-navbar-collapse ul 
+{
+    padding-right:0;
+    align-items: flex-start;
+    display:block;
+    border-radius: 0;
+
+}
+.desktop-display-sett
+{
+display:none;
+}
+.mobile-display-sett
+{
+    display:block;
+    margin-top:0;
+}
+.navbar.afterlogin-nav .megamenu
+{
+    background-color: transparent;
+}
+
+.col-megamenu .megamenu-heading-links p.megamenu-p a,
+.col-megamenu .megamenu-heading-links a {
+    font-size: 13px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.col-megamenu {
+    margin-bottom: 30px;
+    padding-left: 30px;
+}
+
+.col-megamenu .megamenu-heading-links p.megamenu-p {
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.nav-container .afterlogin-nav .navbar-explore-upgrade {
+    position: relative;
+    left: 0px;
+    top: 0;
+}
+.afterlogin-navbar-collapse .dropdown-toggle::after {
+    display: inline-block;
+    /* margin-left: .255em; */
+    /* vertical-align: .255em; */
+    width:10px;
+    vertical-align: middle;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+    position:absolute;
+    right:20px;
+    top:20px;
+}
+.afterlogin-navbar-collapse .dropdown-toggle.show::after {
+    display: inline-block;
+    width:10px;
+    vertical-align: middle;
+    /* margin-right: .255em;
+    vertical-align: .255em; */
+    content: "";
+    border-bottom: .3em solid;
+    border-left: .3em solid transparent;
+    border-top: 0;
+    border-right: .3em solid transparent;
+    position:absolute;
+    right:20px;
+    top:20px;
+}
+
+
+
+#mobile-category-navbar
+{
+    background-color: #222;
+    width: 100%;
+    padding: 0;
+    overflow-x: scroll;
+}
+#mobile-category-link-container {
+    width: max-content;
+    margin: 0 auto;
+    text-align: center;
+}
+.mobile-category-link-wrapper {
+    padding: 0 12px;
+}
+.mobile-category-link, .mobile-category-link:hover, .mobile-category-link:focus {
+    padding: 13px 0;
+    color: #FFF;
+    font-size: 11px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.mobile-category-link.active, .mobile-category-link:hover {
+    border-bottom: 3px solid #FFF;
+    font-weight: bold;
+}
+
+
+.nav-container .afterlogin-nav.thin-navbar ul.beforelogin-navbar li a.nav-link {
+    margin: 0;
+    font-size: 14px !important;
+    padding: 10px 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.nav-container .afterlogin-nav.thin-navbar .afterlogin-navbar-collapse {
+    position: relative;
+}
+
+
+.nav-container .afterlogin-nav.thin-navbar
+{
+    position: relative;
+}
+.nav-container .afterlogin-nav.thin-navbar  .navbar-explore-upgrade
+{
+	display:block !important;
+}
+.nav-container .afterlogin-navbar-collapse ul li.has-megamenu a.dropdown-toggle::after
+{
+    display:block;
+}
+
+.navbar.afterlogin-nav ul.beforelogin-navbar li.dropdown:hover >  .dropdown-menu.megamenu
+{
+      display: none;
+      margin-top: 0;
+} 
+.navbar.afterlogin-nav ul.beforelogin-navbar li.dropdown:hover >  .dropdown-menu.megamenu.show
+{
+      display: block;
+      margin-top: 0;
+} 
+
+/* css for menu display after membership expired */
+.nav-container .account-menu li.account-menu-li .btn-rejoin {
+    border: none;
+    padding: 5px 10px !important;
+    font-size: 12px;
+}
+.nav-container .afterlogin-nav.thin-navbar .account-menu li.account-menu-li .btn-rejoin
+{
+    border: none;
+    padding: 5px 10px !important;
+    font-size: 12px;
+}
+.desktop-rejoin-btn
+{
+    display:none;
+}
+.mobile-rejoin-btn
+{
+    display:block;
+}
+/* css for menu display after membership expired */
+
+
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (orientation: landscape) {
+	.nav-container .afterlogin-nav .logo-size-setting {
+        width: 60px;
+    }
+    .nav-container  .navbar-toggler
+    {
+        color:#ffffff;
+        line-height: inherit;
+        font-size:28px;
+        padding-left: 0;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .nav-container  .navbar-toggler:focus
+    {
+        color:#ffffff;
+        box-shadow:none;
+    }
+    .nav-container .afterlogin-nav .account-menu ul.navbar-nav
+    {
+        padding-left: 0;
+        padding-right: 0;
+        display: -webkit-box;
+        padding-top: 0px;
+    }
+    .nav-container .afterlogin-nav .navbar-brand {
+        margin-right: 0;
+        height:auto;
+        padding: 0px;
+    }
+    .nav-container .afterlogin-nav .account-menu {
+        top: 0;
+        right: 0;
+    }
+    .nav-container .div-sett {
+        width: auto;
+    }
+    .nav-container .afterlogin-nav .margin-top-15 {
+        margin-top: 0px;
+    }
+    .nav-container {
+        padding: 10px 0;
+    }
+    .nav-container .afterlogin-nav {
+        position: relative;
+        width: 100%;
+        display: block;
+    }
+
+    .nav-container .afterlogin-navbar-collapse ul li a.nav-link {
+        font-size: 14px;
+        padding: 10px 10px;
+        font-weight:400;
+        position:relative;
+    }
+    .menu-section-break
+    {
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        width: 95%;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .text-center-desktop
+    {
+        text-align:center;
+    }
+.nav-container .afterlogin-navbar-collapse ul 
+{
+    padding-right:0;
+    align-items: flex-start;
+    display:block;
+    border-radius: 0;
+
+}
+.desktop-display-sett
+{
+display:none;
+}
+.mobile-display-sett
+{
+    display:block;
+    margin-top:0;
+}
+.navbar.afterlogin-nav .megamenu
+{
+    background-color: transparent;
+}
+
+
+.col-megamenu .megamenu-heading-links p.megamenu-p a,
+.col-megamenu .megamenu-heading-links a {
+    font-size: 13px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.col-megamenu {
+    margin-bottom: 30px;
+    padding-left: 30px;
+}
+
+.col-megamenu .megamenu-heading-links p.megamenu-p {
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.nav-container .afterlogin-nav .navbar-explore-upgrade {
+    position: relative;
+    left: 0px;
+    top: 0;
+}
+.afterlogin-navbar-collapse .dropdown-toggle::after {
+    display: inline-block;
+    /* margin-left: .255em;
+    vertical-align: .255em; */
+    vertical-align: middle; 
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+.afterlogin-navbar-collapse .dropdown-toggle.show::after {
+    display: inline-block;
+    /* margin-right: .255em; */
+    /* vertical-align: .255em; */
+    vertical-align:middle;
+    content: "";
+    border-bottom: .3em solid;
+    border-left: .3em solid transparent;
+    border-top: 0;
+    border-right: .3em solid transparent;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+
+
+#mobile-category-navbar
+{
+    background-color: #222;
+    width: 100%;
+    padding: 0;
+    overflow-x: scroll;
+}
+#mobile-category-link-container {
+    width: max-content;
+    margin: 0 auto;
+    text-align: center;
+}
+.mobile-category-link-wrapper {
+    padding: 0 12px;
+}
+.mobile-category-link, .mobile-category-link:hover, .mobile-category-link:focus {
+    padding: 13px 0;
+    color: #FFF;
+    font-size: 11px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.mobile-category-link.active, .mobile-category-link:hover {
+    border-bottom: 3px solid #FFF;
+    font-weight: bold;
+}
+.nav-container .afterlogin-nav.thin-navbar ul.beforelogin-navbar li a.nav-link {
+    margin: 0;
+    font-size: 14px !important;
+    padding: 10px 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.nav-container .afterlogin-nav.thin-navbar .afterlogin-navbar-collapse {
+    position: relative;
+}
+
+.nav-container .afterlogin-nav.thin-navbar
+{
+    position: relative;
+}
+.nav-container .afterlogin-nav.thin-navbar  .navbar-explore-upgrade
+{
+	display:inline-block !important;
+}
+
+.nav-container .afterlogin-navbar-collapse ul li.has-megamenu a.dropdown-toggle::after
+{
+    display:block;
+}
+
+.navbar.afterlogin-nav ul.beforelogin-navbar li.dropdown:hover >  .dropdown-menu.megamenu
+{
+      display: none;
+      margin-top: 0;
+} 
+.navbar.afterlogin-nav ul.beforelogin-navbar li.dropdown:hover >  .dropdown-menu.megamenu.show
+{
+      display: block;
+      margin-top: 0;
+} 
+
+/* css for menu display after membership expired */
+.nav-container .account-menu li.account-menu-li .btn-rejoin {
+    border: none;
+    padding: 5px 10px !important;
+    font-size: 12px;
+}
+.nav-container .afterlogin-nav.thin-navbar .account-menu li.account-menu-li .btn-rejoin
+{
+    border: none;
+    padding: 5px 10px !important;
+    font-size: 12px;
+}
+.desktop-rejoin-btn
+{
+    display:none;
+}
+.mobile-rejoin-btn
+{
+    display:block;
+}
+/* css for menu display after membership expired */
+
+}
+
+
+@media (max-width: 1024px) and (min-width: 768px) {
+	
+	.nav-container .afterlogin-nav .logo-size-setting {
+        /* width: 200px; */
+        width: 60px;
+    }
+    .nav-container  .navbar-toggler
+    {
+        color:#ffffff;
+        font-size:28px;
+        padding-left: 0;
+        position: absolute;
+        left: 0;
+        line-height: inherit;
+        top: 0;
+    }
+    .nav-container  .navbar-toggler:focus
+    {
+        color:#ffffff;
+        box-shadow:none;
+    }
+    .nav-container .afterlogin-nav .account-menu ul.navbar-nav
+    {
+        padding-left: 0;
+        padding-right: 0;
+        display: -webkit-box;
+        padding-top: 0px;
+    }
+    .nav-container .afterlogin-nav .navbar-brand {
+        margin-right: 0;
+        height:auto;
+        /* padding: 15px; */
+        padding: 0px;
+    }
+    .nav-container .afterlogin-nav .account-menu {
+        top: 0;
+        right: 0;
+    }
+    .nav-container .div-sett {
+        width: auto;
+    }
+    .nav-container .afterlogin-nav .margin-top-15 {
+        margin-top: 0px;
+    }
+    .nav-container {
+        padding: 10px 0;
+    }
+    .nav-container .afterlogin-nav {
+        position: relative;
+        width: 100%;
+        display: block;
+    }
+
+    .nav-container .afterlogin-navbar-collapse ul li a.nav-link {
+        font-size: 14px;
+        padding: 10px 10px;
+        position:relative;
+    }
+    .menu-section-break
+    {
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        width: 95%;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    .text-center-desktop
+    {
+        text-align:center;
+    }
+.nav-container .afterlogin-navbar-collapse ul 
+{
+    padding-right:0;
+    align-items: flex-start;
+    display:block;
+    border-radius: 0;
+
+}
+.desktop-display-sett
+{
+display:none;
+}
+.mobile-display-sett
+{
+    display:block;
+    margin-top:0;
+}
+.navbar.afterlogin-nav .megamenu
+{
+    background-color: transparent;
+}
+
+.col-megamenu .megamenu-heading-links p.megamenu-p a, 
+.col-megamenu .megamenu-heading-links a {
+    font-size: 13px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.col-megamenu {
+    margin-bottom: 30px;
+    padding-left: 0px;
+}
+
+.col-megamenu .megamenu-heading-links p.megamenu-p {
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+.nav-container .afterlogin-nav .navbar-explore-upgrade {
+    position: relative;
+    left: 0px;
+    top: 0;
+}
+.afterlogin-navbar-collapse .dropdown-toggle::after {
+    display: inline-block;
+    /* margin-left: .255em;
+    vertical-align: .255em; */
+    vertical-align: middle;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+    position: absolute;
+    right:20px;
+    top:20px;
+}
+.afterlogin-navbar-collapse .dropdown-toggle.show::after {
+    display: inline-block;
+    /* margin-right: .255em; */
+    vertical-align: middle;
+    content: "";
+    border-bottom: .3em solid;
+    border-left: .3em solid transparent;
+    border-top: 0;
+    border-right: .3em solid transparent;
+    position: absolute;
+    right:20px;
+    top:20px;
+}
+
+
+
+#mobile-category-navbar
+{
+    background-color: #222;
+    width: 100%;
+    padding: 0;
+    overflow-x: scroll;
+}
+#mobile-category-link-container {
+    width: max-content;
+    margin: 0 auto;
+    text-align: center;
+}
+.mobile-category-link-wrapper {
+    padding: 0 12px;
+}
+.mobile-category-link, .mobile-category-link:hover, .mobile-category-link:focus {
+    padding: 13px 0;
+    color: #FFF;
+    font-size: 11px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.mobile-category-link.active, .mobile-category-link:hover {
+    border-bottom: 3px solid #FFF;
+    font-weight: bold;
+}
+.nav-container .afterlogin-nav.thin-navbar .afterlogin-navbar-collapse {
+    position: relative;
+}
+.nav-container .afterlogin-nav.thin-navbar
+	{
+		position: relative;
+	}
+
+    .nav-container .afterlogin-nav.thin-navbar  .navbar-explore-upgrade
+    {
+        display:block !important;
+    }
+    .nav-container .afterlogin-nav.thin-navbar ul.beforelogin-navbar li a.nav-link {
+        margin: 0;
+        font-size: 14px !important;
+        padding: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .nav-container .afterlogin-navbar-collapse ul li.has-megamenu a.dropdown-toggle::after
+{
+    display:block;
+}
+.navbar.afterlogin-nav ul.beforelogin-navbar li.dropdown:hover >  .dropdown-menu.megamenu
+{
+      display: none;
+      margin-top: 0;
+} 
+.navbar.afterlogin-nav ul.beforelogin-navbar li.dropdown:hover >  .dropdown-menu.megamenu.show
+{
+      display: block;
+      margin-top: 0;
+} 
+
+
+
+/* css for menu display after membership expired */
+.nav-container .account-menu li.account-menu-li .btn-rejoin {
+    border: none;
+    padding: 5px 10px !important;
+    font-size: 12px;
+}
+.nav-container .afterlogin-nav.thin-navbar .account-menu li.account-menu-li .btn-rejoin
+{
+    border: none;
+    padding: 5px 10px !important;
+    font-size: 12px;
+}
+.desktop-rejoin-btn
+{
+    display:none;
+}
+.mobile-rejoin-btn
+{
+    display:block;
+}
+/* css for menu display after membership expired */
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+
+	.text-center-desktop {
+        text-align: center;
+    }
+    .nav-container .afterlogin-navbar-collapse ul {
+        padding-right: 0;
+        align-items: center;
+        display: flex;
+        border-radius: 0;
+    }
+    .mobile-display-sett {
+        display: none;
+        margin-top: 20px;
+    }
+    .desktop-display-sett {
+        display: block;
+    }
+    .navbar.afterlogin-nav .megamenu {
+        background-color: #ffffff;
+    }
+    /* .col-megamenu .megamenu-heading-links p.megamenu-p a {
+        font-size: 13px;
+        color: #000000;
+
+    } */
+    .col-megamenu .megamenu-heading-links p.megamenu-p a, 
+    .col-megamenu .megamenu-heading-links a 
+    {
+        font-size: 13px;
+        color: #000000;
+        text-transform: capitalize;
+        font-weight: 500;
+    }
+    .col-megamenu .megamenu-heading-links p.megamenu-p {
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    .nav-container .afterlogin-nav .navbar-explore-upgrade {
+        position: absolute;
+        left: 15px;
+        top: 0;
+    }
+    .nav-container .afterlogin-nav .account-menu ul.navbar-nav {
+        padding-left: 0;
+        padding-right: 0;
+        display: -webkit-box;
+        padding-top: 0;
+    }
+    .nav-container .account-menu li.account-menu-li span.user-icon i.bi {
+        font-size: 18px;
+    }
+    .nav-container .afterlogin-nav.thin-navbar
+{
+	position: fixed;
+	z-index: 1000;
+	width: 100%;top:0;
+}
+.nav-container .afterlogin-nav.thin-navbar .logo-size-setting {
+	float: left;
+	width: 40px;z-index: 99;
+}
+.nav-container .afterlogin-nav.thin-navbar .text-center-desktop
+{
+	text-align:left;
+}
+
+.nav-container .afterlogin-nav.thin-navbar  .navbar-explore-upgrade
+{
+	display:none !important;
+}
+.nav-container .afterlogin-nav.thin-navbar  .thin-navbar-hide
+{
+	display:none !important;
+}
+
+.nav-container .afterlogin-nav.thin-navbar .afterlogin-navbar-collapse {
+	float: none;
+    width: 100%;
+    position: absolute;
+   
+    top: 10px;
+    left: auto;
+    right: auto;
+}
+.nav-container .afterlogin-nav.thin-navbar ul.beforelogin-navbar li a.nav-link {
+	margin: 0;
+	font-size: 12px !important;
+	padding:10px;
+}
+
+.nav-container .afterlogin-nav.thin-navbar .margin-top-15 {
+    margin-top: 0;
+}
+.nav-container .afterlogin-nav.thin-navbar .account-menu
+{
+z-index: 99;
+}
+.nav-container .afterlogin-navbar-collapse ul li.has-megamenu a.dropdown-toggle::after
+{
+    display:none;
+}
+.dropdown-toggle::after {
+    position: relative;
+    right:0px;
+    top:0px;
+}
+.afterlogin-navbar-collapse .dropdown-toggle.show::after {
+    position: relative;
+    right:0px;
+    top:0px;
+}
+
+
+
+/* css for menu display after membership expired */
+.nav-container .account-menu li.account-menu-li .btn-rejoin {
+    border: 1px solid #FFF;
+    padding: 10px 20px !important;
+    font-size: 12px;
+}
+.nav-container .afterlogin-nav.thin-navbar .account-menu li.account-menu-li .btn-rejoin
+{
+    border: 1px solid #FFF;
+    padding: 5px 10px !important;
+    font-size: 8px;
+}
+.nav-container .afterlogin-nav.thin-navbar  .reactivate-user .reactivate-user-name,
+.nav-container .afterlogin-nav.thin-navbar .reactivate-user .reactivate-user-membership
+{
+    font-size: 10px;
+}
+.desktop-rejoin-btn
+{
+    display:block;
+}
+.mobile-rejoin-btn
+{
+    display:none;
+}
+/* css for menu display after membership expired */
+
+
+
+}
+
+
+
+
+/* ============ desktop view ============ */
+@media all and (min-width: 992px) {
+
+  .navbar.afterlogin-nav .has-megamenu{position:static!important;}
+  .navbar.afterlogin-nav .megamenu{left:0; right:0; width:100%; margin-top:0; border-radius: 0; }
+
+}	
+/* ============ desktop view .end// ============ */
+
+/* ============ mobile view ============ */
+@media(max-width: 991px){
+  .navbar.fixed-top .navbar-collapse, .navbar.sticky-top .navbar-collapse{
+        overflow-y: auto;
+        max-height: 90vh;
+        margin-top: 10px;
+        position: absolute;
+        width: 100%;
+        background: #222222;
+  }
+  /* .navbar.afterlogin-nav ul.beforelogin-navbar li.dropdown:hover >  .dropdown-menu.megamenu
+     {
+      display: block;
+      margin-top: 0;
+    } */
+}
+
+
+@media (min-width: 576px) {
+   
+   
+    /* .navbar.afterlogin-nav ul.beforelogin-navbar li.dropdown:hover >  .dropdown-menu.megamenu
+     {
+      display: block;
+      margin-top: 0;
+    } */
+    /* .nav-container .afterlogin-navbar-collapse ul li.has-megamenu a.dropdown-toggle::after
+    {
+        display:none;
+    } */
+
+
+  }
+
+
+
+

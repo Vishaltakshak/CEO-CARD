@@ -39,6 +39,7 @@ import BrowseHotelsByBrands from "./Components/BrowseHotelsByBrands";
 import AllPageScrollToTop from "./Components/AllPageScrollTotop";
 import Reactivate from "./Components/pages/reactivate";
 import RejoinHome from "./Components/RejoinHome";
+import { ExploreElite } from "./Components/pages/ExploreElite.js";
 
 const App = () => {
   const isLoggedIn = sessionStorage.getItem("isLoggedIn");
@@ -66,6 +67,7 @@ const App = () => {
                 path="/MembershipFormSubmitted"
                 element={<MembershipFormSubmitted />}
               />
+              <Route path="/exploreelite" element={<ExploreElite/>} />
               <Route path="/SubMenu" element={<SubMenu />} />
               <Route path="/homeafterlogin" element={<HomeAfterLogin />} />
               <Route path="/allbenifits" element={<AllBenifits />} />

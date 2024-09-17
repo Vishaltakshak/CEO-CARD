@@ -1,6 +1,80 @@
 .refer-frnd-div{
-    height: 30%;
-    width: 90%;
+    height: 40%;
+    width: auto;
     background-color: #d9d9d9;
     color: black;
+    padding: 40px;
+
+}
+.refer-parent-con h1{
+    color: white;
+}
+.refer-frnd-div p{
+    color: black;
+    margin: 0;
+   
+}
+.Containter-fluid h1{
+    color: white;
+    font-weight: 600;
+}
+.Refer-learn-more{
+    background-color: #605E5F;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+
+}
+.Refer-learn-more a{
+    color: white;
+    text-decoration: none;
+}
+.refer-form-container .form-heading{
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: left !important;
+    /* padding-bottom: 10px; */
+}
+.sub-form-container label{
+    color: white;
+   
+}
+
+.sub-form-container .input-container{
+    /* margin-bottom: 5%; */
+    gap: 1rem;
+    padding-bottom: 5%;
+}
+.input-container input{
+    padding: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    border: none;
+    background-color: #d9d9d9;
+    color: black;
+}
+.link-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.link-container p{
+    color: white;
+}
+.link-details{
+    display: inline-block;
+    padding: 10px;
+    border-radius: 8px;
+    color: black;
+    background-color: #d9d9d9;
+    
+}
+.form-format{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5%;
+}
+.form-format button{
+    height: 45px;
 }

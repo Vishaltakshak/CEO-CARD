@@ -48,7 +48,7 @@ const AfterLoginFooter = () => {
                   <a
                     className="btn footer-btn-white"
                     id="footer-refer-link"
-                    href="/homeafterlogin"
+                    href="/refferal"
                   >
                     REFER A MEMBER, EARN FCPOINTS
                   </a>

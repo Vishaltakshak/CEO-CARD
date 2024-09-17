@@ -127,7 +127,7 @@ const AfterLoginHeader = ({ allMenu }) => {
                         aria-labelledby="dropdownMenuLink"
                       >
                         <li>
-                          <Link to="/ExploreElite">profile</Link>
+                          <Link to="/Profile-Page">profile</Link>
                         </li>
                         <li>
                           <Link to="/homeafterlogin">account setting</Link>

@@ -41,7 +41,7 @@ import Reactivate from "./Components/pages/reactivate";
 import RejoinHome from "./Components/RejoinHome";
 import { ExploreElite } from "./Components/pages/ExploreElite.js";
 import { Referreal } from "./Components/pages/Referreal.js";
-import { ProfilePage1 } from "./Components/pages/userprofile/ProfilePage1.js";
+import { ProfilePage } from "./Components/pages/userprofile/ProfilePage.js";
 
 const App = () => {
   const isLoggedIn = sessionStorage.getItem("isLoggedIn");
@@ -89,7 +89,7 @@ const App = () => {
                 path="/OrderMembershipCard"
                 element={<OrderMembershipCard />}
               />
-              <Route path="/Profile-page" element={<ProfilePage1/>}/>
+              <Route path="/Profile-page" element={<ProfilePage/>}/>
               <Route path="/concierge_request" element={<ConciergeRequest />} />
               <Route
                 path="/redemption_assistance"

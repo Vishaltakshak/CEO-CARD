@@ -1,7 +1,9 @@
 import React from 'react'
 import AfterLoginLayout from '../../layouts/AfterLoginLayout'
+import { ProfilePage1 } from './ProfilePage1'
+import { ProfilePage2 } from './ProfilePage2'
 
-export const ProfilePage1 = () => {
+export const ProfilePage = () => {
   return (
     <>
     <AfterLoginLayout>
@@ -19,6 +21,9 @@ export const ProfilePage1 = () => {
                         <li>Other Travellers</li>
                     </ul>
                 </aside>
+                {/* <ProfilePage1/> */}
+                <ProfilePage2></ProfilePage2>
+
 
             </div>
         </div>

@@ -3,6 +3,7 @@
     padding: 10px;
   
 }
+
 .personal-details-form{
 margin-bottom: 30px;
 padding-bottom: auto;
@@ -14,6 +15,9 @@ padding-bottom: auto;
     background-color: white;
 }
 .presonal-details-heading{
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
     width: 100%;
+
 }

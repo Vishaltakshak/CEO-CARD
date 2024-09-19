@@ -21,7 +21,7 @@ export const ProfilePage1 = () => {
     return (
         <div className='container-fluid bg-black flex flex-col justify-center items-center'>
             <div className='ps-0'>
-              <div className='presonal-details-heading flex '>
+              <div className='presonal-details-heading flex justify-between'>
                 <div>
                 <h1>Personal Details</h1>
                 <h5>Update your information and find out how it's used.</h5>

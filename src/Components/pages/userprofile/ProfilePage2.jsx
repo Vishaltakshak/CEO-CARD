@@ -24,11 +24,13 @@ export const ProfilePage2 = () => {
                      </div>
                      
                 </div>
-                <button type="submit" style={{ marginTop: '20px', padding: '10px 20px', backgroundColor: '#007bff', color: '#fff', borderRadius: '5px' }}>
+                
+            </form>
+            
+        </div>
+        <button type="submit" style={{ marginTop: '20px', padding: '10px 20px', backgroundColor: '#007bff', color: '#fff', borderRadius: '5px' }}>
                    Submit
                 </button>
-            </form>
-        </div>
     </div>
   )
 }

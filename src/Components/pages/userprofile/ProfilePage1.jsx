@@ -31,6 +31,7 @@ export const ProfilePage1 = () => {
                   <img src="" alt="" />
                 </div>
               </div>
+              <hr />
                 <div className="personal-details-form flex flex-col justify-center items-center">
                     <form onSubmit={HandlePersonalSubmit} action="">
                         {/* Label and Input pairs */}

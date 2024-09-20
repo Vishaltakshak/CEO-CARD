@@ -10,7 +10,7 @@ export const EmailePreferences = () => {
                 </p>
             </div>
             <div className='flex flex-row'>
-                <div> <strong>Email preferences:</strong> </div>
+                <div className='heading'> <strong>Email preferences:</strong> </div>
                 <div>This is the email address you use to sign in. Its also where we send your booking confirmations.</div>
                 <div><button className='Profile3-btn'>Manage</button></div>
             </div>

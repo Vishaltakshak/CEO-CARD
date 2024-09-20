@@ -8,6 +8,7 @@ import { PaymentMethod } from './ProfilePage4.jsx'
 import { PrivacySettings } from './ProfilePage5.jsx'
 import { EmailePreferences } from './ProfilePage6.jsx'
 import { OtherTravelers } from './ProfilePage7.jsx'
+import { Link } from "react-router-dom";
 
 export const ProfilePage = () => {
     const[active, SetActive]=useState(1)
@@ -15,7 +16,32 @@ export const ProfilePage = () => {
     <>
     <AfterLoginLayout>
         <div className="container-fluid bg-black  ">
+        <button
+              className="navbar-toggler aside-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#Proile-page-aside"
+              aria-controls="Proile-page-aside"
+              aria-expanded="false"
+              aria-label="Toggle Profile aside"
+            >
+              <span className="navbar-toggler-icon">
+                <i class="bi bi-list" aria-hidden="true"></i>
+              </span>
+            </button>
+            <div className="collapse navbar-collapse" id="Proile-page-aside">
+                <ul className='list-unstyled'>
+                   <li onClick={()=>{SetActive(1)}}>Personal Details</li>
+                   <li onClick={()=>{SetActive(2)}}>Preferences</li>
+                   <li onClick={()=>{SetActive(3)}}>Security</li>
+                   <li onClick={()=>{SetActive(4)}}>Payment Details</li>
+                   <li onClick={()=>{SetActive(5)}}>Privacy</li>
+                   <li onClick={()=>{SetActive(6)}}>Email Notification</li>
+                   <li onClick={()=>{SetActive(7)}}>Other Travellers</li>
+                </ul>
+            </div>
             <div className="container pe-0 ps-0 flex flex-row m-10">
+            
 
                 <aside className='Proile-page-aside'>
                     <ul className='list-unstyled'>

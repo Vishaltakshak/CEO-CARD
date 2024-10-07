@@ -5,6 +5,7 @@
     color: black;
     padding: 40px;
     margin: 3%;
+    align-items: center;
 
 }
 .refer-parent-con h1{
@@ -13,6 +14,8 @@
 .refer-frnd-div p{
     color: black;
     margin: 0;
+    font-size: 1.3rem;
+    
    
 }
 .Containter-fluid h1{
@@ -25,6 +28,7 @@
     border: none;
     border-radius: 8px;
     text-align: center;
+    width: 40%;
 
 }
 .Refer-learn-more a{

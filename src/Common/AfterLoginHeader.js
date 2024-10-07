@@ -129,14 +129,8 @@ const AfterLoginHeader = ({ allMenu }) => {
                         <li>
                           <Link to="/Profile-Page">profile</Link>
                         </li>
-                        <li>
-                          <Link to="/homeafterlogin">account setting</Link>
-                        </li>
-                        <li>
-                          <Link to="/homeafterlogin">
-                            UPGRADE TO ALL ACCESS ELITE
-                          </Link>
-                        </li>
+                        
+                        
                         <li>
                           <Link to="/SpouseMembership">
                             PURCHASE SPOUSE MEMBERSHIP
@@ -148,7 +142,7 @@ const AfterLoginHeader = ({ allMenu }) => {
                           </Link>
                         </li>
                         <li>
-                          <Link to="/homeafterlogin">
+                          <Link to="/refferal">
                             REFER FRIENDS, EARN REWARDS
                           </Link>
                         </li>
@@ -157,12 +151,8 @@ const AfterLoginHeader = ({ allMenu }) => {
                             ORDER MEMBERSHIP CARD
                           </Link>
                         </li>
-                        <li>
-                          <Link to="/homeafterlogin">VIEW DIGITAL CARD</Link>
-                        </li>
-                        <li>
-                          <Link to="/homeafterlogin">TUTORIAL</Link>
-                        </li>
+                        
+                        
                         <li>
                           <a className="dropdown-item" onClick={() => logout()}>
                             LOGOUT

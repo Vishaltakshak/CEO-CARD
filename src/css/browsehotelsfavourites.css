@@ -88,6 +88,7 @@ padding-right: 0;
 {
 padding-top:30px;
 background-color: #000000;
+column-gap: 100px;
 }
 .btn-fav-view-more-box
 {
@@ -160,6 +161,9 @@ margin-top:0;
 .benefits-block-parent.benefits-block-parent-favourites
 {
 padding-top:10px;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 .btn-fav-view-more-box
 {

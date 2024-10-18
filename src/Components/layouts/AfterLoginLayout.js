@@ -12,10 +12,10 @@ const AfterLoginLayout = ({children}) => {
         GetAllMenu().then(allMenu => setMenu(allMenu))
     }, [])
     
-    if(isLoggedIn === null) {
-        navigate("/")
-        return null
-    } 
+    // if(isLoggedIn === null) {
+    //     navigate("/")
+    //     return null
+    // } 
 
 
     return(

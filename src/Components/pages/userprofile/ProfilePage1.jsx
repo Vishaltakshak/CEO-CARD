@@ -1,56 +1,117 @@
-import React, { useState } from 'react';
-import '../../../css/ProfileSection/ProfilePage1.css'
+import React, { useContext, useEffect, useState } from 'react';
+import '../../../css/ProfileSection/ProfilePage1.css';
+import axios from 'axios';
+import { UserContext } from '../../../UserContext';
 
 export const ProfilePage1 = () => {
     const [Name, setName] = useState('');
-    const [DisplayName, SetDisplayName] = useState('');
-    const [Mail, SetMail] = useState('');
-    const [phn, setPhn] = useState('');
-    const [DOB, SetDOB] = useState('');
-    const [Nationality, SetNationality] = useState('');
-    const [Gender, SetGender] = useState('');
-    const [Address, SetAddress] = useState('');
-    const [Passport, setPassport] = useState('');
+    const [Mail, setMail] = useState('');
+    const [MobileNumber, setMobileNumber] = useState('');
+    const [Role, setRole] = useState('');
+    const [Status, setStatus] = useState('');
+    const{userId}=useContext(UserContext)
+    console.log("user id is",userId)
+    const [FormData, setFormData]=useState({
+        Name: '',
+        Mail: '',
+        Password: '',
+        ConfirmPassword: '',
+        MobileNumber: '',
+      
+        DOB: '',
+        LinkedinProfile: '',
+        CompanyName: '',
+        ProfessionalTitle: '',
+        
+        UserType: 'Regular User',
+        UserImage: null,
+      })
 
     const HandlePersonalSubmit = (e) => {
         e.preventDefault();
-        // Handle form submission logic here
-        console.log({ Name, DisplayName, Mail, phn, DOB, Nationality, Gender, Address, Passport });
+        
+        const formPayload = new FormData();
+    
+    Object.keys(FormData).forEach(key => {
+      if (FormData[key] !== null) {
+        formPayload.append(key, FormData[key]);
+      }
+    });
+    try {
+        if (userId) {
+            const updatedUser= axios.put(`http://localhost:4500/api/user/view/${userId}`, )
+          console.log('User data updated successfully', updatedUser);
+        } 
+      } catch (error) {
+        console.error('Error submitting data:', error);
+      }
+        
+        console.log({ Name, Mail, MobileNumber, Role, Status });
+        // Add your update logic here
     };
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData(prevState => ({ ...prevState, [name]: value }));
+      };
+    
+
+    useEffect(() => {
+        const fetchdata = async () => {
+            try {
+                const response = await axios.get(`http://localhost:4500/api/user/view/${userId}`);
+                const data =  response.data.Users;
+                console.log(response)
+             
+
+                setFormData(prevState => ({
+                    ...prevState,
+                    Name: data.Name || '',
+                    Mail: data.Mail || '',
+                    MobileNumber: data.MobileNumber || '',
+                    Role: data.Role || 'User',
+                    DOB: data.DOB || '',
+                    LinkedinProfile: data.LinkedinProfile || '',
+                    CompanyName: data.CompanyName || '',
+                    ProfessionalTitle: data.ProfessionalTitle || '',
+                    Status: data.Status || 'Active',
+                    UserType: data.UserType || 'Regular User',
+                  }))
+            } catch (error) {
+                console.error('Error fetching user data:', error);
+            }
+        };
+
+        if (userId) {
+            fetchdata();
+        }
+    }, [userId]);
 
     return (
         <div className='container-fluid bg-black flex flex-col justify-center items-center'>
             <div className='ps-0'>
-              <div className='presonal-details-heading flex justify-between'>
-                <div>
-                <h1>Personal Details</h1>
-                <h5>Update your information and find out how it's used.</h5>
+                <div className='personal-details-heading flex justify-between'>
+                    <h1>Personal Details</h1>
+                   
                 </div>
-                
-                <div className='Personal-details-profile-con'>
-                  <img src="" alt="" />
-                </div>
-              </div>
-              <hr />
+                <hr />
                 <div className="personal-details-form flex flex-col justify-center items-center">
-                    <form onSubmit={HandlePersonalSubmit} action="">
+                    <form onSubmit={HandlePersonalSubmit}>
                         {/* Label and Input pairs */}
                         {[
-                            { label: 'Name', value: Name, onChange: setName },
-                            { label: 'Display Name', value: DisplayName, onChange: SetDisplayName },
-                            { label: 'Email Address', value: Mail, onChange: SetMail },
-                            { label: 'Phone Number', value: phn, onChange: setPhn },
-                            { label: 'Date Of Birth', value: DOB, onChange: SetDOB },
-                            { label: 'Nationality', value: Nationality, onChange: SetNationality },
-                            { label: 'Gender', value: Gender, onChange: SetGender },
-                            { label: 'Address', value: Address, onChange: SetAddress },
-                            { label: 'Passport Details', value: Passport, onChange: setPassport }
+                            { label: 'Name', value: FormData.Name, onChange: handleChange },
+                            { label: 'Email Address', value: FormData.Mail, onChange: {handleChange} },
+                            { label: 'Phone Number', value: FormData.MobileNumber, onChange: {handleChange} },
+                            {label:'Company Name', value:FormData.CompanyName, onchange:{handleChange}},
+                            {label:'LinkedIn Profile', value:FormData.LinkedinProfile, onchange:{handleChange}}
+                           
+                            
                         ].map((field) => (
                             <div key={field.label} style={{ display: 'flex', flexDirection: 'row', marginBottom: '15px', justifyContent:"space-between", color:"white" }}>
                                 <label htmlFor={field.label} style={{ padding: '10px' }}>{field.label}:</label>
                                 <input
                                     className='bg-black personal-details-form-input'
-                                    type={field.label === 'Date Of Birth' ? 'date' : field.label === 'Phone Number' ? 'number' : 'text'}
+                                    type={field.label === 'Phone Number' ? 'number' : 'text'}
                                     id={field.label}
                                     placeholder={`Enter ${field.label}`}
                                     value={field.value}
@@ -59,6 +120,20 @@ export const ProfilePage1 = () => {
                                 />
                             </div>
                         ))}
+                         <div className='flex flex-row justify-between'>
+                            <label htmlFor="DOB" className="block text-sm font-medium text-gray-700 mb-1">Date of Birth</label>
+                            <div className=" bg-black">
+                              <input
+                                type="date"
+                                id="DOB"
+                                name="DOB"
+                                value={FormData.DOB}
+                                onChange={handleChange}
+                                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none  focus:ring-2 focus:ring-blue-500"
+                                style={{filter:'invert(1)'}}
+                              />
+                            </div>
+                        </div>
                         <button type="submit" style={{ marginTop: '20px', padding: '10px 20px', backgroundColor: '#007bff', color: '#fff', borderRadius: '5px' }}>
                             Submit
                         </button>

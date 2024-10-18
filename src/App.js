@@ -42,12 +42,14 @@ import RejoinHome from "./Components/RejoinHome";
 import { ExploreElite } from "./Components/pages/ExploreElite.js";
 import { Referreal } from "./Components/pages/Referreal.js";
 import { ProfilePage } from "./Components/pages/userprofile/ProfilePage.js";
+import { UserProvider } from "./UserContext.js";
 
 const App = () => {
   const isLoggedIn = sessionStorage.getItem("isLoggedIn");
   return (
     <>
       <div className="App" style={{overflow:"hidden"}}>
+      <UserProvider>
         <BrowserRouter>
           <AllPageScrollToTop>
             <Routes>
@@ -105,6 +107,7 @@ const App = () => {
             </Routes>
           </AllPageScrollToTop>
         </BrowserRouter>
+        </UserProvider>
       </div>
     </>
   );

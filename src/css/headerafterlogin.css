@@ -39,9 +39,25 @@ a, a:hover, a:focus {
     margin-left: 0;
     margin-right: 0;
 }
+
 .nav-container .afterlogin-nav {
     /* overflow-x: hidden; */
     padding:0;
+}
+.logoNav{
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+}
+.gapbwli{
+    column-gap: 0px;
+}
+.afterlogin-nav img.logo-size {
+	height:auto;
+	padding: 0;
+	line-height: 20px;
+	width: 50px;
+    margin: 10px 0px;
 }
 .nav-container .afterlogin-nav .navbar-explore-upgrade
 {
@@ -109,7 +125,7 @@ margin-top:20px;
     color: #ffffff;
     font-size: 14px;
     text-transform: uppercase;
-    padding: 20px 10px;
+    padding: 20px 4px;
     margin-left:10px;
     margin-right:10px;
     font-weight: 500;

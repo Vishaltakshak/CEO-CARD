@@ -49,10 +49,10 @@ const BrowseHotelsFavourites = () => {
 								<div className="row benefits-block-parent benefits-block-parent-favourites">
 									<PopularBenefitsList></PopularBenefitsList>
 									<PopularBenefitsList></PopularBenefitsList>
+									{/* <PopularBenefitsList></PopularBenefitsList>
 									<PopularBenefitsList></PopularBenefitsList>
 									<PopularBenefitsList></PopularBenefitsList>
-									<PopularBenefitsList></PopularBenefitsList>
-									<PopularBenefitsList></PopularBenefitsList>
+									<PopularBenefitsList></PopularBenefitsList> */}
 								</div>
 								<div className="row btn-fav-view-more-box ">
 									<button className="btn btn-fav-view-more">View More</button>

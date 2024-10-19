@@ -7,7 +7,7 @@ const PopularBenefitsList = () => {
 	useEffect(() => {
 		const fetchData = async () => {
 			try {
-				const response = await fetch('http://localhost:4500/api/subnav/link/view');
+				const response = await fetch('https://ceo-card-back-end-1wob.vercel.app/api/subnav/link/view');
 				if (!response.ok) {
 					throw new Error('Failed to fetch data');
 				}

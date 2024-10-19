@@ -1,26 +1,24 @@
+import axios from "axios";
+
 const RegistrationApi = async (formData) => {
-  const url = "https://admin.speedsoftware.site/Api/register";
+  const url = "https://ceo-card-back-end-1wob.vercel.app/api/user/add";
   let isRegistered = false
     
     try {
-      const response = await fetch(url, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      })
-        .then((res) => res.json())
-        .then((response) => {
-          if (response.status) (isRegistered = true)
-        })
-        .catch((error) => {
-          console.error('Registration error', error)
-        });
-    } catch (e) {
-      console.log(e);
+      const response = await axios.post(url, formData)
+      if (response.status) {
+        console.log("form submitted sucessfully")
+        console.log(formData)
+        
+      } else {
+        console.log('error')
+        
+      }
+      
+    } catch (error) {
+      console.log(error.message)
+      
     }
-
     return isRegistered
 };
 

@@ -38,7 +38,20 @@ p {
 	padding-top: 20px;
 	background-color: #000000;
 	margin: 2%;
-	width: 40%;
+	width: 30%;
+}
+.member-benefit-block-popular
+{
+	margin-bottom:40px;
+	padding-top: 20px;
+	background-color: #000000;
+	margin: 2%;
+	width: 20%;
+	gap: 1rem;
+}
+.member-benefit-block-popular img{
+	height: 70%;
+	width: 20vw;
 }
 .benefits-block-parent  .member-benefit-block-parent
 {

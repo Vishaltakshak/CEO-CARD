@@ -8,13 +8,15 @@ export const registrationReducer = (state, action) => {
 }
 
 export const registrationState = {
-    firstName: '',
-    lastName: '',
-    mobileNumber: '',
-    email: '',
-    dob: '',
-    linkedinProfile: '',
-    companyName: '',
-    professionalTitle: '',
-    password: ''
+    Name: '',
+    
+    MobileNumber: '',
+    Mail: '',
+    DOB: '',
+    LinkedinProfile: '',
+    CompanyName: '',
+    ProfessionalTitle: '',
+    Password: '',
+    ConfirmPassword:'',
+    Status:'Inactive'
 }

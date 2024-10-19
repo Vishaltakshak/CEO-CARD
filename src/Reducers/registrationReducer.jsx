@@ -18,5 +18,7 @@ export const registrationState = {
     ProfessionalTitle: '',
     Password: '',
     ConfirmPassword:'',
-    Status:'Inactive'
+    Status:'Inactive',
+    Currency:'',
+    Language:''
 }

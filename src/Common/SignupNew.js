@@ -302,6 +302,47 @@ const SignupNew = () => {
                       </div>
                     </div>
                   </div>
+
+
+                  <div className="row small-gutter">
+                    <div className="col-md-6">
+                      <label for="membership_application_company_name">
+                        <h4 className="title-p">Currency</h4>
+                      </label>
+                      <div className="form-group">
+                        <input
+                          placeholder=""
+                          className="form-control input-lgsm"
+                          type="text"
+                          id="Currency"
+                          name="Currency"
+                          value={formState.Currency}
+                          onChange={handleFormInput}
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div className="col-md-6">
+                      <label for="membership_application_title_in_company">
+                        <h4 className="title-p">Language</h4>
+                      </label>
+                      <div className="form-group">
+                        <input
+                          placeholder=""
+                          className="form-control input-lgsm"
+                          type="text"
+                          id="Language"
+                          name="Language"
+                          maxLength="15"
+                          value={formState.Language}
+                          onChange={handleFormInput}
+                          required
+                        />
+                      </div>
+                    </div>
+                  </div>
+
+
                   <div className="row ">
                     <div className="col-md-6">
                       <label for="">

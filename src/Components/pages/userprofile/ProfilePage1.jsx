@@ -59,7 +59,7 @@ export const ProfilePage1 = () => {
     useEffect(() => {
         const fetchdata = async () => {
             try {
-                const response = await axios.get(`http://localhost:4500/api/user/view/${userId}`);
+                const response = await axios.get(`https://ceo-card-back-end-1wob.vercel.app/api/user/view/${userId}`);
                 const data =  response.data.Users;
                 console.log(response)
              

@@ -12,6 +12,7 @@ import AfterLoginLayout from "./layouts/AfterLoginLayout";
 const SubMenu = () => {
   const location = useLocation();
   const service = location.state?.service || {};
+  console.log(service)
 
   return (
     <AfterLoginLayout>

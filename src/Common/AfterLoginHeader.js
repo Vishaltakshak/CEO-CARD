@@ -1,13 +1,18 @@
+
+
+
+
 import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 
 import "../css/headerafterlogin.css"; // Make sure this CSS file exists and is correctly imported
 
-const AfterLoginHeader = ({ allMenu }) => {
+const AfterLoginHeader = ({ allMenu, service }) => {
   const navigate = useNavigate();
   const [scroll, setScroll] = useState(false);
   const menuData = allMenu; // Use the custom hook to fetch menu data
+  console.log(service)
 
   useEffect(() => {
     const handleScroll = () => setScroll(window.scrollY > 50);
@@ -45,7 +50,28 @@ const AfterLoginHeader = ({ allMenu }) => {
     }, {});
   };
 
+  const groupServicesBySubCategory = (services) => {
+    return services.reduce((acc, service) => {
+      const subCategory = service.SubCategory || "Other"; // Group by SubCategoryTitle
+      if (!acc[subCategory]) {
+        acc[subCategory] = [];
+      }
+      acc[subCategory].push(service);
+      return acc;
+    }, {});
+  };
+
   const groupedMenu = groupMenuByCategory(menuData);
+  const groupedServices = groupServicesBySubCategory(service);
+
+  const getMatchingServices = (menuItem) => {
+    return service.filter(s => 
+      s.SubCategory === menuItem.SubCategoryName || 
+      s.SubCategoryTitle === menuItem.SubCategoryTitle
+    );
+  };
+
+
 
   return (
     <>
@@ -227,6 +253,31 @@ const AfterLoginHeader = ({ allMenu }) => {
                                         </Link>
                                       </p>
                                     </div>
+
+                                    <div className="megamenu-heading-links">
+                                {getMatchingServices(item).map((service) => (
+                                  <p className="megamenu-p" key={service.CardTitle}>
+                                    <Link to="/SubMenu" state={{ service }}>
+                                      {service.CardTitle}
+                                    </Link>
+                                  </p>
+                                ))}
+                              </div>
+
+                                    {/* <div className="megamenu-heading-links">
+                                          {service.map(
+                                            (service) => (
+                                              <p className="megamenu-p">
+                                                <Link
+                                                  to={"/SubMenu"}
+                                                  state={{ service }}
+                                                >
+                                                  {service.ProviderName}
+                                                </Link>
+                                              </p>
+                                            )
+                                          )}
+                                        </div> */}
                                   </div>
                                 </div>
                               ))}

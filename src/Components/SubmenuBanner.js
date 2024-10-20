@@ -27,16 +27,16 @@ const SubmenuBanner = ({ service }) => {
       <div className="container-fluid submenu-banner">
         <div className="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 pe-0 ps-0 submenu-banner-child">
           <div className="visible-large-size">
-            <img alt="Full width Banner" src={service.banner}></img>
+            <img alt="Full width Banner" src={service.BannerIMG}></img>
           </div>
           <div className="visible-small-size">
-            <img alt="Full width Banner" src={service.banner}></img>
+            <img alt="Full width Banner" src={service.BannerIMG}></img>
           </div>
           <div className="submenu-banner-child-overlay">
             <div className="external-information">
-              {service.contactPhone}
+              {service.ContactNumber}
               &nbsp; &nbsp; &nbsp; &nbsp;
-              <Link to={service.websiteURL} target="_blank">
+              <Link to={service.WebsiteURl} target="_blank">
                 Visit Website &nbsp;
                 <img
                   alt="Website Visit"
@@ -113,10 +113,10 @@ const SubmenuBanner = ({ service }) => {
 
                   <div className="text-center">
                     <h1 className="long-box-inner-title">
-                      {service.serviceProviderName}
+                      {service.ProviderName}
                     </h1>
                     <h5 className="long-box-inner-subtitle">
-                      {service.cardTitle}
+                      {service.CardTitle}
                     </h5>
                   </div>
 
@@ -209,7 +209,7 @@ const SubmenuBanner = ({ service }) => {
                       </p>
                       <ul className="offers-desc-inner-ul">
                         <li>
-                          <span>{service.cardDescription}</span>
+                          <span>{service.CardDescription}</span>
                         </li>
                       </ul>
                     </div>

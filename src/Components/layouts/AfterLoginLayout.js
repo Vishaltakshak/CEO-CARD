@@ -8,17 +8,14 @@ const AfterLoginLayout = ({children}) => {
     const navigate = useNavigate()
     // const [menu, setMenu] = useState([])
     const isLoggedIn = sessionStorage.getItem('isLoggedIn')
-    const menu = useMenuData();
-    
-    // if(isLoggedIn === null) {
-    //     navigate("/")
-    //     return null
-    // } 
+    const {menu, link}= useMenuData()
+    console.log("menu is ",menu);
+    console.log("s",link)
 
 
     return(
         <>
-            <AfterLoginHeader allMenu={menu} />
+            <AfterLoginHeader allMenu={menu} service={link} />
                 {children}
             <AfterLoginFooter />
         </>

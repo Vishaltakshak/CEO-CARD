@@ -52,7 +52,7 @@ p {
 
 .beforelogin-nav ul.navbar-nav.beforelogin-navbar li a {
 	color: #fff;
-	font-size: 11px;
+	font-size: 12px;
 	font-weight: 400;
 	letter-spacing: 1px;
 	text-decoration: none;
@@ -71,7 +71,7 @@ p {
 	display: block;
 	overflow: hidden;
 	width: 100%;
-	height: 100vh;
+	/* height: 100vh; */
 	margin-right: auto;
 	margin-left: auto;
 	padding-top: 0;
@@ -202,11 +202,12 @@ p {
 	left: 0;
 	margin-right: auto;
 	margin-left: auto;
+	margin-top: 150px;
 }
 
 .video-details1 h1.homevideo-title1 {
 
-	margin-bottom: 15px;
+	margin-bottom: 52px;
 	color: #fff;
 	font-size: 47px;
 	line-height: 52px;
@@ -319,7 +320,7 @@ p {
 }
 
 .membership-block-parent .membership-detail-child .membership-title {
-	font-size: 18px;
+	font-size: 22px;
 	margin-top: 0px;
 	margin-bottom: 20px;
 	text-transform: capitalize;
@@ -335,7 +336,7 @@ p {
 	font-family: Montserrat, sans-serif;
 	color: #000;
 	line-height: 24px;
-	font-weight: 300;
+	font-weight: 400;
 }
 
 .membership-block-parent .membership-detail-child .membership-para strong {
@@ -348,6 +349,7 @@ p {
 	margin-bottom: 0;
 	padding-top: 0;
 	font-family: Montserrat, sans-serif;
+	font-weight: 400;
 }
 
 .membership-block-parent .membership-detail-child .membership-list li {

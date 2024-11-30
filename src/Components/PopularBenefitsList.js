@@ -7,13 +7,13 @@ const PopularBenefitsList = () => {
 	useEffect(() => {
 		const fetchData = async () => {
 			try {
-				const response = await fetch('https://ceo-card-back-end-1wob.vercel.app/api/subnav/link/view');
+				const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/subnav/link/view`);
 				if (!response.ok) {
 					throw new Error('Failed to fetch data');
 				}
 				const result = await response.json();
 				setData(result.Data)
-				console.log(data)
+				console.log(process.env.REACT_APP_BACKEND_URL);
 			} catch (err) {
 				setError(err.message);
 			} finally {
@@ -41,12 +41,12 @@ const PopularBenefitsList = () => {
 						</a>
 						<div>
 
-							<div className="benefit-title-container col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-6" key={i}>
+							<div className="benefit-title-container col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-6" style={{width:"100%"}} key={i}>
 								<a href="/SubMenu" class="link-no-underline">
-									<h5 className="no-translation">{datab.ContentTitle}</h5>
+									<h5 style={{color:"white", fontWeight:"bold"}} className="no-translation">{datab.ContentTitle}</h5>
 								</a>
 							</div>
-							<div className="benefit-description-container col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-6">
+							<div className="benefit-description-container col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-6" style={{overflow:"hidden", fontSize:"12px", maxHeight:"60px", width:"100%"}}>
 								{datab.ContentDescription}
 							</div>
 						</div >

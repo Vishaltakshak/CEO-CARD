@@ -35,19 +35,19 @@ const handleViewreferral = () => {
 						<form className="new_interested_submission" action="/">
 							<div class="form-group">
 								<label className="form-label">FULL NAME</label>
-								<input className="form-control form-field" type="text" placeholder="Enter your Name"/>
+								<input style={{fontWeight:"600"}} className="form-control form-field" type="text" placeholder="Enter your Name"/>
 							</div>
 							<div class="form-group">
 								<label className="form-label">EMAIL ADDRESS</label>
-								<input className="form-control form-field" type="email" placeholder="Enter your Email Address" />
+								<input style={{fontWeight:"600"}} className="form-control form-field" type="email" placeholder="Enter your Email Address" />
 							</div>
 							<div class="form-group">
 								<label className="form-label">PROFESSIONAL TITLE</label>
-								<input className="form-control form-field" type="email" placeholder="Enter your Title" />
+								<input style={{fontWeight:"600"}} className="form-control form-field" type="email" placeholder="Enter your Title" />
 							</div>
 							<div class="form-group">
 								<label className="form-label">COMPANY</label>
-								<input className="form-control form-field" type="email" placeholder="Enter your Company" />
+								<input style={{fontWeight:"600"}} className="form-control form-field" type="email" placeholder="Enter your Company" />
 							</div>
 							<div className={
 								isViewreferral

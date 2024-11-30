@@ -5,6 +5,7 @@ import '../css/memberbenefits.css';
 import "../css/testimonial.css";
 
 const PopularBenefits = () => {
+	
 	return (
 		<>
 			<div className="container-fluid benefits-block-parent benefits-block-parent-white">

@@ -7,7 +7,7 @@ const HomeVideo = () => {
 	return (
 		<>
 			<div className="video-overlay1">
-				<img className="video-overlay1-img" src="./././././assets/img/landing-hero.jpg" alt="heroimg"></img>
+				<video className="video-overlay1-img" src="./././././assets/img/vid-bg.mp4" alt="heroimg" autoPlay loop muted></video>
 				<div className="video-details1 text-center">
 				<div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 					<h1 className="homevideo-title1">Exceptional Perks for CEOs, CFOs, Business Owners, and Entrepreneurs</h1>

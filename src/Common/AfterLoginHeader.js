@@ -244,13 +244,13 @@ const AfterLoginHeader = ({ allMenu, service }) => {
                                         {item.SubCategoryName}
                                       </Link>
                                     </h6>
-                                    <div className="megamenu-heading-links">
+                                    {/* <div className="megamenu-heading-links">
                                       <p className="megamenu-p">
                                         <Link to="/SubMenu" state={{ service: item }}>
                                           {item.SubCategoryTitle}
                                         </Link>
                                       </p>
-                                    </div>
+                                    </div> */}
 
                                     <div className="megamenu-heading-links">
 

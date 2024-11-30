@@ -40,14 +40,14 @@
   margin-top:50px;
   margin-left: auto;
   padding: 40px;
-  background-color: #ffffffc7;
+  background-color: #212529cf;
 }
 
 .enquiry-page-container  .enquiry-page-row .inquire-form-container .inquire-title
 {
   margin-top: 0px;
   margin-bottom: 0px;
-  color: #030303;
+  color: #ffffff;
   font-size: 15px;
   line-height: 21px;
   font-style: normal;
@@ -62,7 +62,7 @@
   line-height: 32px;
   font-weight: 500;
   text-align: center;
-  color: black;
+  color: rgb(255, 255, 255);
 }
 .enquiry-page-container  .enquiry-page-row .inquire-form-container .form-label {
   font-size: 10px;
@@ -89,10 +89,10 @@
 {
   padding: 0;
   text-decoration: underline;
-  font-weight: 400;
-  color: #337ab7;
+  font-weight: 500;
+  color: #ffffff;
   border-radius: 0;
-  font-size: 14px;
+  font-size: 16px;
 }
 .enquiry-page-container  .enquiry-page-row .inquire-form-container  .btn-membership-preview
 {
@@ -104,13 +104,13 @@
   border-color: #fff;
   border-radius: 5px;
   background-color: #000;
-  background-image: linear-gradient(240deg, #000, #505050);
+  background-image: linear-gradient(240deg, #cbcaca, #505050);
   -webkit-transition: all 350ms ease;
   transition: all 350ms ease;
   color: #fff;
   font-size: 14px;
-  font-weight: 600;
-  color: white;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
     line-height: inherit;
     text-decoration: none ;
 }

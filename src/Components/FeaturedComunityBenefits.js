@@ -3,6 +3,7 @@ import HomePageHeading from "./HomePageHeading";
 import FeaturedComunityBenefitsList from "./FeaturedComunityBenefitsList";
 import '../css/memberbenefits.css';
 import "../css/testimonial.css";
+import PopularBenefitsList from "./PopularBenefitsList.js";
 
 
 const FeaturedComunityBenefits = () => {
@@ -14,19 +15,7 @@ const FeaturedComunityBenefits = () => {
 					{/* <div className="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 member-benefit-block-parent scroll-container testimonial-container"> */}
 					<div className="testimonial-container flex">
 						<div className="flex scroll-inner-div-6-benefits test-slider ">
-							<FeaturedComunityBenefitsList></FeaturedComunityBenefitsList>
-							<FeaturedComunityBenefitsList></FeaturedComunityBenefitsList>
-							<FeaturedComunityBenefitsList></FeaturedComunityBenefitsList>
-							<FeaturedComunityBenefitsList></FeaturedComunityBenefitsList>
-							<FeaturedComunityBenefitsList></FeaturedComunityBenefitsList>
-							<FeaturedComunityBenefitsList></FeaturedComunityBenefitsList>
-							<FeaturedComunityBenefitsList></FeaturedComunityBenefitsList>
-							<FeaturedComunityBenefitsList></FeaturedComunityBenefitsList>
-							<FeaturedComunityBenefitsList></FeaturedComunityBenefitsList>
-							<FeaturedComunityBenefitsList></FeaturedComunityBenefitsList>
-							<FeaturedComunityBenefitsList></FeaturedComunityBenefitsList>
-							<FeaturedComunityBenefitsList></FeaturedComunityBenefitsList>
-							<FeaturedComunityBenefitsList></FeaturedComunityBenefitsList>
+							<PopularBenefitsList/>
 							
 						</div>
 					</div>

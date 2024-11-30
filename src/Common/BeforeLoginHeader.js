@@ -6,7 +6,7 @@ const BeforLoginHeader = (props) => {
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-light beforelogin-nav transparent-nav" style={{backgroundColor: props.HEADERBGCOLOR}} >
-        <div className="container-fluid pe-0 ps-0">
+        <div className="container-fluid pe-0 ps-0 " style={{backgroundColor: "transparent"}}>
           <div className="container pe-0 ps-0">
             <Link className="navbar-brand" to="/#">
               <img

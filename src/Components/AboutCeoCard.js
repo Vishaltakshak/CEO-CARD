@@ -16,7 +16,7 @@ const AboutCeoCard = () => {
         {/* Dark Overlay */}
         <div className="absolute top-0 left-0 w-full h-full bg-white opacity-40"></div>
         <div className="flex flex-col items-center justify-center py-20 gap-4 z-[10] relative">
-          <h1 className="font-bold text-[3rem] xs:pl-4 text-black">What is CEO Card</h1>
+          <h1 className="font-bold text-[2rem] xs:pl-4 sm:text-[3rem] text-black">What is CEO Card</h1>
           <p className="text-[1.2rem] text-black text-center font-medium w-[60%]">
             Established in 2020, CEO Card provides premium membership benefits
             for elite entrepreneurs and business leaders. <br />

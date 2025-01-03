@@ -137,6 +137,7 @@
   @media (max-width: 380px) {
 	.video-overlay1{
 	height: 59vh;
+	margin-bottom: 1.2rem;
 
 	}
 	.video-details1 h1.homevideo-title1 {
@@ -537,7 +538,7 @@ p {
 	.video-details1 h1.homevideo-title1 {
 		font-size: 14px;
 		line-height: inherit;
-		padding-top: 5%;
+
 	}
 
 	.video-details1 p.homevideo-subtitle1 {

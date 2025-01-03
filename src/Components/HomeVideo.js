@@ -29,9 +29,9 @@ const HomeVideo = () => {
             <h1 className="homevideo-title1">
 			Welcome to CEOCard – Empowering India's Startup Leaders
             </h1>
-            <p className="homevideo-subtitle1">
+            <p className="homevideo-subtitle1 p-4 sm:p-0">
               {" "}
-			  At CEOCard, we understand the challenges and opportunities of leading a startup. Tailored specifically for entrepreneurs and CEOs of Indian startups, our platform offers exclusive benefits, strategic resources, and invaluable networking to help you scale your business and achieve your goals. Join a community of innovative leaders, access priority investment opportunities, and enjoy lifestyle perks that make business growth easier and more rewarding.
+			  At CEOCard, we understand the challenges and opportunities of leading a startup. Tailored specifically for entrepreneurs and CEOs of Indian startups, our platform offers exclusive benefits, strategic resources to help you scale your business and achieve your goals. Join a community of innovative leaders, and enjoy lifestyle perks that make business growth easier and more rewarding.
             </p>
             <button className="btn custombutton-white">
               <Link to="/Enquiry">PREVIEW MEMBERSHIP</Link>

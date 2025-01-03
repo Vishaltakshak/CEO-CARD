@@ -1,0 +1,54 @@
+
+.benefit-member-info-container {
+    min-height: 57px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.benefit-member-avatar {
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+}
+.benefit-member-info {
+    margin-left: 6px;
+}
+
+.benefit-member-info-container h6 {
+    font-size: 12px;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    font-weight: 700;
+}
+.benefit-member-info-container p {
+    font-size: 11px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    line-height: 14px;
+}
+
+
+
+
+
+@media only screen and (max-width: 767px) {
+	
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (orientation: landscape) {
+
+	
+	
+}
+
+
+@media (max-width: 1024px) and (min-width: 768px) {
+
+	
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+
+	
+	
+}

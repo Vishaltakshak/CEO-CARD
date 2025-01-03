@@ -1,0 +1,66 @@
+/* body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	font-family: 'Montserrat', sans-serif !important;
+} */
+.home-heading
+{
+	color:#fffafa;
+	font-weight: 700;
+    font-size: 24px;
+    margin-bottom: 5px;
+	text-align:center;
+	text-transform: uppercase;
+}
+
+.home-heading-anchor
+{
+	cursor: pointer;
+    color: #ffffff;
+	font-size: 14px;
+    text-decoration: underline;
+	text-align:center;
+}
+/* @media (max-width: 767px) */
+@media only screen and (max-width: 767px) {
+
+.home-heading
+{
+    font-size: 15px;
+}
+
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (orientation: landscape) {
+	.home-heading
+	{
+		font-size: 15px;
+	}
+
+	
+
+
+}
+@media (max-width: 1024px) and (min-width: 768px) {
+	.home-heading
+	{
+		font-size: 24px;
+	}
+	
+
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+
+	.home-heading
+{
+    font-size: 24px;
+}
+}

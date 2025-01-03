@@ -1,0 +1,178 @@
+/* body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	font-family: 'Montserrat', sans-serif !important;
+} */
+
+.before-login-header
+{
+    top: 0;
+	background-color: #fff !important;
+    margin-bottom: 0;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+	border-radius: 0;
+	padding-top: 0;
+    padding-bottom: 0;
+}
+.before-login-header  a.navbar-brand
+{
+    padding: 10px 10px 10px 10px;
+	margin-right:0;
+}
+.before-login-header .logo-size-sett
+{
+	max-width: 199px;
+	filter: invert(1);
+}
+.before-login-header .before-login-header-collapse ul li a.nav-link {
+	font-size: 14px;
+	text-transform: capitalize;
+    padding: 15px 15px;
+    color: #ffffff;
+	font-weight:normal;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+.before-login-header a.btn-header-bg {
+
+    color: #fff;
+    font-size: 11px;
+	margin:10px;
+	border-radius: 0;
+    font-weight: 600;
+    padding: 7px 20px 6px;
+	min-width:106px;
+	text-align:center;
+	text-transform: uppercase;
+	display:block;
+}
+.before-login-header .btn-header-bg.btn-apply-now {
+	border-radius: 5px;
+    background-color: #2a74e5;
+	border: 2px solid #2a74e5;
+	color: #fff;
+}
+.before-login-header .btn-header-bg.btn-apply-now:hover
+{
+	background-color: #0b5ed7;
+	border: 2px solid #0b5ed7;
+	
+}
+.before-login-header .btn-header-bg.btn-log-in {
+	border-radius: 5px;
+    background-color: #ffffff;
+	color:#2a74e5;
+	border: 2px solid #2a74e5;
+}
+.before-login-header .before-login-header-collapse .navbar-nav
+{
+	padding-right: 0;
+}
+
+
+@media only screen and (max-width: 767px) {
+	.before-login-header {
+		z-index: 9;
+	}
+	.before-login-header .login-navbar-toggle
+	 {
+		padding: 3px 7px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-right: 0;
+        background-color: #2a74e5;
+        border: 1px solid transparent;
+        border-radius: 4px;
+	}
+	.before-login-header .login-navbar-toggle:focus
+	 {
+		box-shadow:none;
+	}
+	.before-login-header .login-navbar-toggle .navbar-toggler-icon {
+		background-image: none;
+	}
+	.before-login-header .login-navbar-toggle .navbar-toggler-icon i.bi{
+		color:#fff;
+		font-size:30px;
+	}
+	.before-login-header .before-login-header-collapse ul li a.nav-link {
+		font-size: 14px;padding:5px;
+	}
+	.before-login-header a.btn-header-bg {
+		min-width:160px;
+		display: inline-block;
+	}
+
+
+
+
+
+
+
+
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (orientation: landscape) {
+
+	.before-login-header {
+		z-index: 9;
+	}
+	.before-login-header .login-navbar-toggle
+	 {
+		padding: 3px 7px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-right: 0;
+        background-color: #2a74e5;
+        border: 1px solid transparent;
+        border-radius: 4px;
+	}
+	.before-login-header .login-navbar-toggle:focus
+	 {
+		box-shadow:none;
+	}
+	.before-login-header .login-navbar-toggle .navbar-toggler-icon {
+		background-image: none;
+	}
+	.before-login-header .login-navbar-toggle .navbar-toggler-icon i.bi{
+		color:#fff;
+		font-size:30px;
+	}
+	.before-login-header .before-login-header-collapse ul li a.nav-link {
+		font-size: 14px;padding:5px;
+	}
+	.before-login-header a.btn-header-bg {
+		min-width:160px;
+		display:inline-block;
+	}
+	
+	
+}
+
+
+@media (max-width: 1024px) and (min-width: 768px) {
+
+	.before-login-header .logo-size-sett {
+		max-width: 199px;
+	}
+	
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+
+	.before-login-header .logo-size-sett {
+		max-width: 199px;
+	}
+}

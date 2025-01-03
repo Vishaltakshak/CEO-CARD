@@ -1,0 +1,81 @@
+.Profile-main{
+    width: 80%;
+    margin: 10px 0;
+}
+.aside-toggler{
+    display: none;
+
+}
+.margin-20{
+    margin-bottom: 20px;
+}
+.Proile-page-aside{
+    
+    background-color: #d9d9d9;
+    margin: 10px 10px 50px 10px;
+    border-radius: 8px;
+    width: 20%;
+    height: 57vh;
+
+}
+.profile4-main{
+    justify-content: space-between;
+}
+.Proile-page-aside li{
+    padding: 10px;
+    color: black;
+    border-top: 1px solid black;
+    cursor: pointer;
+}
+.profile-page3 p {
+    width: 100%;
+
+}
+.profile-page3{
+    width: 100%;
+}
+.profile-page3 .Password-con, .Two-Factor-authentication, .Active-session, .Delete-account{
+    justify-content: space-between;
+}
+.Profile3-btn{
+    background-color: black;
+    color:white;
+    text-align: center;
+    border: none;
+    padding: 3px;
+    &:hover{
+        background-color: #2e2d2d;
+    }
+
+}
+ .heading {
+    padding-right: 10px;
+    width: 20% ;
+}
+@media only screen and (max-width: 767px) 
+{
+    .Proile-page-aside{
+        display: none;
+    }
+    .Profile-main{
+        width: 100%;
+        margin: 10px 0;
+    }
+    .aside-toggler{
+        display: block;
+    }
+    .heading{
+        width: 31%;
+    }
+  
+
+
+
+}
+@media only screen and (min-width:350px) and (max-width:450px) {
+    .Personal-details-profile-con{
+        height: 66px;
+        width: 86px;
+    }
+    
+}

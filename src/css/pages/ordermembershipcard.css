@@ -1,0 +1,706 @@
+
+.order-container-banner
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    background: linear-gradient(270deg, rgba(0, 0, 0, 0.80) 24.11%, rgba(0, 0, 0, 0.00) 51.29%), linear-gradient(0deg, rgba(0, 0, 0, 0.90) 0%, rgba(0, 0, 0, 0.90) 100%), 
+    url("../../../public/assets/img/HeaderPages/ordermembership.png") lightgray 50% / cover no-repeat;
+    padding: 100px;
+}
+
+
+.order-container-banner .order-container-banner-row {
+    padding-bottom: 95px;
+    justify-content: space-between;
+}
+
+.order-container-banner .order-container-banner-row .order-container-left h1
+{
+    color: #fff;
+    font-family: Montserrat;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 111.688%;
+    letter-spacing: -2.64px;
+    padding-bottom: 32px;
+}
+.order-container-banner .order-container-banner-row .order-container-left p {
+    color: var(--FC---White, #FFF);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 161.688%;
+    letter-spacing: -0.14px;
+    padding-bottom: 74px;
+}
+
+.order-container-banner .order-container-banner-row .btn-orderMembership
+{
+    width: 100%;
+    margin-bottom: 15px;
+    font-weight: normal;
+    background-color: #037DC2;
+    padding: 15px 40px;
+    font-size: 12px;
+    font-weight: normal;
+    border-radius: 0;
+    border: none;
+    text-decoration: none;
+    color: #fff;
+}
+.order-container-banner .order-container-banner-row .btn-orderMembership-anchor
+{
+    color: #fff;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+.order-container-banner .order-container-banner-row .order-container-right img.order-img
+{
+    width: 433px;
+}
+
+
+
+.complem-container
+{
+    background: #F5F5F5;
+    padding-bottom: 130px;
+    padding-top: 130px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.complem-container .complem-container-row
+{
+   padding-bottom: 70px;
+}
+.complem-container .complem-container-row .complem-container-left img.comple-img
+{
+   width: 480px;
+   max-width: 100%;
+}
+.complem-container .complem-container-row .complem-container-right h1.comple-heading
+{
+    color: #000;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 111.688%;
+    letter-spacing: -2.585px;
+}
+.complem-container .complem-container-row .complem-container-right p.comple-para {
+    color: #000;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 161.688%;
+    letter-spacing: -0.14px;
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+
+.complem-container .complem-container-row .complem-container-right .comple-btn {
+    padding: 15px 40px;
+    font-size: 12px;
+    color: #FFF;
+    font-weight: 700;
+    border-radius: 0;
+    border: none;
+    text-decoration: none;
+    background-color: #037DC2;
+    width: 100%;
+}
+
+
+.complem-form-container .complem-form-container-column {
+    border: 2px solid #E2E8F0;
+    margin: 15px 0;
+    padding: 35px 65px;
+}
+.complem-form-container .complem-form-container-column .complem-form-container-row.row-equal-ht{
+
+    display: -webkit-flex;
+    flex-wrap: wrap;
+}
+
+
+.complem-form-container .complem-form-container-column .complem-form-container-row .opacity-hidden
+{
+    visibility: hidden;
+}
+
+.complem-form-container .complem-form-container-column .complem-form-container-row .form-label
+{
+
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: capitalize;
+    color: #000;
+    
+}
+.complem-form-container .complem-form-container-column .complem-form-container-row .form-control
+{
+    border-radius: 2px;
+    border: 1px solid #E2E8F0;
+    background: #FFF;
+    padding: 5px 10px;
+    -webkit-box-shadow: none;
+    width: 100%;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    height: 42px;
+}
+.complem-form-container .complem-form-container-column .complem-form-container-row select.form-control
+{
+    -webkit-appearance: listbox;
+}
+
+.complem-form-container .complem-form-container-column .complem-form-container-row .confirm-button
+{
+    width: 250px;
+    float: right;
+    font-weight: normal;
+    background-color: #037DC2 !important;
+    color:#fff;
+    padding: 15px 40px;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 0;
+    border: none;
+    text-decoration: none;
+}
+
+
+.benefit-container
+{
+
+}
+.benefit-container {
+    background-color: rgb(245, 245, 245);
+}
+.benefit-container .benefit-container-child {
+    padding: 30px 70px;
+    max-width: 1012px;
+    margin: 0 auto;
+    border-radius: 25px;
+    background-color: #FFF;
+}
+
+.benefit-container .benefit-container-child .benefit-title
+{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 46.909px;
+    letter-spacing: -2.31px;
+}
+.benefit-table-trial-heading
+{
+    font-weight: 700;
+}
+.elite-upgrade-member-benefits-table > .row {
+    padding-top: 2px;
+    padding-bottom: 2px;
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+}
+.elite-upgrade-member-benefits-table > .row > div:nth-child(2), 
+.elite-upgrade-member-benefits-table > .row > div:last-child {
+    text-align: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.elite-upgrade-member-benefits-table > .row > div:nth-child(2) {
+    color: #A1A1A1;
+}
+.benefit-table-elite-heading {
+    background-color: #208CC9;
+    border-radius: 30px;
+    color: #FFF;
+    padding: 8px 22px;
+    font-size: 14px;
+    font-weight: 600;
+    z-index: 20;
+    position: relative;
+}
+
+.elite-upgrade-member-benefits-table > .row:first-of-type > div:last-child::after {
+    border-top: 2px solid #208CC9;
+    top: 17px;
+}
+
+.elite-upgrade-member-benefits-table > .row > div:last-child::after {
+    content: '';
+    position: absolute;
+    top: -17px;
+    right: 0;
+    bottom: -17px;
+    left: 0;
+    border-right: 2px solid #208CC9;
+    border-left: 2px solid #208CC9;
+}
+
+
+.elite-upgrade-member-benefits-table > .row.table-main-category,
+.elite-upgrade-member-benefits-table > .row.underline {
+    border-bottom: 1px solid #000;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+.table-main-category > div:first-child {
+    margin-left: -15px;
+    margin-right: 15px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.elite-table-hyphen {
+    width: 12px;
+    border-bottom: 1px solid #A1A1A1;
+    display: inline-block;
+}
+
+.elite-table-bullet::before {
+    content: "\2022";
+    margin-right: 5px;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 767px) 
+{
+    .order-container-banner .order-container-banner-row .order-container-right img.order-img {
+        width: 200px;
+        max-width: 100%;
+    }
+
+    .order-container-banner {
+        padding: 20px 20px;
+    }
+    .order-container-banner .order-container-banner-row .order-container-left h1 {
+        font-size: 26px;
+    }
+    .order-container-banner .order-container-banner-row .order-container-left p {
+        font-size: 14px;
+        padding-bottom: 30px;
+    }
+    .order-container-banner .order-container-banner-row .btn-orderMembership {
+        font-size: 12px;
+    }
+    .order-container-banner .order-container-banner-row {
+        padding-bottom: 30px;
+        text-align: center;
+    }
+
+    .complem-container {
+        padding-bottom:30px;
+        padding-top:30px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .complem-container .complem-container-row .complem-container-right h1.comple-heading {
+        font-size: 24px;
+    }
+    .complem-container .complem-container-row 
+    {
+        text-align:center;
+    }
+    .complem-container .complem-container-row .complem-container-left img.comple-img {
+        width: 200px;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    .complem-container .complem-container-row .complem-container-right p.comple-para {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    .complem-form-container .complem-form-container-column {
+        padding: 15px;
+    }
+    .complem-form-container .complem-form-container-column .complem-form-container-row .opacity-hidden {
+        visibility: hidden;
+    }
+    .complem-form-container .complem-form-container-column .complem-form-container-row .form-label
+    {
+        overflow:hidden; 
+        white-space:nowrap; 
+        text-overflow: ellipsis;
+    }
+    .complem-form-container .complem-form-container-column .complem-form-container-row .opacity-hidden.mobile-hidden-label
+   {
+    display:none;
+   }
+   .complem-form-container .complem-form-container-column .complem-form-container-row .confirm-button {
+    width: 100%;
+    }
+
+
+    .benefit-container .benefit-container-child {
+        padding: 20px 20px;
+    }
+    .benefit-container .benefit-container-child .benefit-title {
+       font-size: 24px;
+    }
+    .benefit-table-trial-heading,
+    .benefit-table-elite-heading
+     {
+        font-size: 10px;
+    }
+    .table-main-category > div:first-child {
+        font-size: 12px;
+    }
+    .elite-upgrade-member-benefits-table > .row > div:nth-child(2), .elite-upgrade-member-benefits-table > .row > div:last-child
+    {
+        font-size: 12px;
+    }
+    .benefit-table-elite-heading {
+        padding: 5px 5px;
+    }
+
+    .elite-upgrade-member-benefits-table .bullet-font-size {
+        padding: 0px;
+        padding-left: 10px;
+        font-size: 10px;
+    }
+
+
+
+
+
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (orientation: landscape) {
+    
+    .order-container-banner .order-container-banner-row .order-container-right img.order-img {
+        width: 200px;
+        max-width: 100%;
+    }
+
+    .order-container-banner {
+        padding: 20px 20px;
+    }
+    .order-container-banner .order-container-banner-row .order-container-left h1 {
+        font-size: 26px;
+    }
+    .order-container-banner .order-container-banner-row .order-container-left p {
+        font-size: 14px;
+        padding-bottom: 30px;
+    }
+    .order-container-banner .order-container-banner-row .btn-orderMembership {
+        font-size: 12px;
+    }
+    .order-container-banner .order-container-banner-row {
+        padding-bottom: 30px;
+        text-align: center;
+    }
+    .complem-container {
+        padding-bottom:30px;
+        padding-top:30px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .complem-container .complem-container-row .complem-container-right h1.comple-heading {
+        font-size: 24px;
+    }
+    .complem-container .complem-container-row 
+    {
+        text-align:center;
+    }
+    .complem-container .complem-container-row .complem-container-left img.comple-img {
+        width: 200px;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    .complem-container .complem-container-row .complem-container-right p.comple-para {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+
+    .complem-form-container .complem-form-container-column {
+        padding: 15px;
+    }
+    .complem-form-container .complem-form-container-column .complem-form-container-row .opacity-hidden {
+        visibility: hidden;
+    }
+    .complem-form-container .complem-form-container-column .complem-form-container-row .form-label
+    {
+        overflow:hidden; 
+        white-space:nowrap; 
+        text-overflow: ellipsis;
+    }
+    .complem-form-container .complem-form-container-column .complem-form-container-row .opacity-hidden.mobile-hidden-label
+   {
+    display:none;
+   }
+   .complem-form-container .complem-form-container-column .complem-form-container-row .confirm-button {
+    width: 100%;
+    }
+
+    .benefit-container .benefit-container-child {
+        padding: 20px 20px;
+    }
+    .benefit-container .benefit-container-child .benefit-title {
+       font-size: 24px;
+    }
+    .benefit-table-trial-heading,
+    .benefit-table-elite-heading
+     {
+        font-size: 12px;
+    }
+    .table-main-category > div:first-child {
+        font-size: 12px;
+    }
+    .elite-upgrade-member-benefits-table > .row > div:nth-child(2), .elite-upgrade-member-benefits-table > .row > div:last-child
+    {
+        font-size: 12px;
+    }
+    .benefit-table-elite-heading {
+        padding: 5px 5px;
+    }
+
+    .elite-upgrade-member-benefits-table .bullet-font-size {
+        padding: 0px;
+        padding-left: 10px;
+        font-size: 12px;
+    }
+
+
+}
+
+
+@media (max-width: 1024px) and (min-width: 768px) 
+{.order-container-banner .order-container-banner-row .order-container-right img.order-img {
+    width: 300px;
+    max-width: 100%;
+}
+
+.order-container-banner {
+    padding: 50px 100px;
+}
+.order-container-banner .order-container-banner-row .order-container-left h1 {
+    font-size: 26px;
+}
+.order-container-banner .order-container-banner-row .order-container-left p {
+    font-size: 14px;
+    padding-bottom: 30px;
+}
+.order-container-banner .order-container-banner-row .btn-orderMembership {
+    font-size: 12px;
+}
+.order-container-banner .order-container-banner-row {
+    padding-bottom: 07px;
+    text-align: center;
+}
+.complem-container {
+    padding-bottom:50px;
+    padding-top:50px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.complem-container .complem-container-row .complem-container-right h1.comple-heading {
+    font-size: 24px;
+}
+.complem-container .complem-container-row 
+{
+    text-align:center;
+}
+.complem-container .complem-container-row .complem-container-left img.comple-img {
+    width: 200px;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+.complem-container .complem-container-row .complem-container-right p.comple-para {
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+
+.complem-form-container .complem-form-container-column {
+    padding: 15px;
+}
+.complem-form-container .complem-form-container-column .complem-form-container-row .opacity-hidden {
+    visibility: hidden;
+}
+.complem-form-container .complem-form-container-column .complem-form-container-row .form-label
+{
+    overflow:hidden; 
+    white-space:nowrap; 
+    text-overflow: ellipsis;
+}
+.complem-form-container .complem-form-container-column .complem-form-container-row .opacity-hidden.mobile-hidden-label
+{
+display:none;
+}
+.complem-form-container .complem-form-container-column .complem-form-container-row .confirm-button {
+    width: 250px;
+    }
+
+
+
+    .benefit-container .benefit-container-child {
+        padding: 20px 20px;
+    }
+    .benefit-container .benefit-container-child .benefit-title {
+       font-size: 24px;
+    }
+    .benefit-table-trial-heading,
+    .benefit-table-elite-heading
+     {
+        font-size: 12px;
+    }
+    .table-main-category > div:first-child {
+        font-size: 12px;
+    }
+    .elite-upgrade-member-benefits-table > .row > div:nth-child(2), .elite-upgrade-member-benefits-table > .row > div:last-child
+    {
+        font-size: 12px;
+    }
+    .benefit-table-elite-heading {
+        padding: 5px 5px;
+    }
+
+    .elite-upgrade-member-benefits-table .bullet-font-size {
+        padding: 0px;
+        padding-left: 10px;
+        font-size: 12px;
+    }
+
+
+
+
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) 
+{
+    .order-container-banner .order-container-banner-row .order-container-right img.order-img {
+        width: 433px;
+        max-width: 100%;
+    }
+
+    .order-container-banner {
+        padding: 50px 100px;
+    }
+    .order-container-banner .order-container-banner-row .order-container-left h1 {
+        font-size: 26px;
+    }
+    .order-container-banner .order-container-banner-row .order-container-left p {
+        font-size: 14px;
+        padding-bottom: 30px;
+    }
+    .order-container-banner .order-container-banner-row .btn-orderMembership {
+        font-size: 12px;
+    }
+    .order-container-banner .order-container-banner-row {
+        padding-bottom: 30px;
+        text-align: left;
+    }
+
+    .complem-container {
+        padding-bottom:50px;
+        padding-top:50px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    .complem-container .complem-container-row .complem-container-right h1.comple-heading {
+        font-size: 24px;
+    }
+    .complem-container .complem-container-row 
+    {
+        text-align:left;
+    }
+    .complem-container .complem-container-row .complem-container-left img.comple-img {
+        width: 300px;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    .complem-container .complem-container-row .complem-container-right p.comple-para {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+
+
+
+
+
+
+
+
+
+    .complem-form-container .complem-form-container-column {
+        padding: 15px;
+    }
+    .complem-form-container .complem-form-container-column .complem-form-container-row .opacity-hidden {
+        visibility: hidden;
+    }
+    .complem-form-container .complem-form-container-column .complem-form-container-row .form-label
+    {
+        overflow:hidden; 
+        white-space:nowrap; 
+        text-overflow: ellipsis;
+    }
+    .complem-form-container .complem-form-container-column .complem-form-container-row .opacity-hidden.mobile-hidden-label
+   {
+    display:block;
+   }
+   .complem-form-container .complem-form-container-column .complem-form-container-row .confirm-button {
+    width: 250px;
+    }
+
+    .benefit-container .benefit-container-child {
+        padding: 20px 20px;
+    }
+    .benefit-container .benefit-container-child .benefit-title {
+       font-size: 24px;
+    }
+    .benefit-table-trial-heading,
+    .benefit-table-elite-heading
+     {
+        font-size: 12px;
+    }
+    .table-main-category > div:first-child {
+        font-size: 12px;
+    }
+    .elite-upgrade-member-benefits-table > .row > div:nth-child(2), .elite-upgrade-member-benefits-table > .row > div:last-child
+    {
+        font-size: 12px;
+    }
+    .benefit-table-elite-heading {
+        padding: 5px 5px;
+    }
+
+    .elite-upgrade-member-benefits-table .bullet-font-size {
+        padding: 0px;
+        padding-left: 10px;
+        font-size: 12px;
+    }
+
+
+
+
+
+
+
+
+
+
+}

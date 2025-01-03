@@ -1,0 +1,679 @@
+
+.submenu-banner
+{
+  /* height:400px; */
+  padding-left:0;
+  padding-right:0;
+}
+.submenu-banner .submenu-banner-child img
+{
+  width:100%;
+}
+.submenu-banner .submenu-banner-child
+{
+  position:relative;
+}
+.submenu-banner .submenu-banner-child .submenu-banner-child-overlay
+{
+  background: linear-gradient(transparent, transparent, transparent, rgba(0, 0, 0, 0.8));
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+
+
+.submenu-banner .submenu-banner-child .submenu-banner-desc
+{
+  position: absolute;
+  left: 60%;
+  top:0;
+  margin-top: 15px;
+}
+
+/* .submenu-banner .submenu-banner-child .submenu-banner-long-box
+{
+  height: initial;
+  min-height: 370px;
+  max-height: 750px;
+ 
+} */
+.submenu-banner .submenu-banner-child .submenu-banner-view-more
+{
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  right:0;
+  background-color: #d9d9d9;
+  width: 100%;
+  padding-left:20px;
+  padding-top: 5px;
+  font-size: 12px;
+  height: 30px;
+  z-index: 5;
+}
+.submenu-banner .submenu-banner-child .submenu-banner-view-more a
+{
+  text-decoration: underline;
+  color:#000000;
+}
+.submenu-banner .submenu-banner-child .submenu-banner-desc-child
+{
+    border: 1px solid #e2e2e2;
+    position: absolute;
+    /* height: 370px; */
+    /* height: auto; */
+    height:auto;
+    min-height: 370px;
+    max-height: 750px;
+    width:400px;
+    margin-left: -15px;
+    padding: 20px 25px 30px 25px;
+    background-color: #d9d9d9;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+/* .submenu-banner .submenu-banner-child .submenu-banner-desc-child.submenu-banner-long-box
+{
+    height:initial;
+    min-height: 370px;
+    max-height: 750px;
+    overflow-y: auto;
+} */
+.submenu-banner .submenu-banner-child .submenu-banner-long-box
+{
+    height:initial;
+    /* min-height: 370px; */
+    /* max-height: 750px; */
+    max-height: 240px;
+    overflow-y: auto;
+}
+.submenu-banner .submenu-banner-child .submenu-banner-desc-child .submenu-banner-long-box-inner
+{
+  background-color: #d9d9d9;
+}
+.submenu-banner .submenu-banner-child .submenu-banner-desc-child .submenu-banner-long-box-inner .favorite-icon
+{
+  cursor: pointer;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  font-size: 22px;
+
+}
+.submenu-banner .submenu-banner-child .submenu-banner-desc-child .submenu-banner-long-box-inner .long-box-inner-title
+{
+  margin: 0;
+  font-weight: 700;
+  color: #43484D;
+  font-size: 21px;
+  margin-top:15px;
+  text-transform: capitalize;
+}
+
+.submenu-banner .submenu-banner-child .submenu-banner-desc-child .submenu-banner-long-box-inner .long-box-inner-subtitle
+{
+  padding-bottom: 15px;
+  color: #000000;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 400;
+  margin-top: 8px;
+  margin-bottom: 10PX;
+}
+
+.submenu-banner .submenu-banner-child .submenu-banner-desc-child .submenu-banner-long-box-inner 
+.offers-desc .offers-desc-inner
+{
+  margin-bottom: 20px;
+}
+
+.submenu-banner .submenu-banner-child .submenu-banner-desc-child .submenu-banner-long-box-inner 
+.offers-desc p.offers-desc-inner-p
+{
+  line-height:1.42857143;
+  font-size:15px;
+}
+.submenu-banner .submenu-banner-child .submenu-banner-desc-child .submenu-banner-long-box-inner 
+.offers-desc ul.offers-desc-inner-ul
+{
+  padding-left: 10px;
+  margin-left: 10px;
+}
+
+.submenu-banner .submenu-banner-child .submenu-banner-desc-child .submenu-banner-long-box-inner 
+.offers-desc ul  li {
+  color: #3B3B3B;
+  font-size: 14px;
+  line-height: 19px;
+  padding-bottom: 10px;
+}
+
+.submenu-banner .submenu-banner-child .submenu-banner-desc-child .submenu-banner-long-box-bottom h3 {
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.submenu-banner .submenu-banner-child .submenu-banner-desc-child .submenu-banner-long-box-bottom p{
+  font-size: 11px;
+  line-height: 16px;
+  color: #7f7d7d;
+}
+
+.visible-large-size
+{
+    display:block;
+}
+.visible-small-size
+{
+    display:none;
+}
+
+/* .submenu-banner .submenu-banner-child .submenu-banner-desc-child .view-more-box
+{
+    display:none;
+}
+.submenu-banner .submenu-banner-child .submenu-banner-view-more a:focus .view-more-box
+{
+    display:block;
+} */
+.submenu-banner .submenu-banner-child .external-information
+{
+  position: absolute;
+  color: rgba(255, 255, 255, 0.85);
+  bottom: 10px;
+  font-size: 10px;
+  left: 80px;
+}
+.submenu-banner .submenu-banner-child .external-information a
+{
+  color:#fff;
+  text-decoration:underline;
+}
+
+
+
+.submenu-banner .submenu-banner-child  .btn-unlock-benefits
+{
+  min-width: 240px;
+  margin-top: 20px;
+  border-radius: 0px;
+  font-size: 12px;
+  background-color: #000;
+  transition: all 350ms ease;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-color: #fff;
+  border-style: none;
+  border-width: 1px;
+  padding: 15px 40px;
+  font-family: Montserrat, sans-serif;
+}
+
+.submenu-banner .submenu-banner-child  .btn-unlock-benefits:hover
+{
+  background-color: #000;
+  color: #fff;
+}
+.submenu-banner .submenu-banner-child .featured-comment-box
+{
+  background-color: #EFEFEF;
+  margin-left: -25px;
+  margin-right: -25px;
+  padding: 15px;
+}
+.submenu-banner .submenu-banner-child .featured-comment-box h6.featured-comment-name
+{
+  font-size: 12px;
+  margin-bottom: 15px;
+  color: #000;
+  font-weight: 500;
+  text-align: center;
+}
+.submenu-banner .submenu-banner-child .featured-comment-box .featured-comment-image-link .featured-comment-image
+{
+  margin-top: 0px;
+  border-radius: 50%;
+  width: 35px;
+}
+.submenu-banner .submenu-banner-child .featured-comment-box .featured-comment-para
+{
+  white-space: initial;
+  margin-left: 5px;
+  display: inline-block;
+  max-width: 78%;
+}
+
+.submenu-banner .submenu-banner-child .featured-comment-box .featured-comment-para h5
+{
+  font-size:8px;
+  margin-bottom:5px
+}
+
+
+.submenu-banner .submenu-banner-child table.offer-table
+{
+  margin-left: -25px;
+  width: calc(100% + 50px);
+  margin-bottom: 25px !important;
+}
+.submenu-banner .submenu-banner-child table.offer-table th {
+  padding: 15px 15px;
+  font-size: 11px;
+  line-height: 14px;
+  font-weight: bold;
+  letter-spacing: -0.31px;
+  background-color: #EFEFF3;
+  color: #3B3B3B;
+  font-family: Montserrat;
+  text-transform: uppercase;
+}
+.submenu-banner .submenu-banner-child table.offer-table tbody tr {
+  border-bottom: 1px solid #CCC;
+}
+.submenu-banner .submenu-banner-child table.offer-table tbody tr td {
+  padding: 15px 15px;
+  max-width: 150px;
+    color: #3B3B3B;
+    font-size: 14px;
+    line-height: 14px;
+}
+.submenu-banner .submenu-banner-child table.offer-table tbody tr td:nth-child(2) {
+  font-weight: bold;
+}
+
+/* redeem benefits offcanvas menu */
+
+.redeem-benefits-section
+{
+    background-color: #FFF;
+    overflow-y: auto;
+    padding: 0;
+    width: 40% !important;
+    /* padding: 30px 40px; */
+}
+.redeem-benefits-section .redeem-benefits-section-header
+{
+  padding: 30px 40px;
+}
+.redeem-benefits-section .redeem-benefits-section-body
+{
+  padding: 30px 40px;
+}
+.redeem-benefits-section .redeem-benefits-section-body .back-to-benefit-box
+{
+  margin-bottom: 30px;
+}
+.redeem-benefits-section a.back-to-benefit
+{
+  cursor: pointer;
+  color: #000;
+  text-decoration: underline;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+.redeem-benefits-section a.back-to-benefit img
+{
+  width: 17px;
+  margin-right:10px;
+  vertical-align: middle;
+}
+.redeem-benefits-section .btn.btn-redeem-closed
+{
+  font-size: 12px;
+}
+.redeem-benefits-section .redeem-benefit-box,
+.redeem-benefits-section .redeem-benefit-box p
+{
+  font-size: 14px;
+  color: #000;
+  line-height: 1.42857143;
+}
+.redeem-benefits-section .redeem-benefit-box a
+{
+  text-decoration: underline;
+}
+.redeem-benefits-section .redeem-benefit-box  h1,h2,h3,h4,h5,h6
+{
+ font-size: 14px;
+ margin-top:10px;
+ margin-bottom: 10px;
+}
+.redeem-benefits-section .redeem-benefit-box h3 {
+  font-size: 18px;
+  font-weight: 600;
+  border-bottom: 1px solid #e2e2e2;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+  margin-top: 60px;
+}
+/* redeem benefits offcanvas menu */
+
+
+@media only screen and (max-width: 767px) 
+{
+    .submenu-banner .submenu-banner-child .submenu-banner-desc 
+    {
+        position: relative;
+        left: 0;
+        top: 0;
+        margin-top: 0;
+    }
+    .visible-large-size
+    {
+        display:none;
+    }
+    .visible-small-size
+    {
+        display:block;
+    }
+    .submenu-banner .submenu-banner-child .submenu-banner-desc-child {
+       
+        position: relative;
+        height: auto;
+        width: 100%;
+        margin-left: 0;
+        padding:15px;
+        min-height: 370px;
+        max-height: 800px;
+    }
+    .submenu-banner .submenu-banner-child .submenu-banner-desc-child .submenu-banner-long-box-inner .long-box-inner-title {
+        font-size: 18px;
+    }
+    .submenu-banner .submenu-banner-child .submenu-banner-desc-child .submenu-banner-long-box-inner .long-box-inner-subtitle {
+        font-size: 12px;
+    }
+    .submenu-banner .submenu-banner-child .submenu-banner-desc-child .submenu-banner-long-box-inner 
+    .offers-desc p.offers-desc-inner-p
+    {
+      font-size:15px;
+    }
+    .submenu-banner .submenu-banner-child .submenu-banner-desc-child .submenu-banner-long-box-inner .offers-desc ul li {
+        font-size: 14px;
+    }
+    .submenu-banner .submenu-banner-child .submenu-banner-desc-child .submenu-banner-long-box-bottom h3 {
+        font-size: 12px;
+    }
+
+
+    .submenu-banner .submenu-banner-child .submenu-banner-view-more 
+    {
+      width: 100%;
+    }
+    /* .submenu-banner .submenu-banner-child .submenu-banner-desc-child.submenu-banner-long-box {
+      height: initial;
+      min-height: initial;
+      max-height: initial;
+      overflow-y: initial;
+  } */
+  .submenu-banner .submenu-banner-child .submenu-banner-long-box {
+    height: initial;
+    min-height: initial;
+    max-height: initial;
+    overflow-y: initial;
+}
+  .submenu-banner .submenu-banner-child table.offer-table {
+    margin-left: -22px;
+        width: 112%;
+}
+
+
+
+
+.redeem-benefits-section {
+  width: 100% !important;
+}
+
+.redeem-benefits-section .redeem-benefits-section-body {
+  padding: 15px 20px;
+}
+
+
+
+
+
+
+
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (orientation: landscape) 
+{
+  .submenu-banner .submenu-banner-child .submenu-banner-desc 
+  {
+      position: relative;
+      left: 0;
+      top: 0;
+      margin-top: 0;
+  }
+  .visible-large-size
+  {
+      display:none;
+  }
+  .visible-small-size
+  {
+      display:block;
+  }
+  .submenu-banner .submenu-banner-child .submenu-banner-desc-child {
+     
+      position: relative;
+      height: auto;
+      width: 100%;
+      margin-left: 0;
+      padding:15px;
+      min-height: 370px;
+      max-height: 800px;
+  }
+  .submenu-banner .submenu-banner-child .submenu-banner-desc-child .submenu-banner-long-box-inner .long-box-inner-title {
+      font-size: 18px;
+  }
+  .submenu-banner .submenu-banner-child .submenu-banner-desc-child .submenu-banner-long-box-inner .long-box-inner-subtitle {
+      font-size: 12px;
+  }
+  .submenu-banner .submenu-banner-child .submenu-banner-desc-child .submenu-banner-long-box-inner 
+  .offers-desc p.offers-desc-inner-p
+  {
+    font-size:15px;
+  }
+  .submenu-banner .submenu-banner-child .submenu-banner-desc-child .submenu-banner-long-box-inner .offers-desc ul li {
+      font-size: 14px;
+  }
+  .submenu-banner .submenu-banner-child .submenu-banner-desc-child .submenu-banner-long-box-bottom h3 {
+      font-size: 12px;
+  }
+
+
+  .submenu-banner .submenu-banner-child .submenu-banner-view-more 
+  {
+    width: 100%;
+  }
+  /* .submenu-banner .submenu-banner-child .submenu-banner-desc-child.submenu-banner-long-box {
+    height: initial;
+    min-height: initial;
+    max-height: initial;
+    overflow-y: initial;
+} */
+.submenu-banner .submenu-banner-child .submenu-banner-long-box {
+  height: initial;
+  min-height: initial;
+  max-height: initial;
+  overflow-y: initial;
+}
+
+
+.redeem-benefits-section {
+  width: 100% !important;
+}
+
+.redeem-benefits-section .redeem-benefits-section-body {
+  padding: 15px 20px;
+}
+
+
+
+
+
+}
+
+@media (max-width: 1024px) and (min-width: 768px) 
+{
+  .submenu-banner .submenu-banner-child .submenu-banner-desc 
+  {
+      position: relative;
+      left: 0;
+      top: 0;
+      margin-top: 0;
+  }
+  .visible-large-size
+  {
+      display:none;
+  }
+  .visible-small-size
+  {
+      display:block;
+  }
+  .submenu-banner .submenu-banner-child .submenu-banner-desc-child {
+     
+      position: relative;
+      height: auto;
+      width: 100%;
+      margin-left: 0;
+      padding:15px;
+      min-height: 370px;
+    max-height: 800px;
+  }
+  .submenu-banner .submenu-banner-child .submenu-banner-desc-child .submenu-banner-long-box-inner .long-box-inner-title {
+      font-size: 18px;
+  }
+  .submenu-banner .submenu-banner-child .submenu-banner-desc-child .submenu-banner-long-box-inner .long-box-inner-subtitle {
+      font-size: 12px;
+  }
+  .submenu-banner .submenu-banner-child .submenu-banner-desc-child .submenu-banner-long-box-inner 
+  .offers-desc p.offers-desc-inner-p
+  {
+    font-size:15px;
+  }
+  .submenu-banner .submenu-banner-child .submenu-banner-desc-child .submenu-banner-long-box-inner .offers-desc ul li {
+      font-size: 14px;
+  }
+  .submenu-banner .submenu-banner-child .submenu-banner-desc-child .submenu-banner-long-box-bottom h3 {
+      font-size: 12px;
+  }
+
+
+  .submenu-banner .submenu-banner-child .submenu-banner-view-more 
+  {
+    width: 100%;
+  }
+  /* .submenu-banner .submenu-banner-child .submenu-banner-desc-child.submenu-banner-long-box {
+    height: initial;
+    min-height: initial;
+    max-height: initial;
+    overflow-y: initial;
+} */
+
+.submenu-banner .submenu-banner-child .submenu-banner-long-box {
+  height: initial;
+  min-height: initial;
+  max-height: initial;
+  overflow-y: initial;
+}
+
+.redeem-benefits-section {
+  width: 100% !important;
+}
+
+.redeem-benefits-section .redeem-benefits-section-body {
+  padding: 30px 40px;
+}
+
+
+
+
+
+
+
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) 
+{
+  .submenu-banner .submenu-banner-child .submenu-banner-desc 
+  {
+      position: absolute;
+      left: 60%;
+      top: 20px;
+      right:20px;
+      margin-top: 0;
+  }
+  .visible-large-size
+  {
+      display:block;
+  }
+  .visible-small-size
+  {
+      display:none;
+  }
+  .submenu-banner .submenu-banner-child .submenu-banner-desc-child {
+     
+    border: 1px solid #e2e2e2;
+    position: absolute;
+    /* height: 370px; */
+    /* height: auto; */
+    height:initial;
+    min-height: 370px;
+    max-height: 750px;
+    width:400px;
+    margin-left: -15px;
+    padding: 20px 25px 30px 25px;
+  }
+  
+  .submenu-banner .submenu-banner-child .submenu-banner-desc-child .submenu-banner-long-box-inner .long-box-inner-title {
+      font-size: 18px;
+  }
+  .submenu-banner .submenu-banner-child .submenu-banner-desc-child .submenu-banner-long-box-inner .long-box-inner-subtitle {
+      font-size: 12px;
+  }
+  .submenu-banner .submenu-banner-child .submenu-banner-desc-child .submenu-banner-long-box-inner 
+  .offers-desc p.offers-desc-inner-p
+  {
+    font-size:15px;
+  }
+  .submenu-banner .submenu-banner-child .submenu-banner-desc-child .submenu-banner-long-box-inner .offers-desc ul li {
+      font-size: 14px;
+  }
+  .submenu-banner .submenu-banner-child .submenu-banner-desc-child .submenu-banner-long-box-bottom h3 {
+      font-size: 12px;
+  }
+
+
+  .submenu-banner .submenu-banner-child .submenu-banner-view-more 
+  {
+    width: 100%;
+  }
+  /* .submenu-banner .submenu-banner-child .submenu-banner-desc-child.submenu-banner-long-box {
+    height: initial;
+    min-height: 370px; 
+    max-height: 240px;
+    overflow-y: auto;
+} */
+.submenu-banner .submenu-banner-child .submenu-banner-long-box {
+  height: initial;
+  /* min-height: 370px; */
+  max-height: 240px;
+  overflow-y: auto;
+}
+
+.redeem-benefits-section {
+  width: 40% !important;
+}
+
+.redeem-benefits-section .redeem-benefits-section-body {
+  padding: 30px 40px;
+}
+
+
+
+
+}

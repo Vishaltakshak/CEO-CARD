@@ -1,0 +1,145 @@
+
+.category-sidebar {
+  padding-top: 10px;
+  padding-bottom: 50px;
+}
+.sidebar-open-close {
+  width: 25px;
+  height: 30px;
+  opacity: 0.74;
+  background-color: #292928;
+  cursor: pointer;
+  position:absolute;
+  left:0;
+}
+
+.sidebar-arrow {
+  color: #fff;
+  font-size: 18px;
+  padding-left: 0;
+  padding-top: 0;
+  vertical-align: middle;
+  line-height: 30px;
+}
+
+#sidebar-open {
+  display: none;
+}
+
+.category-sidebar .categorization-sidebar-filters {
+  min-height: 600px;
+  padding-left: 40px;
+  padding-top: 33px;
+}
+
+.category-sidebar.close-sidebar {
+  display:none !important;
+} 
+
+
+
+.category-sidebar .subcategory-div {
+  padding-bottom: 10px;
+}
+
+.category-sidebar .subcategory-div a {
+  text-decoration: none;
+  font-weight: 600;
+  color:#ffffff;
+  font-size:14px;
+  text-transform: capitalize;
+}
+.category-sidebar .subcategory-div a.active {
+  font-weight: 700;
+}
+
+
+
+.category-sidebar .brands-section {
+  padding-top: 50px;
+}
+
+.category-sidebar .brands-section h4.listbrand-name {
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+.category-sidebar .brands-section  .brands-list-container {
+  padding: 10px 0;
+  border-top: 1px solid #979797;
+  border-bottom: 1px solid #979797;
+}
+
+
+.category-sidebar .brands-section  .brands-list-container .brands-list
+{
+  max-height: 250px;
+  overflow-y: auto;
+  font-size: 12px;
+}
+
+.category-sidebar .brands-section  .brands-list-container .benefit-brand-div
+{
+  cursor: pointer;
+  padding: 2px 0;
+}
+
+.category-sidebar .brands-section  .brands-list-container .filter-checkbox {
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  border: 1px solid #888;
+  margin-right: 10px;
+  position: relative;
+  top: 2px;
+}
+
+.category-sidebar .brands-section  .brands-list-container .filter-text {
+  font-size: 12px;
+  color: #ffffff;
+  margin-bottom: 0;
+}
+
+.category-sidebar .brands-section  .brands-list-container .benefit-brand-div.active {
+  font-weight: 700;
+}
+.category-sidebar .brands-section  .brands-list-container .benefit-brand-div:hover {
+  font-weight: 600;
+}
+.category-sidebar .brands-section  .brands-list-container .benefit-brand-div.active .filter-checkbox {
+  background-color: #333;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 767px) 
+{
+  
+
+
+
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (orientation: landscape) 
+{
+ 
+
+  
+
+}
+
+@media (max-width: 1024px) and (min-width: 768px) 
+{
+  
+ 
+
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) 
+{
+ 
+}

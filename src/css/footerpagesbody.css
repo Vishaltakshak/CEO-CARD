@@ -1,0 +1,284 @@
+
+.top-spacing
+{
+	margin-top:52px;
+}
+.footerPageCareerHeight{
+	height: auto;
+	
+	background-color: #000000c0;
+}
+.footerpages-container
+{
+	background: url("../../public/assets/img/building4\ 2.png") top left no-repeat fixed;
+    background-size: cover;
+	/* background-color: #01326a; */
+}
+.footerpages-container-child
+{
+	padding:30px 60px;    
+	background-color: #121111ae;
+}
+.footerpages-container  a {
+    color: #337ab7;
+    text-decoration: none;
+}
+.footerpages-container {
+	text-align:center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.footerpages-container .common-pages-text
+{
+    font-size: 20px;
+    font-weight: 400;
+	color: rgb(250, 248, 248);
+	text-transform: uppercase;
+}
+.footerpages-container .common-pages-subtext
+{
+    font-size: 15px;
+    font-weight: 400;
+	margin-bottom:10px;line-height: 28px;
+}
+.footerpages-container  hr.border-blue
+{
+	border-color: #2a74e5 !important;
+	opacity: 0.9;
+}
+.footerpages-container  .common-pages-form .form-group
+{
+	margin-bottom:15px;
+}
+.footerpages-container  .common-pages-form label{
+	margin-bottom: 10px;
+    text-align: left;
+    display: block;
+}
+.footerpages-container  .common-pages-form .form-group input.form-control,
+.footerpages-container  .common-pages-form .form-group select.form-control,
+.footerpages-container  .common-pages-form .form-group textarea.form-control
+{
+	font-size: 16px;
+	border-radius: 4px;
+	height: 46px;
+    padding: 10px 16px;
+	color:#333;
+	border: 1px solid #ccc;
+}
+.footerpages-container  .common-pages-form .form-group input.form-control:focus,
+.footerpages-container  .common-pages-form .form-group select.form-control:focus,
+.footerpages-container  .common-pages-form .form-group textarea.form-control:focus
+{
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+}
+.footerpages-container  .common-pages-form .form-group textarea.form-control
+{
+	height:auto;
+}
+
+.footerpages-container  .common-pages-form .btn-submit
+{
+	font-size: 18px;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 0;
+    margin-top: 15px;
+    width: auto;
+    padding: 6px 50px;
+}
+.footerpages-container  .common-pages-form .btn-submit a
+{
+	color:#fff;
+	font-weight: 700;
+}
+.footerpages-container  .common-pages-form .btn-black 
+{
+	font-size: 16px;
+	text-transform: uppercase;
+	color:#fff;
+	border-radius: 4px;
+	margin-top:15px;
+	width:auto;
+	background-color: #000;
+	padding:13px 50px;
+	font-weight: 700;
+}
+.footerpages-container  .common-pages-form .btn-black:hover
+{
+	color:#fff;
+	background-color: #2a74e5;
+}
+.footerpages-container  .common-pages-form .btn-black  a
+{
+	color:#fff;
+}
+.footerpages-container  .trouble-text
+{
+	font-size:14px;
+}
+
+.footerpages-container .career-box
+{
+	padding:20px;
+	border: 1px solid #CCC;
+	background-color: white;
+	margin:3% auto auto auto;
+	width: 90%;
+	border-radius: 5px;
+}
+
+
+.footerpages-container-child2
+{
+	padding:0px;    
+	
+}
+.footerpages-container-child2 .career-box,
+.footerpages-container-child2 .career-box-details
+{
+	padding:20px;
+	border: 2px solid #CCC;
+}
+.footerpages-container-child2 .career-box-details
+{
+	color: #000;
+	border:none;
+	text-align:left;
+	font-size:14px;
+	background-color: #ffffffc7;
+    width: 90%;
+	margin: 0 auto 3% auto;
+}
+
+.footerpages-container-child2 .career-box .career-post
+{
+	font-size:18px;
+	font-weight: 600;
+	font-style: normal;
+	margin-bottom: 0;
+	color:#000;
+	text-transform: capitalize;
+	text-align:left;
+}
+.col-12 h3{
+
+	color: white;
+}
+.footerpages-container-child2 .career-box a.btn-view-details {
+    background-color: #ffffff;
+	color:#2a74e5;
+	border: 2px solid #2a74e5;
+    font-size: 11px;
+	border-radius: 0;
+    font-weight: 600;
+    padding: 7px 20px 6px;
+	text-align:center;
+	text-transform: uppercase;
+}
+
+.btn-text-right
+{
+	text-align:right;
+}
+
+
+.last-career-box{
+	margin: 3% auto 3% auto !important;
+}
+.partenership-box [aria-hidden="true"] {
+	display: none;
+  }
+
+
+@media only screen and (max-width: 767px) {
+
+	
+	.footerpages-container {
+		padding-top: 40px;
+		padding-bottom: 80px;
+	}
+
+	.footerpages-container .common-pages-text {
+		font-size: 16px;
+	}
+	.footerpages-container .common-pages-subtext {
+		font-size: 12px;
+        line-height: 28px;
+	}
+	.footerpages-container  .trouble-text
+	{
+		font-size:12px;
+	}
+	.footerpages-container-child {
+		padding: 15px;
+	}
+
+
+	.footerpages-container-child2 .career-box, .footerpages-container-child2 .career-box-details {
+		padding: 10px;
+	}
+	.footerpages-container-child2 .career-box .career-post {
+		font-size: 14px;
+	}
+
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (orientation: landscape) {
+
+	.footerpages-container {
+		padding-top: 40px;
+		padding-bottom: 80px;
+	}
+
+	.footerpages-container .common-pages-text {
+		font-size: 16px;
+	}
+	.footerpages-container .common-pages-subtext {
+		font-size: 12px;
+        line-height: 28px;
+	}
+	.footerpages-container  .trouble-text
+	{
+		font-size:12px;
+	}
+	.footerpages-container-child2 .career-box, .footerpages-container-child2 .career-box-details {
+		padding: 10px;
+	}
+	.footerpages-container-child2 .career-box .career-post {
+		font-size: 14px;
+	}
+	
+}
+
+
+@media (max-width: 1024px) and (min-width: 768px) {
+
+	.footerpages-container {
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+	.footerpages-container-child2 .career-box, .footerpages-container-child2 .career-box-details {
+		padding: 20px;
+	}
+	.footerpages-container-child2 .career-box .career-post {
+		font-size: 18px;
+	}
+	
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+	.footerpages-container {
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+	.footerpages-container-child2 .career-box, .footerpages-container-child2 .career-box-details {
+		padding: 20px;
+	}
+	.footerpages-container-child2 .career-box .career-post {
+		font-size: 18px;
+	}
+}

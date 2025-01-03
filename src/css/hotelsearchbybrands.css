@@ -1,0 +1,165 @@
+
+.suggestion-list
+{
+	background-color: #000000;
+	padding-top:40px;
+	padding-bottom:0px;
+}
+.suggestion-block
+{
+	margin-bottom:40px;
+	margin-right: 4%;
+}
+.suggestion-block .suggestion-image-wrapper
+{
+	position:relative;
+}
+.suggestion-block .suggestion-image-wrapper .suggestion-label
+{
+	font-size:15px;
+	position: absolute;
+	text-transform: uppercase;
+    top: 10px;
+    left: 10px;
+    text-decoration: none;
+    background-color: #000;
+    color: #FFF;
+    padding: 4px 8px;
+    border-radius: 3px;
+    z-index: 10;
+    font-weight: 600;
+}
+.suggestion-block .suggestion-image-wrapper .locked-suggestion-label {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    text-decoration: none;
+    background-color: #000;
+	font-size:12px;
+    color: #FFF;
+    padding: 4px 8px;
+    border-radius: 3px;
+    z-index: 10;
+    font-weight: 600;
+}
+.suggestion-block .suggestion-image-wrapper .suggestion-primary-image {
+    position: absolute;
+    left: 0;
+    -webkit-transition: opacity 1s ease-in-out;
+    -moz-transition: opacity 1s ease-in-out;
+    -o-transition: opacity 1s ease-in-out;
+    transition: opacity 1s ease-in-out;
+}
+.suggestion-block .suggestion-image-wrapper  .suggestion-primary-image:hover {
+    opacity: 0;
+}
+
+
+.suggestion-block .suggestion-image-wrapper img {
+    width: 100%;
+}
+.suggestion-block .suggestion-top-title-container
+{
+margin-top:10px;
+}
+.suggestion-block .suggestion-top-title-container  h5
+{
+	color:#8f8f8f;
+	font-size: 14px;
+	text-transform: capitalize;
+}
+.suggestion-block .suggestion-title-container a h5 {
+	font-size:16px;
+	color:#ffffff;
+    font-weight: 500;
+	margin-top: 7px;
+    margin-bottom: 7px;
+}
+.suggestion-block .suggestion-title-container .suggestion-no-underline {
+    text-decoration: none;
+}
+ .suggestion-block .suggestion-description-container
+{
+    font-size: 13px;
+	color:#ffffff;
+    min-height: 40px;
+}
+
+.row-equal-height {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+}
+
+
+.mapopen .suggestion-block 
+{
+	width: 50%;
+}
+@media only screen and (max-width: 767px) {
+	
+	.row-equal-height {
+		display: flex;
+		display: -webkit-flex;
+		flex-wrap: wrap;
+	}
+	.suggestion-block .suggestion-image-wrapper .suggestion-label
+	{
+		font-size:10px;
+	}
+	.suggestion-block .suggestion-title-container a h5 {
+		font-size: 14px;
+	}
+	.suggestion-block .suggestion-description-container {
+		font-size: 14px;
+	}
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (orientation: landscape) {
+
+	
+	.row-equal-height {
+		display: flex;
+		display: -webkit-flex;
+		flex-wrap: wrap;
+	}
+	.suggestion-block .suggestion-image-wrapper .suggestion-label
+	{
+		font-size:10px;
+	}
+	.suggestion-block .suggestion-title-container a h5 {
+		font-size: 14px;
+	}
+	.suggestion-block .suggestion-description-container {
+		font-size: 14px;
+	}
+	
+}
+
+
+@media (max-width: 1024px) and (min-width: 768px) {
+
+	.suggestion-block .suggestion-image-wrapper .suggestion-label {
+		font-size: 20px;
+	}
+	.suggestion-block .suggestion-title-container a h5 {
+		font-size: 16px;
+	}
+	.suggestion-block .suggestion-description-container {
+		font-size: 14px;
+	}
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+
+	 .suggestion-block .suggestion-image-wrapper .suggestion-label {
+		font-size: 20px;
+	}
+	.suggestion-block .suggestion-title-container a h5 {
+		font-size: 16px;
+	}
+	.suggestion-block .suggestion-description-container {
+		font-size: 14px;
+	}
+	
+}

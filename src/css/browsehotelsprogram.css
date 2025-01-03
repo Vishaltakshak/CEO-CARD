@@ -1,0 +1,84 @@
+
+.hotels-program-container
+{
+  background-color: #000000;
+}
+
+.hotels-program-container .hotels-program-child
+{
+  margin-bottom: 15px;
+}
+.hotels-program-container .hotels-program-child .hotels-program-child-img img.reowned-program-img
+{
+  width: 100%;
+  height:380px;
+}
+.hotels-program-container .hotels-program-child .hotels-program-child-img-detail
+{
+  padding: 10px;
+  text-align:left;
+}
+.hotels-program-container .hotels-program-child .hotels-program-child-img-detail h3
+{
+  font-size: 14px;
+  text-transform: inherit;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.hotels-program-container .hotels-program-child .hotels-program-child-img-detail p
+{
+  font-size: 14px;
+  margin-bottom: 10px;
+  line-height: 1.42857143;
+  color: #ffffff;
+}
+
+@media only screen and (max-width: 767px) 
+{
+ 
+  .hotels-program-container .hotels-program-child .hotels-program-child-img-detail {
+    text-align: center;
+}
+.hotels-program-container .hotels-program-child .hotels-program-child-img-detail h3 {
+  font-size: 14px;
+}
+
+
+
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (orientation: landscape) 
+{
+  
+  .hotels-program-container .hotels-program-child .hotels-program-child-img-detail {
+    text-align: center;
+}
+.hotels-program-container .hotels-program-child .hotels-program-child-img-detail h3 {
+  font-size: 14px;
+}
+
+}
+
+@media (max-width: 1024px) and (min-width: 768px) 
+{
+   
+  .hotels-program-container .hotels-program-child .hotels-program-child-img-detail {
+    text-align: left;
+}
+.hotels-program-container .hotels-program-child .hotels-program-child-img-detail h3 {
+  font-size: 14px;
+}
+ 
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) 
+{
+ 
+  .hotels-program-container .hotels-program-child .hotels-program-child-img-detail {
+    text-align: left;
+}
+.hotels-program-container .hotels-program-child .hotels-program-child-img-detail h3 {
+  font-size: 14px;
+}
+}

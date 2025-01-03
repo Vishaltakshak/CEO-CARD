@@ -1,0 +1,33 @@
+#footer {
+  color: #fff;
+  font-size: 14px;
+  background-color: #1d2e36;
+  padding: 4px;
+}
+
+.ftstick {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  /* background-color: yellow; */
+  color: white;
+  text-align: center;
+  z-index: 999;
+}
+.ftarrow {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border: 3px solid red !important;
+  z-index: 999;
+}
+.footer-width {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+@media (min-width: 768px) {
+  .d-md-flex {
+    display: flex !important;
+  }
+}

@@ -1,0 +1,23 @@
+.personal-details-form form label{
+    margin-right: 3%;
+    padding: 10px;
+  
+}
+
+.personal-details-form{
+margin-bottom: 30px;
+padding-bottom: auto;
+}
+.Personal-details-profile-con{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: white;
+}
+.presonal-details-heading{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+
+}

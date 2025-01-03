@@ -1,0 +1,48 @@
+.browse-hotels-container
+{
+  
+  padding: 50px 0 50px 0;
+}
+.browse-hotels-container .browse-hotels-title
+{
+  font-size: 24px;
+  font-weight: 600;
+  margin-top:0px;
+  margin-bottom:30px;
+  color:#ffffff;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+
+
+
+
+@media only screen and (max-width: 767px) 
+{
+ 
+
+
+
+
+
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (orientation: landscape) 
+{
+  
+
+  
+
+}
+
+@media (max-width: 1024px) and (min-width: 768px) 
+{
+  
+ 
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) 
+{
+ 
+}

@@ -1,0 +1,481 @@
+
+.rewards-block-parent
+{
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #000000;
+}
+.rewards-block-parent .rewards-block-child
+{
+    margin-top: 40px;
+    margin-bottom: 0px;
+}
+.rewards-block-parent .rewards-block-child .reward-column
+{
+  border: solid 0.9px #e7e7e7;
+  text-align: center;
+  background-color: #FFF;
+  height: 280px;
+  margin-bottom:30px;
+}
+
+.rewards-block-parent .rewards-block-child .reward-column .reward-info {
+  cursor: pointer;
+  height: 100%;
+  background-color: #000;
+}
+
+.rewards-block-parent .rewards-block-child .reward-column .reward-image
+{
+  height: 62%;
+  width: 100%;
+}
+
+.rewards-block-parent .rewards-block-child .reward-column .reward-details
+{
+  padding: 20px;
+}
+
+.rewards-block-parent .rewards-block-child .reward-column .reward-details .reward-details-heading
+{
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 5px;
+  text-transform: capitalize;
+  color:#ffffff;
+  line-height: 1.42857143;
+  overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.rewards-block-parent .rewards-block-child .reward-column .reward-details .reward-details-subheading
+{
+  margin-bottom: 0;
+  font-size: 14px;
+  line-height: 1.42857143;
+}
+
+
+
+
+
+
+
+/* earn points css */
+.earnpt-block-parent
+{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.earnpt-block-parent-left0
+{
+  padding-left: 0;
+  padding-right:15px;
+}
+.earnpt-block-parent-right0
+{
+  padding-left: 15px;
+  padding-right:0;
+}
+.earnpt-block-parent-left0-right0
+{
+  padding-left: 15px;
+  padding-right:15px;
+}
+.earnpt-block-parent .earnpt-block-child
+{
+    margin-top: 40px;
+    margin-bottom: 0px;
+}
+
+.earnpt-block-parent .earnpt-block-child .earn-more-image
+{
+  width:100%;
+  height:435px;
+}
+
+.earnpt-block-parent .earnpt-block-child .earn-more-details
+{
+  padding: 30px;
+  height: 200px;
+}
+.earnpt-block-parent .earnpt-block-child .earn-more-details h5.earn-more-details-title
+{
+  font-size: 14px;
+  font-weight: 600;
+  margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 1.1;
+    color: #ffffff;
+    text-transform: capitalize;
+}
+.earnpt-block-parent .earnpt-block-child .earn-more-details p.earn-more-details-p
+{
+  font-size: 14px;
+  font-weight: 400;
+    margin-bottom: 10px;
+    line-height: 1.42857143;
+    color: #ffffff;
+    height: 60px;
+}
+.earnpt-block-parent .earnpt-block-child .earn-more-details .btn-earn-points
+{
+  width: 242px;
+  padding: 15px 40px;
+    font-size: 12px;
+    font-weight: 700;
+    border-radius: 0;
+    border: none;
+    text-decoration: none;
+    background-color: #037DC2;
+    color:#fff;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+/* earn points css */
+/* .rewards-block-parent.pts-container
+{
+  background-color: #FFF;
+} */
+.rewards-block-parent .points-activity-row, 
+.rewards-block-parent .points-activity-headers {
+  padding: 15px 50px;
+}
+.rewards-block-parent .points-activity-headers {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 16px;
+}
+.rewards-block-parent .points-activity-row
+{
+  font-size: 14px;
+}
+.rewards-block-parent .points-activity-row.row-odd
+{
+  background-color: #000000;
+  color: white !important;
+}
+.rewards-block-parent .points-activity-row.row-even
+{
+  background-color: #000000;
+  color: white !important;
+}
+
+
+
+
+
+
+
+/*fc points css*/
+
+
+/*fc points css*/
+@media only screen and (max-width: 767px) {
+  .rewards-block-parent .rewards-block-child .reward-column .reward-image {
+    height: 50%;
+}
+.rewards-block-parent .rewards-block-child .reward-column {
+  
+  height: 190px;
+}
+.rewards-block-parent .rewards-block-child .reward-column .reward-details {
+  padding: 10px;
+}
+.rewards-block-parent .rewards-block-child .reward-column .reward-details .reward-details-heading {
+  font-size: 12px;margin-bottom: 5px;
+}
+.rewards-block-parent .rewards-block-child .reward-column .reward-details .reward-details-subheading {
+ 
+  font-size: 10px;
+  margin-bottom: 5px;
+}
+
+
+/* earn points css */
+.earn-more-column
+{
+  margin-bottom: 30px;
+}
+
+.earnpt-block-parent-left0,
+.earnpt-block-parent-right0,
+.earnpt-block-parent-left0-right0
+{
+  padding-left: 15px;
+  padding-right:15px;
+}
+
+.earnpt-block-parent .earnpt-block-child .earn-more-details {
+ 
+  height: 200px;
+  padding: 15px;
+  border: 1px solid #000;
+}
+.earnpt-block-parent .earnpt-block-child .earn-more-details h5.earn-more-details-title {
+  font-size: 14px;
+}
+.earnpt-block-parent .earnpt-block-child .earn-more-details p.earn-more-details-p {
+  font-size: 14px;
+}
+.earnpt-block-parent .earnpt-block-child .earn-more-details .btn-earn-points {
+  width: 242px;
+  padding: 15px 40px;
+}
+/* earn points css */
+
+
+
+.rewards-block-parent .points-activity-row, 
+.rewards-block-parent .points-activity-headers {
+  padding: 15px 15px;
+}
+.rewards-block-parent .points-activity-headers,
+.rewards-block-parent .points-activity-row 
+{
+  font-size: 13px;
+}
+
+
+
+
+}
+
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (orientation: landscape) {
+
+  .rewards-block-parent .rewards-block-child .reward-column .reward-image {
+    height: 50%;
+}
+.rewards-block-parent .rewards-block-child .reward-column {
+  
+  height: 190px;
+}
+.rewards-block-parent .rewards-block-child .reward-column .reward-details {
+  padding: 10px;
+}
+.rewards-block-parent .rewards-block-child .reward-column .reward-details .reward-details-heading {
+  font-size: 12px;margin-bottom: 5px;
+}
+.rewards-block-parent .rewards-block-child .reward-column .reward-details .reward-details-subheading {
+ 
+  font-size: 10px;
+  margin-bottom: 5px;
+}
+
+/* earn points css */
+.earn-more-column
+{
+  margin-bottom: 30px;
+}
+
+.earnpt-block-parent-left0,
+.earnpt-block-parent-right0,
+.earnpt-block-parent-left0-right0
+{
+  padding-left: 15px;
+  padding-right:15px;
+}
+
+.earnpt-block-parent .earnpt-block-child .earn-more-details {
+ 
+  height: 200px;
+  padding: 15px;
+  border: 1px solid #000;
+}
+.earnpt-block-parent .earnpt-block-child .earn-more-details h5.earn-more-details-title {
+  font-size: 14px;
+}
+.earnpt-block-parent .earnpt-block-child .earn-more-details p.earn-more-details-p {
+  font-size: 14px;
+}
+.earnpt-block-parent .earnpt-block-child .earn-more-details .btn-earn-points {
+  width: 242px;
+  padding: 15px 40px;
+}
+/* earn points css */
+
+.rewards-block-parent .points-activity-row, 
+.rewards-block-parent .points-activity-headers {
+  padding: 15px 15px;
+}
+.rewards-block-parent .points-activity-headers,
+.rewards-block-parent .points-activity-row 
+{
+  font-size: 13px;
+}
+}
+
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  
+  .rewards-block-parent .rewards-block-child .reward-column .reward-image {
+    height: 62%;
+}
+.rewards-block-parent .rewards-block-child .reward-column {
+  
+  height: 230px;
+}
+.rewards-block-parent .rewards-block-child .reward-column .reward-details {
+  padding: 10px;
+}
+.rewards-block-parent .rewards-block-child .reward-column .reward-details .reward-details-heading {
+  font-size: 12px;margin-bottom: 5px;
+}
+.rewards-block-parent .rewards-block-child .reward-column .reward-details .reward-details-subheading {
+ 
+  font-size: 10px;
+  margin-bottom: 5px;
+}
+
+
+/* earn points css */
+.earn-more-column
+{
+  margin-bottom: 30px;
+}
+
+.earnpt-block-parent-left0
+{
+  padding-left:15px;
+  padding-right:15px;
+}
+.earnpt-block-parent-right0
+{
+  padding-left: 15px;
+  padding-right:15px;
+}
+.earnpt-block-parent-left0-right0
+{
+  padding-left: 15px;
+  padding-right:15px;
+}
+
+.earnpt-block-parent .earnpt-block-child .earn-more-details {
+ 
+  height: 200px;
+  padding: 15px;
+  border: 1px solid #000;
+}
+.earnpt-block-parent .earnpt-block-child .earn-more-details h5.earn-more-details-title {
+  font-size: 14px;
+}
+.earnpt-block-parent .earnpt-block-child .earn-more-details p.earn-more-details-p {
+  font-size: 14px;
+}
+.earnpt-block-parent .earnpt-block-child .earn-more-details .btn-earn-points {
+  width: 242px;
+  padding: 15px 40px;
+}
+.earnpt-block-parent .earnpt-block-child .earn-more-image {
+  width: 100%;
+  height: 345px;
+}
+/* earn points css */
+
+
+
+.rewards-block-parent .points-activity-row, 
+.rewards-block-parent .points-activity-headers {
+  padding: 15px 20px;
+}
+.rewards-block-parent .points-activity-headers,
+.rewards-block-parent .points-activity-row 
+{
+  font-size: 13px;
+}
+
+
+
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+
+  
+  .rewards-block-parent .rewards-block-child .reward-column .reward-image {
+    height: 62%;
+}
+.rewards-block-parent .rewards-block-child .reward-column {
+  
+  height: 280px;
+}
+.rewards-block-parent .rewards-block-child .reward-column .reward-details {
+  padding: 20px;
+}
+.rewards-block-parent .rewards-block-child .reward-column .reward-details .reward-details-heading {
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+.rewards-block-parent .rewards-block-child .reward-column .reward-details .reward-details-subheading {
+ 
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+
+/* earn points css */
+.earn-more-column
+{
+  margin-bottom: 30px;
+}
+
+.earnpt-block-parent-left0
+{
+  padding-left:0;
+  padding-right:15px;
+}
+.earnpt-block-parent-right0
+{
+  padding-left: 15px;
+  padding-right:0;
+}
+.earnpt-block-parent-left0-right0
+{
+  padding-left: 15px;
+  padding-right:15px;
+}
+
+.earnpt-block-parent .earnpt-block-child .earn-more-details {
+ 
+  height: 200px;
+  padding: 15px;
+  border: none;
+}
+.earnpt-block-parent .earnpt-block-child .earn-more-details h5.earn-more-details-title {
+  font-size: 14px;
+}
+.earnpt-block-parent .earnpt-block-child .earn-more-details p.earn-more-details-p {
+  font-size: 14px;
+}
+.earnpt-block-parent .earnpt-block-child .earn-more-details .btn-earn-points {
+  width: 242px;
+  padding: 15px 40px;
+}
+.earnpt-block-parent .earnpt-block-child .earn-more-image {
+  width: 100%;
+  height: 345px;
+}
+/* earn points css */
+
+.rewards-block-parent .points-activity-row, 
+.rewards-block-parent .points-activity-headers {
+  padding: 15px 50px;
+}
+.rewards-block-parent .points-activity-headers,
+.rewards-block-parent .points-activity-row 
+{
+  font-size: 14px;
+}
+
+
+}
+
+
+
+

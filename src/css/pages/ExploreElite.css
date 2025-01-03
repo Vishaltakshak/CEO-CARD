@@ -1,0 +1,88 @@
+.explore-elite-con{
+    height: auto;
+    padding: 4% 0 4% 0;
+    width: 100%;
+}
+.explore-elite-parent{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.flex-col{
+    flex-direction: column;
+}
+.flex-col h2{
+    color: white;
+    font-weight: 600;
+    font-size: 2rem;
+}
+.flex-col h5{
+    color: white;
+}
+.Hero-con-img{
+    background-image: url(../../../public/assets/img/explore-elite-hero.png);
+    height: 65vh;
+    width: 70vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+.Explore-elite-text-con{
+    height: auto;
+    width: 70vw;
+    margin-top: 4%;
+    background-color: #d9d9d9;
+    padding: 2% 2% 2% 1%;
+
+}
+.Explore-elite-text-con h2{
+    color: black;
+    font-size: 1.5rem;
+}
+.Explore-elite-text-con li{
+    color: black;
+    text-align: left;
+}
+@media only screen and (max-width: 2500px){
+    .Explore-elite-text-con{
+        margin:5%;
+        
+    }
+    .Hero-con-img{
+        height: 55vh;
+        width: 68vw;
+    }
+  }
+  @media only screen  and (min-width:800px) and (max-width: 1000px){
+    
+    .Hero-con-img{
+        height: 25vh;
+       
+    }
+  }
+
+  @media only screen  and (min-width:500px) and (max-width: 800px){
+    .Explore-elite-text-con{
+        margin:3%;
+        width:90vw;
+    }
+    
+    .Hero-con-img{
+        height: 30vh;
+        width: 100%;
+       
+    }
+  }
+  
+  @media only screen  and (min-width:300px) and (max-width: 500px){
+    .Explore-elite-text-con{
+        margin:0;
+        width:90vw;
+    }
+    
+    .Hero-con-img{
+        height: 15vh;
+        width: 100%;
+       
+    }
+  }

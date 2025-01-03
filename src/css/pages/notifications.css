@@ -1,0 +1,420 @@
+.notify-container
+{
+    padding-top:50px;
+    padding-bottom:50px;
+}
+
+.notify-container .notify-nav
+{
+    margin-bottom: 50px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+
+.notify-container .notify-nav .nav-item .nav-link, 
+.notify-container .notify-nav .nav-item .nav-link:focus, 
+.notify-container .notify-nav .nav-item .nav-link:hover {
+    border-top: none ;
+    border-right: none ;
+    border-left: none ;
+    background-color: transparent ;
+    padding: 15px 45px 15px 45px ;
+    color: #000;
+    cursor: default;
+    background-color: #fff;
+    border-bottom-color: transparent;
+}
+.notify-container .notify-nav .nav-item .nav-link.active {
+    border-bottom: 3px solid #000;
+    color:#555;
+}
+
+.notify-container .notify-nav .nav-item .nav-link:hover {
+    border-bottom:3px solid #d1cfcf;
+}
+.notify-container .notify-nav .nav-item .nav-link.active:hover {
+    border-bottom:3px solid #000;
+}
+.notify-container .notify-nav .nav-item .nav-link h5
+{
+    font-weight: 600;
+    font-size: 14px;
+    margin-top:10px;
+    margin-bottom:10px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.notify-accordian .notify-accordian-item 
+{
+    border: 1px solid #979797;
+    border-bottom:none;
+    padding:20px 30px;
+    border-radius: 0;
+}
+.notify-accordian .notify-accordian-item:last-child
+{
+    border-bottom: 1px solid #979797;
+}
+.notify-accordian .notify-accordian-item .accordion-button 
+{
+    font-size: 12px;
+    /* padding: 20px; */
+    padding:0;
+    text-transform: capitalize;
+    background-color: #FFF;
+    /* border: 1px solid #979797; */
+    cursor: pointer;
+    position: relative;
+    border-radius: 0;
+    display:block;
+}
+.notify-accordian .notify-accordian-item .accordion-button:focus{
+    box-shadow: none;
+}
+.notify-accordian .notify-accordian-item .accordion-button .div1
+{
+
+    font-weight: 600;
+}
+.notify-accordian .notify-accordian-item .accordion-button  .notify-float-right
+{
+    position: absolute;
+    top: auto;
+    bottom: auto;
+    left: auto;
+    padding-right:0;
+    right: 0;
+    background-color: #FFF;
+    z-index: 10;
+}
+.notify-accordian .notify-accordian-item .accordion-button  .notify-dt
+{
+    font-size:12px;
+    font-weight:400;
+    color:#686868;
+    text-align:right;
+    padding-right:0px;
+}
+.notify-accordian .notify-accordian-item .accordion-button  .notify-option
+{
+   
+    display:none;
+}
+.accordion-item>.accordion-header .accordion-button:hover  .notify-option
+{
+    display:block;
+
+}
+.accordion-item>.accordion-header .accordion-button:hover  .notify-dt
+{
+    display:none;
+}
+.notify-accordian .notify-accordian-item .accordion-button  .notify-option p.star-link
+{
+    font-size:14px;
+    font-weight:400;
+    color:#000;
+    margin-bottom:5px;
+    padding-left:50px;
+}
+
+.notify-accordian .notify-accordian-item .accordion-button .div2
+{
+    margin-top:20px;
+}
+.notify-accordian .notify-accordian-item .accordion-button .div2 p
+{
+    font-size:12px;
+    font-weight:400;
+    margin-bottom:0;
+    color:#686868;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+}
+
+
+.notify-accordian .notify-accordian-item .accordion-body
+{
+    padding: 0;
+    font-size: 14px;
+    /* border-top: 1px solid #787676; */
+    padding-top: 30px;
+}
+
+
+/* 
+.notify-accordian .notify-accordian-item .accordion-button:hover 
+{
+
+} */
+
+.notify-accordian .notify-accord-btn:not(.collapsed) 
+{
+    box-shadow: none;
+    border-bottom:1px solid #979797;
+}
+.notify-accordian .notify-accord-btn:not(.collapsed)  .notify-option
+{
+    display:block !important;
+}
+.notify-accordian .notify-accord-btn:not(.collapsed)  .notify-option p.star-link
+{
+    padding-left:0 !important;
+    display: inline-block;
+    margin-bottom: 0 !important;
+    margin-left:8px;
+}
+
+.notify-accordian .notify-accord-btn:not(.collapsed)  .star-link span
+{
+    display:none;
+}
+.notify-accordian .notify-accord-btn:not(.collapsed)  .notify-float-right
+{
+    display:inline-flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.notify-accordian .notify-accord-btn:not(.collapsed)  .div2
+{
+display:none;
+}
+.notify-accordian .notify-accord-btn:not(.collapsed)  .div1
+{
+padding-bottom:25px;
+}
+.notify-accordian .notify-accord-btn:not(.collapsed):hover .notify-dt
+{
+    display: block !important;
+}
+
+.notify-accordian .new-message-indication
+{
+    height: 10px;
+    width: 10px;
+    background-color: #295d6c;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    top: 3px;
+    left: -12px;
+}
+
+.notify-accordian .notify-accordian-item .accordion-button .div1,
+.notify-accordian .notify-accordian-item .accordion-button .div2
+{
+    padding-left:15px;
+    padding-right:15px;
+}
+.notify-accordian .notify-accordian-item .accordion-body
+{
+    padding-left:30px;
+    padding-right:30px;
+}
+
+
+
+
+
+@media only screen and (max-width: 767px) {
+   
+
+    .notify-container .notify-nav .nav-item .nav-link, 
+    .notify-container .notify-nav .nav-item .nav-link:focus, 
+    .notify-container .notify-nav .nav-item .nav-link:hover {
+        padding: 0 15px;
+    }
+    .notify-container .notify-nav .nav-item .nav-link h5 {
+        font-size: 14px;
+        }
+        .notify-container .notify-nav {
+            margin-bottom: 30px;
+        }
+
+        .notify-accordian .notify-accordian-item {
+            padding: 10px 20px;
+        }
+        .notify-accordian .notify-accordian-item .accordion-button {
+            font-size: 12px;
+        }
+        .notify-accordian .notify-accordian-item .accordion-button .div2 p {
+            font-size: 12px;
+        }
+        .accordion-item>.accordion-header .accordion-button:hover .notify-option {
+            display: none;
+        }
+        .accordion-item>.accordion-header .accordion-button:hover .notify-dt {
+            display: block;
+        }
+
+        .notify-accordian .notify-accordian-item .accordion-button .div1,
+        .notify-accordian .notify-accordian-item .accordion-button .div2
+        {
+            padding-left:15px;
+            padding-right:15px;
+        }
+        .notify-accordian .notify-accordian-item .accordion-body
+        {
+            padding-left:15px;
+            padding-right:15px;
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (orientation: landscape) {
+    .notify-container .notify-nav .nav-item .nav-link, 
+    .notify-container .notify-nav .nav-item .nav-link:focus, 
+    .notify-container .notify-nav .nav-item .nav-link:hover {
+        padding: 0 15px;
+    }
+    .notify-container .notify-nav .nav-item .nav-link h5 {
+        font-size: 14px;
+        }
+        .notify-container .notify-nav {
+            margin-bottom: 30px;
+        }
+
+        .notify-accordian .notify-accordian-item {
+            padding: 10px 20px;
+        }
+        .notify-accordian .notify-accordian-item .accordion-button {
+            font-size: 12px;
+        }
+        .notify-accordian .notify-accordian-item .accordion-button .div2 p {
+            font-size: 12px;
+        }
+        .accordion-item>.accordion-header .accordion-button:hover .notify-option {
+            display: none;
+        }
+        .accordion-item>.accordion-header .accordion-button:hover .notify-dt {
+            display: block;
+        }
+
+        .notify-accordian .notify-accordian-item .accordion-button .div1,
+        .notify-accordian .notify-accordian-item .accordion-button .div2
+        {
+            padding-left:15px;
+            padding-right:15px;
+        }
+        .notify-accordian .notify-accordian-item .accordion-body
+        {
+            padding-left:15px;
+            padding-right:15px;
+        }
+
+
+
+
+
+}
+
+
+@media (max-width: 1024px) and (min-width: 768px) 
+{
+    .notify-container .notify-nav .nav-item .nav-link, 
+    .notify-container .notify-nav .nav-item .nav-link:focus, 
+    .notify-container .notify-nav .nav-item .nav-link:hover {
+        padding: 0 15px;
+    }
+    .notify-container .notify-nav .nav-item .nav-link h5 {
+        font-size: 14px;
+        }
+        .notify-container .notify-nav {
+            margin-bottom: 30px;
+        }
+
+        .notify-accordian .notify-accordian-item {
+            padding: 10px 30px;
+        }
+        .notify-accordian .notify-accordian-item .accordion-button {
+            font-size: 12px;
+        }
+        .notify-accordian .notify-accordian-item .accordion-button .div2 p {
+            font-size: 12px;
+        }
+        .accordion-item>.accordion-header .accordion-button:hover .notify-option {
+            display: none;
+        }
+        .accordion-item>.accordion-header .accordion-button:hover .notify-dt {
+            display: block;
+        }
+        .notify-accordian .notify-accordian-item .accordion-button .div1,
+.notify-accordian .notify-accordian-item .accordion-button .div2
+{
+    padding-left:15px;
+    padding-right:15px;
+}
+.notify-accordian .notify-accordian-item .accordion-body
+{
+    padding-left:15px;
+    padding-right:15px;
+}
+   
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) 
+{
+
+
+    .notify-container .notify-nav .nav-item .nav-link, 
+    .notify-container .notify-nav .nav-item .nav-link:focus, 
+    .notify-container .notify-nav .nav-item .nav-link:hover {
+        padding:15px 20px;
+    }
+    .notify-container .notify-nav .nav-item .nav-link h5 {
+        font-size: 14px;
+        }
+        .notify-container .notify-nav {
+            margin-bottom: 50px;
+        }
+
+        .notify-accordian .notify-accordian-item {
+            padding: 15px 30px;
+        }
+        .notify-accordian .notify-accordian-item .accordion-button {
+            font-size: 14px;
+        }
+        .notify-accordian .notify-accordian-item .accordion-button .div2 p {
+            font-size: 14px;
+        }
+        .accordion-item>.accordion-header .accordion-button:hover .notify-option {
+            display: none;
+        }
+        .accordion-item>.accordion-header .accordion-button:hover .notify-dt {
+            display: block;
+        }
+        .notify-accordian .notify-accordian-item .accordion-button .div1,
+        .notify-accordian .notify-accordian-item .accordion-button .div2
+        {
+            padding-left:15px;
+            padding-right:15px;
+        }
+        .notify-accordian .notify-accordian-item .accordion-body
+        {
+            padding-left:30px;
+            padding-right:30px;
+        }
+
+}

@@ -1,0 +1,169 @@
+/* body {
+	font-family: 'Montserrat', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	font-family: 'Montserrat', sans-serif !important;
+} */
+.top-spacing {
+	margin-top: 52px;
+	background-image: url(../../public/assets/img/beforelogin-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.login-container a {
+
+	color: #464646;
+	text-decoration: none;
+}
+
+.login-container {
+	margin-bottom: 5%;
+	margin-top: 6.5%;
+	height: auto;
+	max-height: 75vh;
+	width: 60vw;
+	/* background-color: rgba(255, 255, 255, 0.8); */
+	text-align: center;
+	padding-top: 70px;
+	padding-bottom: 70px;
+	border-radius: 20px;
+}
+
+.login-container .welcome-text {
+	font-size: 28px;
+	font-weight: 700;
+	color: black;
+	text-transform: capitalize;
+}
+
+.login-container .welcome-subtext {
+	font-size: 20px;
+	font-weight: normal;
+	margin: 10px 0 15px 10px;
+	color: #000;
+	text-transform: inherit;
+}
+
+.login-container .login-form .form-group {
+	margin-bottom: 5px;
+	color: black;
+}
+
+.login-container .login-form .form-group input.form-control {
+	font-size: 16px;
+	border-radius: 4px;
+	height: 46px;
+	padding: 10px 16px;
+	color: #333;
+	border: 1px solid #ccc;
+}
+
+.login-container .login-form .form-group input.form-control:focus {
+	border-color: #66afe9;
+	outline: 0;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(102, 175, 233, .6);
+}
+
+
+.login-container .login-form .btn-signin {
+	font-size: 16px;
+	text-transform: capitalize;
+	color: #fff;
+	border-radius: 4px;
+	margin-top: 15px;
+}
+
+.login-container .login-form .btn-signin a {
+	color: #fff;
+}
+
+.login-container .trouble-text {
+	font-size: 14px;
+}
+
+.text-left-align {
+	text-align: left;
+}
+
+.text-right-align {
+	text-align: right;
+}
+
+.flash-danger {
+	background-color: #C0232B;
+	border-color: #C0232B;
+	margin-bottom: 0;
+}
+
+.flash {
+	border-radius: 0;
+	color: #FFF;
+	padding: 15px;
+	margin-bottom: 20px;
+	border: 1px solid transparent;
+}
+
+@media only screen and (max-width: 767px) {
+
+
+	.login-container {
+		padding-top: 40px;
+		padding-bottom: 80px;
+	}
+
+	.login-container .welcome-text {
+		font-size: 22px;
+	}
+
+	.login-container .welcome-subtext {
+		font-size: 18px;
+	}
+
+	.login-container .trouble-text {
+		font-size: 12px;
+	}
+
+
+
+
+
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (orientation: landscape) {
+
+	.login-container {
+		padding-top: 40px;
+		padding-bottom: 80px;
+	}
+
+	.login-container .welcome-text {
+		font-size: 22px;
+	}
+
+	.login-container .welcome-subtext {
+		font-size: 18px;
+	}
+
+	.login-container .trouble-text {
+		font-size: 12px;
+	}
+
+
+}
+
+
+@media (max-width: 1024px) and (min-width: 768px) {}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {}

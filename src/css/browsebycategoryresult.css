@@ -1,0 +1,109 @@
+
+.browse-category-result
+{
+    padding-top:40px;
+    padding-bottom:40px;
+}
+
+.categorization-results
+{
+    padding-left:30px;
+    padding-right:30px;
+    overflow: hidden;
+}
+.categorization-results.result-fullscreen
+{
+    width:100%;
+}
+.categorization-results .result-title
+{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color:#ffffff;
+    text-transform: capitalize;
+}
+.categorization-results .result-title a{
+    color: #fff;
+
+}
+.categorization-results .select-category-option
+{
+    background-color: #fff;
+    padding: 10px 5px;
+    border-radius: 0;
+    font-size:14px;
+}
+.categorization-results .select-float-right
+{
+    text-align:right;
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 767px) 
+{
+  
+
+    .categorization-results {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .categorization-results .result-title {
+        font-size: 16px;
+    }
+    .categorization-results .select-category-option {
+        font-size: 12px;
+    }
+
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (orientation: landscape) 
+{
+ 
+    .categorization-results {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .categorization-results .result-title {
+        font-size: 16px;
+    }
+    .categorization-results .select-category-option {
+        font-size: 12px;
+    }
+
+}
+
+@media (max-width: 1024px) and (min-width: 768px) 
+{
+  
+    .categorization-results {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .categorization-results .result-title {
+        font-size: 16px;
+    }
+    .categorization-results .select-category-option {
+        font-size: 12px;
+    }
+
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) 
+{
+    .categorization-results {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .categorization-results .result-title {
+        font-size: 16px;
+    }
+    .categorization-results .select-category-option {
+        font-size: 12px;
+    }
+}

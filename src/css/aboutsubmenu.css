@@ -1,0 +1,31 @@
+.submenu-container
+{
+  padding-top:30px;
+  padding-bottom:30px;
+}
+.about-submenu
+{
+  text-align:left;
+}
+.about-submenu .about-submenu-desc p
+{
+  font-size:14px;
+  margin-bottom: 10px;
+  color:#000;
+  line-height: 1.42857143;
+}
+@media only screen and (max-width: 767px) {
+  
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 767px) and (orientation: landscape) {
+ 
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+  
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  
+}

@@ -9,10 +9,10 @@ module.exports = {
         xs: "345px", // Custom screen size for 345px
       },
       backgroundImage: {
-        clouds: "url('/assets/img/Home/clouds.jpg')",
-        about: "url('/assets/img/About/aboutus.jpg')",
-        enquiry: "url('/assets/img/Enquiry/enquiry.jpg')",
-        signin: "url('/assets/img/signup/signin.jpg')",
+        clouds: "url('/public/assets/img/Home/clouds.jpg')",
+          about: "url('/public/assets/img/About/aboutus.jpg')",
+          enquiry: "url('/public/assets/img/Enquiry/enquiry.jpg')",
+          signin: "url('/public/assets/img/signup/signin.jpg')",
       },
     },
   },

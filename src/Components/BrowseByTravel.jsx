@@ -51,7 +51,7 @@ const TravelResults = ({ travelData = [] }) => {
                     <div className="d-flex">
                         {/* Sidebar */}
                         {isSidebarVisible && (
-                            <div className="sidebar">
+                            <div className="sidebar" style={{display:"none"}}>
                                 <button onClick={handleSidebarToggle}>Close Sidebar</button>
                                 <h4>Categories</h4>
                                 <ul>
@@ -68,35 +68,35 @@ const TravelResults = ({ travelData = [] }) => {
 
                         {/* Results */}
                         <div className="results">
-                            <div className="d-flex justify-content-between">
+                            {/* <div className="d-flex justify-content-between">
                                 {!isSidebarVisible && (
                                     <button onClick={handleSidebarToggle}>Show Sidebar</button>
                                 )}
-                            </div>
+                            </div> */}
                             <div className="result-grid">
                             <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-2 member-benefit-block-popular flex " >
-                {data.map((data, i) => (
-                    <div >
-                        <a href="/SubMenu">
-                            <div className="benefit-image-wrapper">
+                                     {data.map((data, i) => (
+                                <div >
+                                     <a href="/SubMenu">
+                                         <div className="benefit-image-wrapper">
                                 
-                                <img  alt={data.ContentTitle} className="primary-image" src={data.VendorImages}></img>
+                                         <img  alt={data.ContentTitle} className="primary-image" src={data.VendorImages}></img>
 
-                            </div>
-                        </a>
-                        <div>
+                                        </div>
+                                     </a>
+                                <div>
 
-                            <div className="benefit-title-container col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-6" style={{width:"100%"}} key={i}>
+                                <div className="benefit-title-container col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-6" style={{width:"100%"}} key={i}>
                                 <a href="/SubMenu" class="link-no-underline">
                                     <h5 style={{color:"white", fontWeight:"bold"}} className="no-translation">{data.VendorName}</h5>
                                 </a>
-                            </div>
-                            <div className="benefit-description-container col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-6" style={{overflow:"hidden", fontSize:"12px", maxHeight:"60px", width:"100%"}}>
+                                </div>
+                                <div className="benefit-description-container col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-6" style={{overflow:"hidden", fontSize:"12px", maxHeight:"60px", width:"100%"}}>
                                 {data.VendorDescription}
-                            </div>
-                        </div >
-                    </div>
-                ))}
+                                </div>
+                             </div >
+                                 </div>
+                                  ))}
             </div>
                             </div>
                         </div>

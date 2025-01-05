@@ -17,7 +17,7 @@ const BrowseByCategory = () => {
 			<BrowseByCategoryDetails></BrowseByCategoryDetails>
 			<ScrollTotop></ScrollTotop>
 			{/* <AfterLoginFooter></AfterLoginFooter> */}
-			<PopularBenefitsList/>
+			{/* <PopularBenefitsList/> */}
 			</AfterLoginLayout>
 		</>
 	);

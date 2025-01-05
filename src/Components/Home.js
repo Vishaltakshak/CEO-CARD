@@ -23,7 +23,7 @@ const Home = () => {
       <>
         <BeforLoginHeader />
        <HomeVideo/>
-        <ScrollToDivArrow />
+        {/* <ScrollToDivArrow /> */}
         <AboutCeoCard />
 
         <MembershipVipTravel />

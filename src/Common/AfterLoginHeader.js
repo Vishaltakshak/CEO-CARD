@@ -221,6 +221,7 @@ const AfterLoginHeader = ({ allMenu, service }) => {
             <div
               className="collapse navbar-collapse afterlogin-navbar-collapse"
               id="navbarTogglerDemo01"
+              style={{visibility:"visible"}}
             >
               <ul className="navbar-nav beforelogin-navbar mx-auto mb-2 mb-lg-0">
                 {Object.entries(groupedMenu).map(([category, items]) => (
@@ -246,13 +247,7 @@ const AfterLoginHeader = ({ allMenu, service }) => {
                                         {item.SubCategoryName}
                                       </Link>
                                     </h6>
-                                    {/* <div className="megamenu-heading-links">
-                                      <p className="megamenu-p">
-                                        <Link to="/SubMenu" state={{ service: item }}>
-                                          {item.SubCategoryTitle}
-                                        </Link>
-                                      </p>
-                                    </div> */}
+                                    
 
                                     <div className="megamenu-heading-links">
 
@@ -265,20 +260,7 @@ const AfterLoginHeader = ({ allMenu, service }) => {
                                 ))}
                               </div>
 
-                                    {/* <div className="megamenu-heading-links">
-                                          {service.map(
-                                            (service) => (
-                                              <p className="megamenu-p">
-                                                <Link
-                                                  to={"/SubMenu"}
-                                                  state={{ service }}
-                                                >
-                                                  {service.ProviderName}
-                                                </Link>
-                                              </p>
-                                            )
-                                          )}
-                                        </div> */}
+                                  
                                   </div>
                                 </div>
                               ))}
@@ -321,15 +303,23 @@ const AfterLoginHeader = ({ allMenu, service }) => {
                     </div>
                   </li>
                 ))}
-                <li className="nav-item">
+                <li className="nav-item sm:hidden md:block  ">
                   <a className="nav-link" href="/Community">
                     <strong>community</strong>
                   </a>
                 </li>
-                <li className="nav-item">
+                <li className="nav-item sm:hidden md:block lg:block">
                   <a className="nav-link" href="/allbenifits">
                     <strong>all benefits</strong>
                   </a>
+                </li>
+                <li className="nav-item pl-4 md:hidden">
+                  <button className="nav-link text-white" onClick={logout}>
+                  {/* <a className="nav-link" href="/"> */}
+                
+                    <strong>LOG OUT</strong>
+                    </button>
+                  
                 </li>
                 <li className="nav-item">
                   <div className="d-xl-block d-lg-block d-md-none d-sm-none d-none">
@@ -387,7 +377,6 @@ const AfterLoginHeader = ({ allMenu, service }) => {
 };
 
 export default AfterLoginHeader;
-
 
 
 

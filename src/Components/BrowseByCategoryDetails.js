@@ -26,7 +26,7 @@ const BrowseByCategoryDetails = () => {
 		<>
 			<div className="container-fluid pe-0 ps-0 browse-category-result">
 				{/* filters only visible for mobile  */}
-				<div className="d-xxl-none d-xl-none d-lg-none d-md-block d-sm-block d-block">
+				<div className="d-xxl-none d-xl-none d-lg-none d-md-block d-sm-none hidden">
 					<div className="col-xl-12">
 						<div className="filter-select-box">
 							<div className="row">

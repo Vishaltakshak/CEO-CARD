@@ -10,41 +10,9 @@ const Image2 = "././assets/img/Home/luxuryHotel.jpg";
 const Image3 = "././assets/img/Home/businessSolutions.jpg";
 const MembershipVipTravel = () => {
   return (
-    // <>
-    //   <div
-    //     id="one"
-    //     className="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 membership-block bg-white"
-    //   >
-    //     <div className="row align-items-center justify-content-center bg-D9D9D9 border-radius">
-    //       {/* <MembershipDetails></MembershipDetails> */}
-    //       <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12 membership-detail-child order-xxl-1 order-lg-1 order-md-2 order-sm-2 order-2">
-    //         <h1 className="membership-title">VIP Travel Privileges</h1>
-    //         <p className="membership-para">
-    //           CEO Card partners with leading airlines, loyalty programs, car
-    //           rental companies and innovative travel brands to provide Members
-    //           with:
-    //         </p>
-    //         <ul className="membership-list">
-    //           <li>Seamless priority check-in</li>
-    //           <li>Unmatched travel savings</li>
-    //           <li>Global travel adventures</li>
-    //           <li>Complimentary travel membership</li>
-    //           <li>Enhanced travel value</li>
-    //           <li>Premium customer service</li>
-    //           <li>Elite status elevation</li>
-    //         </ul>
-    //         <p className="membership-para">
-    //           <strong>Partners include:</strong> United Airlines, Virgin
-    //           Atlantic, Singapore Airlines, Avis and more...
-    //         </p>
-    //         <HomeButton buttontext={"preview membership"}></HomeButton>
-    //       </div>
-    //       <MembershipImage membershipimg={Image}></MembershipImage>
-    //     </div>
-    //   </div>
-    // </>
+   
     <div
-      className=" bg-gradient-to-r from-[#F8F8F8] from-20% via-[#FEFEFE] via-[50%] to-[#D9D9D9] to-100% p-8 pt-[10rem]"
+      className=" bg-gradient-to-r from-[#F8F8F8] from-20% via-[#FEFEFE] via-[50%] to-[#D9D9D9] to-100% p-4 pt-[10rem]"
       id="one"
     >
       {/* Grid container: 2 sections in one line, last section below */}
@@ -147,7 +115,7 @@ const MembershipVipTravel = () => {
 
 
 
-	  <div className=" bg-gradient-to-r from-[#F8F8F8] from-20% via-[#FEFEFE] via-[50%] to-[#D9D9D9] to-100% p-8 pt-[10rem]">
+	  <div className=" bg-gradient-to-r from-[#F8F8F8] from-20% via-[#FEFEFE] via-[50%] to-[#D9D9D9] to-100% p-1 pt-[10rem]">
 	  <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
         {/* First Section: VIP Travel Privileges */}
         <div className="bg-[#546166] p-6 rounded-lg flex items-center justify-center shadow-xl relative">

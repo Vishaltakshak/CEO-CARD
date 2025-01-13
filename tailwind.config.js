@@ -5,6 +5,22 @@ module.exports = {
   ],
   theme: {
     extend: {
+      animation:{
+        slide: "slide 5s cubic-bezier(0.87, 0.69, 0.35, 0.38) infinite"
+      },
+      keyframes: {
+        slide: {
+          '0%': { transform: 'translateY(-10%)' },  
+          '15%': { transform: 'translateY(-5%)' }, 
+          '35%': { transform: 'translateY(-3%)' }, 
+          '50%': { transform: 'translateY(0)' },   // Centered
+          '75%': { transform: 'translateY(5%)' }, 
+          '85%': { transform: 'translateY(7%)' }, 
+          '100%': { transform: 'translateY(15%)' }, 
+        },
+      },
+      
+      
       screens: {
         xs: "345px", // Custom screen size for 345px
       },

@@ -20,10 +20,10 @@ const Enquiry = () => {
       <BeforeLoginHeaderEnquiry
         HEADERBGCOLOR={HeaderbgColor}
       ></BeforeLoginHeaderEnquiry>
-      <div className="w-full h-[120vh] flex items-center justify-center bg-enquiry bg-cover bg-top bg-no-repeat relative">
+      <div className="w-full flex items-center justify-center bg-enquiry bg-cover bg-top bg-no-repeat relative">
         {/* Dark Overlay */}
         <div className="absolute top-0 left-0 w-full h-full bg-black opacity-60"></div>
-        <div className="flex z-[10] bg-[rgba(255,255,255,0.8)] p-12 rounded-xl">
+        <div className="flex z-[10] bg-[rgba(255,255,255,0.8)] p-1 rounded-xl m-8 w-[50%]">
           <div className="col-xl-12 col-12">
             <div className="inquire-form-container">
               <div className="text-center">
@@ -38,42 +38,72 @@ const Enquiry = () => {
                 </h1>
               </div>
               <form
-                className="flex flex-col gap-3 w-[40vw] mt-[2rem]"
+                className="flex items-start flex-col gap-3 ml-8  mt-[2rem]"
                 action="/"
               >
-                <div class="flex flex-col items-center justify-center">
+                <div class="flex flex-col items-start justify-center">
                   <label className="form-label">FULL NAME</label>
                   <input
-                    className="w-[70%] px-3 py-1 bg-transparent rounded-full border-1 border-black"
+                    className=" px-3 placeholder:text-black  p-2 text-center bg-transparent rounded-full border-1 border-black text-black  "
                     type="text"
-                    placeholder="Enter your Name"
+                    placeholder ="Enter your Name"
                   />
                 </div>
-                <div class="flex flex-col items-center justify-center">
+                <div class="flex flex-col items-start justify-center">
                   <label className="form-label">EMAIL ADDRESS</label>
                   <input
-                    className="w-[70%] px-3 py-1 bg-transparent rounded-full border-1 border-black"
+                    className=" placeholder:text-black px-3 p-2 text-center bg-transparent rounded-full border-1 border-black"
                     type="email"
                     placeholder="Enter your Email Address"
                   />
                 </div>
-                <div class="flex flex-col items-center justify-center">
+                <div class="flex flex-col items-start justify-center">
                   <label className="form-label">PROFESSIONAL TITLE</label>
                   <input
-                    className="w-[70%] px-3 py-1 bg-transparent rounded-full border-1 border-black"
+                    className=" px-3 p-2 text-center bg-transparent placeholder:text-black rounded-full border-1 border-black"
                     type="email"
                     placeholder="Enter your Title"
                   />
                 </div>
-                <div class="flex flex-col items-center justify-center">
+                <div class="flex flex-col items-start justify-center">
                   <label className="form-label">COMPANY</label>
                   <input
-                    className="w-[70%] px-3 py-1 bg-transparent rounded-full border-1 border-black"
+                    className=" px-3 p-2 text-center bg-transparent placeholder:text-black rounded-full border-1 border-black"
                     type="email"
                     placeholder="Enter your Company"
                   />
                 </div>
-                <div
+                <div class="flex flex-col items-start justify-center">
+                  <label className="form-label">PHONE</label>
+                  <input
+                    className=" px-3 p-2 text-center bg-transparent placeholder:text-black rounded-full border-1 border-black"
+                    type="Number"
+                    placeholder="Enter your Phone no"
+                  />
+                </div>
+                <div class="flex flex-col items-start justify-center">
+                  <label className="form-label">Referral</label>
+                  <input
+                    className=" px-3 p-2 text-center bg-transparent placeholder:text-black rounded-full border-1 border-black"
+                    type="text"
+                    placeholder="Enter Referral Code"
+                  />
+                </div>
+
+
+
+
+
+                {/* <div class="flex flex-col items-center justify-center">
+                  <label className="form-label">Referral</label>
+                  <input
+                    className=" px-3 py-1 bg-transparent placeholder:text-black rounded-full border-1 border-black"
+                    type="email"
+                    placeholder="Enter Referral Code
+                  />
+                </div> */}
+
+                {/* <div
                   className={
                     isViewreferral
                       ? "flex flex-col items-center justify-center d-none"
@@ -82,30 +112,20 @@ const Enquiry = () => {
                 >
                   <label className="form-label">REFERRAL CODE</label>
                   <input
-                    className="w-[70%] px-3 py-1 bg-transparent rounded-full border-1 border-black"
+                    className=" px-3 py-1 bg-transparent placeholder:text-black rounded-full border-1 border-black"
                     type="email"
                     placeholder="Referral Code..."
                   />
-                </div>
-                <div class="flex flex-col items-center justify-center">
-                  <button
-                    onClick={handleViewreferral}
-                    className={
-                      isViewreferral
-                        ? "btn btn-referal-link-a d-block"
-                        : "btn btn-referal-link-a d-none"
-                    }
-                    type="button"
-                  >
-                    Referral Code
-                  </button>
-                </div>
-                <div class="flex flex-col items-center justify-center btn-center-mobile">
+
+                
+                </div> */}
+                
+                <div class="flex flex-col  items-center justify-center btn-center-mobile">
                   <Link
-                    to="/MembershipFormSubmitted"
-                    class="btn btn-custombutton"
+                    to="/signupnew"
+                    class="btn btn-custombutton text-white bg-black"
                   >
-                    PREVIEW MEMBERSHIP
+                   SUBMIT
                   </Link>
                 </div>
               </form>

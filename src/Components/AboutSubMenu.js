@@ -12,12 +12,12 @@ const AboutSubMenu = ({service}) => {
 					<div className="row">
 						<div className="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12">
 							<SubmenuBadges></SubmenuBadges>
-							<SubmenuPageHeading mobhidetitle="mob-title-hidden" submenupagetopic={service.ContentTitle} submenupagesubtopic="" ></SubmenuPageHeading>
+							<SubmenuPageHeading mobhidetitle="mob-title-hidden" submenupagetopic={service.VendorName} submenupagesubtopic="" ></SubmenuPageHeading>
 							<br></br>
 							<div className="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 about-submenu-desc">
 								<div className="row">
 									<div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12" style={{height:"auto", filter:"invert(1)"}}>
-										<p>{service.ContentDescription}</p>
+										<p>{service.VendorDescription}</p>
 									</div>
 									<div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
 										<br></br>

@@ -19,7 +19,7 @@ const About_us = () => {
         <div className="w-full h-[80vh] flex items-center justify-center bg-about bg-cover bg-top bg-no-repeat relative">
           {/* Dark Overlay */}
           <div className="absolute top-0 left-0 w-full h-full bg-black opacity-70"></div>
-          <div className="w-[50%] flex flex-col items-center justify-center z-[10]">
+          <div className="w-[70%] lg:w-[50%] flex flex-col items-center justify-center z-[10]">
             <h1 className="redesign-about-hero-h1" style={{ color: "#fff" }}>
               The CEOCard Story
             </h1>

@@ -1,193 +1,195 @@
-import React from "react";
-import { useState } from "react";
-import { Link } from "react-router-dom";
-import OverlayTrigger from "react-bootstrap/OverlayTrigger";
-import Tooltip from "react-bootstrap/Tooltip";
-import SubmenuPageHeading from "./SubmenuPageHeading";
-import '../css/shareexperience.css';
+// import React from "react";
+// import { useState } from "react";
+// import { Link } from "react-router-dom";
+// import OverlayTrigger from "react-bootstrap/OverlayTrigger";
+// import Tooltip from "react-bootstrap/Tooltip";
+// import SubmenuPageHeading from "./SubmenuPageHeading";
+// import '../css/shareexperience.css';
 
 
-const ShareExperience = () => {
-	//use state for handle view more experience
-	const [isActive, setActive] = useState("false");
-	const handleViewmoreClick = () => {
-		setActive(!isActive);  
-	};
+// const ShareExperience = ({service}) => {
+// 	//use state for handle view more experience
+// 	const [isActive, setActive] = useState("false");
+// 	const handleViewmoreClick = () => {
+// 		setActive(!isActive);  
+// 	};
 
-	//use state for handle add experience form
-	const [isCheck, setCheck] = useState("false");
-	const handleCheckboxChecked = () => {
-		setCheck(!isCheck);  
-	};
-	return (
-		<>
-			<div className="container-fluid submenu-container share-exp-box">
-				<div className="container pe-0 ps-0">
-					{/* view commente box */}
-					<div className="row">
-						<div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-							<SubmenuPageHeading  submenupagetopic="Share your experience and total savings with fellow Members..." submenupagesubtopic="" ></SubmenuPageHeading>
-							<br></br>
-							<div className={isActive ? "col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12  comment-box-parent " : "col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 comment-box-parent comment-box-parent-height"}>
-								{/* comment-box-parent-height */}
-								{/* repeate block */}
-								<div className="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 comment-box ">
-									<div className="comment-img-box">
-										<Link  className="comment-image-link" to='/#' target="_blank">
-												<img className="comment-img" alt="Comment" src="././assets/img/Submenu/full_width_EY.jpg"></img>
-										</Link>
-									</div>
-									<div className="comment-text-box">
-										<h3 className="comment-text-box-h3">The Etihad Apartments is absolutely incredible.</h3>
-										<h5 className="comment-text-box-h5">
-											<Link to='/#' target="_blank" class="link-no-underline">
-												Bethany W.
-											</Link> , 
-											Founder and CEO @ BougieMiles.com
-										</h5>
-									</div>
-								</div>
-								{/* repeate block */}
-
-								{/* repeate block */}
-								<div className="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 comment-box ">
-									<div className="comment-img-box">
-										<Link  className="comment-image-link" to='/#' target="_blank">
-												<img className="comment-img" alt="Comment" src="././assets/img/Submenu/full_width_EY.jpg"></img>
-										</Link>
-									</div>
-									<div className="comment-text-box">
-										<h3 className="comment-text-box-h3">The Etihad Apartments is absolutely incredible.</h3>
-										<h5 className="comment-text-box-h5">
-											<Link to='/#' target="_blank" class="link-no-underline">
-												Bethany W.
-											</Link> , 
-											Founder and CEO @ BougieMiles.com
-										</h5>
-									</div>
-								</div>
-								{/* repeate block */}
-
-								{/* repeate block */}
-								<div className="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 comment-box ">
-									<div className="comment-img-box">
-										<Link  className="comment-image-link" to='/#' target="_blank">
-												<img className="comment-img" alt="Comment" src="././assets/img/Submenu/full_width_EY.jpg"></img>
-										</Link>
-									</div>
-									<div className="comment-text-box">
-										<h3 className="comment-text-box-h3">The Etihad Apartments is absolutely incredible.</h3>
-										<h5 className="comment-text-box-h5">
-											<Link to='/#' target="_blank" class="link-no-underline">
-												Bethany W.
-											</Link> , 
-											Founder and CEO @ BougieMiles.com
-										</h5>
-									</div>
-								</div>
-								{/* repeate block */}
-
-								{/* repeate block */}
-								<div className="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 comment-box ">
-									<div className="comment-img-box">
-										<Link  className="comment-image-link" to='/#' target="_blank">
-												<img className="comment-img" alt="Comment" src="././assets/img/Submenu/full_width_EY.jpg"></img>
-										</Link>
-									</div>
-									<div className="comment-text-box">
-										<h3 className="comment-text-box-h3">The Etihad Apartments is absolutely incredible.</h3>
-										<h5 className="comment-text-box-h5">
-											<Link to='/#' target="_blank" class="link-no-underline">
-												Bethany W.
-											</Link> , 
-											Founder and CEO @ BougieMiles.com
-										</h5>
-									</div>
-								</div>
-								{/* repeate block */}
-
-								{/* repeate block */}
-								<div className="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 comment-box ">
-									<div className="comment-img-box">
-										<Link  className="comment-image-link" to='/#' target="_blank">
-												<img className="comment-img" alt="Comment" src="././assets/img/Submenu/full_width_EY.jpg"></img>
-										</Link>
-									</div>
-									<div className="comment-text-box">
-										<h3 className="comment-text-box-h3">The Etihad Apartments is absolutely incredible.</h3>
-										<h5 className="comment-text-box-h5">
-											<Link to='/#' target="_blank" class="link-no-underline">
-												Bethany W.
-											</Link> , 
-											Founder and CEO @ BougieMiles.com
-										</h5>
-									</div>
-								</div>
-								{/* repeate block */}
-
-							</div>
-							<div className={isActive ? "col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 comment-box-view-more-box text-center d-block" : "col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 comment-box-view-more-box text-center d-none"}>
-								<Link onClick={handleViewmoreClick} className="btn btn-exp-view-more"  >
-										view more
-								</Link>
+// 	//use state for handle add experience form
+// 	const [isCheck, setCheck] = useState("false");
+// 	const handleCheckboxChecked = () => {
+// 		setCheck(!isCheck);  
+// 	};
+// 	return (
+// 		<>
+// 			<div className="container-fluid submenu-container share-exp-box">
+// 				<div className="container pe-0 ps-0">
+// 					{/* view commente box */}
+// 					<div className="row">
+// 						<div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+// 							<h1> {service.VendorName}</h1>
+// 							{/* <SubmenuPageHeading  submenupagetopic="Share your experience and total savings with fellow Members..." submenupagesubtopic="" ></SubmenuPageHeading> */}
+// 							<br></br>
+// 							<div className={isActive ? "col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12  comment-box-parent " : "col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 comment-box-parent comment-box-parent-height"}>
 								
-							</div>
-						</div>
-					</div>
-				{/* view commente box */}
-
-				{/* add commente box */}
-				<div className="row">
-					<div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 add-comment-box">
-						<div className="col-xxl-8 col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12  mx-auto ">
-							<h3 className="add-comment-box-title">
-              					Share your experience with fellow Members.  Each insight is worth 100 FCPoints. 
-								  <OverlayTrigger placement="top" overlay={(props) => (
-									<Tooltip {...props}>
-										Receive 100 FCPoints for each insight, up to 5 insights every 90 days.
-									</Tooltip>)}>
-									<i class="bi bi-info-circle-fill"></i>
-								</OverlayTrigger>
-							</h3>
-							<form className="add-comment-form">
-								<div className="form-group">
-									<input type="text" name="comment_placeholder" value="" placeholder="Start sharing here."
-									className={isCheck ? "form-control d-block " : "form-control d-none"}></input>
-
-									<textarea rows="3"  placeholder="Start sharing here." name="comment_placeholder" className={isCheck ? "form-control d-none " : "form-control d-block"}></textarea>
-								</div>
+// 								<div className="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 comment-box ">
+// 									<div className="comment-img-box">
+// 										<Link  className="comment-image-link" to='/#' target="_blank">
+// 												<img className="comment-img" alt="Comment" src="././assets/img/Submenu/full_width_EY.jpg"></img>
+// 										</Link>
+// 									</div>
+									
+// 								</div>
 								
-								
-								<div class="form-group">
-									<input onClick={handleCheckboxChecked} class="form-check-input" type="checkbox" value=""></input>
-									<label class="form-check-label" >
-									&nbsp;&nbsp;&nbsp;I've used this benefit
-									</label>
-								</div>
-
-								<div className={isCheck ? "form-other-field-show d-none " : "form-other-field-show d-block"}>
-									<div className="form-group " >
-										<input type="number" name="comment_placeholder" value="" placeholder="Share total savings with this benefit (USD)." class="form-control"></input>
-									</div>
-									<div className="form-group btn-mob-center">
-										<Link style={{minWidth:"auto"}} className="btn btn-exp-view-more " to='/#' target="_blank">
-												submit
-										</Link>
-									</div>
-									</div>
-								</form>
 							
-						</div>
-					</div>
-				</div>
+// 								<div className="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 comment-box ">
+									
+// 									<div className="comment-text-box">
+// 										<h3 className="comment-text-box-h3">The Etihad Apartments is absolutely incredible.</h3>
+// 										<h5 className="comment-text-box-h5">
+// 											<Link to='/#' target="_blank" class="link-no-underline">
+// 												Bethany W.
+// 											</Link> , 
+// 											Founder and CEO @ BougieMiles.com
+// 										</h5>
+// 									</div>
+// 								</div>
+								
+								
+								
+								
+								
 
-				{/* add commente box */}
-				</div>
-			</div>
+// 							</div>
+							
+// 						</div>
+// 					</div>
+				
+// 				<div className="row">
+// 					<div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 add-comment-box">
+// 						<div className="col-xxl-8 col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12  mx-auto ">
+// 							<h3 className="add-comment-box-title">
+//               					Share your experience with fellow Members.  Each insight is worth 100 FCPoints. 
+// 								  <OverlayTrigger placement="top" overlay={(props) => (
+// 									<Tooltip {...props}>
+// 										Receive 100 FCPoints for each insight, up to 5 insights every 90 days.
+// 									</Tooltip>)}>
+// 									<i class="bi bi-info-circle-fill"></i>
+// 								</OverlayTrigger>
+// 							</h3>
+							
+							
+// 						</div>
+// 					</div>
+// 				</div>
+
+// 				{/* add commente box */}
+// 				</div>
+// 			</div>
 			
-		</>
+// 		</>
 		
-	);
+// 	);
+// };
+
+// export default ShareExperience;
+import React from 'react';
+import { Clock, MapPin, Phone, Mail, FileText } from 'lucide-react';
+
+const VendorDescription = ({ service }) => {
+  return (
+    <div className="min-h-screen bg-black text-white p-4 md:p-6">
+      <div className="max-w-3xl mx-auto">
+        <div className="bg-black rounded-lg shadow-xl overflow-hidden">
+          {/* Header */}
+          <div className="p-4 md:p-6 border-b border-gray-700">
+            <h1 className="text-xl md:text-2xl font-bold text-white">
+              {service.VendorName}
+            </h1>
+          </div>
+
+          {/* Content */}
+          <div className="p-4 md:p-6 space-y-6">
+            {/* Description */}
+            <div className="flex items-start gap-3">
+              <FileText className="w-5 h-5 mt-1 text-gray-400 flex-shrink-0" />
+              <div>
+                <h3 className="font-semibold text-white">Description</h3>
+                <p className="text-gray-300 mt-1 break-words">
+                  {service.VendorDescription}
+                </p>
+              </div>
+            </div>
+
+            {/* Address */}
+            <div className="flex items-start gap-3">
+              <MapPin className="w-5 h-5 mt-1 text-gray-400 flex-shrink-0" />
+              <div>
+                <h3 className="font-semibold text-white">Address</h3>
+                <p className="text-gray-300 mt-1 break-words">
+                  {service.VendorAddress}
+                </p>
+              </div>
+            </div>
+
+            {/* Operating Hours */}
+            <div className="flex items-start gap-3">
+              <Clock className="w-5 h-5 mt-1 text-gray-400 flex-shrink-0" />
+              <div>
+                <h3 className="font-semibold text-white">Operating Hours</h3>
+                <p className="text-gray-300 mt-1">
+                  {service.VendorOpenHours}
+                </p>
+              </div>
+            </div>
+
+            {/* Pricing Information */}
+            {service.VendorPricingInfo && (
+              <div className="flex items-start gap-3">
+                <span className="w-5 h-5 mt-1 text-gray-400 flex-shrink-0 font-semibold">₹</span>
+                <div>
+                  <h3 className="font-semibold text-white">Pricing Information</h3>
+                  <p className="text-gray-300 mt-1">
+                    Currency: {service.VendorPricingInfo.Currency}
+					<br/>
+					Minimum-Amount:  {service.VendorPricingInfo.PriceRange.Min}
+					<br/>
+					Maximum-Amount:  {service.VendorPricingInfo.PriceRange.Max}
+                  </p>
+                </div>
+              </div>
+            )}
+
+            {/* Contact Details Section */}
+            <div className="pt-4 border-t">
+              <h2 className="text-lg font-semibold text-white mb-4">Contact Information</h2>
+              
+              {/* Contact Number */}
+              <div className="flex items-start gap-3 mb-4">
+                <Phone className="w-5 h-5 mt-1 text-gray-400 flex-shrink-0" />
+                <div>
+                  <h3 className="font-semibold text-white">Phone</h3>
+                  <p className="text-gray-300 mt-1">
+                    {service.ContactNumber}
+                  </p>
+                </div>
+              </div>
+
+              {/* Email */}
+              <div className="flex items-start gap-3">
+                <Mail className="w-5 h-5 mt-1 text-gray-400 flex-shrink-0" />
+                <div>
+                  <h3 className="font-semibold text-white">Email</h3>
+                  <p className="text-gray-300 mt-1 break-words">
+                    {service.ContactMail}
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
 };
 
-export default ShareExperience;
+export default VendorDescription;

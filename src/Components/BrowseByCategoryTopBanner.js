@@ -4,14 +4,10 @@ import "../css/browsebycategorytopbanner.css";
 const BrowseByCategoryTopBanner = ({ allMenuNav }) => {
   return (
     <>
-      <div className="container-fluid browse-category-bg">
-        <div className="col-xl-12 col-xxl-12 col-lg-12 col-md-12 col-12">
-          <h1 className="browse-category-title">Featured Travel Benefits</h1>
-        </div>
-      </div>
+      
       <div className="container-fluid browse-category-item">
         <div className="row">
-          <div className="col-xl-6 col-xxl-6 col-lg-6 col-md-6 col-6 browse-category-item-left">
+          {/* <div className="col-xl-6 col-xxl-6 col-lg-6 col-md-6 col-6 browse-category-item-left">
             <div
               className="browse-category-img"
               style={{
@@ -34,23 +30,37 @@ const BrowseByCategoryTopBanner = ({ allMenuNav }) => {
                 Elevated car rental that meets your needs across the globe
               </p>
             </div>
-          </div>
-          <div className="col-xl-6 col-xxl-6 col-lg-6 col-md-6 col-6 browse-category-item-right">
+          </div> */}
+          <div className="col-xl-12 col-xxl-12 col-lg-12 col-md-12 col-12 browse-category-item-right">
+            
             <div className="browse-category-video">
               <Link to="/#" target="_blank">
                 <div class="width-height-sett">
-                  <video
+                <div className="absolute top-15 left-0 w-full h-[15%] md:h-[40%] bg-black opacity-55"></div>
+                <img 
+                className="browse-category-video-height"
+                src={`${process.env.PUBLIC_URL}/assets/img/Home/vacation.jpg`}
+                 alt="lifestyle"/>
+                  {/* <video
                     poster="https://d2920d93lyqeaf.cloudfront.net/images/picture_gallery_items/images/7912/gallery_Screenshot_2023-12-05_at_5.09.53_PM.png?1701814225"
                     className="browse-category-video-height"
                     autoplay="autoplay"
                     loop="loop"
                     muted="muted"
                     src="https://d2q86wmri3hsp2.cloudfront.net/system/benefits/standard_videos/000/001/110/original/Porsche_standard.mp4?1690469858"
-                  ></video>
+                  ></video> */}
+                      
+                      <div className="absolute top-[30%]  right-0 left-0 mr-auto ml-auto text-center">
+                    <div className="col-xl-12 col-xxl-12 col-lg-12 col-md-12 col-12 flex flex-col justify-center items-center">
+                      <h1 className="browse-category-title text-[1rem]">LifeStyle</h1>
+                      <p className="font-bold text-white">Exclusive perks for extraordinary experiences</p>
+                    </div>
+                    </div>
+            
                 </div>
               </Link>
             </div>
-            <div className="browse-category-info">
+            {/* <div className="browse-category-info">
               <h3 className="browse-category-info-title">
                 <Link to="/#" target="_blank">
                   Porsche Drive
@@ -61,7 +71,7 @@ const BrowseByCategoryTopBanner = ({ allMenuNav }) => {
                 Waived Activation Fees on Porsche Drive Rentals and
                 Subscriptions & 10% off.
               </p>
-            </div>
+            </div> */}
           </div>
 
           {/* <ul className="navbar-nav beforelogin-navbar mx-auto mb-2 mb-lg-0">

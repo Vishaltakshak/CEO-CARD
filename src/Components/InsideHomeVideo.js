@@ -25,7 +25,7 @@ const InsideHomeVideo = () => {
 						<br></br>FOR ONLY $595 </h1>
 						<p className="homevideo-subtitle">Join a select group of Members and receive high-level elite status with major travel brands, over $25,000 in credits, and more.</p>
 						<button className="btn custombutton-transparent">
-							<Link to='/homeafterlogin' target='_blank'>EXPLORE ELITE</Link>
+							<Link to='/OrderMembershipCard' target='_blank'>EXPLORE ELITE</Link>
 						</button>
 						
 					</div>

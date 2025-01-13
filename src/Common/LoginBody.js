@@ -63,7 +63,7 @@ const LoginBody = () => {
   return (
     <>
       <ToastContainer />
-      <div className=" bg-signin bg-cover bg-bottom bg-no-repeat flex justify-content-center align-item-center">
+      <div className=" bg-signin bg-cover bg-bottom bg-no-repeat flex justify-content-center align-item-center mt-8 md:m-0">
         <div className=" login-container flex justify-content-center">
           <div className="row d-flex justify-content-center">
             <div className="col-12 col-xl-12">

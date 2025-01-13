@@ -27,14 +27,16 @@ const HomeVideo = () => {
         <div className="video-details1 text-center">
           <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
             <h1 className="homevideo-title1">
-			Welcome to CEOCard – Empowering India's Startup Leaders
+			          Welcome to CEOCard  
             </h1>
+            <br></br>
+            <h1 className="text-white" style={{fontSize:"18px"}}>Empowering India's Startup Leaders</h1>
             <p className="homevideo-subtitle1 p-4 sm:p-0">
               {" "}
-			  At CEOCard, we understand the challenges and opportunities of leading a startup. Tailored specifically for entrepreneurs and CEOs of Indian startups, our platform offers exclusive benefits, strategic resources to help you scale your business and achieve your goals. Join a community of innovative leaders, and enjoy lifestyle perks that make business growth easier and more rewarding.
+			  At CEOCard, we understand the challenges and opportunities of leading a startup. Tailored specifically for entrepreneurs and CEOs of Indian startups, our platform offers exclusive benefits, strategic resources to help you scale your business and achieve your goals. 
             </p>
             <button className="btn custombutton-white">
-              <Link to="/Enquiry">PREVIEW MEMBERSHIP</Link>
+              <Link to="/enquiry">PREVIEW MEMBERSHIP</Link>
             </button>
           </div>
 

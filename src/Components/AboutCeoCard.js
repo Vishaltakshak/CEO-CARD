@@ -27,7 +27,7 @@ const AboutCeoCard = () => {
           </p>
           <a
             href="#one"
-            className="bg-[#A1A9BC] text-white mx-auto px-20 py-3 rounded-full font-semibold text-[20px]"
+            className="bg-black text-white mx-auto px-20 py-3 rounded-full font-semibold text-[20px]"
           >
             <button>See More</button>
           </a>

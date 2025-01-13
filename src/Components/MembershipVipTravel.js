@@ -18,7 +18,7 @@ const MembershipVipTravel = () => {
       {/* Grid container: 2 sections in one line, last section below */}
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
         {/* First Section: VIP Travel Privileges */}
-        <div className="bg-[#546166] p-6 rounded-lg flex items-center justify-center shadow-xl relative">
+        <div className="bg-[#546166] p-6 rounded-lg flex items-start justify-center shadow-xl relative">
           {/* Text content on the right */}
           <div className="lg:w-2/3  text-center lg:text-left text-white flex flex-col justify-start z-[10]">
             <h1 className="text-3xl font-bold text-white text-center">
@@ -45,8 +45,8 @@ const MembershipVipTravel = () => {
               <strong>Partners include:</strong> United Airlines, Virgin
               Atlantic, Singapore Airlines, Avis and more...
             </p>
-            {/* <HomeButton buttontext="preview membership" /> */}
-            <Link to="/enquiry" className="btn btn-custombutton">
+            
+            <Link to="/enquiry" className="btn btn-custombutton ">
               <button>Preview Membership</button>
             </Link>
           </div>
@@ -63,9 +63,9 @@ const MembershipVipTravel = () => {
         </div>
 
         {/* Second Section: CEO Hotel Program */}
-        <div className="bg-[#546166] p-6 rounded-lg flex items-center justify-center shadow-xl relative">
+        <div className="bg-[#546166] p-6 rounded-lg flex items-start justify-center shadow-xl relative">
           {/* Text content on the right */}
-          <div className="lg:w-2/3 p-4 text-center lg:text-left text-white flex flex-col justify-start z-[10]">
+          <div className="lg:w-2/3  text-center lg:text-left text-white flex flex-col justify-start z-[10]">
             <h1 className="text-3xl font-bold text-white text-center">
 			Membership Benefits
             </h1>
@@ -79,19 +79,24 @@ const MembershipVipTravel = () => {
             {/* Points in two columns */}
             <ul className="grid  gap-2.5 list-disc mb-4 text-lg text-left">
               <li className="text-white">Peer-to-Peer Connections: Engage with fellow CEOs and founders across a wide range of industries, share experiences, and collaborate on projects</li>
-              <li className="text-white">Peer-to-Peer Connections: Engage with fellow CEOs and founders across a wide range of industries, share experiences, and collaborate on projects</li>
+              <li className="text-white">Discounted Services: Access discounts on critical services such as legal, accounting, and HR solutions.</li>
               <li className="text-white">
 			  Access exclusive funding opportunities through our network of investors and venture capitalists. CEOCard connects you with potential investors who are actively looking for promising startups to support.
               </li>
-             
-             
+              <li className="text-white">
+              - Business Development Programs: Participate in tailored business growth programs that focus on key areas like marketing, scalability, and international expansion              </li>
+            
+              <li className="text-white">
+              Angel Investors: Gain direct introductions to angel investors           </li>
+              <li className="text-white">
+              Angel Investors: Gain direct introductions to angel investors  </li>
             </ul>
 
             <p className="text-lg mb-4">
               <strong>Partners include:</strong> Park Hyatt, W Hotels, Rosewood,
               The Peninsula, Oberoi Hotels and more...
             </p>
-            <Link to="/enquiry" className="btn btn-custombutton">
+            <Link to="/enquiry" className="btn btn-custombutton ">
               <button>Preview Membership</button>
             </Link>
           </div>
@@ -160,7 +165,7 @@ const MembershipVipTravel = () => {
         </div>
 
         {/* Second Section: CEO Hotel Program */}
-        <div className="bg-[#546166] p-6 rounded-lg flex items-center justify-center shadow-xl relative">
+        <div className="bg-[#546166] p-6 rounded-lg flex  justify-center shadow-xl relative">
           {/* Text content on the right */}
           <div className="lg:w-2/3  text-center lg:text-left text-white flex flex-col justify-start z-[10]">
             <h1 className="text-3xl font-bold text-white text-center mb-auto">

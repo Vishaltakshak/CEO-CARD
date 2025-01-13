@@ -46,7 +46,7 @@ const BrowseByCategorySidebar = ({sharedState,setSharedState,handlesharedState})
 					</div>
 
 					<div class="subcategory-div">
-						<Link target="/#">
+						<Link target="/travel">
 							Premium Airlines
 						</Link>
 					</div>

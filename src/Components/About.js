@@ -36,14 +36,14 @@ const About = () => {
                 needs, recognizing the critical role executives play in driving
                 organizational success.
               </p>
-              <div className="w-full flex justify-start">
+              {/* <div className="w-full flex justify-start">
                 <Link
                   to="/enquiry"
                   className="bg-black text-white px-4 py-3 rounded-lg font-semibold text-center"
                 >
                   Preview Membership
                 </Link>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

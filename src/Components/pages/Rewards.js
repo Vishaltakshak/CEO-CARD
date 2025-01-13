@@ -15,7 +15,7 @@ const Rewards = () => {
                 className="home-heading"
                 style={{ textTransform: "capitalize" }}
               >
-                Redeem Your FCPoints<sup>TM</sup>
+                Redeem Your CCPoints<sup>TM</sup>
               </h1>
               <Link
                 style={{ textDecoration: "none" }}
@@ -50,7 +50,7 @@ const Rewards = () => {
                           Amazon eGift Card
                         </p>
                         <p className="reward-details-subheading">
-                          $200 - $500 Gift Cards
+                          &#8377;200 - &#8377;500 Gift Cards
                         </p>
                         <p
                           style={{ color: "#8f8f8f" }}
@@ -77,7 +77,7 @@ const Rewards = () => {
                           Amazon eGift Card
                         </p>
                         <p className="reward-details-subheading">
-                          $200 - $500 Gift Cards
+                          &#8377;200 - &#8377;500 Gift Cards
                         </p>
                         <p
                           style={{ color: "#8f8f8f" }}
@@ -103,7 +103,7 @@ const Rewards = () => {
                           Amazon eGift Card
                         </p>
                         <p className="reward-details-subheading">
-                          $200 - $500 Gift Cards
+                          &#8377;200 - &#8377;500 Gift Cards
                         </p>
                         <p
                           style={{ color: "#8f8f8f" }}
@@ -129,7 +129,7 @@ const Rewards = () => {
                           Amazon eGift Card
                         </p>
                         <p className="reward-details-subheading">
-                          $200 - $500 Gift Cards
+                          &#8377;200 - &#8377;500 Gift Cards
                         </p>
                         <p
                           style={{ color: "#8f8f8f" }}
@@ -155,7 +155,7 @@ const Rewards = () => {
                           Amazon eGift Card
                         </p>
                         <p className="reward-details-subheading">
-                          $200 - $500 Gift Cards
+                          &#8377;200 - &#8377;500 Gift Cards
                         </p>
                         <p
                           style={{ color: "#8f8f8f" }}
@@ -195,10 +195,10 @@ const Rewards = () => {
                       Add your Spouse or Significant Other
                     </h5>
                     <p className="earn-more-details-p">
-                      Earn 10,000 FCPoints when you purchase a companion
+                      Earn 10,000 CCPoints when you purchase a companion
                       Membership
                     </p>
-                    <Link className="btn btn-earn-points" to="/#">
+                    <Link className="btn btn-earn-points" to="/Payment">
                       ADD SPOUSE
                     </Link>
                   </div>
@@ -212,13 +212,13 @@ const Rewards = () => {
                   />
                   <div className="earn-more-details">
                     <h5 className="earn-more-details-title">
-                      Invite New FC Members
+                      Invite New CC Members
                     </h5>
                     <p className="earn-more-details-p">
-                      Earn 20,000 FCPoints for each Member referral that joins
+                      Earn 20,000 CCPoints for each Member referral that joins
                       CeoCard
                     </p>
-                    <Link className="btn btn-earn-points" to="/#">
+                    <Link className="btn btn-earn-points" to="/Payment">
                       SEND A REFERRAL
                     </Link>
                   </div>
@@ -236,7 +236,7 @@ const Rewards = () => {
                     <p className="earn-more-details-p">
                       Earn 20,000 FCPoints for each Gift Membership purchased
                     </p>
-                    <Link className="btn btn-earn-points" to="/#">
+                    <Link className="btn btn-earn-points" to="/payment">
                       GIFT A MEMBERSHIP
                     </Link>
                   </div>
@@ -253,7 +253,7 @@ const Rewards = () => {
                 className="home-heading"
                 style={{ textTransform: "capitalize" }}
               >
-                FCPoints Activity
+                CCPoints Activity
               </h1>
             </div>
             <div className="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 rewards-block-child">

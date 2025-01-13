@@ -44,6 +44,14 @@ import { Referreal } from "./Components/pages/Referreal.js";
 import { ProfilePage } from "./Components/pages/userprofile/ProfilePage.js";
 import { UserProvider } from "./UserContext.js";
 import TravelPage from "./Components/TravelPage.jsx";
+import BusinessPage from "./Components/Business.jsx";
+import Payment from "./Components/Payment.jsx";
+import "bootstrap/dist/css/bootstrap.min.css"; // Bootstrap CSS
+import "bootstrap/dist/js/bootstrap.bundle.min.js"; // Bootstrap JS
+import ServiceInfo from "./Components/ServiceInfo.jsx";
+import TravelInfo from "./Components/TravelInfo.jsx";
+import HotelInfo from "./Components/HotelInfo.jsx";
+import BusinessInfo from "./Components/BusinessInfo.jsx";
 
 const App = () => {
   const isLoggedIn = sessionStorage.getItem("isLoggedIn");
@@ -54,10 +62,15 @@ const App = () => {
         <BrowserRouter>
           <AllPageScrollToTop>
             <Routes>
-              
+              <Route path="/business" element={<BusinessPage/>}/>
               <Route path="/" element={<Home />} />
               <Route path="/signupnew" element={<SignupNew />} />
               <Route path="/about_us" element={<Aboutus />} />
+              <Route path="/Payment" element={<Payment />} />
+              <Route path="/ServiceInfo" element={<ServiceInfo />} />
+              <Route path="/TravelInfo" element={<TravelInfo />} />
+              <Route path="/HotelInfo" element={<HotelInfo />} />
+              <Route path="/BusinessInfo" element={<BusinessInfo />} />
               {/* Added by SK */}
               <Route path="/LoginPage" element={<LoginPage />} />
               <Route

@@ -72,7 +72,8 @@ const TeamMembership = () => {
 							</div>
 
 							<div className="col-xl-12 col-12 pe-0 ps-0 checkbox-spacing text-center">
-								<button className="btn btn-purchase">PURCHASE FOR $<span>495</span></button>
+								<Link to='/Payment'>
+								<button className="btn btn-purchase">PURCHASE FOR $<span>495</span></button></Link>
 							</div>
 						</form>
 					</div>

@@ -31,6 +31,8 @@ const AfterLoginHeader = ({ allMenu, service }) => {
       changeLocation("/browse_hotels");
     } else if(categoryName === "Travel"){
       changeLocation("/travel")
+    } else if(categoryName === "Business"){
+      changeLocation("/business")
     }
     else {
       changeLocation("/BrowseByCategory");
@@ -61,7 +63,9 @@ const AfterLoginHeader = ({ allMenu, service }) => {
 
   const groupedMenu = groupMenuByCategory(menuData);
   const groupedServices = groupServicesBySubCategory(service);
-
+  
+  
+  
 
 
   const getMatchingServices = (menuItem) => {
@@ -82,8 +86,8 @@ const AfterLoginHeader = ({ allMenu, service }) => {
           }`}
         >
           <Link className="navbar-brand" to="/homeafterlogin">
-            <div className="logo-size-setting">
-              <p>CEO CARD</p>
+            <div className="logo-size-setting md:hidden sm:block">
+           <p>Ceo Card</p>
             </div>
           </Link>
 
@@ -121,11 +125,7 @@ const AfterLoginHeader = ({ allMenu, service }) => {
                         <li>
                           <Link to="/Profile-Page">Profile</Link>
                         </li>
-                        <li>
-                          <Link to="/SpouseMembership">
-                            PURCHASE SPOUSE MEMBERSHIP
-                          </Link>
-                        </li>
+                        
                         <li>
                           <Link to="/TeamMembership">
                             PURCHASE TEAM MEMBERSHIP
@@ -138,7 +138,7 @@ const AfterLoginHeader = ({ allMenu, service }) => {
                         </li>
                         <li>
                           <Link to="/OrderMembershipCard">
-                            ORDER MEMBERSHIP CARD
+                            ORDER CEO CARD
                           </Link>
                         </li>
                         <li>
@@ -159,25 +159,43 @@ const AfterLoginHeader = ({ allMenu, service }) => {
                         data-bs-toggle="dropdown"
                         aria-expanded="false"
                       >
-                        Asia
+                        DELHI
                       </a>
                       <ul
                         className="dropdown-menu account-dropdown-menu"
                         aria-labelledby="dropdownMenuLink"
                       >
-                        <li><Link to="/homeafterlogin">US</Link></li>
-                        <li><Link to="/homeafterlogin">Canada</Link></li>
-                        <li><Link to="/homeafterlogin">UK</Link></li>
-                        <li><Link to="/homeafterlogin">Europe</Link></li>
-                        <li><Link to="/homeafterlogin">Asia</Link></li>
-                        <li><Link to="/homeafterlogin">Australia</Link></li>
-                        <li><Link to="/homeafterlogin">Mexico</Link></li>
-                        <li><Link to="/homeafterlogin">South America</Link></li>
+                       <li><Link to="/homeafterlogin">Mumbai</Link></li>
+                      <li><Link to="/homeafterlogin">Delhi</Link></li>
+                      <li><Link to="/homeafterlogin">Bangalore</Link></li>
+                      <li><Link to="/homeafterlogin">Hyderabad</Link></li>
+                      <li><Link to="/homeafterlogin">Chennai</Link></li>
+                      <li><Link to="/homeafterlogin">Kolkata</Link></li>
+                      <li><Link to="/homeafterlogin">Ahmedabad</Link></li>
+                      <li><Link to="/homeafterlogin">Pune</Link></li>
+                      <li><Link to="/homeafterlogin">Surat</Link></li>
+                      <li><Link to="/homeafterlogin">Jaipur</Link></li>
+                      <li><Link to="/homeafterlogin">Lucknow</Link></li>
+                      <li><Link to="/homeafterlogin">Nagpur</Link></li>
+                      <li><Link to="/homeafterlogin">Visakhapatnam</Link></li>
+                      <li><Link to="/homeafterlogin">Bhopal</Link></li>
+                      <li><Link to="/homeafterlogin">Indore</Link></li>
+                      <li><Link to="/homeafterlogin">Visakhapatnam</Link></li>
+<li><Link to="/homeafterlogin">Patna</Link></li>
+<li><Link to="/homeafterlogin">Vadodara</Link></li>
+<li><Link to="/homeafterlogin">Coimbatore</Link></li>
+<li><Link to="/homeafterlogin">Nashik</Link></li>
+<li><Link to="/homeafterlogin">Aurangabad</Link></li>
+<li><Link to="/homeafterlogin">Ludhiana</Link></li>
+<li><Link to="/homeafterlogin">Rajkot</Link></li>
+<li><Link to="/homeafterlogin">Agra</Link></li>
+<li><Link to="/homeafterlogin">Mysore</Link></li>
+
                       </ul>
                     </div>
                   </li>
                   <li className="account-menu-li d-xl-block d-lg-block d-md-none d-sm-none d-none thin-navbar-hide">
-                    <a href="/Rewards">7,500 FCPoints™</a>
+                    <a href="/Rewards">7,500 CCPoints™</a>
                   </li>
                   <li className="account-menu-li">
                     <a href="/Notifications">
@@ -188,12 +206,12 @@ const AfterLoginHeader = ({ allMenu, service }) => {
                       <span className="badge">9</span>
                     </a>
                   </li>
-                  <li className="account-menu-li d-xl-block d-lg-block d-md-block d-sm-none d-none">
+                  {/* <li className="account-menu-li d-xl-block d-lg-block d-md-block d-sm-none d-none">
                     <Link to="/homeafterlogin">
                       <i className="bi bi-suit-heart" aria-hidden="true"></i>
                     </Link>
-                  </li>
-                  <li className="account-menu-li d-xl-none d-lg-none d-md-none d-sm-block d-block">
+                  </li> */}
+                  <li className="account-menu-li d-xl-block d-lg-block d-md-none d-sm-block d-block">
                     <Link to="/Search">
                       <i className="bi bi-search" aria-hidden="true"></i>
                     </Link>
@@ -233,16 +251,24 @@ const AfterLoginHeader = ({ allMenu, service }) => {
                       data-bs-toggle="dropdown"
                     >
                       <strong>{category}</strong>
+                      
+                      
                     </Link>
-                    <div className="dropdown-menu megamenu" role="menu">
-                      <div className="container">
-                        <div className="row g-3">
-                          <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+                    
+                    
+                   
+                   
+                    
+                    <div className="dropdown-menu  megamenu bg-[#222222]" role="menu">
+                      <div className="container ml-2">
+                        <div className="row g-3 ">
+                          <div className="col-xxl-8 col-xl-8 col-lg-8 col-md-8 col-sm-8 col-8 ml-4">
                             <div className="row">
+                              
                               {items.map((item) => (
-                                <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-12 desktop-display-sett" key={item.SubCategoryName}>
-                                  <div className="col-megamenu">
-                                    <h6 className="megamenu-heading">
+                                <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-12 desktop-display-sett text-white" key={item.SubCategoryName}>
+                                  <div className="col-megamenu ">
+                                    <h6 className="megamenu-heading ">
                                       <Link to="/homeafterlogin">
                                         {item.SubCategoryName}
                                       </Link>
@@ -266,32 +292,29 @@ const AfterLoginHeader = ({ allMenu, service }) => {
                               ))}
                             </div>
                           </div>
-                          <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-12 desktop-display-sett">
+                          <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-12 desktop-display-sett">
                             <div className="row">
-                              <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-12 col-megamenu">
-                                <h6 className="megamenu-heading">
-                                  <a href="/#">CEO FAVORITES</a>
-                                </h6>
+                              <div className="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-12 col-megamenu">
+                                
                                 <div className="megamenu-heading-links">
                                   <div>
-                                    <a href="/#">
+                                    
+                                    <a href="/OrderMembershipCard">
                                       <img
                                         alt="block"
                                         style={{ width: "100%" }}
-                                        src="https://d2920d93lyqeaf.cloudfront.net/images/picture_gallery_items/images/6522/gallery_unnamed-1.jpg?1706540682"
+                                        src={`${process.env.PUBLIC_URL}/assets/img/CEOCARD.jpg`}
                                       />
                                     </a>
                                   </div>
-                                  <h6 className="favorites-subcategory">
-                                    <strong>Travel</strong>
-                                  </h6>
+                                  
                                   <h5 className="favorites-subcategory-person">
-                                    <a href="/#">
-                                      <strong>Marriott Bonvoy™ </strong>
+                                    <a href="/OrderMembershipCard">
+                                      <strong style={{fontSize:'13px'}}>PURCHASE YOUR MEMBERSHIP </strong>
                                     </a>
                                   </h5>
                                   <h6 className="favorites-subcategory-para">
-                                    Enroll in Marriott Platinum Elite Status
+                                    Enroll and enjoy Platinum Elite Status
                                     Challenge
                                   </h6>
                                 </div>
@@ -301,8 +324,25 @@ const AfterLoginHeader = ({ allMenu, service }) => {
                         </div>
                       </div>
                     </div>
+                   
                   </li>
-                ))}
+                )
+                
+                )}
+                <li className="nav-item hidden md:block  ">
+                <Link to="/homeafterlogin">
+                <img
+                              className="w-[4rem]  block "
+                              src="././assets/img/ceo-logo-white.png"
+                              alt="Logo"
+                            />
+                                      </Link>
+                
+               
+                </li>
+                
+                
+              
                 <li className="nav-item sm:hidden md:block  ">
                   <a className="nav-link" href="/Community">
                     <strong>community</strong>
@@ -313,6 +353,8 @@ const AfterLoginHeader = ({ allMenu, service }) => {
                     <strong>all benefits</strong>
                   </a>
                 </li>
+
+
                 <li className="nav-item pl-4 md:hidden">
                   <button className="nav-link text-white" onClick={logout}>
                   {/* <a className="nav-link" href="/"> */}
@@ -359,6 +401,7 @@ const AfterLoginHeader = ({ allMenu, service }) => {
                 </Link>
               </li>
             ))}
+            
             <span className="mobile-category-link-wrapper">
               <a className="mobile-category-link" href="/allbenifits">
                 <strong>ALL BENEFITS</strong>

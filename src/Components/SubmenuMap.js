@@ -8,7 +8,7 @@ const SubmenuMap = ({service}) => {
 	return (
 		<>
 			<div className="conatiner-fluid pe-0 ps-0">
-				<h2 className="sub-menu-map-heading">Location</h2>
+				<h2 className="sub-menu-map-heading">API INTEGRATION REQUIRED</h2>
 				{mapUrl?(
 					<iframe src={mapUrl} width="100%" height="450" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 				):(

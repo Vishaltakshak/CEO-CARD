@@ -195,7 +195,7 @@
 
 .video-details1 h1.homevideo-title1 {
 
-	margin-bottom: 52px;
+	
 	color: #fff;
 	font-size: 47px;
 	line-height: 52px;
@@ -371,10 +371,10 @@ p {
 	margin-top: 20px;
 	border-radius: 0;
 	font-size: 12px;
-	background-color: #000;
+	background-color: #ffffff;
 	-webkit-transition: all 350ms ease;
 	transition: all 350ms ease;
-	color: #fff;
+	color: #000000;
 	font-weight: 700;
 	text-transform: uppercase;
 	text-decoration: none;
@@ -383,14 +383,15 @@ p {
 	border-width: 1px;
 	padding: 16px 40px;
 	font-family: Montserrat, sans-serif;
+	
 }
 
 .btn.btn-custombutton:hover {
-	background-color: #000;
+	background-color: #ffffff;
 	-webkit-transform: translate(0px, -5px);
 	-ms-transform: translate(0px, -5px);
 	transform: translate(0px, -5px);
-	color: #fff;
+	color: #000000;
 	text-decoration: none;
 }
 .btn.btn-custombutton a
@@ -536,7 +537,7 @@ p {
 	}
 
 	.video-details1 h1.homevideo-title1 {
-		font-size: 14px;
+		font-size: 30px;
 		line-height: inherit;
 
 	}

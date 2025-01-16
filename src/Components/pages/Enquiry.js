@@ -26,109 +26,103 @@ const Enquiry = () => {
         <div className="flex z-[10] bg-[rgba(255,255,255,0.8)] p-1 rounded-xl m-8 w-[50%]">
           <div className="col-xl-12 col-12">
             <div className="inquire-form-container">
-              <div className="text-center">
-                <div className="inquire-title">Get Access</div>
-                <h1 className="inquire-heading">
-                  <strong>
-                    Receive Inside Access to
-                    <br />
-                    Over 500 Exclusive Benefits
-                  </strong>
-                  <br></br>
-                </h1>
-              </div>
-              <form
-                className="flex items-start flex-col gap-3 ml-8  mt-[2rem]"
-                action="/"
-              >
-                <div class="flex flex-col items-start justify-center">
-                  <label className="form-label">FULL NAME</label>
-                  <input
-                    className=" px-3 placeholder:text-black  p-2 text-center bg-transparent rounded-full border-1 border-black text-black  "
-                    type="text"
-                    placeholder ="Enter your Name"
-                  />
-                </div>
-                <div class="flex flex-col items-start justify-center">
-                  <label className="form-label">EMAIL ADDRESS</label>
-                  <input
-                    className=" placeholder:text-black px-3 p-2 text-center bg-transparent rounded-full border-1 border-black"
-                    type="email"
-                    placeholder="Enter your Email Address"
-                  />
-                </div>
-                <div class="flex flex-col items-start justify-center">
-                  <label className="form-label">PROFESSIONAL TITLE</label>
-                  <input
-                    className=" px-3 p-2 text-center bg-transparent placeholder:text-black rounded-full border-1 border-black"
-                    type="email"
-                    placeholder="Enter your Title"
-                  />
-                </div>
-                <div class="flex flex-col items-start justify-center">
-                  <label className="form-label">COMPANY</label>
-                  <input
-                    className=" px-3 p-2 text-center bg-transparent placeholder:text-black rounded-full border-1 border-black"
-                    type="email"
-                    placeholder="Enter your Company"
-                  />
-                </div>
-                <div class="flex flex-col items-start justify-center">
-                  <label className="form-label">PHONE</label>
-                  <input
-                    className=" px-3 p-2 text-center bg-transparent placeholder:text-black rounded-full border-1 border-black"
-                    type="Number"
-                    placeholder="Enter your Phone no"
-                  />
-                </div>
-                <div class="flex flex-col items-start justify-center">
-                  <label className="form-label">Referral</label>
-                  <input
-                    className=" px-3 p-2 text-center bg-transparent placeholder:text-black rounded-full border-1 border-black"
-                    type="text"
-                    placeholder="Enter Referral Code"
-                  />
-                </div>
+             
+              <form className="flex flex-col w-full px-8 py-6 gap-6">
+  <div className="text-center mb-6">
+    <div className="text-2xl font-semibold text-gray-700 mb-2 mt-3">Get Access</div>
+    <h1 className="text-3xl font-bold text-gray-800">
+      Receive Inside Access to
+      <br />
+      Over 500 Exclusive Benefits
+    </h1>
+  </div>
 
+  {/* Form Fields Container */}
+  <div className="grid gap-5 w-full max-w-2xl mx-auto">
+    {/* Full Name */}
+    <div className="flex flex-col gap-1">
+      <label className="text-lg font-semibold text-gray-700">FULL NAME</label>
+      <input
+        className="px-4 py-2.5 rounded-full border border-black bg-transparent 
+        placeholder:text-gray-800 focus:outline-none focus:border-black 
+        transition-all duration-200 hover:border-gray-400"
+        type="text"
+        placeholder="Enter your Name"
+      />
+    </div>
 
+    {/* Email */}
+    <div className="flex flex-col gap-1">
+      <label className="text-lg font-semibold text-gray-700">EMAIL ADDRESS</label>
+      <input
+        className="px-4 py-2.5 rounded-full border border-black bg-transparent 
+        placeholder:text-gray-800 focus:outline-none focus:border-black 
+        transition-all duration-200 hover:border-gray-400"
+        type="email"
+        placeholder="Enter your Email Address"
+      />
+    </div>
 
+    {/* Professional Title */}
+    <div className="flex flex-col gap-1">
+      <label className="text-lg font-semibold text-gray-700">PROFESSIONAL TITLE</label>
+      <input
+        className="px-4 py-2.5 rounded-full border border-black bg-transparent 
+        placeholder:text-gray-800 focus:outline-none focus:border-black 
+        transition-all duration-200 hover:border-gray-400"
+        type="text"
+        placeholder="Enter your Title"
+      />
+    </div>
 
+    {/* Company */}
+    <div className="flex flex-col gap-1">
+      <label className="text-lg font-semibold text-gray-700">COMPANY</label>
+      <input
+        className="px-4 py-2.5 rounded-full border border-black bg-transparent 
+        placeholder:text-gray-800 focus:outline-none focus:border-black 
+        transition-all duration-200 hover:border-gray-400"
+        type="text"
+        placeholder="Enter your Company"
+      />
+    </div>
 
-                {/* <div class="flex flex-col items-center justify-center">
-                  <label className="form-label">Referral</label>
-                  <input
-                    className=" px-3 py-1 bg-transparent placeholder:text-black rounded-full border-1 border-black"
-                    type="email"
-                    placeholder="Enter Referral Code
-                  />
-                </div> */}
+    {/* Phone */}
+    <div className="flex flex-col gap-1">
+      <label className="text-lg font-semibold text-gray-700">PHONE</label>
+      <input
+        className="px-4 py-2.5 rounded-full border border-black bg-transparent 
+        placeholder:text-gray-800 focus:outline-none focus:border-black 
+        transition-all duration-200 hover:border-gray-400"
+        type="tel"
+        placeholder="Enter your Phone no"
+      />
+    </div>
 
-                {/* <div
-                  className={
-                    isViewreferral
-                      ? "flex flex-col items-center justify-center d-none"
-                      : "flex flex-col items-center justify-center d-block"
-                  }
-                >
-                  <label className="form-label">REFERRAL CODE</label>
-                  <input
-                    className=" px-3 py-1 bg-transparent placeholder:text-black rounded-full border-1 border-black"
-                    type="email"
-                    placeholder="Referral Code..."
-                  />
+    {/* Referral */}
+    <div className="flex flex-col gap-1">
+      <label className="text-lg font-semibold text-gray-700">REFERRAL CODE</label>
+      <input
+        className="px-4 py-2.5 rounded-full border border-black bg-transparent 
+        placeholder:text-gray-800 focus:outline-none focus:border-black 
+        transition-all duration-200 hover:border-gray-400"
+        type="text"
+        placeholder="Enter Referral Code"
+      />
+    </div>
 
-                
-                </div> */}
-                
-                <div class="flex flex-col  items-center justify-center btn-center-mobile">
-                  <Link
-                    to="/signupnew"
-                    class="btn btn-custombutton text-white bg-black"
-                  >
-                   SUBMIT
-                  </Link>
-                </div>
-              </form>
+    {/* Submit Button */}
+    <div className="flex justify-center mt-4">
+      <Link
+        to="/signupnew"
+        className="px-8 py-3 bg-black text-white rounded-full font-semibold 
+        hover:bg-gray-800 transition-all duration-200 text-center min-w-[200px]"
+      >
+        SUBMIT
+      </Link>
+    </div>
+  </div>
+</form>
             </div>
           </div>
         </div>

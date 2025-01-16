@@ -10,7 +10,7 @@ const HomeVideo = () => {
         {/* <img className="video-overlay1-img" src="./././././assets/img/landing-hero.jpg" alt="heroimg"></img> */}
         <video
           className="absolute top-0 left-0 w-full h-full object-cover"
-          src={`${process.env.PUBLIC_URL}/assets/img/Home/homevideo.mp4`}
+          src={`${process.env.PUBLIC_URL}/assets/img/Home/homeVideo.mp4`}
 		
           autoPlay
           loop

@@ -120,7 +120,7 @@
 @media (max-width: 800px) {
 	
 	.video-overlay1{
-		height: 60vh;
+		height: 75vh;
 		
 	}
 	
@@ -128,7 +128,7 @@
   
   @media (max-width: 425px) {
 	.video-overlay1{
-	height: 70vh;
+	height: 75vh;
 
 	}
 	
@@ -136,7 +136,7 @@
   }
   @media (max-width: 380px) {
 	.video-overlay1{
-	height: 59vh;
+	height: 70vh;
 	margin-bottom: 1.2rem;
 
 	}

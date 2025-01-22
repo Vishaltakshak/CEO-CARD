@@ -23,7 +23,7 @@ const Enquiry = () => {
       <div className="w-full flex items-center justify-center bg-enquiry bg-cover bg-top bg-no-repeat relative">
         {/* Dark Overlay */}
         <div className="absolute top-0 left-0 w-full h-full bg-black opacity-60"></div>
-        <div className="flex z-[10] bg-[rgba(255,255,255,0.8)] p-1 rounded-xl m-8 w-[50%]">
+        <div className="flex z-[10] bg-[rgba(255,255,255,0.8)] p-1 rounded-xl m-8 w-[80%] md:w-[50%]">
           <div className="col-xl-12 col-12">
             <div className="inquire-form-container">
              

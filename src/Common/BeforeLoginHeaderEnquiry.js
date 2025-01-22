@@ -4,8 +4,8 @@ import "../css/home.css";
 const BeforeLoginHeaderEnquiry = (props) => {
   return (
     <>
-      <nav className="navbar navbar-expand-lg navbar-light beforelogin-nav transparent-nav" style={{backgroundColor: props.HEADERBGCOLOR}} >
-        <div className="container-fluid pe-0 ps-0">
+      <nav className="navbar navbar-expand-lg h-4 navbar-light beforelogin-nav transparent-nav" style={{backgroundColor: props.HEADERBGCOLOR}} >
+        <div className="container-fluid pe-0 ps-0 h-20 md:h-8">
           <div className="container pe-0 ps-0">
             <a className="navbar-brand" href="/#">
               <img
@@ -16,7 +16,7 @@ const BeforeLoginHeaderEnquiry = (props) => {
               ></img>
             </a>
 
-            <button
+            {/* <button
               className="navbar-toggler"
               type="button"
               data-bs-toggle="collapse"
@@ -28,8 +28,8 @@ const BeforeLoginHeaderEnquiry = (props) => {
               <span className="navbar-toggler-icon">
                 <i class="bi bi-list" aria-hidden="true"></i>
               </span>
-            </button>
-            <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
+            </button> */}
+            {/* <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
               <ul className="navbar-nav beforelogin-navbar ms-auto mb-2 mb-lg-0">
                 <li className="nav-item">
                   <a className="nav-link" href="#enquiryFaq" style={{color:"#fff"}}>
@@ -38,7 +38,7 @@ const BeforeLoginHeaderEnquiry = (props) => {
                 </li>
 
               </ul>
-            </div>
+            </div> */}
           </div>
         </div>
       </nav>

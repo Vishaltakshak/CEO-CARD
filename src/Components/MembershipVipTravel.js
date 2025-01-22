@@ -168,7 +168,7 @@ const MembershipVipTravel = () => {
         <div className="bg-[#546166] p-6 rounded-lg flex  justify-center shadow-xl relative">
           {/* Text content on the right */}
           <div className="lg:w-2/3  text-center lg:text-left text-white flex flex-col justify-start z-[10]">
-            <h1 className="text-3xl font-bold text-white text-center mb-auto">
+            <h1 className="text-3xl font-bold text-white text-center">
 			Corporate Services & Tools
             </h1>
 

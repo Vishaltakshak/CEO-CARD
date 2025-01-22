@@ -18,7 +18,7 @@ const FooterNew = (props) => {
           ‍
           <a
             href="/about_us"
-            target="_blank"
+            
             className="redesign-home-footer-links"
           >
             ABOUT US
@@ -26,7 +26,7 @@ const FooterNew = (props) => {
           |
           <a
             href="/partnership"
-            target="_blank"
+            
             className="redesign-home-footer-links"
           >
             PARTNERSHIP INQUIRIES
@@ -34,7 +34,7 @@ const FooterNew = (props) => {
           |
           <a
             href="/ContactUs"
-            target="_blank"
+            
             className="redesign-home-footer-links"
           >
             CONTACT US
@@ -42,7 +42,7 @@ const FooterNew = (props) => {
           |
           <a
             href="/careers"
-            target="_blank"
+            
             className="redesign-home-footer-links"
           >
             CAREERS
@@ -50,7 +50,7 @@ const FooterNew = (props) => {
           |
           <a
             href="/privacy"
-            target="_blank"
+            
             className="redesign-home-footer-links"
           >
             PRIVACY

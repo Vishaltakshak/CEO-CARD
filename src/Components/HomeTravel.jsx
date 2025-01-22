@@ -32,21 +32,21 @@ const HomeTravel = () => {
     }, []);
     return (
         <>
-        <div className="container-fluid benefits-block-parent benefits-block-parent-white">
+        <div className="container-fluid benefits-block-parent benefits-block-parent-white scrollBar overflow-x-auto" >
 				<div className="container pe-0 ps-0">
 					
 						<h1 className="text-center text-[20px] font-bold">TRAVEL PARTNERS</h1>
 					<div className="  flex   ">
 						<div className=" flex scroll-inner-div-6-benefits duration-1000 test-slider ">
 							
-                        <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-2 member-benefit-block-popular flex bg-black" >
+                        <div className="col-xxl-4 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-2 !gap-20 md:gap-4 member-benefit-block-popular flex bg-black" >
                 {data.map((datab, i) => (
                     <Link to='/ServiceInfo' state={{datab}}>
-                    <div >
+                    <div className="w-[60vw] md:w-[300px] h-[200px]">
                         <a href="/SubMenu">
-                            <div className="benefit-image-wrapper">
+                            <div className="benefit-image-wrapper h-[200px] w-[300px]">
                                 
-                                <img  alt={datab.ContentTitle} className="primary-image" src={datab.VendorImages}></img>
+                                <img  alt={datab.ContentTitle} className="primary-image h-[200px] !w-[94%] md:w-[300px]" src={datab.VendorImages}></img>
 
                             </div>
                         </a>

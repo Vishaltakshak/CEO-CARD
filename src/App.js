@@ -52,6 +52,7 @@ import ServiceInfo from "./Components/ServiceInfo.jsx";
 import TravelInfo from "./Components/TravelInfo.jsx";
 import HotelInfo from "./Components/HotelInfo.jsx";
 import BusinessInfo from "./Components/BusinessInfo.jsx";
+import LifestyleInfoPage from "./Components/LifeStyleInfoPage.jsx";
 
 const App = () => {
   const isLoggedIn = sessionStorage.getItem("isLoggedIn");
@@ -86,6 +87,7 @@ const App = () => {
                 path="/MembershipFormSubmitted"
                 element={<MembershipFormSubmitted />}
               />
+              <Route path='/LifeStyleInfoPage' element={<LifestyleInfoPage/>} />
               <Route path='/refferal' element={<Referreal/>} />
               <Route path="/exploreelite" element={<ExploreElite/>} />
               <Route path="/SubMenu" element={<SubMenu />} />

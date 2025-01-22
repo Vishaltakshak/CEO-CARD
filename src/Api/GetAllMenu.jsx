@@ -9,7 +9,7 @@ const useMenuData = () => {
   useEffect(() => {
     const fetchMenuData = async () => {
       try {
-        const url = "https://ceo-card-back-end-72bl.vercel.app/api/Nav/hover/view";
+        const url = `${process.env.REACT_APP_BACKEND_URL}/api/Nav/hover/view`;
         const response = await axios.get(url);
         const data = response.data.Data;
         
@@ -20,11 +20,12 @@ const useMenuData = () => {
         }));
         setMenu(storedData);
 
-        const onHoverLinksUrl = "https://ceo-card-back-end-72bl.vercel.app/api/subnav/link/view";
+        const onHoverLinksUrl =`${process.env.REACT_APP_BACKEND_URL}/api/subnav/link/view` ;
 
         try {
           const response = await axios.get(onHoverLinksUrl);
           const links = response.data.Data;
+          
           const subCategories = links.map(data=>data);
          
           setlink(subCategories);
@@ -45,7 +46,7 @@ const useMenuData = () => {
     fetchMenuData();
   }, []); // Empty dependency array ensures the fetch runs only once on mount
 
-  return {menu, link}; // Only return the menu array
+  return {menu, link}; 
 };
 
 export default useMenuData;

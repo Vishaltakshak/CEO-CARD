@@ -10,15 +10,16 @@ import ScrollTotop from "./ScrollTotop";
 import AfterLoginLayout from "./layouts/AfterLoginLayout";
 import ServiceInfoBanner from "./ServiceInfoBanner";
 import VendorDescription from "./ShareExperience";
+import LifeStyleInfoBanner from "./LIfeStyleInfoBanner";
 
-const HotelInfo = () => {
+const LifestyleInfoPage = () => {
   const location = useLocation();
-  const service = location.state?.hotel || {};
+  const service = location.state?.datab || {};
  
 
   return (
     <AfterLoginLayout>
-      <ServiceInfoBanner service={service} />
+      <LifeStyleInfoBanner service={service} />
       {/* <AboutSubMenu service={service} /> */}
       <SubcategorySlider service={service} />
       <VendorDescription service={service} />
@@ -29,4 +30,4 @@ const HotelInfo = () => {
   );
 };
 
-export default HotelInfo;
+export default LifestyleInfoPage;

@@ -7,7 +7,7 @@ const AfterLoginHeader = ({ allMenu, service }) => {
   const navigate = useNavigate();
   const [scroll, setScroll] = useState(false);
   const menuData = allMenu; // Use the custom hook to fetch menu data
-  
+  console.log("service data is ",service)
 
   useEffect(() => {
     const handleScroll = () => setScroll(window.scrollY > 50);

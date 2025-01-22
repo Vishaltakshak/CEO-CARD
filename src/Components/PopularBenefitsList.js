@@ -33,13 +33,13 @@ const PopularBenefitsList = () => {
 	}, []);
 	return (
 		<>
-			<div className="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-2 member-benefit-block-popular flex " >
+			<div className="col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-2 !gap-[20] md:gap[1rem] member-benefit-block-popular flex " >
 				{data.map((datab, i) => (
-					<div >
+					<div className="w-[60vw] md:w-[25vw]">
 						<Link to='/ServiceInfo' state={{datab}}>
-							<div className="benefit-image-wrapper">
+							<div className="benefit-image-wrapper h-[200px] w-[60vw] md:w-[25vw]">
 								
-								<img  alt={datab.ContentTitle} className="primary-image" src={datab.VendorImages}></img>
+								<img  alt={datab.ContentTitle} className="primary-image h-[200px] !w-[94%] md:w-[300px]" src={datab.VendorImages}></img>
 
 							</div>
 						

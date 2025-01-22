@@ -91,7 +91,7 @@ const BrowseHotelsFavourites = () => {
                         <div className="benefit-image-wrapper">
                           <img
                             alt={hotel.VendorName}
-                            className="primary-image"
+                            className="primary-image max-w-[100%] max-h-auto md:h-[50vh] "
                             src={hotel.VendorImages}
                           />
                         </div>

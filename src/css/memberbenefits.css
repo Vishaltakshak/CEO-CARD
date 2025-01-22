@@ -11,6 +11,32 @@ h6,
 p {
 	font-family: 'Montserrat', sans-serif !important;
 } */
+.scrollBar::-webkit-scrollbar {
+	width: 8px; /* Adjust width for vertical scroll */
+	height: 8px; /* Adjust height for horizontal scroll */
+  }
+  
+  .scrollBar::-webkit-scrollbar-track {
+	background: #1a1a1a; /* Dark gray background to blend with black theme */
+	border-radius: 10px; /* Round edges */
+  }
+  
+  .scrollBar::-webkit-scrollbar-thumb {
+	background: #444; /* Slightly lighter gray thumb for contrast */
+	border-radius: 10px; /* Round edges */
+	border: 2px solid #1a1a1a; /* Add border for a seamless look */
+  }
+  
+  .scrollBar::-webkit-scrollbar-thumb:hover {
+	background: #666; /* Slightly lighter gray on hover for better visibility */
+  }
+  
+  .scrollBar {
+	scrollbar-width: none; /* For Firefox: thin scrollbar */
+	scrollbar-color: #444 #1a1a1a; 
+	
+  }
+  
 .Member-benefit-con-color{
 	background-color: #000000;
 
@@ -48,10 +74,11 @@ p {
 	margin: 10px;
 	width: 20%;
 	gap: 1rem;
+	height: 50vh;
 }
 .member-benefit-block-popular img{
-	height: 70%;
-	width: 20vw;
+	height: 25vh;
+	width: 25vw;
 }
 .benefits-block-parent  .member-benefit-block-parent
 {

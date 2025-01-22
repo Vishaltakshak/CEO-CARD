@@ -35,7 +35,7 @@ const LoginHeader = () => {
             className="collapse navbar-collapse before-login-header-collapse"
             id="navbarSupportedContent"
           >
-            <ul className="navbar-nav ms-auto text-center d-flex mb-2 mb-lg-0">
+            <ul className="navbar-nav ms-auto text-center d-flex mb-2 mb-lg-0 "style={{"visibility":"visible"}}>
               <li className="nav-item">
                 <Link className="nav-link active" to="/" >
                   Benefits

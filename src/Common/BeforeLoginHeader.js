@@ -37,7 +37,7 @@ const BeforeLoginHeader = () => {
             </svg>
           </button>
 
-          <div className={`lg:flex ${isOpen ? 'block' : 'hidden'} absolute lg:relative top-[74px] left-[73%] lg:left-0 lg:top-0 w-full lg:w-auto bg-transparent  lg:mt-0  lg:p-0`}>
+          <div className={`lg:flex ${isOpen ? 'block h-screen' : 'hidden h-0'} absolute lg:relative top-[74px] left-[73%] lg:left-0 lg:top-0 w-full lg:w-auto bg-transparent  lg:mt-0  lg:p-0`}>
             <ul className="flex flex-col lg:flex-row space-y-2 lg:space-y-0 lg:space-x-6">
               <li>
                 <Link

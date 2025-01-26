@@ -84,7 +84,7 @@ const BrowseHotelsFavourites = () => {
 
               <div className="tab-content custom-tab-content" id="myTabContent">
                 <div role="tabpanel" className="tab-pane fade active show mt-2 " id="tab1" aria-labelledby="public-tab">
-                  <div className=" grid grid-cols-1 lg:grid-cols-2 gap-6 my-6">
+                  <div className=" grid grid-cols-2 lg:grid-cols-2 gap-6 my-6">
                     {visibleHotels.map((hotel, index) => (
                       <div key={index} className="hotel-card">
                         <Link to='/HotelInfo' state={{hotel}}>
@@ -97,7 +97,7 @@ const BrowseHotelsFavourites = () => {
                         </div>
                         <div className="hotel-details">
                           <h5 style={{ color: "white", fontWeight: "bold" }}>{hotel.VendorName}</h5>
-                          <p style={{ fontSize: "12px" }}>{hotel.VendorDescription}</p>
+                          <p className="line-clamp-4" style={{ fontSize: "12px" }}>{hotel.VendorDescription}</p>
                         </div>
                         </Link>
                       </div>

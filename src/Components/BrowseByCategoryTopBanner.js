@@ -50,7 +50,7 @@ const BrowseByCategoryTopBanner = ({ allMenuNav }) => {
                     src="https://d2q86wmri3hsp2.cloudfront.net/system/benefits/standard_videos/000/001/110/original/Porsche_standard.mp4?1690469858"
                   ></video> */}
                       
-                      <div className="absolute top-[30%]  right-0 left-0 mr-auto ml-auto text-center">
+                      <div className="absolute top-[25%] md:top-[30%]  right-0 left-0 mr-auto ml-auto text-center">
                     <div className="col-xl-12 col-xxl-12 col-lg-12 col-md-12 col-12 flex flex-col justify-center items-center">
                       <h1 className="browse-category-title text-[1rem]">LifeStyle</h1>
                       <p className="font-bold text-white">Exclusive perks for extraordinary experiences</p>

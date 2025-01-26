@@ -108,10 +108,10 @@ column-gap: 100px;
   text-decoration: none;
 }
 
-.hotels-fav-container .custom-tab-content
+/* .hotels-fav-container .custom-tab-content
 {
 padding: 20px;
-}
+} */
 
 .hotels-fav-container .benefit-image-wrapper
 {
@@ -121,7 +121,7 @@ margin-top:0;
 {
   .hotels-fav-container
   {
-    padding-top:30px;
+    padding-top:90px;
   }
   .hotels-fav-row-tab .scroll-arrow
   {
@@ -174,10 +174,10 @@ align-items: center;
 {
   font-size: 12px;
 }
-.hotels-fav-container .custom-tab-content
+/* .hotels-fav-container .custom-tab-content
 {
 padding: 10px;
-}
+} */
 
 
 

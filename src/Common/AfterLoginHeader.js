@@ -92,10 +92,11 @@ const AfterLoginHeader = ({ allMenu, service }) => {
           </Link>
 
           <div className="div-sett">
-            <div className="afterlogin-nav-header">
-              <Link className="btn btn-explore" to="/exploreelite">
+            <div className="afterlogin-nav-header ">
+              <div className=" hidden md:block">
+              <Link className="btn btn-explore hidden md:block" to="/exploreelite">
                 PREMIUM CARD
-              </Link>
+              </Link></div>
 
               <div className="account-menu">
                 <ul className="nav navbar-nav">

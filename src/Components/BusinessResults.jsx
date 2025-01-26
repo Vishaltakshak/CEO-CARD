@@ -398,15 +398,15 @@ const BusinessResults = ({ travelData = [] }) => {
 
                     <div className="results flex-1 p-4">
                         <div className="result-grid">
-                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                            <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4">
                                 {filteredData.map((item, i) => (
                                     <div key={i} className="bg-black rounded-lg overflow-hidden">
                                         <Link to='/BusinessInfo' state={{item}}>
                                             <div className="benefit-image-wrapper">
-                                                <img alt={item.ContentTitle} className="w-full h-48 object-cover" src={item.VendorImages} />
+                                                <img alt={item.ContentTitle} className="w-full min-h-48 object-contain" src={item.VendorImages} />
                                             </div>
                                         
-                                            <div className="p-4">
+                                            <div >
                                                 <div className="mb-2">
                                                     <h5 className="text-white font-bold text-lg">
                                                         {item.VendorName}

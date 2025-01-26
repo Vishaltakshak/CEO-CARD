@@ -15,7 +15,7 @@ const BrowseHotelsTopBanner = () => {
 			<div className="container-fluid browse-hotels-banner-container">
 				<div className="row browse-hotel-row">
 					<div className="col-xl-12 col-lg-12 col-md-12 col-12 hotels-banner">
-					<div className="absolute top-0 left-0 w-full h-[79vh] bg-black opacity-30 z-10"></div>
+					<div className="absolute top-0 left-0 w-full h-[48vh] md:h-[79vh] bg-black opacity-30 z-10"></div>
 						<img
 						className="absolute sm:top-4  md:top-0 md:block h-[48vh]  w-[100%] lg:h-[75vh]"
 						style={{top:'0.25rem'}}

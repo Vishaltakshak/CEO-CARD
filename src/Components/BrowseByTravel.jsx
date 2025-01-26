@@ -110,7 +110,7 @@ const TravelResults = () => {
                 </button>
             </div>
 
-            <div className="container ml-4 p-4">
+            <div className="container mr-1 ml-1 min-w-[100vw]">
                 <div className="flex flex-col md:flex-row gap-4">
                     {/* Filters Sidebar */}
                     <div className={`
@@ -196,7 +196,7 @@ const TravelResults = () => {
                     </div>
 
                     {/* Results Grid - remains the same */}
-                    <div className="md:w-3/4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div className="  md:w-3/4 grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 mr-2">
                         {filteredData.length > 0 ? (
                             filteredData.map((service, index) => (
                                 <div key={index} className="bg-black rounded-lg overflow-hidden">
@@ -208,7 +208,7 @@ const TravelResults = () => {
                                             className="w-full h-full object-cover"
                                         />
                                     </div>
-                                    <div className="p-4">
+                                    <div >
                                         <h3 className="text-xl font-bold mb-2 text-white">{service.VendorName}</h3>
                                         <div className="flex items-center mb-2">
                                             {[...Array(5)].map((_, i) => (
@@ -224,10 +224,10 @@ const TravelResults = () => {
                                                 </span>
                                             ))}
                                         </div>
-                                        <p className="text-sm mb-2 line-clamp-3">{service.VendorDescription}</p>
+                                        <p className="text-sm mb-2 line-clamp-2">{service.VendorDescription}</p>
                                         <p className="text-sm font-semibold">
-                                            {service.VendorPricingInfo.Currency}
-                                            {service.VendorPricingInfo.PriceRange.Min.toLocaleString()} - 
+                                            {service.VendorPricingInfo.Currency+" "}
+                                            {service.VendorPricingInfo.PriceRange.Min.toLocaleString() + " - "} 
                                             {service.VendorPricingInfo.PriceRange.Max.toLocaleString()}
                                         </p>
                                     </div>

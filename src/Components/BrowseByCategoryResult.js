@@ -30,12 +30,12 @@ const BrowseByCategoryResult = ({sharedState}) => {
 				</div>
 				
 
-				<div className=" result-option-container suggestion-list testimonial-container">
-					<div className="test-slider flex">
+				<div className=" result-option-container suggestion-list ">
+					{/* <div className="test-slider flex"> */}
 				
 					<PopularBenefitsList/>
 					
-					</div>
+					{/* </div> */}
 				</div>
 			</div>
 		</>

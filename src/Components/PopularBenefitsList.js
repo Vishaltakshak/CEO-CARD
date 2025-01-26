@@ -33,13 +33,13 @@ const PopularBenefitsList = () => {
 	}, []);
 	return (
 		<>
-			<div className="col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-2 !gap-[20] md:gap[1rem] member-benefit-block-popular flex " >
+			<div className="col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-sm-6 col-2 !gap-[20]  mt:0 md:gap[1rem] grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4  w-full overflow-y-auto " >
 				{data.map((datab, i) => (
-					<div className="w-[60vw] md:w-[25vw]">
+					<div className="w-[44vw] md:w-[16vw] mb-[2rem]">
 						<Link to='/ServiceInfo' state={{datab}}>
-							<div className="benefit-image-wrapper h-[200px] w-[60vw] md:w-[25vw]">
+							<div className="benefit-image-wrapper  w-[44vw] md:w-[16vw]">
 								
-								<img  alt={datab.ContentTitle} className="primary-image h-[200px] !w-[94%] md:w-[300px]" src={datab.VendorImages}></img>
+								<img  alt={datab.ContentTitle} className="primary-image h-[165px] !w-[100%] md:w-[300px]" src={datab.VendorImages}></img>
 
 							</div>
 						
@@ -50,7 +50,7 @@ const PopularBenefitsList = () => {
 										<h5 style={{color:"white", fontWeight:"bold"}} className="no-translation">{datab.VendorName}</h5>
 									</a>
 								</div>
-								<div className="benefit-description-container col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-6 text-white" style={{overflow:"hidden", fontSize:"12px", maxHeight:"60px", width:"100%"}}>
+								<div className="benefit-description-container col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-6 line-clamp-3 text-white" style={{overflow:"hidden", fontSize:"12px",  width:"70%"}}>
 									{datab.VendorDescription}
 								</div>
 							</div >

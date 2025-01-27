@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import BeforLoginHeader from "../Common/BeforeLoginHeader";
 import HomeVideo from "./HomeVideo.js";
 import ScrollToDivArrow from "./ScrollToDivArrow";
@@ -10,32 +10,33 @@ import Faq from "./Faq";
 import FooterNew from "../Common/FooterNew";
 import "../css/home.css";
 import HomeAfterLogin from "./HomeAfterLogin";
+import { AuthProvider } from "./AuthContext.js";
 
 const Home = () => {
   const isLoggedIn = sessionStorage.getItem("isLoggedIn");
 
+
   if (isLoggedIn) {
     return <HomeAfterLogin />;
   }
-
   return (
     <div className="bg-black">
       <>
-        <BeforLoginHeader />
-       <HomeVideo/>
-        {/* <ScrollToDivArrow /> */}
+      <AuthProvider>
+        <BeforLoginHeader  />
+       <HomeVideo />
+        
         <AboutCeoCard />
 
         <MembershipVipTravel />
-        {/* <MembershipHotelProgram /> */}
-        {/* <MembershipBusinessSolution /> */}
-        {/* <MembershipLifestyle></MembershipLifestyle> */}
+     
 
         <About />
-        {/* <Signature></Signature> */}
+       
         <TestimonialMembers />
         <Faq />
         <FooterNew />
+        </AuthProvider>
       </>
     </div>
   );

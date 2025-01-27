@@ -1,10 +1,15 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-
-const BeforeLoginHeader = () => {
+import { useAuth } from '../Components/AuthContext';
+const BeforeLoginHeader = ({isopen}) => {
+  
   const [isOpen, setIsOpen] = useState(false);
+  const { isLoggedIn, setIsLoggedIn } = useAuth();
 
-  const toggleMenu = () => setIsOpen(!isOpen);
+  const toggleMenu = () => {setIsOpen(!isOpen)
+
+  setIsLoggedIn(!isLoggedIn)
+  };
 
   return (
     <nav className="bg-transparent py-4 absolute z-[100] w-full">

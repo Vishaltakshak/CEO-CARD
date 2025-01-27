@@ -2,11 +2,15 @@ import React from "react";
 import { Link } from "react-router-dom";
 //import BgVideo from '././assets/img/vid-bg.mp4';
 import "../css/home.css";
+import { useAuth } from "./AuthContext";
 
 const HomeVideo = () => {
+  const { isLoggedIn } = useAuth();
+  console.log(isLoggedIn)
+
   return (
     <>
-      <div className="video-overlay1">
+      <div className=  {`video-overlay1 ${isLoggedIn ? "mt-[250px] transition-all" : ""} `}  >
         {/* <img className="video-overlay1-img" src="./././././assets/img/landing-hero.jpg" alt="heroimg"></img> */}
         <video
           className="absolute top-0 left-0 w-full h-full object-cover"

@@ -10,7 +10,7 @@ const HomeVideo = () => {
 
   return (
     <>
-      <div className=  {`video-overlay1 ${isLoggedIn ? "mt-[250px] transition-all" : ""} `}  >
+      <div className=  {`video-overlay1 `}  >
         {/* <img className="video-overlay1-img" src="./././././assets/img/landing-hero.jpg" alt="heroimg"></img> */}
         <video
           className="absolute top-0 left-0 w-full h-full object-cover"
@@ -28,7 +28,7 @@ const HomeVideo = () => {
 
         {/* Dark Overlay */}
         <div className="absolute top-0 left-0 w-full h-full bg-black opacity-60"></div>
-        <div className="video-details1 text-center">
+        <div className= {`video-details1 text-center ${isLoggedIn ? "mt-[250px] transition-all" : ""}`}>
           <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
             <h1 className="homevideo-title1">
 			          Welcome to CEOCard  

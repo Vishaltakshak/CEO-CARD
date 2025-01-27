@@ -28,7 +28,7 @@ const HomeVideo = () => {
 
         {/* Dark Overlay */}
         <div className="absolute top-0 left-0 w-full h-full bg-black opacity-60"></div>
-        <div className= {`video-details1 text-center ${isLoggedIn ? "mt-[250px] transition-all" : ""}`}>
+        <div className= {`video-details1 text-center transition-all duration-250 ease-[cubic-bezier(0,-0.11,1,0.99)] ${isLoggedIn ? "!mt-[200px] " : ""}`}>
           <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
             <h1 className="homevideo-title1">
 			          Welcome to CEOCard  

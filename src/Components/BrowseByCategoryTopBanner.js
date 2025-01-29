@@ -29,7 +29,7 @@ const BrowseByCategoryTopBanner = () => {
     <>
       <div className="container-fluid browse-category-item">
         <div className="row">
-          <div className="col-xl-12 col-xxl-12 col-lg-12 col-md-12 col-12 browse-category-item-right h-[30vh] md:h-[47vh]">
+          <div className="col-xl-12 col-xxl-12 col-lg-12 col-md-12 col-12 browse-category-item-right h-auto md:h-[47vh]">
             <h1 className="browse-category-title text-[1.5rem] text-center mt-4">Featured Lifestyle Benefits</h1>
             <p className="font-bold text-white text-center mb-4">Exclusive perks for extraordinary experiences</p>
 

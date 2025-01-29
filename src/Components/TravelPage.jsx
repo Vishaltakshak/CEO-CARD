@@ -35,7 +35,7 @@ const TravelPage = () => {
           </div>
 
           <div className="col-xl-12 browse-category-item-right">
-            <div className="browse-category-video">
+            <div className="browse-category-video !h-auto">
               <div className="w-[90%] mx-auto gap-4 grid grid-cols-2">
                 {data.map((item, index) => (
                   <div key={index} className="relative rounded-lg overflow-hidden w-full h-64">

@@ -33,10 +33,10 @@ const BrowseByCategoryTopBanner = () => {
             <h1 className="browse-category-title text-[1.5rem] text-center mt-4">Featured Lifestyle Benefits</h1>
             <p className="font-bold text-white text-center mb-4">Exclusive perks for extraordinary experiences</p>
 
-            <div className="browse-category-video grid grid-cols-2 gap-4">
+            <div className="browse-category-video !h-auto grid grid-cols-2 ml-2">
               {data.map((vendor, index) => (
                 <Link key={index} to="/#" target="_blank">
-                  <div className="relative rounded-lg overflow-hidden">
+                  <div className="relative rounded-lg overflow-hidden mr-[0.9rem]">
                     {/* Dark Overlay */}
                     <div className="absolute inset-0 bg-black opacity-55"></div>
 

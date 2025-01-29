@@ -12,7 +12,7 @@ const BusinessPage = () => {
       <div className="container-fluid browse-category-item">
         <div className="row">
           <div className="col-xl-12 col-xxl-12 col-lg-12 col-md-12 col-12 browse-category-item-right">
-            <div className="browse-category-video">
+            <div className="browse-category-video ">
               <Link to="/#" target="_blank">
                 <div className="relative width-height-sett flex justify-center items-center">
                   {/* Dark Overlay */}

@@ -83,7 +83,7 @@ const PopularBenefitsList = () => {
         // City filter
         if (filters.city) {
             filtered = filtered.filter(item => item.City === filters.city);
-			console.log("After city filter length:", filtered.length);
+			
         }
 
         // Brand filter
@@ -94,13 +94,11 @@ const PopularBenefitsList = () => {
                 const match = itemBrand === filterBrand;
                 
                 // Log non-matching items that have the brand property for debugging
-                if (!match && itemBrand) {
-                    console.log(`Non-matching brand: "${itemBrand}" vs filter: "${filterBrand}"`);
-                }
+                
                 
                 return match;
             });
-			console.log("After brand filter length:", filtered.length);
+			
         }
 
         setFilteredData(filtered);

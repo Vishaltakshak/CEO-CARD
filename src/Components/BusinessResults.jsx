@@ -7,31 +7,50 @@ const BusinessResults = () => {
     const [isSidebarVisible, setSidebarVisible] = useState(true);
     const [filteredData, setFilteredData] = useState([]);
     const [data, setData] = useState([]);
-    const [brands, setBrands] = useState([]); // To store brands fetched from backend
+    const [brands, setBrands] = useState([]);
     const [priceRange, setPriceRange] = useState([0, 10000]);
-    const [selectedBrand, setSelectedBrand] = useState('');
     const [selectedCity, setSelectedCity] = useState('');
     const [searchQuery, setSearchQuery] = useState('');
+    const [cities, setCities] = useState([]);
+    const [filters, setFilters] = useState({
+        searchQuery: "",
+        priceRange: [0, 10000],
+        city: "",
+        brand: ""
+    });
+
+    const handleFilterChange = (filterName, value) => {
+        setFilters(prevFilters => ({
+            ...prevFilters,
+            [filterName]: value
+        }));
+    };
 
     const handleFilterBrand = (brand) => {
-        setSelectedBrand(brand);
-        applyFilters(brand, selectedCity, priceRange, searchQuery);
+        setFilters(prevFilters => ({
+            ...prevFilters,
+            brand: brand
+        }));
+        applyFilters(brand, filters.city, priceRange, searchQuery);
     };
 
     const handleFilterCity = (city) => {
-        setSelectedCity(city);
-        applyFilters(selectedBrand, city, priceRange, searchQuery);
+        setFilters(prevFilters => ({
+            ...prevFilters,
+            city: city
+        }));
+        applyFilters(filters.brand, city, priceRange, searchQuery);
     };
 
     const handlePriceChange = (value) => {
         setPriceRange(value);
-        applyFilters(selectedBrand, selectedCity, value, searchQuery);
+        applyFilters(filters.brand, filters.city, value, searchQuery);
     };
 
     const handleSearch = (event) => {
         const query = event.target.value;
         setSearchQuery(query);
-        applyFilters(selectedBrand, selectedCity, priceRange, query);
+        applyFilters(filters.brand, filters.city, priceRange, query);
     };
 
     const applyFilters = (brand, city, price, query) => {
@@ -47,16 +66,12 @@ const BusinessResults = () => {
 
         // Apply brand filter
         if (brand) {
-            filtered = filtered.filter(item =>
-                item.VendorBrand?.toLowerCase() === brand.toLowerCase()
-            );
+            filtered = filtered.filter(item => item.Brand?.trim() === brand.trim());
         }
 
         // Apply city filter
         if (city) {
-            filtered = filtered.filter(item =>
-                item.City?.toLowerCase() === city.toLowerCase()
-            );
+            filtered = filtered.filter(item => item.City === city);
         }
 
         // Apply price filter
@@ -71,22 +86,29 @@ const BusinessResults = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                // Fetch data for vendors
                 const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/Vendor/vendors`);
                 if (!response.ok) {
                     throw new Error('Failed to fetch data');
                 }
                 const result = await response.json();
                 const Travel = result.Data.filter(item => item.VendorCategory === 'Business');
-                
+                const cityList = [...new Set(Travel.map(item => item.City))].filter(Boolean);
+                const brandList = [...new Set(
+                        Travel
+                        .map(item => item.Brand?.trim())
+                        .filter(Boolean)
+                        .sort()
+                )];
                 const enrichedData = Travel.map(item => ({
                     ...item,
                     Price: item.Price || Math.floor(Math.random() * 10000),
                     Rating: item.Rating || Math.floor(Math.random() * 5) + 1
                 }));
-                
+
                 setData(enrichedData);
                 setFilteredData(enrichedData);
+                setCities(cityList);
+                setBrands(brandList);
             } catch (err) {
                 console.error('Error fetching vendor data:', err);
             }
@@ -94,13 +116,12 @@ const BusinessResults = () => {
 
         const fetchBrands = async () => {
             try {
-                // Fetch unique brands from backend
                 const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/Vendor/brands`);
                 if (!response.ok) {
                     throw new Error('Failed to fetch brands');
                 }
                 const result = await response.json();
-                setBrands(result.Data); // Assuming the backend sends an array of brand names in `result.Data`
+                setBrands(result.Data || []); // Ensure it defaults to an empty array if no data
             } catch (err) {
                 console.error('Error fetching brands:', err);
             }
@@ -113,10 +134,9 @@ const BusinessResults = () => {
     return (
         <div className="container-fluid pe-0 ps-0 browse-category-result">
             <div className="col-xl-12">
-                <div className="d-flex">
+                <div className="d-flex flex-col md:flex-row">
                     {isSidebarVisible && (
                         <div className="sidebar bg-black p-4 rounded-lg hidden md:block">
-                            {/* Search Input */}
                             <div className="mb-6">
                                 <h4 className="text-white mb-4">Search</h4>
                                 <input
@@ -127,38 +147,47 @@ const BusinessResults = () => {
                                     className="w-full px-3 py-2 bg-black text-white rounded focus:outline-none focus:ring-2 focus:ring-white"
                                 />
                             </div>
-                            
-                            {/* Brand Filter */}
+
                             <div className="mb-6">
-                                <h4 className="text-white mb-4">Brands</h4>
-                                <ul className="space-y-2">
-                                    {brands.map((brand) => (
-                                        <li 
-                                            key={brand}
-                                            onClick={() => handleFilterBrand(brand)}
-                                            className={`cursor-pointer ${
-                                                selectedBrand === brand ? 'text-white font-bold' : 'text-gray-300'
-                                            } hover:text-white`}
-                                        >
-                                            {brand}
-                                        </li>
+                                <h4 className="text-white mb-2">Brand</h4>
+                                <select
+                                    className="w-full p-2 bg-gray-800 rounded text-white appearance-none"
+                                    value={filters.brand}
+                                    onChange={(e) => handleFilterBrand(e.target.value)}
+                                    style={{ direction: 'ltr' }}
+                                >
+                                    <option value="">All Brands</option>
+                                    {brands.map(brand => (
+                                        <option key={brand} value={brand}>{brand}</option>
                                     ))}
-                                </ul>
+                                </select>
                             </div>
 
-                            {/* City Filter */}
+                            
                             <div className="mb-6">
+                                <select
+                                    className="w-full p-2 bg-gray-800 rounded text-white appearance-none"
+                                    value={filters.city}
+                                    onChange={(e) => handleFilterChange("city", e.target.value)}
+                                    style={{ direction: 'ltr' }}
+                                >
+                                    <option value="">All Cities</option>
+                                    {cities.map(city => (
+                                        <option key={city} value={city}>{city}</option>
+                                    ))}
+                                </select>
+                            </div>
+                            {/* <div className="mb-6">
                                 <h4 className="text-white mb-4">City</h4>
                                 <input
                                     type="text"
-                                    value={selectedCity}
+                                    value={filters.city}
                                     onChange={(e) => handleFilterCity(e.target.value)}
                                     placeholder="Enter city..."
                                     className="w-full px-3 py-2 bg-black text-white rounded focus:outline-none focus:ring-2 focus:ring-white"
                                 />
-                            </div>
+                            </div> */}
 
-                            {/* Price Range */}
                             <div className="mb-6">
                                 <h4 className="text-white mb-4">Price Range</h4>
                                 <Slider
@@ -178,9 +207,8 @@ const BusinessResults = () => {
                             </div>
                         </div>
                     )}
-
-                    {/* Mobile Filters */}
-                    <div className="block md:hidden p-4 bg-black text-white space-y-4">
+                     {/* Mobile Filters */}
+                     <div className="block md:hidden p-4 bg-black text-white space-y-4">
                         <input
                             type="text"
                             value={searchQuery}
@@ -188,15 +216,18 @@ const BusinessResults = () => {
                             placeholder="Search..."
                             className="w-full px-3 py-2 bg-black text-white rounded focus:outline-none focus:ring-2 focus:ring-white"
                         />
-                        <input
-                            type="text"
-                            value={selectedCity}
-                            onChange={(e) => handleFilterCity(e.target.value)}
-                            placeholder="Enter city..."
-                            className="w-full px-3 py-2 bg-black text-white rounded focus:outline-none focus:ring-2 focus:ring-white"
-                        />
+                            <select
+                                    className="w-full p-2 bg-gray-800 rounded text-white appearance-none"
+                                    value={filters.city}
+                                    onChange={(e) => handleFilterChange("city", e.target.value)}
+                                    style={{ direction: 'ltr' }}
+                                >
+                                    <option value="">All Cities</option>
+                                    {cities.map(city => (
+                                        <option key={city} value={city}>{city}</option>
+                                    ))}
+                            </select>
                     </div>
-
                     <div className="results flex-1 p-4">
                         <div className="result-grid">
                             <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -206,7 +237,6 @@ const BusinessResults = () => {
                                             <div className="benefit-image-wrapper">
                                                 <img alt={item.ContentTitle} className="w-full min-h-48 object-contain" src={item.VendorImages} />
                                             </div>
-                                        
                                             <div>
                                                 <div className="mb-2">
                                                     <h5 className="text-white font-bold text-lg">
@@ -217,7 +247,7 @@ const BusinessResults = () => {
                                                     Price: ₹{item.Price}
                                                 </div>
                                                 <div className="text-yellow-400 mb-2">
-                                                    {'★'.repeat(item.Rating)}{'☆'.repeat(5-item.Rating)}
+                                                    {'★'.repeat(item.Rating)}{'☆'.repeat(5 - item.Rating)}
                                                 </div>
                                                 <div className="text-gray-400 text-sm" style={{maxHeight: "60px", overflow: "hidden"}}>
                                                     {item.VendorDescription}

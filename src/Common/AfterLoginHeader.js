@@ -7,7 +7,7 @@ const AfterLoginHeader = ({ allMenu, service }) => {
   const navigate = useNavigate();
   const [scroll, setScroll] = useState(false);
   const menuData = allMenu; // Use the custom hook to fetch menu data
-  console.log("service data is ",service)
+ 
 
   useEffect(() => {
     const handleScroll = () => setScroll(window.scrollY > 50);
@@ -81,7 +81,7 @@ const AfterLoginHeader = ({ allMenu, service }) => {
     <>
       <div className="nav-container">
         <nav
-          className={`navbar navbar-expand-lg navbar-static-top afterlogin-nav ${
+          className={`navbar navbar-expand-lg navbar-static-top afterlogin-nav  ${
             scroll ? "thin-navbar" : ""
           }`}
         >
@@ -333,17 +333,13 @@ const AfterLoginHeader = ({ allMenu, service }) => {
                 <li className="nav-item hidden md:block  ">
                 <Link to="/homeafterlogin">
                 <img
-                              className="w-[4rem]  block "
-                              src="././assets/img/ceo-logo-white.png"
-                              alt="Logo"
-                            />
-                                      </Link>
-                
-               
+                    className="w-[4rem]  block "
+                    src="././assets/img/ceo-logo-white.png"
+                    alt="Logo"
+                  />
+                 </Link>
                 </li>
-                
-                
-              
+
                 <li className="nav-item sm:hidden md:block  ">
                   <a className="nav-link" href="/Community">
                     <strong>community</strong>
@@ -403,7 +399,7 @@ const AfterLoginHeader = ({ allMenu, service }) => {
               </li>
             ))}
             
-            <span className="mobile-category-link-wrapper">
+            {/* <span className="mobile-category-link-wrapper">
               <a className="mobile-category-link" href="/allbenifits">
                 <strong>ALL BENEFITS</strong>
               </a>
@@ -412,7 +408,7 @@ const AfterLoginHeader = ({ allMenu, service }) => {
               <a className="mobile-category-link" href="/community">
                 <strong>COMMUNITY</strong>
               </a>
-            </span>
+            </span> */}
           </ul>
         </div>
       </div>

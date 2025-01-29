@@ -10,7 +10,7 @@ const BrowseByCategoryResult = ({sharedState}) => {
 	return (
 		
 		<>
-			<div id="categorization-results" className={sharedState ? "col-xxl-9 col-xl-9 col-lg-9 col-md-12 col-12 categorization-results" : "col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-12 categorization-results result-fullscreen"}>
+			<div id="categorization-results" className={sharedState ? "col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-12 categorization-results" : "col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-12 categorization-results result-fullscreen"}>
 				<div className="d-xxl-block d-xl-block d-lg-block d-md-none d-sm-none d-none">
 					<div className="row">
 						

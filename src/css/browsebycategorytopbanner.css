@@ -86,14 +86,15 @@
 @media only screen and (max-width: 767px) 
 {
   .browse-category-title {
-    font-size: 18px;
+    margin-top: 0.8rem;
+    font-size: 24px;
     text-align:center;
 }
 
 .browse-category-item .browse-category-img,
 .browse-category-item .browse-category-video,
 .browse-category-item .browse-category-video-height {
-  height: 120px;
+  height: 15vh;
 }
 .browse-category-item .browse-category-info {
   padding: 5px 5px;

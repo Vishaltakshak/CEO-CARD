@@ -1,127 +1,62 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import "../css/browsebycategorytopbanner.css";
-const BrowseByCategoryTopBanner = ({ allMenuNav }) => {
+
+const BrowseByCategoryTopBanner = () => {
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    const fetchCategories = async () => {
+      try {
+        const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/Vendor/vendors`);
+        if (!response.ok) {
+          throw new Error("Failed to fetch data");
+        }
+        const result = await response.json();
+
+        // Filter for Paid vendors & Get first 2 only
+        const lifestyleVendors = result.Data.filter((item) => item.Paid === "true").slice(0, 2);
+
+        setData(lifestyleVendors);
+      } catch (error) {
+        console.error("Error fetching categories:", error);
+      }
+    };
+
+    fetchCategories();
+  }, []);
+
   return (
     <>
-      
       <div className="container-fluid browse-category-item">
         <div className="row">
-          {/* <div className="col-xl-6 col-xxl-6 col-lg-6 col-md-6 col-6 browse-category-item-left">
-            <div
-              className="browse-category-img"
-              style={{
-                backgroundImage:
-                  "url('https://d2920d93lyqeaf.cloudfront.net/images/picture_gallery_items/images/6987/large_sixt.com-rent-a-car-for-business-sixt-products-rent.jpg')",
-              }}
-            >
-              <Link to="/#" target="_blank">
-                <div className="width-height-sett"></div>
-              </Link>
-            </div>
-            <div className="browse-category-info">
-              <h3 className="browse-category-info-title">
-                <Link to="/#" target="_blank">
-                  SIXT - Rent The Car
-                </Link>
-              </h3>
-              <p className="browse-category-info-para">
-                {" "}
-                Elevated car rental that meets your needs across the globe
-              </p>
-            </div>
-          </div> */}
-          <div className="col-xl-12 col-xxl-12 col-lg-12 col-md-12 col-12 browse-category-item-right">
-            
-            <div className="browse-category-video">
-              <Link to="/#" target="_blank">
-                <div class="width-height-sett">
-                <div className="absolute top-15 left-0 w-full h-[15%] md:h-[40%] bg-black opacity-55"></div>
-                <img 
-                className="browse-category-video-height"
-                src={`${process.env.PUBLIC_URL}/assets/img/Home/vacation.jpg`}
-                 alt="lifestyle"/>
-                  {/* <video
-                    poster="https://d2920d93lyqeaf.cloudfront.net/images/picture_gallery_items/images/7912/gallery_Screenshot_2023-12-05_at_5.09.53_PM.png?1701814225"
-                    className="browse-category-video-height"
-                    autoplay="autoplay"
-                    loop="loop"
-                    muted="muted"
-                    src="https://d2q86wmri3hsp2.cloudfront.net/system/benefits/standard_videos/000/001/110/original/Porsche_standard.mp4?1690469858"
-                  ></video> */}
-                      
-                      <div className="absolute top-[25%] md:top-[30%]  right-0 left-0 mr-auto ml-auto text-center">
-                    <div className="col-xl-12 col-xxl-12 col-lg-12 col-md-12 col-12 flex flex-col justify-center items-center">
-                      <h1 className="browse-category-title text-[1rem]">LifeStyle</h1>
-                      <p className="font-bold text-white">Exclusive perks for extraordinary experiences</p>
-                    </div>
-                    </div>
-            
-                </div>
-              </Link>
-            </div>
-            {/* <div className="browse-category-info">
-              <h3 className="browse-category-info-title">
-                <Link to="/#" target="_blank">
-                  Porsche Drive
-                </Link>
-              </h3>
-              <p className="browse-category-info-para">
-                {" "}
-                Waived Activation Fees on Porsche Drive Rentals and
-                Subscriptions & 10% off.
-              </p>
-            </div> */}
-          </div>
+          <div className="col-xl-12 col-xxl-12 col-lg-12 col-md-12 col-12 browse-category-item-right h-[30vh] md:h-[47vh]">
+            <h1 className="browse-category-title text-[1.5rem] text-center mt-4">Featured Lifestyle Benefits</h1>
+            <p className="font-bold text-white text-center mb-4">Exclusive perks for extraordinary experiences</p>
 
-          {/* <ul className="navbar-nav beforelogin-navbar mx-auto mb-2 mb-lg-0">
-            {allMenuNav &&
-              allMenuNav.length > 0 &&
-              allMenuNav.map((menu) => (
-                <li
-                  className="nav-item dropdown has-megamenu"
-                  key={menu.categoryId}
-                >
-                  <div className="dropdown-menu megamenu" role="menu">
-                    <div className="container">
-                      <div className="row g-3">
-                   
-                        <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-                          <div className="row">
-                            {menu.subcategories.map((subCategory) => (
-                              <div
-                                className="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-12 desktop-display-sett"
-                                key={subCategory.subCategoryId}
-                              >
-                                <div className="col-megamenu">
-                                  <h6 className="megamenu-heading">
-                                    <Link to="/homeafterlogin">
-                                      {subCategory.subCategoryName}
-                                    </Link>
-                                  </h6>
-                                  <div className="megamenu-heading-links">
-                                    {subCategory.services.map((service) => (
-                                      <p
-                                        className="megamenu-p"
-                                        key={service.serviceId}
-                                      >
-                                        
+            <div className="browse-category-video grid grid-cols-2 gap-4">
+              {data.map((vendor, index) => (
+                <Link key={index} to="/#" target="_blank">
+                  <div className="relative rounded-lg overflow-hidden">
+                    {/* Dark Overlay */}
+                    <div className="absolute inset-0 bg-black opacity-55"></div>
 
-                                        <img src={service.serviceImages} />
-                                      </p>
-                                    ))}
-                                  </div>
-                                </div>
-                              </div>
-                            ))}
-                          </div>
-                        </div>
-                      </div>
+                    {/* Vendor Image */}
+                    <img
+                      className="w-full h-[250px] object-cover"
+                      src={vendor.VendorImages}
+                      alt={vendor.VendorName}
+                    />
+
+                    {/* Vendor Name & Description */}
+                    <div className="absolute bottom-4 left-4 text-white">
+                      <h2 className="text-lg font-bold">{vendor.VendorName}</h2>
+                      <p className="text-sm line-clamp-2">{vendor.VendorDescription}</p>
                     </div>
                   </div>
-                </li>
+                </Link>
               ))}
-          </ul> */}
+            </div>
+          </div>
         </div>
       </div>
     </>

@@ -10,10 +10,10 @@ const HomeVideo = () => {
 
   return (
     <>
-      <div className=  {`video-overlay1 `}  >
+      <div className=  {`video-overlay1 !h-80vh`}  >
         {/* <img className="video-overlay1-img" src="./././././assets/img/landing-hero.jpg" alt="heroimg"></img> */}
         <video
-          className="absolute top-0 left-0 w-full h-full object-cover"
+          className={`absolute top-0 left-0 w-full  object-cover ${isLoggedIn ? "!h-90vh " : "!h-80vh"}`}
           src={`${process.env.PUBLIC_URL}/assets/img/Home/homeVideo.mp4`}
 		
           autoPlay

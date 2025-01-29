@@ -1,18 +1,22 @@
-
-import React, { useState, useEffect, useRef } from "react";
-import "../css/browsehotelsfavourites.css";
+import React, { useState, useEffect } from "react";
+import Slider from "rc-slider";
+import "rc-slider/assets/index.css";
 import { Link } from "react-router-dom";
 
 const BrowseHotelsFavourites = () => {
-  const navRef = useRef();
-  const [hotels, setHotels] = useState([]); // All hotels data
-  const [visibleHotels, setVisibleHotels] = useState([]); // Hotels to display
-  const [currentIndex, setCurrentIndex] = useState(0); // Index of the next batch of hotels
-  const batchSize = 6; // Number of hotels to display per batch
+  const [hotels, setHotels] = useState([]);
+  const [filteredHotels, setFilteredHotels] = useState([]);
+  const [cities, setCities] = useState([]);
+  const [brands, setBrands] = useState([]);
+  const [filters, setFilters] = useState({
+    searchQuery: "",
+    priceRange: [1000, 30000],
+    city: "",
+    brand: ""
+  });
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
 
-  // Fetch hotels data
   useEffect(() => {
     const fetchHotels = async () => {
       try {
@@ -21,9 +25,16 @@ const BrowseHotelsFavourites = () => {
           throw new Error("Failed to fetch data");
         }
         const result = await response.json();
-        const filteredHotels = result.Data.filter((item) => item.VendorCategory === "Hotel");
-        setHotels(filteredHotels);
-        setVisibleHotels(filteredHotels.slice(0, batchSize)); // Show the first batch
+        const hotelData = result.Data.filter((item) => item.VendorCategory === "Hotel");
+        
+        // Extract unique cities and brands directly from the properties
+        const cityList = [...new Set(hotelData.map(hotel => hotel.City))].filter(Boolean);
+        const brandList = [...new Set(hotelData.map(hotel => hotel.Brand))].filter(Boolean);
+        
+        setHotels(hotelData);
+        setFilteredHotels(hotelData);
+        setCities(cityList);
+        setBrands(brandList);
       } catch (err) {
         setError(err.message);
       } finally {
@@ -34,89 +45,170 @@ const BrowseHotelsFavourites = () => {
     fetchHotels();
   }, []);
 
-  // Scroll navigation
-  const handleNav = (direction) => {
-    if (direction === "left") {
-      if (navRef) {
-        navRef.current.scrollLeft -= 100;
-      }
-    } else {
-      if (navRef) {
-        navRef.current.scrollLeft += 100;
-      }
-    }
+  const handleFilterChange = (filterName, value) => {
+    setFilters(prevFilters => ({
+      ...prevFilters,
+      [filterName]: value
+    }));
   };
 
-  // Handle "View More" functionality
-  const handleViewMore = () => {
-    const nextIndex = currentIndex + batchSize;
-    const nextBatch = hotels.slice(nextIndex, nextIndex + batchSize);
-    setVisibleHotels((prevVisibleHotels) => [...prevVisibleHotels, ...nextBatch]);
-    setCurrentIndex(nextIndex);
-  };
+  useEffect(() => {
+    let filtered = [...hotels];
+
+    // Search filter
+    if (filters.searchQuery) {
+      const query = filters.searchQuery.toLowerCase();
+      filtered = filtered.filter(hotel =>
+        hotel.VendorName.toLowerCase().includes(query) ||
+        hotel.VendorDescription.toLowerCase().includes(query)
+      );
+    }
+
+    // Price range filter
+    const [minPrice, maxPrice] = filters.priceRange;
+    filtered = filtered.filter(hotel => {
+      const hotelMin = hotel?.VendorPricingInfo?.PriceRange?.Min || 0;
+      const hotelMax = hotel?.VendorPricingInfo?.PriceRange?.Max || Infinity;
+      return hotelMin >= minPrice && hotelMax <= maxPrice;
+    });
+
+    // City filter
+    if (filters.city) {
+      filtered = filtered.filter(hotel => hotel.City === filters.city);
+    }
+
+    // Brand filter
+    if (filters.brand) {
+      filtered = filtered.filter(hotel => hotel.Brand === filters.brand);
+    }
+
+    setFilteredHotels(filtered);
+  }, [filters, hotels]);
 
   if (loading) return <p>Loading...</p>;
   if (error) return <p>{error}</p>;
 
   return (
-    <>
-      <div className="container-fluid hotels-fav-container">
-        <div className="container">
-          <div className="row hotels-fav-row">
-            <div className="col-xl-12 col-lg-12 col-md-12 col-12 hotels-fav-row-tab">
-              {/* <div className="col-xl-12 col-lg-12 col-md-12 col-12 hotels-fav-row-tab-inner">
-                <div onClick={() => handleNav("left")} className="scroll-arrow scroller-left float-start">
-                  <i className="bi bi-chevron-left"></i>
-                </div>
-                <div onClick={() => handleNav("right")} className="scroll-arrow scroller-right float-end">
-                  <i className="bi bi-chevron-right"></i>
-                </div>
-                <div className="col-xl-12 col-lg-12 col-md-12 col-12 scroll-container" ref={navRef}>
-                  <div className="col-xl-12 col-lg-12 col-md-12 col-12 scroll-inner-div">
-                    <nav className="nav nav-tabs hotels-nav-tabs mt-2" id="myTab" role="tablist">
-                      <a className="nav-item nav-link custom-nav-item active" data-bs-toggle="tab" data-bs-target="#tab1" role="tab" aria-controls="public" aria-selected="true">
-                        Newest FC Hotels
-                      </a>
-                    </nav>
-                  </div>
-                </div>
-              </div> */}
-
-              <div className="tab-content custom-tab-content" id="myTabContent">
-                <div role="tabpanel" className="tab-pane fade active show mt-2 " id="tab1" aria-labelledby="public-tab">
-                  <div className=" grid grid-cols-2 lg:grid-cols-2 gap-6 my-6">
-                    {visibleHotels.map((hotel, index) => (
-                      <div key={index} className="hotel-card">
-                        <Link to='/HotelInfo' state={{hotel}}>
-                        <div className="benefit-image-wrapper">
-                          <img
-                            alt={hotel.VendorName}
-                            className="primary-image max-w-[100%] max-h-auto md:h-[50vh] "
-                            src={hotel.VendorImages}
-                          />
-                        </div>
-                        <div className="hotel-details">
-                          <h5 style={{ color: "white", fontWeight: "bold" }}>{hotel.VendorName}</h5>
-                          <p className="line-clamp-4" style={{ fontSize: "12px" }}>{hotel.VendorDescription}</p>
-                        </div>
-                        </Link>
-                      </div>
-                    ))}
-                  </div>
-                  {currentIndex + batchSize < hotels.length && (
-                    <div className="row btn-fav-view-more-box ">
-                      <button className="btn btn-fav-view-more" onClick={handleViewMore}>
-                        View More
-                      </button>
-                    </div>
-                  )}
-                </div>
-              </div>
-            </div>
-          </div>
+    <div className="min-h-screen bg-black text-white flex flex-col md:flex-row ">
+      {/* Mobile Filters */}
+      <div className="block md:hidden p-4 bg-black gap-4 ">
+        <input
+          type="text"
+          placeholder="Search hotels..."
+          className="w-full p-2 bg-gray-800 rounded text-white mb-2"
+          value={filters.searchQuery}
+          onChange={(e) => handleFilterChange("searchQuery", e.target.value)}
+        />
+        <div className="relative">
+          <select
+            className="w-full p-2 bg-gray-800 rounded text-white appearance-none"
+            value={filters.city}
+            onChange={(e) => handleFilterChange("city", e.target.value)}
+            style={{ direction: 'ltr' }}
+          >
+            <option value="">All Cities</option>
+            {cities.map(city => (
+              <option key={city} value={city}>{city}</option>
+            ))}
+          </select>
         </div>
       </div>
-    </>
+
+      {/* Desktop Filters */}
+      <div className="hidden md:flex md:flex-col p-4 bg-black w-1/4">
+        <div className="mb-4">
+          <input
+            type="text"
+            placeholder="Search hotels..."
+            className="w-full p-2 bg-gray-800 rounded text-white"
+            value={filters.searchQuery}
+            onChange={(e) => handleFilterChange("searchQuery", e.target.value)}
+          />
+        </div>
+        
+        <div className="mb-4">
+          <h4 className="text-white mb-2">Price Range</h4>
+          <Slider
+            range
+            min={1000}
+            max={30000}
+            step={1000}
+            value={filters.priceRange}
+            onChange={(value) => handleFilterChange("priceRange", value)}
+            trackStyle={[{ backgroundColor: "#4CAF50" }]}
+            handleStyle={[{ borderColor: "#4CAF50" }]}
+          />
+          <div className="flex justify-between text-sm mt-2">
+            <span>₹{filters.priceRange[0]}</span>
+            <span>₹{filters.priceRange[1]}</span>
+          </div>
+        </div>
+
+        <div className="mb-4 relative">
+          <h4 className="text-white mb-2">City</h4>
+          <select
+            className="w-full p-2 bg-gray-800 rounded text-white appearance-none"
+            value={filters.city}
+            onChange={(e) => handleFilterChange("city", e.target.value)}
+            style={{ direction: 'ltr' }}
+          >
+            <option value="">All Cities</option>
+            {cities.map(city => (
+              <option key={city} value={city}>{city}</option>
+            ))}
+          </select>
+        </div>
+
+        <div className="relative">
+          <h4 className="text-white mb-2">Brand</h4>
+          <select
+            className="w-full p-2 bg-gray-800 rounded text-white appearance-none"
+            value={filters.brand}
+            onChange={(e) => handleFilterChange("brand", e.target.value)}
+            style={{ direction: 'ltr' }}
+          >
+            <option value="">All Brands</option>
+            {brands.map(brand => (
+              <option key={brand} value={brand}>{brand}</option>
+            ))}
+          </select>
+        </div>
+      </div>
+
+      {/* Hotels Grid */}
+      <div className="w-full md:w-3/4 p-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {filteredHotels.length > 0 ? (
+            filteredHotels.map((hotel, index) => (
+              <div key={index} className="bg-black rounded-lg overflow-hidden">
+                <Link to="/HotelInfo" state={{ hotel }}>
+                  <div className="relative h-48">
+                    <img
+                      src={hotel.VendorImages || "/api/placeholder/400/200"}
+                      alt={hotel.VendorName}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div className="p-4">
+                    <h3 className="text-xl font-bold mb-2 text-white">{hotel.VendorName}</h3>
+                    <p className="text-sm mb-2 line-clamp-2">{hotel.VendorDescription}</p>
+                    {hotel.VendorPricingInfo && (
+                      <p className="text-sm font-semibold">
+                        ₹{hotel.VendorPricingInfo.PriceRange?.Min?.toLocaleString()} - 
+                        ₹{hotel.VendorPricingInfo.PriceRange?.Max?.toLocaleString()}
+                      </p>
+                    )}
+                   
+                  </div>
+                </Link>
+              </div>
+            ))
+          ) : (
+            <p className="text-center text-gray-400 col-span-full">No hotels match your filters.</p>
+          )}
+        </div>
+      </div>
+    </div>
   );
 };
 

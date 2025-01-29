@@ -8,6 +8,7 @@ import ScrollTotop from "./ScrollTotop";
 import AfterLoginLayout from "./layouts/AfterLoginLayout";
 import HomeTravel from "./HomeTravel";
 import HomeLifestyle from "./HomeLifestyle";
+import AllBenifitsHome from "./AllBenifitsHome";
 
 const HomeAfterLogin = () => {
   return (
@@ -18,7 +19,7 @@ const HomeAfterLogin = () => {
       <HomeLifestyle/>
       {/* <FeaturedComunityBenefits></FeaturedComunityBenefits> */}
       <HotelCollection></HotelCollection>
-      <PopularBenefits></PopularBenefits>
+      <AllBenifitsHome/>
       <ScrollTotop></ScrollTotop>
     </AfterLoginLayout>
   );

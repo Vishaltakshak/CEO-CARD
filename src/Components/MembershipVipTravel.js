@@ -184,6 +184,7 @@ const MembershipVipTravel = () => {
               <li className="text-white">- Accounting & Tax Solutions: Get professional accounting services to ensure your financials are in order.</li>
               <li className="text-white">
 			  Productivity Tools: Gain access to premium productivity tools at discounted prices to streamline operations and enhance team collaboration </li>
+        <li className="text-white">Legal Services: Access trusted legal counsel to help with contracts, intellectual property, and more</li>
              
              
             </ul>

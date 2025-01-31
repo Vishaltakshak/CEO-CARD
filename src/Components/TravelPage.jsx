@@ -16,7 +16,7 @@ const TravelPage = () => {
         }
         const result = await response.json();
         const TravelData = result.Data.filter((item) => item.VendorCategory === "Travel");
-        const PremiumData = TravelData.filter((item) => item.Paid === "true");
+        const PremiumData = TravelData.filter((item) => item.Paid === "true").slice(0,2);
         setData(PremiumData);
       } catch (error) {
         console.error("Error in fetch function:", error);

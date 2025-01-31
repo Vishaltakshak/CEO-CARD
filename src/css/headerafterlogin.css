@@ -43,6 +43,8 @@ a, a:hover, a:focus {
 .nav-container .afterlogin-nav {
     /* overflow-x: hidden; */
     padding:0;
+    position: relative;
+    top: auto;
 }
 .logoNav{
     display: flex;
@@ -389,9 +391,11 @@ text-align:center;
 
 .nav-container .afterlogin-nav.thin-navbar
 {
-	position: fixed;
-	z-index: 1000;
-	width: 100%;top:0;
+	position: absolute;
+	z-index: 0;
+	width: 100%;
+    top: auto;
+    transition:all 0.3s ease-in-out 0.1s;
 }
 .nav-container .afterlogin-nav.thin-navbar .navbar-brand {
    padding:5px 10px;
@@ -575,11 +579,12 @@ z-index: 99;
     }
     .nav-container {
         padding: 10px 0;
+        height: 52px;
     }
     .nav-container .afterlogin-nav {
         position: relative;
         width: 100%;
-        display: block;
+        /* display: block; */
     }
     .nav-container .afterlogin-navbar-collapse
     {

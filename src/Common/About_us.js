@@ -2,18 +2,16 @@ import React from "react";
 import BeforLoginHeader from "../Common/BeforeLoginHeader";
 import "../css/about_us.css";
 import FooterNew from "./FooterNew";
+import AboutusHeader from "./AboutusHeader";
 
-// const styles = {
-//   otherpagebg: {
-//     background:"#000000"
-//   }
-// }
+
 const AboutHeaderbgColor = "#000000";
 const AboutFooterbgColor = "#ffffff";
 const About_us = () => {
   return (
     <>
-      <BeforLoginHeader HEADERBGCOLOR={AboutHeaderbgColor}></BeforLoginHeader>
+    <AboutusHeader/>
+      {/* <BeforLoginHeader isopen={false}  HEADERBGCOLOR={AboutHeaderbgColor}></BeforLoginHeader> */}
       <div>
         {/* ist */}
         <div className="w-full h-[80vh] flex items-center justify-center bg-about bg-cover bg-top bg-no-repeat relative">
@@ -37,26 +35,7 @@ const About_us = () => {
           <div className="redesign-home-full-container">
             <div className="redesign-about-cols row">
               <div className="col-lg-4 col-md-4">
-                {/* <div>
-                  <a
-                    href="/#"
-                    className="redesign-about-vid-lightbox w-inline-block w-lightbox"
-                  >
-                    <img
-                      className="redesign-about-vid-img"
-                      src="assets/img/About/about-vid.jpg"
-                      alt="about-vid"
-                    />
-
-                    <div className="play-button"></div>
-                    <iframe
-                      title="video"
-                      width="100%"
-                      height="315"
-                      src="https://www.youtube.com/embed/tgbNymZ7vqY"
-                    ></iframe>
-                  </a>
-                </div> */}
+                
               </div>
               {/* <div className="col-lg-8 col-md-8"> */}
               <div className="redesign-home-div-left-events">

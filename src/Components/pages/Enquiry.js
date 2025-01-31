@@ -22,7 +22,7 @@ const Enquiry = () => {
       ></BeforeLoginHeaderEnquiry>
       <div className="w-full flex items-center justify-center bg-enquiry bg-cover bg-top bg-no-repeat relative">
         {/* Dark Overlay */}
-        <div className="absolute top-0 left-0 w-full h-full bg-black opacity-60"></div>
+        <div className="absolute top-0 left-0 w-full h-full bg-black opacity-10"></div>
         <div className="flex z-[10] bg-[rgba(255,255,255,0.8)] p-1 rounded-xl m-2 md:m-8 w-[90%] md:w-[50%]">
           <div className="col-xl-12 col-12">
             <div className="inquire-form-container">
@@ -129,17 +129,17 @@ const Enquiry = () => {
       </div>
       <div
         id="enquiryFaq"
-        className="container-fluid enquiry-faq-container pe-0 ps-0"
+        className="container-fluid enquiry-faq-container pe-0 ps-0 bg-white"
       >
         <div className="container">
           <div className="row">
-            <div class="col-xs-12">
-              <h2 class="faq-heading">Frequently Asked Questions</h2>
+            <div class="col-xs-12 text-black">
+              <h2 class="faq-heading text-black">Frequently Asked Questions</h2>
             </div>
             <div className="col-xl-4 col-lg-4 col-md-12 col-12 col-12">
-              <div className="question-div">
-                <h6>IF I JOIN TODAY, WHEN CAN I BEGIN USING MY MEMBERSHIP?</h6>
-                <p className="faq-details">
+              <div className="question-div text-black">
+                <h6 className="text-black">IF I JOIN TODAY, WHEN CAN I BEGIN USING MY MEMBERSHIP?</h6>
+                <p className="faq-details text-black">
                   <span>
                     Your Membership starts the day your application is approved,
                     and you will have immediate access to redeem benefits at
@@ -147,9 +147,9 @@ const Enquiry = () => {
                   </span>
                 </p>
               </div>
-              <div className="question-div">
+              <div className="question-div text-black">
                 <h6>IIS FOUNDERSCARD A CREDIT CARD?</h6>
-                <p className="faq-details">
+                <p className="faq-details text-black">
                   <span>
                     FoundersCard is a Membership community, not a credit card.
                     Your Membership provides you access to a portfolio of over
@@ -160,9 +160,9 @@ const Enquiry = () => {
             </div>
 
             <div className="col-xl-4 col-lg-4 col-md-12 col-12 col-12">
-              <div className="question-div">
+              <div className="question-div text-black">
                 <h6>HOW DOES REDEEMING BENEFITS WORK?</h6>
-                <p className="faq-details">
+                <p className="faq-details text-black">
                   <span>
                     Each benefit that we offer our Members has a dedicated
                     landing page on the FoundersCard site, with simple
@@ -176,9 +176,9 @@ const Enquiry = () => {
             </div>
 
             <div className="col-xl-4 col-lg-4 col-md-12 col-12 col-12">
-              <div className="question-div">
+              <div className="question-div text-black">
                 <h6>IS MEMBERSHIP AVAILABLE INTERNATIONALLY?</h6>
-                <p className="faq-details">
+                <p className="faq-details text-black">
                   <span>
                     FoundersCard Membership is available globally. There may be
                     some restrictions with brands that will be listed on the
@@ -187,9 +187,9 @@ const Enquiry = () => {
                   </span>
                 </p>
               </div>
-              <div className="question-div">
+              <div className="question-div text-black">
                 <h6>WHY CAN'T I SEE THE FULL LIST OF BENEFITS?</h6>
-                <p className="faq-details">
+                <p className="faq-details text-black">
                   <span>
                     Due to the exclusive benefits we have negotiated with our
                     benefit partners, we can only show the detailed list of over

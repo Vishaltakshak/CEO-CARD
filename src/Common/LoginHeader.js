@@ -6,8 +6,13 @@ const LoginHeader = () => {
   return (
     <>
       <nav className="navbar  navbar-expand-lg   navbar-expand-md navbar-light bg-light before-login-header">
-        <div className="container-fluid">
-          <Link className="navbar-brand" to="/" target="_blank">
+        <div className="container-fluid bg-white">
+          <Link className="navbar-brand"
+          style={{
+            
+            filter:"invert(1)"
+          }}
+          to="/" target="_blank">
             <img
               className="logo-size-sett"
               src="././assets/img/ceo-logo-white2.png"
@@ -15,6 +20,7 @@ const LoginHeader = () => {
               style={{
                 width: "58px",
                 height: "auto",
+               
               }}
             ></img>
           </Link>

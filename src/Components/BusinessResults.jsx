@@ -138,13 +138,13 @@ const BusinessResults = () => {
                     {isSidebarVisible && (
                         <div className="sidebar bg-black p-4 rounded-lg hidden md:block">
                             <div className="mb-6">
-                                <h4 className="text-white mb-4">Search</h4>
+                                {/* <h4 className="text-white mb-4">Search</h4> */}
                                 <input
                                     type="text"
                                     value={searchQuery}
                                     onChange={handleSearch}
                                     placeholder="Search ..."
-                                    className="w-full px-3 py-2 bg-black text-white rounded focus:outline-none focus:ring-2 focus:ring-white"
+                                    className="w-full px-3 py-2 bg-black text-white rounded focus:outline-white focus:ring-2 focus:ring-white"
                                 />
                             </div>
 

@@ -21,6 +21,7 @@ const TravelResults = () => {
                 if (!response.ok) throw new Error("Failed to fetch data");
                 const result = await response.json();
                 const travel = result.Data.filter(item => item.VendorCategory === "Travel");
+                console.log(travel)
 
                 // Extract unique brands from the data
                 const brandList = [...new Set(travel.map(item => item.Brand))].filter(Boolean);
@@ -163,8 +164,9 @@ const TravelResults = () => {
                 </div>
             </div>
 
+            
             {/* Results Grid */}
-            <div className="w-full md:w-3/4 container mx-auto mt-4 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 px-4">
+            <div className="w-full md:w-3/4 p-4 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4">
                 {filteredData.length > 0 ? (
                     filteredData.map((service, index) => (
                         <div key={index} className="bg-black rounded-lg overflow-hidden">
@@ -176,7 +178,7 @@ const TravelResults = () => {
                                         className="w-full h-full object-cover"
                                     />
                                 </div>
-                                <div>
+                                <div className="p-2">
                                     <h3 className="text-xl font-bold mb-2 text-white">{service.VendorName}</h3>
                                     <div className="flex items-center mb-2">
                                         {[...Array(5)].map((_, i) => (

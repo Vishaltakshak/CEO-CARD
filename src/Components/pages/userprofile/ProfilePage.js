@@ -40,7 +40,7 @@ export const ProfilePage = () => {
                    <li onClick={()=>{SetActive(7)}}>Other Travellers</li>
                 </ul>
             </div>
-            <div className="container pe-0 ps-0 flex flex-row m-10">
+            <div className="container pe-0 ps-0 flex flex-row">
             
 
                 <aside className='Proile-page-aside'>

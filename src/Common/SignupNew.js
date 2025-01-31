@@ -12,6 +12,7 @@ import LoginFooter from "./LoginFooter";
 import "react-toastify/dist/ReactToastify.css";
 
 import { useNavigate } from "react-router-dom";
+import AboutusHeader from "./AboutusHeader.js";
 
 const AboutFooterbgColor = "#ffffff";
 const SignupNew = () => {
@@ -41,8 +42,9 @@ const SignupNew = () => {
   return (
     <div style={{}}>
       <ToastContainer />
+      {/* <AboutusHeader/> */}
       <nav id="navbar_id" className=" navbar navbar-static-topd navb">
-        <div className="container-fluid">
+        <div className="container-fluid " >
           <div className="navbar-header flex items-center">
             <a id="navbar-brand" className="navbar-brand-sign" href="/">
               <img

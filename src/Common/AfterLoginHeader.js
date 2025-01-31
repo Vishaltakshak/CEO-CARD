@@ -10,7 +10,7 @@ const AfterLoginHeader = ({ allMenu, service }) => {
  
 
   useEffect(() => {
-    const handleScroll = () => setScroll(window.scrollY > 50);
+    const handleScroll = () => setScroll(window.scrollY > 1);
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
@@ -99,7 +99,7 @@ const AfterLoginHeader = ({ allMenu, service }) => {
               </Link></div>
 
               <div className="account-menu">
-                <ul className="nav navbar-nav">
+                <ul className="nav navbar-nav ">
                   <li className="account-menu-li d-xl-block d-lg-block d-md-none d-sm-none d-none">
                     <div className="dropdown custom-nav-dropdown">
                       <a

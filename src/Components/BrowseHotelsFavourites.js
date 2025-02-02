@@ -89,19 +89,19 @@ const BrowseHotelsFavourites = () => {
   if (error) return <p>{error}</p>;
 
   return (
-    <div className="min-h-screen bg-black text-white flex flex-col md:flex-row ">
+    <div className="min-h-screen bg-white text-black flex flex-col md:flex-row ">
       {/* Mobile Filters */}
-      <div className="block md:hidden p-4 bg-black gap-4 ">
+      <div className="block md:hidden p-4 bg-white gap-4 ">
         <input
           type="text"
           placeholder="Search hotels..."
-          className="w-full p-2 bg-gray-800 rounded text-white mb-2"
+          className="w-full p-2 bg-gray-100 rounded text-black mb-2"
           value={filters.searchQuery}
           onChange={(e) => handleFilterChange("searchQuery", e.target.value)}
         />
         <div className="relative">
           <select
-            className="w-full p-2 bg-gray-800 rounded text-white appearance-none"
+            className="w-full p-2 bg-gray-100 rounded text-black appearance-none"
             value={filters.city}
             onChange={(e) => handleFilterChange("city", e.target.value)}
             style={{ direction: 'ltr' }}
@@ -115,19 +115,19 @@ const BrowseHotelsFavourites = () => {
       </div>
 
       {/* Desktop Filters */}
-      <div className="hidden md:flex md:flex-col p-4 bg-black w-1/4">
+      <div className="hidden md:flex md:flex-col p-4 bg-white w-1/4">
         <div className="mb-4">
           <input
             type="text"
             placeholder="Search hotels..."
-            className="w-full p-2 bg-gray-800 rounded text-white"
+            className="w-full p-2 bg-white rounded text-black"
             value={filters.searchQuery}
             onChange={(e) => handleFilterChange("searchQuery", e.target.value)}
           />
         </div>
         
         <div className="mb-4">
-          <h4 className="text-white mb-2">Price Range</h4>
+          <h4 className="text-black mb-2">Price Range</h4>
           <Slider
             range
             min={1000}
@@ -138,16 +138,16 @@ const BrowseHotelsFavourites = () => {
             trackStyle={[{ backgroundColor: "#4CAF50" }]}
             handleStyle={[{ borderColor: "#4CAF50" }]}
           />
-          <div className="flex justify-between text-sm mt-2">
+          <div className="flex justify-between text-sm mt-2 text-black">
             <span>₹{filters.priceRange[0]}</span>
             <span>₹{filters.priceRange[1]}</span>
           </div>
         </div>
 
         <div className="mb-4 relative">
-          <h4 className="text-white mb-2">City</h4>
+          <h4 className="text-blakc mb-2">City</h4>
           <select
-            className="w-full p-2 bg-gray-800 rounded text-white appearance-none"
+            className="w-full p-2 bg-gray-100 rounded text-black appearance-none"
             value={filters.city}
             onChange={(e) => handleFilterChange("city", e.target.value)}
             style={{ direction: 'ltr' }}
@@ -160,9 +160,9 @@ const BrowseHotelsFavourites = () => {
         </div>
 
         <div className="relative">
-          <h4 className="text-white mb-2">Brand</h4>
+          <h4 className="text-blakc mb-2">Brand</h4>
           <select
-            className="w-full p-2 bg-gray-800 rounded text-white appearance-none"
+            className="w-full p-2 bg-gray-100 rounded text-black appearance-none"
             value={filters.brand}
             onChange={(e) => handleFilterChange("brand", e.target.value)}
             style={{ direction: 'ltr' }}
@@ -176,24 +176,24 @@ const BrowseHotelsFavourites = () => {
       </div>
 
       {/* Hotels Grid */}
-      <div className="w-full md:w-3/4 p-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="w-full md:w-3/4 p-4 bg-white">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
           {filteredHotels.length > 0 ? (
             filteredHotels.map((hotel, index) => (
-              <div key={index} className="bg-black rounded-lg overflow-hidden">
+              <div key={index} className="bg-white rounded-lg overflow-hidden">
                 <Link to="/HotelInfo" state={{ hotel }}>
-                  <div className="relative h-48">
+                  <div className="relative h-[16vh]">
                     <img
                       src={hotel.VendorImages || "/api/placeholder/400/200"}
                       alt={hotel.VendorName}
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <div className="p-4">
-                    <h3 className="text-xl font-bold mb-2 text-white">{hotel.VendorName}</h3>
-                    <p className="text-sm mb-2 line-clamp-2">{hotel.VendorDescription}</p>
+                  <div >
+                    <h3 className="text-xl font-bold mb-2 text-black">{hotel.VendorName}</h3>
+                    <p className="text-sm mb-2 line-clamp-2 text-black">{hotel.VendorDescription}</p>
                     {hotel.VendorPricingInfo && (
-                      <p className="text-sm font-semibold">
+                      <p className="text-sm font-semibold text-black">
                         ₹{hotel.VendorPricingInfo.PriceRange?.Min?.toLocaleString()} - 
                         ₹{hotel.VendorPricingInfo.PriceRange?.Max?.toLocaleString()}
                       </p>
@@ -204,7 +204,7 @@ const BrowseHotelsFavourites = () => {
               </div>
             ))
           ) : (
-            <p className="text-center text-gray-400 col-span-full">No hotels match your filters.</p>
+            <p className="text-center text-black col-span-full">No hotels match your filters.</p>
           )}
         </div>
       </div>

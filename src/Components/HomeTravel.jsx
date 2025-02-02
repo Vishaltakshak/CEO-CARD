@@ -1,76 +1,88 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import '../css/memberbenefits.css';
+
 const HomeTravel = () => {
     const [data, setData] = useState([]);
-    const [loading, setLoading] = useState(true)
-    const [error, setError] = useState('')
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState('');
+    const [isHovered, setIsHovered] = useState(false);
+
     useEffect(() => {
         const fetchData = async () => {
             try {
                 const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/Vendor/vendors`);
-                if (!response.ok) {
-                    throw new Error('Failed to fetch data');
-                }
-                console.log("response is",response)
+                if (!response.ok) throw new Error('Failed to fetch data');
                 const result = await response.json();
-            
-                const Hotels = await result.Data.filter(item=>item.VendorCategory==='Travel')
-                console.log("result is", Hotels);
-                
-                
-                setData(Hotels)
-                
+                const Hotels = result.Data.filter(item => item.VendorCategory === 'Travel');
+                setData(Hotels);
             } catch (err) {
                 setError(err.message);
             } finally {
                 setLoading(false);
             }
         };
-
         fetchData();
     }, []);
+
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3, 
+        slidesToScroll: 1,
+        autoplay: !isHovered,
+        autoplaySpeed: 2000,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    };
+
     return (
-        <>
-        <div className="container-fluid benefits-block-parent benefits-block-parent-white scrollBar overflow-x-auto" >
-				<div className="container pe-0 ps-0">
-					
-						<h1 className="text-center text-[20px] font-bold">TRAVEL PARTNERS</h1>
-					<div className="  flex   ">
-						<div className=" flex scroll-inner-div-6-benefits duration-1000 test-slider ">
-							
-                        <div className="col-xxl-4 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-2 !gap-20 md:gap-4 member-benefit-block-popular flex bg-black" >
-                {data.map((datab, i) => (
-                    <Link to='/ServiceInfo' state={{datab}}>
-                    <div className="w-[60vw] md:w-[300px] h-[200px]">
-                        <a href="/SubMenu">
-                            <div className="benefit-image-wrapper h-[200px] w-[300px]">
-                                
-                                <img  alt={datab.ContentTitle} className="primary-image h-[200px] !w-[94%] md:w-[300px]" src={datab.VendorImages}></img>
-
-                            </div>
-                        </a>
-                        <div>
-
-                            <div className="benefit-title-container col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-6" style={{width:"100%"}} key={i}>
-                                <a href="/SubMenu" class="link-no-underline">
-                                    <h5 style={{color:"white", fontWeight:"bold"}} className="no-translation">{datab.VendorName}</h5>
-                                </a>
-                            </div>
-                            <div className="benefit-description-container col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-6 text-white" style={{overflow:"hidden", fontSize:"12px", maxHeight:"60px", width:"100%"}}>
-                                {datab.VendorDescription}
-                            </div>
-                        </div >
-                    </div>
-                    </Link>
-                ))}
+        <div className="w-full bg-white px-6 !overflow-hidden"> 
+            <h1 className="text-center text-[20px] font-bold py-4">TRAVEL PARTNERS</h1>
+            <div className="w-full">
+                <Slider {...settings} 
+                    className="travel-slider"
+                    onMouseEnter={() => setIsHovered(true)}
+                    onMouseLeave={() => setIsHovered(false)}
+                >
+                    {data.map((datab, i) => (
+                        <div key={i}>
+                            <Link to='/ServiceInfo' state={{ datab }}>
+                                <div className="bg-white mx-1">
+                                    <img
+                                        src={datab.VendorImages}
+                                        alt={datab.ContentTitle}
+                                        className="w-full h-[200px] object-cover"
+                                    />
+                                    <div className="pt-2">
+                                        <h5 className="text-black font-bold text-lg">{datab.VendorName}</h5>
+                                        <p className="text-black text-sm line-clamp-2">{datab.VendorDescription}</p>
+                                    </div>
+                                </div>
+                            </Link>
+                        </div>
+                    ))}
+                </Slider>
             </div>
-						</div>
-					</div>
-				</div>
-			</div>
-           
-        </>
+        </div>
     );
 };
 

@@ -1,10 +1,16 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import '../css/memberbenefits.css';
+
 const HomeLifestyle = () => {
     const [data, setData] = useState([]);
-    const [loading, setLoading] = useState(true)
-    const [error, setError] = useState('')
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState('');
+    const [isHovered, setIsHovered] = useState(false);
+
     useEffect(() => {
         const fetchData = async () => {
             try {
@@ -12,65 +18,75 @@ const HomeLifestyle = () => {
                 if (!response.ok) {
                     throw new Error('Failed to fetch data');
                 }
-                console.log("response is",response)
                 const result = await response.json();
-
-                const Hotels = await result.Data.filter(item=>item.VendorCategory==="Lifestyle")
-                console.log("result is", Hotels);
-                
-                
-                setData(Hotels)
-                
+                const Hotels = result.Data.filter(item => item.VendorCategory === "Lifestyle");
+                setData(Hotels);
             } catch (err) {
                 setError(err.message);
             } finally {
                 setLoading(false);
             }
         };
-
         fetchData();
     }, []);
+
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: !isHovered,
+        autoplaySpeed: 2000,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            }
+        ]
+    };
+
     return (
-        <>
-                        <h1 className=" p-4 text-center text-[20px] font-bold bg-black text-white">FEATURED LIFESTYLE BENEFITS</h1>
-        <div className="container-fluid benefits-block-parent benefits-block-parent-white overflow-x-auto scrollBar">
-                <div className="container pe-0 ps-0">
-                    
-                    <div className=" testimonial-container flex   ">
-                        <div className=" flex scroll-inner-div-6-benefits test-slider ">
-                            
-                        <div className="col-xxl-4 col-xl-6 col-lg-6 col-md-6 col-sm-6 col-2 gap-20 md:gap-4 member-benefit-block-popular flex bg-black" >
-                {data.map((datab, i) => (
-                    <Link to='/LifeStyleInfoPage' state={{datab}}>
-                    <div className="w-[60vw] md:w-[25vw] h-[20vh]">
-                        <a href="/SubMenu">
-                            <div className="benefit-image-wrapper h-[200px] w-[60vw] md:w-[300px]">
-                                
-                                <img  alt={datab.ContentTitle} className="primary-image h-[200px] !w-[94%] md:w-[300px]" src={datab.VendorImages}></img>
-
-                            </div>
-                        </a>
-                        <div>
-
-                            <div className="benefit-title-container col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-6" style={{width:"100%"}} key={i}>
-                                <a href="/SubMenu" class="link-no-underline">
-                                    <h5 style={{color:"white", fontWeight:"bold"}} className="no-translation">{datab.VendorName}</h5>
-                                </a>
-                            </div>
-                            <div className="benefit-description-container col-xxl-4 col-xl-4 col-lg-4 col-md-6 col-sm-6 col-6 text-white" style={{overflow:"hidden", fontSize:"12px", maxHeight:"60px", width:"100%"}}>
-                                {datab.VendorDescription}
-                            </div>
-                        </div >
-                    </div>
-                    </Link>
-                ))}
-            </div>
+        <div className="w-full bg-white px-6 !overflow-hidden">
+            <h1 className="text-center text-[20px] font-bold py-4">FEATURED LIFESTYLE BENEFITS</h1>
+            <div className="w-full mb-6 bg-white">
+                <Slider {...settings}
+                    className="lifestyle-slider bg-white"
+                    onMouseEnter={() => setIsHovered(true)}
+                    onMouseLeave={() => setIsHovered(false)}
+                >
+                    {data.map((datab, i) => (
+                        <div key={i}>
+                            <Link to='/LifeStyleInfoPage' state={{ datab }}>
+                                <div className="bg-white mx-1">
+                                    <div className="benefit-image-wrapper">
+                                        <img
+                                            src={datab.VendorImages}
+                                            alt={datab.ContentTitle}
+                                            className="w-full h-[200px] object-cover"
+                                        />
+                                    </div>
+                                    <div className="pt-2">
+                                        <h5 className="text-black font-bold text-lg">{datab.VendorName}</h5>
+                                        <p className="text-black text-sm line-clamp-2">{datab.VendorDescription}</p>
+                                    </div>
+                                </div>
+                            </Link>
                         </div>
-                    </div>
-                </div>
+                    ))}
+                </Slider>
             </div>
-           
-        </>
+        </div>
     );
 };
 

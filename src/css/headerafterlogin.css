@@ -24,7 +24,7 @@ a, a:hover, a:focus {
 .nav-container,
 .nav-container .navbar
 {
-	background-color: #222;
+	background-color: #ffffff;
     border-color: #080808;
 }
 .nav-container .navbar-brand 
@@ -298,7 +298,7 @@ text-align:center;
 .col-megamenu .megamenu-heading a
 {
     text-decoration: none;
-    color: #ffffffd6;
+    color: #000000;
     padding: 0;
     font-size: 14px;
     text-transform: uppercase;
@@ -318,7 +318,7 @@ text-align:center;
 {
     font-size: 12px;
     font-weight: 500;
-    color:#b3b3b3;
+    color:#2f2f2f;
     text-transform: capitalize;
     padding:0;
     text-decoration: none;
@@ -586,10 +586,7 @@ z-index: 99;
         width: 100%;
         /* display: block; */
     }
-    .nav-container .afterlogin-navbar-collapse
-    {
-        border-top:1px solid #101010;
-    }
+   
     .nav-container .afterlogin-navbar-collapse ul li a.nav-link {
         font-size: 14px;
         padding: 10px 10px;
@@ -685,7 +682,7 @@ display:none;
 
 #mobile-category-navbar
 {
-    background-color: #222;
+    background-color: #ffffff;
     width: 100%;
     padding: 0;
     overflow-x: scroll;

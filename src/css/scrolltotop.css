@@ -1,5 +1,5 @@
 .bottom-to-top {
-    background-color: #3b3b3b;
+    background-color: #ffffff;
 	padding:20px;
 	cursor:pointer;
 }
@@ -11,7 +11,7 @@
 	font-size:14px;
 	font-weight:500;
 	font-style: normal;
-	color:#ffffff;
+	color:#000000;
 	margin-bottom:0;
  }
 @media only screen and (max-width: 767px) {

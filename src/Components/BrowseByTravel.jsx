@@ -79,21 +79,21 @@ const TravelResults = () => {
     }, [filters, data]);
 
     return (
-        <div className="min-h-screen bg-black text-white flex flex-col md:flex-row ">
+        <div className="min-h-screen bg-white text-black flex flex-col md:flex-row ">
             {/* Filters - Mobile View */}
-            <div className="block md:hidden p-4 bg-black gap-4 ">
+            <div className="block md:hidden p-4 bg-white gap-4 ">
                 {/* Search Bar */}
                 <input
                     type="text"
                     placeholder="Search travel experiences..."
-                    className="w-full p-2 bg-gray-800 rounded text-white focus:outline-none focus:ring-2 focus:ring-gray-600"
+                    className="w-full p-2 bg-gray-100 rounded text-black focus:outline-none focus:ring-2 focus:ring-gray-600"
                     value={filters.searchQuery}
                     onChange={(e) => handleFilterChange("searchQuery", e.target.value)}
                 />
 
                 {/* Brand Dropdown */}
                 <select
-                    className="w-full p-2 bg-gray-800 rounded text-white mt-2"
+                    className="w-full p-2 bg-gray-100 rounded text-black mt-2"
                     value={filters.brand}
                     onChange={(e) => handleFilterChange("brand", e.target.value)}
                 >
@@ -105,18 +105,18 @@ const TravelResults = () => {
             </div>
 
             {/* Filters - Desktop View */}
-            <div className="hidden md:flex md:flex-col p-4 bg-black w-1/4">
+            <div className="hidden md:flex md:flex-col p-4 bg-white w-1/4">
             <div className="mb-4">
                     <input
                         type="text"
                         placeholder="Search travel experiences..."
-                        className="w-full p-2 bg-gray-800 rounded text-white focus:outline-none focus:ring-2 focus:ring-gray-600"
+                        className="w-full p-2 bg-gray-100 rounded text-black focus:outline-none focus:ring-2 focus:ring-gray-600"
                         value={filters.searchQuery}
                         onChange={(e) => handleFilterChange("searchQuery", e.target.value)}
                     />
                 </div>
                 <div className="mb-4">
-                    <h4 className="text-white mb-2">Price Range</h4>
+                    <h4 className="text-black mb-2">Price Range</h4>
                     <Slider
                         range
                         min={0}
@@ -127,7 +127,7 @@ const TravelResults = () => {
                         trackStyle={[{ backgroundColor: "#4CAF50" }]}
                         handleStyle={[{ borderColor: "#4CAF50" }]}
                     />
-                    <div className="flex justify-between text-sm mt-2">
+                    <div className="flex justify-between text-sm mt-2 text-black">
                         <span>&#8377;{filters.priceRange[0]}</span>
                         <span>&#8377;{filters.priceRange[1]}</span>
                     </div>
@@ -135,9 +135,9 @@ const TravelResults = () => {
 
                 {/* Rating Filter */}
                 <div className="mb-4">
-                    <h4 className="text-white mb-2">Rating</h4>
+                    <h4 className="text-black mb-2">Rating</h4>
                     <select
-                        className="w-full p-2 bg-gray-800 rounded text-white"
+                        className="w-full p-2 bg-white rounded text-black"
                         value={filters.rating}
                         onChange={(e) => handleFilterChange("rating", e.target.value)}
                     >
@@ -150,9 +150,9 @@ const TravelResults = () => {
 
                 {/* Brand Filter */}
                 <div>
-                    <h4 className="text-white mb-2">Brand</h4>
+                    <h4 className="text-black mb-2">Brand</h4>
                     <select
-                        className="w-full p-2 bg-gray-800 rounded text-white"
+                        className="w-full p-2 bg-white rounded text-black"
                         value={filters.brand}
                         onChange={(e) => handleFilterChange("brand", e.target.value)}
                     >
@@ -166,10 +166,10 @@ const TravelResults = () => {
 
             
             {/* Results Grid */}
-            <div className="w-full md:w-3/4 p-4 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4">
+            <div className="w-full md:w-3/4 p-4 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-4 bg-white">
                 {filteredData.length > 0 ? (
                     filteredData.map((service, index) => (
-                        <div key={index} className="bg-black rounded-lg overflow-hidden">
+                        <div key={index} className="bg-white rounded-lg overflow-hidden">
                             <Link to="/TravelInfo" state={{ service }}>
                                 <div className="relative h-48">
                                     <img
@@ -179,7 +179,7 @@ const TravelResults = () => {
                                     />
                                 </div>
                                 <div className="p-2">
-                                    <h3 className="text-xl font-bold mb-2 text-white">{service.VendorName}</h3>
+                                    <h3 className="text-xl font-bold mb-2 text-black">{service.VendorName}</h3>
                                     <div className="flex items-center mb-2">
                                         {[...Array(5)].map((_, i) => (
                                             <span
@@ -187,15 +187,15 @@ const TravelResults = () => {
                                                 className={`text-lg ${
                                                     i < parseInt(service.VendorRating)
                                                         ? "text-yellow-400"
-                                                        : "text-gray-400"
+                                                        : "text-gray-800"
                                                 }`}
                                             >
                                                 ★
                                             </span>
                                         ))}
                                     </div>
-                                    <p className="text-sm mb-2 line-clamp-2">{service.VendorDescription}</p>
-                                    <p className="text-sm font-semibold">
+                                    <p className="text-sm mb-2 line-clamp-2 text-black">{service.VendorDescription}</p>
+                                    <p className="text-sm font-semibold text-black">
                                         {service.VendorPricingInfo.Currency + " "}
                                         {service.VendorPricingInfo.PriceRange.Min.toLocaleString() + " - "}
                                         {service.VendorPricingInfo.PriceRange.Max.toLocaleString()}

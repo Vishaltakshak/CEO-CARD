@@ -35,21 +35,21 @@ const TeamMembership = () => {
 							<div className="col-xl-12 col-12 pe-0 ps-0">
 								<div className="row">
 									<div className="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
-										<input autofocus="autofocus" type="text" className="form-control"  placeholder="Full Name" name="name" required/>
+										<input  autofocus="autofocus" type="text" className="form-control placeholder-white"  placeholder="Full Name" name="name" required/>
 									</div>
 
 									<div className="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
-										<input autofocus="autofocus" type="text" className="form-control"  placeholder="Email address" name="name" required/>
+										<input autofocus="autofocus" type="text" className="form-control placeholder-white"  placeholder="Email address" name="name" required/>
 									</div>
 								</div>
 
 								<div className="row form-mtop">
 									<div className="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
-										<input autofocus="autofocus" type="text" className="form-control"  placeholder="Company name" name="name" required/>
+										<input autofocus="autofocus" type="text" className="form-control placeholder-white"  placeholder="Company name" name="name" required/>
 									</div>
 
 									<div className="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
-										<input autofocus="autofocus" type="text" className="form-control"  placeholder="Professional title" name="name" required/>
+										<input autofocus="autofocus" type="text" className="form-control placeholder-white"  placeholder="Professional title" name="name" required/>
 									</div>
 								</div>
 							</div>
@@ -61,7 +61,7 @@ const TeamMembership = () => {
 							<div className="col-xl-12 col-12 pe-0 ps-0 checkbox-spacing">
 								<div className="row">
 									<div className="col-xl-1 col-lg-1 col-md-1 col-sm-2 col-2 pe-0 ">
-										<input className="form-check-input " type="checkbox" name="remember" />
+										<input className="form-check-input bg-black placeholder-white " type="checkbox" name="remember" />
 									</div>
 									<div className="col-xl-11 col-lg-11 col-md-11 col-sm-10 col-10 ps-0">
 										<label className="col-xl-11 checkbox-text">

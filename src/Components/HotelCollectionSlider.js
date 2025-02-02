@@ -42,7 +42,7 @@ const HotelCollectionSlider = () => {
 			<Slider {...settings}>
 				<div>
 					<Link to="/#">
-						<h3 className="video-title">ROSEWOOD LE GUANAHANI ST. BARTH</h3>
+					<h3 className="video-title">ROSEWOOD LE GUANAHANI ST. BARTH</h3>
 						<video autoPlay loop muted className="slick-custom-item"> 
 							<source src="././assets/img/collection1.mp4" type="video/mp4" /> 
 						</video>
@@ -50,7 +50,7 @@ const HotelCollectionSlider = () => {
 				</div>
 				<div>
 					<Link to="/#">
-						<h3 className="video-title">ROSEWOOD LE GUANAHANI ST. BARTH</h3>
+						<h3 className="video-title text-white">ROSEWOOD LE GUANAHANI ST. BARTH</h3>
 						<video autoPlay loop muted className="slick-custom-item"> 
 							<source src="././assets/img/collection1.mp4" type="video/mp4" /> 
 						</video>
@@ -58,7 +58,7 @@ const HotelCollectionSlider = () => {
 				</div>
 				<div>
 					<Link to="/#">
-						<h3 className="video-title">ROSEWOOD LE GUANAHANI ST. BARTH</h3>
+						<h3 className="video-title text-white">ROSEWOOD LE GUANAHANI ST. BARTH</h3>
 						<video autoPlay loop muted className="slick-custom-item"> 
 							<source src="././assets/img/collection1.mp4" type="video/mp4" /> 
 						</video>
@@ -66,7 +66,7 @@ const HotelCollectionSlider = () => {
 				</div>
 				<div>
 					<Link to="/#">
-						<h3 className="video-title">ROSEWOOD LE GUANAHANI ST. BARTH</h3>
+						<h3 className="video-title text-white">ROSEWOOD LE GUANAHANI ST. BARTH</h3>
 						<video autoPlay loop muted className="slick-custom-item"> 
 							<source src="././assets/img/collection1.mp4" type="video/mp4" /> 
 						</video>
@@ -74,7 +74,7 @@ const HotelCollectionSlider = () => {
 				</div>
 				<div>
 					<Link to="/#">
-						<h3 className="video-title">ROSEWOOD LE GUANAHANI ST. BARTH</h3>
+						<h3 className="video-title text-white">ROSEWOOD LE GUANAHANI ST. BARTH</h3>
 						<video autoPlay loop muted className="slick-custom-item"> 
 							<source src="././assets/img/collection1.mp4" type="video/mp4" /> 
 						</video>
@@ -82,7 +82,7 @@ const HotelCollectionSlider = () => {
 				</div>
 				<div>
 					<Link to="/#">
-						<h3 className="video-title">ROSEWOOD LE GUANAHANI ST. BARTH</h3>
+						<h3 className="video-title text-white">ROSEWOOD LE GUANAHANI ST. BARTH</h3>
 						<video autoPlay loop muted className="slick-custom-item"> 
 							<source src="././assets/img/collection1.mp4" type="video/mp4" /> 
 						</video>

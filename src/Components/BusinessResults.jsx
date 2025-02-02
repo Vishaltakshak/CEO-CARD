@@ -132,11 +132,11 @@ const BusinessResults = () => {
     }, []);
 
     return (
-        <div className="container-fluid pe-0 ps-0 browse-category-result">
+        <div className="bg-white pe-0 ps-0 browse-category-result">
             <div className="col-xl-12">
                 <div className="d-flex flex-col md:flex-row">
                     {isSidebarVisible && (
-                        <div className="sidebar bg-black p-4 rounded-lg hidden md:block">
+                        <div className="sidebar bg-white p-4 rounded-lg hidden md:block">
                             <div className="mb-6">
                                 {/* <h4 className="text-white mb-4">Search</h4> */}
                                 <input
@@ -144,14 +144,14 @@ const BusinessResults = () => {
                                     value={searchQuery}
                                     onChange={handleSearch}
                                     placeholder="Search ..."
-                                    className="w-full px-3 py-2 bg-black text-white rounded focus:outline-white focus:ring-2 focus:ring-white"
+                                    className="w-full px-3 py-2 bg-gray-100 text-black rounded focus:outline-white focus:ring-2 focus:ring-white"
                                 />
                             </div>
 
                             <div className="mb-6">
-                                <h4 className="text-white mb-2">Brand</h4>
+                                <h4 className="text-black mb-2">Brand</h4>
                                 <select
-                                    className="w-full p-2 bg-gray-800 rounded text-white appearance-none"
+                                    className="w-full p-2 bg-gray-100 rounded text-black appearance-none"
                                     value={filters.brand}
                                     onChange={(e) => handleFilterBrand(e.target.value)}
                                     style={{ direction: 'ltr' }}
@@ -166,7 +166,7 @@ const BusinessResults = () => {
                             
                             <div className="mb-6">
                                 <select
-                                    className="w-full p-2 bg-gray-800 rounded text-white appearance-none"
+                                    className="w-full p-2 bg-gray-100 rounded text-black appearance-none"
                                     value={filters.city}
                                     onChange={(e) => handleFilterChange("city", e.target.value)}
                                     style={{ direction: 'ltr' }}
@@ -189,7 +189,7 @@ const BusinessResults = () => {
                             </div> */}
 
                             <div className="mb-6">
-                                <h4 className="text-white mb-4">Price Range</h4>
+                                <h4 className="text-black mb-4">Price Range</h4>
                                 <Slider
                                     range
                                     min={0}
@@ -198,26 +198,26 @@ const BusinessResults = () => {
                                     onChange={handlePriceChange}
                                     className="mb-2"
                                     railStyle={{ backgroundColor: '#4B5563' }}
-                                    trackStyle={[{ backgroundColor: 'white' }]}
-                                    handleStyle={[{ borderColor: 'white', backgroundColor: 'white' }]}
+                                    trackStyle={[{ backgroundColor: 'black' }]}
+                                    handleStyle={[{ borderColor: 'black', backgroundColor: 'black' }]}
                                 />
-                                <div className="text-white">
+                                <div className="text-black">
                                     ₹{priceRange[0]} - ₹{priceRange[1]}
                                 </div>
                             </div>
                         </div>
                     )}
                      {/* Mobile Filters */}
-                     <div className="block md:hidden p-4 bg-black text-white space-y-4">
+                     <div className="block md:hidden p-4 bg-gray text-black space-y-4">
                         <input
                             type="text"
                             value={searchQuery}
                             onChange={handleSearch}
                             placeholder="Search..."
-                            className="w-full px-3 py-2 bg-black text-white rounded focus:outline-none focus:ring-2 focus:ring-white"
+                            className="w-full px-3 py-2 bg-gray-100 text-black rounded focus:outline-none focus:ring-2 focus:ring-gray-600"
                         />
                             <select
-                                    className="w-full p-2 bg-gray-800 rounded text-white appearance-none"
+                                    className="w-full p-2 bg-gray-100 rounded text-black appearance-none"
                                     value={filters.city}
                                     onChange={(e) => handleFilterChange("city", e.target.value)}
                                     style={{ direction: 'ltr' }}
@@ -230,26 +230,26 @@ const BusinessResults = () => {
                     </div>
                     <div className="results flex-1 p-4">
                         <div className="result-grid">
-                            <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                            <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 bg-white">
                                 {filteredData.map((item, i) => (
-                                    <div key={i} className="bg-black rounded-lg overflow-hidden">
+                                    <div key={i} className="bg-white rounded-lg overflow-hidden">
                                         <Link to='/BusinessInfo' state={{item}}>
                                             <div className="benefit-image-wrapper">
                                                 <img alt={item.ContentTitle} className="w-full min-h-48 object-contain" src={item.VendorImages} />
                                             </div>
                                             <div>
                                                 <div className="mb-2">
-                                                    <h5 className="text-white font-bold text-lg">
+                                                    <h5 className="text-black font-bold text-lg">
                                                         {item.VendorName}
                                                     </h5>
                                                 </div>
-                                                <div className="text-gray-300 text-sm mb-2">
+                                                <div className="text-gray-800 text-sm mb-2">
                                                     Price: ₹{item.Price}
                                                 </div>
                                                 <div className="text-yellow-400 mb-2">
                                                     {'★'.repeat(item.Rating)}{'☆'.repeat(5 - item.Rating)}
                                                 </div>
-                                                <div className="text-gray-400 text-sm" style={{maxHeight: "60px", overflow: "hidden"}}>
+                                                <div className="text-black text-sm" style={{maxHeight: "60px", overflow: "hidden"}}>
                                                     {item.VendorDescription}
                                                 </div>
                                             </div>

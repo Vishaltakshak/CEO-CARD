@@ -14,12 +14,12 @@ const BrowseByCategoryResult = ({sharedState}) => {
 				<div className="d-xxl-block d-xl-block d-lg-block d-md-none d-sm-none d-none">
 					<div className="row">
 						
-						<div className="col-xxl-8 col-xl-8 col-lg-8 col-md-8 col-sm-8 col-8">
+						{/* <div className="col-xxl-8 col-xl-8 col-lg-8 col-md-8 col-sm-8 col-8">
 							<h1 className="result-title">
 								<Link to="/#">Travel Benefits</Link>
 								: <Link to="/#">Airport Lounges</Link>
 							</h1>
-						</div>
+						</div> */}
 						{/* <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 select-float-right">
 							<select class="select-category-option" >
 								<option value="popularity">Sort By: Popularity</option>

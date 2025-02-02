@@ -88,14 +88,14 @@ export const ProfilePage1 = () => {
     }, [userId]);
 
     return (
-        <div className='container-fluid bg-black flex flex-col justify-center items-center'>
+        <div className='container-fluid bg-white text-black flex flex-col justify-center'>
             <div className='ps-0'>
                 <div className='personal-details-heading flex justify-between'>
-                    <h1>Personal Details</h1>
+                    <h1 className='text-black'>Personal Details</h1>
                    
                 </div>
                 <hr />
-                <div className="personal-details-form flex flex-col justify-center items-center">
+                <div className="personal-details-form flex flex-col justify-center items-center mt-3">
                     <form onSubmit={HandlePersonalSubmit}>
                         {/* Label and Input pairs */}
                         {[
@@ -107,10 +107,10 @@ export const ProfilePage1 = () => {
                            
                             
                         ].map((field) => (
-                            <div key={field.label} style={{ display: 'flex', flexDirection: 'row', marginBottom: '15px', justifyContent:"space-between", color:"white" }}>
+                            <div key={field.label} style={{ display: 'flex', flexDirection: 'row', marginBottom: '15px', justifyContent:"space-between", color:"black" }}>
                                 <label htmlFor={field.label} style={{ padding: '10px' }}>{field.label}:</label>
                                 <input
-                                    className='bg-black personal-details-form-input'
+                                    className='bg-gray-100 text-black personal-details-form-input'
                                     type={field.label === 'Phone Number' ? 'number' : 'text'}
                                     id={field.label}
                                     placeholder={`Enter ${field.label}`}
@@ -121,16 +121,16 @@ export const ProfilePage1 = () => {
                             </div>
                         ))}
                          <div className='flex flex-row justify-between'>
-                            <label htmlFor="DOB" className="block text-sm font-medium text-gray-700 mb-1">Date of Birth</label>
-                            <div className=" bg-black">
+                            <label htmlFor="DOB" className="block text-sm font-medium text-black mb-1">Date of Birth</label>
+                            <div className=" bg-gray-100">
                               <input
                                 type="date"
                                 id="DOB"
                                 name="DOB"
                                 value={FormData.DOB}
                                 onChange={handleChange}
-                                className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none  focus:ring-2 focus:ring-blue-500"
-                                style={{filter:'invert(1)'}}
+                                className="w-full px-3 py-2 bg-gray-100 text-black border border-gray-300 rounded-md focus:outline-none  focus:ring-2 focus:ring-blue-500"
+                               
                               />
                             </div>
                         </div>

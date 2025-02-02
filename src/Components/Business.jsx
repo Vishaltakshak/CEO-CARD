@@ -16,7 +16,7 @@ const BusinessPage = () => {
               <Link to="/#" target="_blank">
                 <div className="relative width-height-sett flex justify-center items-center">
                   {/* Dark Overlay */}
-                  <div className="absolute inset-0 bg-black opacity-55"></div>
+                  <div className="absolute inset-0 bg-black opacity-25"></div>
 
                   {/* Business Image */}
                   <img

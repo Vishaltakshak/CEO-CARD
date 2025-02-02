@@ -27,11 +27,11 @@ const TravelPage = () => {
 
   return (
     <AfterLoginLayout>
-      <div className="container-fluid browse-category-item">
+      <div className="container-fluid browse-category-item text-black bg-white">
         <div className="row">
           <div className="width-height-sett text-center">
-            <h1 className="browse-category-title text-[1rem]">Featured Travel Benefits</h1>
-            <p className="font-bold text-white">Exclusive perks for unforgettable journeys</p>
+            <h1 className="browse-category-title text-[1rem] text-black">Featured Travel Benefits</h1>
+            <p className="font-bold text-black">Exclusive perks for unforgettable journeys</p>
           </div>
 
           <div className="col-xl-12 browse-category-item-right">
@@ -46,12 +46,12 @@ const TravelPage = () => {
                         src={item.VendorImages}
                         alt={item.VendorName}
                       />
-                      <div className="absolute inset-0 bg-black/70"></div>
+                      <div className="absolute inset-0 bg-black/50"></div>
                     </div>
 
                     {/* Text Overlay - Positioned Bottom Left */}
-                    <div className="absolute bottom-4 left-4 text-white">
-                      <h3 className="text-lg font-bold">{item.VendorName}</h3>
+                    <div className="absolute bottom-4 left-4 text-black">
+                      <h3 className="text-lg font-bold text-white">{item.VendorName}</h3>
                       <p className="text-sm line-clamp-3 text-white">{item.VendorDescription}</p>
                     </div>
                   </div>

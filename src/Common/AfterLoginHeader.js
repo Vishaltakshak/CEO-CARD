@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import {LogOut } from "lucide-react";
 import { toast } from "react-toastify";
 import "../css/headerafterlogin.css"; // Make sure this CSS file exists and is correctly imported
 
@@ -87,12 +88,12 @@ const AfterLoginHeader = ({ allMenu, service }) => {
         >
           <Link className="navbar-brand" to="/homeafterlogin">
             <div className="logo-size-setting md:hidden sm:block">
-           <p>Ceo Card</p>
+           <p className="text-black">Ceo Card</p>
             </div>
           </Link>
 
-          <div className="div-sett">
-            <div className="afterlogin-nav-header ">
+          <div className="div-sett bg-white">
+            <div className="afterlogin-nav-header bg-white ">
               <div className=" hidden md:block">
               <Link className="btn btn-explore hidden md:block" to="/exploreelite">
                 PREMIUM CARD
@@ -100,7 +101,7 @@ const AfterLoginHeader = ({ allMenu, service }) => {
 
               <div className="account-menu">
                 <ul className="nav navbar-nav ">
-                  <li className="account-menu-li d-xl-block d-lg-block d-md-none d-sm-none d-none">
+                  <li className="account-menu-li d-xl-block d-lg-block d-md-none d-sm-block d-none">
                     <div className="dropdown custom-nav-dropdown">
                       <a
                         className="dropdown-toggle"
@@ -109,6 +110,7 @@ const AfterLoginHeader = ({ allMenu, service }) => {
                         id="dropdownMenuLink"
                         data-bs-toggle="dropdown"
                         aria-expanded="false"
+                        style={{filter:"invert(1)"}}
                       >
                         <span className="user-icon">
                           <i className="bi bi-person"></i>&nbsp;
@@ -122,6 +124,7 @@ const AfterLoginHeader = ({ allMenu, service }) => {
                       <ul
                         className="dropdown-menu account-dropdown-menu"
                         aria-labelledby="dropdownMenuLink"
+                        
                       >
                         <li>
                           <Link to="/Profile-Page">Profile</Link>
@@ -153,6 +156,7 @@ const AfterLoginHeader = ({ allMenu, service }) => {
                   <li className="account-menu-li d-xl-block d-lg-block d-md-none d-sm-none d-none thin-navbar-hide">
                     <div className="dropdown custom-nav-dropdown">
                       <a
+                        style={{filter:"invert(1)"}}
                         className="dropdown-toggle"
                         href="/#"
                         role="button"
@@ -195,14 +199,15 @@ const AfterLoginHeader = ({ allMenu, service }) => {
                       </ul>
                     </div>
                   </li>
-                  <li className="account-menu-li d-xl-block d-lg-block d-md-none d-sm-none d-none thin-navbar-hide">
-                    <a href="/Rewards">7,500 CCPoints™</a>
+                  <li className="account-menu-li d-xl-block d-lg-block d-md-none d-sm-none d-none thin-navbar-hide text-black">
+                    <a className="text-black" href="/Rewards">7,500 CCPoints™</a>
                   </li>
                   <li className="account-menu-li">
                     <a href="/Notifications">
                       <img
                         alt="Notification"
                         src="././assets/img/notification.svg"
+                        style={{filter:"invert(1)"}}
                       />
                       <span className="badge">9</span>
                     </a>
@@ -214,15 +219,23 @@ const AfterLoginHeader = ({ allMenu, service }) => {
                   </li> */}
                   <li className="account-menu-li d-xl-block d-lg-block d-md-none d-sm-block d-block">
                     <Link to="/Search">
-                      <i className="bi bi-search" aria-hidden="true"></i>
+                      <i className="bi bi-search text-black" aria-hidden="true"></i>
                     </Link>
                   </li>
                 </ul>
               </div>
 
-              <div className="text-center-desktop margin-top-15">
-                <button
-                  className="navbar-toggler"
+              <div className="text-center-desktop margin-top-15 ">
+              <button
+                    className="navbar-toggler text-black flex items-center gap-2"
+                    type="button"
+                    onClick={logout}
+                  >
+                    <LogOut className="w-6 h-6 rotate-180" />
+                    
+              </button>
+                {/* <button
+                  className="navbar-toggler text-black"
                   type="button"
                   data-bs-toggle="collapse"
                   data-bs-target="#navbarTogglerDemo01"
@@ -231,45 +244,47 @@ const AfterLoginHeader = ({ allMenu, service }) => {
                   aria-label="Toggle navigation"
                 >
                   <span className="navbar-toggler-icon">
-                    <i className="bi bi-list" aria-hidden="true"></i>
+                    <i className="bi bi-list hidden" aria-hidden="true"></i>
                   </span>
-                </button>
+                </button> */}
               </div>
             </div>
 
             <div
-              className="collapse navbar-collapse afterlogin-navbar-collapse"
+              className="collapse navbar-collapse afterlogin-navbar-collapse bg-white"
               id="navbarTogglerDemo01"
               style={{visibility:"visible"}}
             >
-              <ul className="navbar-nav beforelogin-navbar mx-auto mb-2 mb-lg-0">
+              <ul className="navbar-nav beforelogin-navbar dropdown-menu-start mx-auto mb-2 mb-lg-0">
                 {Object.entries(groupedMenu).map(([category, items]) => (
-                  <li className="nav-item dropdown has-megamenu" key={category}>
+                  <li className="nav-item dropdown has-megamenu text-black" key={category}>
                     <Link
                       onClick={() => onMenuClick(category)}
-                      className="nav-link dropdown-toggle d-xl-block d-lg-block d-md-none d-sm-none d-none"
+                      className="nav-link dropdown-toggle d-xl-block d-lg-block d-md-none d-sm-none d-none text-black"
                       to="#"
                       data-bs-toggle="dropdown"
                     >
-                      <strong>{category}</strong>
+                      <strong className="text-black">{category}</strong>
                       
                       
                     </Link>
+
+                    
                     
                     
                    
                    
                     
-                    <div className="dropdown-menu  megamenu bg-[#222222]" role="menu">
+                    <div className="dropdown-menu megamenu bg-white text-black" role="menu">
                       <div className="container ml-2">
                         <div className="row g-3 ">
                           <div className="col-xxl-8 col-xl-8 col-lg-8 col-md-8 col-sm-8 col-8 ml-4">
                             <div className="row">
                               
                               {items.map((item) => (
-                                <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-12 desktop-display-sett text-white" key={item.SubCategoryName}>
+                                <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-12 desktop-display-sett text-black" key={item.SubCategoryName}>
                                   <div className="col-megamenu ">
-                                    <h6 className="megamenu-heading ">
+                                    <h6 className="megamenu-heading text-black ">
                                       <Link to="/homeafterlogin">
                                         {item.SubCategoryName}
                                       </Link>
@@ -279,7 +294,7 @@ const AfterLoginHeader = ({ allMenu, service }) => {
                                     <div className="megamenu-heading-links">
 
                                 {getMatchingServices(item).map((service) => (
-                                  <p className="megamenu-p" key={service.CardTitle}>
+                                  <p className="megamenu-p text-black" key={service.CardTitle}>
                                     <Link to="/SubMenu" state={{ service }}>
                                       {service.CardTitle ? service.CardTitle : service.ProviderName}
                                     </Link>
@@ -303,7 +318,7 @@ const AfterLoginHeader = ({ allMenu, service }) => {
                                     <a href="/OrderMembershipCard">
                                       <img
                                         alt="block"
-                                        style={{ width: "100%" }}
+                                        style={{ width: "100%", }}
                                         src={`${process.env.PUBLIC_URL}/assets/img/CEOCARD.jpg`}
                                       />
                                     </a>
@@ -311,10 +326,10 @@ const AfterLoginHeader = ({ allMenu, service }) => {
                                   
                                   <h5 className="favorites-subcategory-person">
                                     <a href="/OrderMembershipCard">
-                                      <strong style={{fontSize:'13px'}}>PURCHASE YOUR MEMBERSHIP </strong>
+                                      <strong className="text-black" style={{fontSize:'13px'}}>PURCHASE YOUR MEMBERSHIP </strong>
                                     </a>
                                   </h5>
-                                  <h6 className="favorites-subcategory-para">
+                                  <h6 className="favorites-subcategory-para text-black">
                                     Enroll and enjoy Platinum Elite Status
                                     Challenge
                                   </h6>
@@ -336,35 +351,36 @@ const AfterLoginHeader = ({ allMenu, service }) => {
                     className="w-[4rem]  block "
                     src="././assets/img/ceo-logo-white.png"
                     alt="Logo"
+                    style={{filter:"invert(1)"}}
                   />
                  </Link>
                 </li>
 
                 <li className="nav-item sm:hidden md:block  ">
                   <a className="nav-link" href="/Community">
-                    <strong>community</strong>
+                    <strong className="text-black">community</strong>
                   </a>
                 </li>
                 <li className="nav-item sm:hidden md:block lg:block">
                   <a className="nav-link" href="/allbenifits">
-                    <strong>all benefits</strong>
+                    <strong className="text-black">all benefits</strong>
                   </a>
                 </li>
 
 
                 <li className="nav-item pl-4 md:hidden">
-                  <button className="nav-link text-white" onClick={logout}>
-                  {/* <a className="nav-link" href="/"> */}
+                  <button className="nav-link text-black" onClick={logout}>
+                  
                 
-                    <strong>LOG OUT</strong>
+                    LOG OUT
                     </button>
                   
                 </li>
                 <li className="nav-item">
                   <div className="d-xl-block d-lg-block d-md-none d-sm-none d-none">
                     <a className="nav-link" href="/Search">
-                      <strong>
-                        <i className="bi bi-search"></i> &nbsp;&nbsp; search
+                      <strong className="text-black">
+                        <i className="bi bi-search" ></i> &nbsp;&nbsp; search
                       </strong>
                     </a>
                   </div>
@@ -388,13 +404,13 @@ const AfterLoginHeader = ({ allMenu, service }) => {
             overflowX: "auto"
           }}>
             {Object.keys(groupedMenu).map((category) => (
-              <li className="mobile-category-link-wrapper" key={category}>
+              <li className="mobile-category-link-wrapper text-black" key={category}>
                 <Link
                   onClick={() => onMenuClick(category)}
-                  className="mobile-category-link"
+                  className="mobile-category-link text-black"
                   to="#"
                 >
-                  <strong>{category}</strong>
+                  <strong className="text-black">{category}</strong>
                 </Link>
               </li>
             ))}

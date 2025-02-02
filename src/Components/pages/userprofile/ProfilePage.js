@@ -15,9 +15,9 @@ export const ProfilePage = () => {
   return (
     <>
     <AfterLoginLayout>
-        <div className="container-fluid bg-black  ">
+        <div className="container-fluid bg-white  ">
         <button
-              className="navbar-toggler aside-toggler"
+              className="navbar-toggler aside-toggler text-black"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#Proile-page-aside"
@@ -29,8 +29,8 @@ export const ProfilePage = () => {
                 <i class="bi bi-list" aria-hidden="true"></i>
               </span>
             </button>
-            <div className="collapse navbar-collapse" id="Proile-page-aside">
-                <ul className='list-unstyled'>
+            <div className="visible md:hidden navbar-collapse" id="Proile-page-aside">
+                <ul className='list-unstyled text-black'>
                    <li onClick={()=>{SetActive(1)}}>Personal Details</li>
                    <li onClick={()=>{SetActive(2)}}>Preferences</li>
                    <li onClick={()=>{SetActive(3)}}>Security</li>

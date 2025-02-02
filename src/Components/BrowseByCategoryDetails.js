@@ -24,7 +24,7 @@ const BrowseByCategoryDetails = () => {
 	return (
 		
 		<>
-			<div className="container-fluid pe-0 ps-0 browse-category-result">
+			<div className="container-fluid pe-0 ps-0 browse-category-result bg-white">
 						
 				<BrowseByCategoryResult sharedState={isViewsidebar} setSharedState={setViewsidebar} handlesharedState={handleViewdetails} ></BrowseByCategoryResult>
 				

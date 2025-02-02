@@ -75,7 +75,7 @@ const AllBenifitsHome = () => {
     if (error) return <p>{error}</p>;
 
     return (
-        <div className="min-h-auto pb-8 bg-black text-white">
+        <div className="min-h-auto pb-8 bg-white text-black !overflow-hidden">
             <h1 className="font-bold text-center text-[2rem]"> ALL BENEFITS</h1>
             <div className="w-full overflow-hidden" ref={containerRef}>
                 <div 
@@ -103,10 +103,10 @@ const AllBenifitsHome = () => {
                                     />
                                 </div>
                                 <div className="mt-3 md:mt-6 mb-4 md:mb-8">
-                                    <h5 className="text-white font-bold text-base md:text-lg mb-2 md:mb-4 truncate">
+                                    <h5 className="text-black font-bold text-base md:text-lg mb-2 md:mb-4 truncate">
                                         {datab.VendorName}
                                     </h5>
-                                    <div className="text-white text-sm md:text-sm line-clamp-2 md:line-clamp-3">
+                                    <div className="text-black text-sm md:text-sm line-clamp-2 md:line-clamp-3">
                                         {datab.VendorDescription}
                                     </div>
                                 </div>

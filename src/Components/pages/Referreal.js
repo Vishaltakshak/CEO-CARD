@@ -31,31 +31,31 @@ export const Referreal = () => {
   return (
     <>
       <AfterLoginLayout>
-        <div className='Container-fluid bg-black flex justify-center items-center flex-col refer-parent-con'>
-          <h1 className='text-center'>Refer A Friend</h1>
+        <div className=' bg-white text-black flex justify-center items-center flex-col refer-parent-con'>
+          <h1 className='text-center text-black '>Refer A Friend</h1>
           <div className='refer-frnd-div flex flex-col items-center'>
-            <p>Earn 500 extra credit points for every friend who signs up!</p>
-            <p>Plus your friends will get up to 250 credit points</p>
+            <p className='text-black'>Earn 500 extra credit points for every friend who signs up!</p>
+            <p className='text-black'>Plus your friends will get up to 250 credit points</p>
             <button className='Refer-learn-more'>
-              <a className='btn btn-explore' href='#'>LEARN MORE</a>
+              <a className='btn btn-explore text-black ' href='#'>LEARN MORE</a>
             </button>
           </div>
         </div>
-        <div className='Container-fluid bg-black'>
+        <div className='Container-fluid bg-white'>
           <div className='refer-form-container'>
-            <div className='form-heading'>Refer A Friend</div>
+            <div className='form-heading text-black '>Refer A Friend</div>
             <div className='col-xl-12 col-12 text-center'>
               <hr className='menu-section-break'></hr>
             </div>
             <div className='sub-form-container'>
               <div className='link-container'>
-                <p>Invite Link:</p>
-                <div className='link-details' ref={contentRef}>YourLink.com/lorem</div>
-                <button onClick={handleCopy}>Copy Link</button>
+                <p className='text-black '>Invite Link:</p>
+                <div className='link-details text-black ' ref={contentRef}>YourLink.com/lorem</div>
+                <button className='text-black bg-white' onClick={handleCopy}>Copy Link</button>
               </div>
               <form onSubmit={handleSubmit}>
                 <div className='form-format'>
-                  <label htmlFor='input1'>Email Invites:</label>
+                  <label htmlFor='input1' className='text-black'>Email Invites:</label>
                   <div className='flex flex-col justify-center items-center input-container'>
                     <input
                       type='text'
@@ -63,6 +63,7 @@ export const Referreal = () => {
                       value={input1}
                       onChange={(e) => setInput1(e.target.value)}
                       placeholder='Enter Email'
+                      className='text-black bg-white '
                     />
                     <input
                       type='text'
@@ -70,6 +71,7 @@ export const Referreal = () => {
                       value={input2}
                       onChange={(e) => setInput2(e.target.value)}
                       placeholder='Enter Email'
+                      className='text-black bg-white '
                     />
                     <input
                       type='text'
@@ -77,9 +79,10 @@ export const Referreal = () => {
                       value={input3}
                       onChange={(e) => setInput3(e.target.value)}
                       placeholder='Enter Email'
+                      className='text-black bg-white '
                     />
                   </div>
-                  <button type="submit">Send Invite</button>
+                  <button  type="submit">Send Invite</button>
                 </div>
               </form>
             </div>

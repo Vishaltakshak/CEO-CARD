@@ -46,7 +46,7 @@ export const ProfilePage2 = () => {
   };
 
   return (
-    <div className="container-fluid flex flex-col justify-center items-center">
+    <div className="bg-white text-black flex flex-col justify-center items-center">
       <div className="page2-heading">
         <h1>Preferences</h1>
         <h6>Change your language, currency, and accessibility requirements.</h6>
@@ -56,26 +56,28 @@ export const ProfilePage2 = () => {
         <form onSubmit={handleSubmit}>
           <div className="flex flex-col justify-center items-center">
             <div className="flex justify-between" style={{ margin: '10px', padding: '10px' }}>
-              <label htmlFor="Currency">Currency:</label>
+              <label className='mt-[5px]' htmlFor="Currency">Currency:</label>
               <input
                 name="Currency"
-                style={{ border: "none", backgroundColor: 'black', color: 'white', marginLeft: '10px' }}
+                style={{ border: "none", backgroundColor: 'white', color: 'white', marginLeft: '10px' }}
                 type="text"
                 placeholder="Select Your Currency"
                 value={formData.Currency}
                 onChange={handleInputChange}
+                className='px-2 py-2'
               />
             </div>
             <hr />
             <div className="flex" style={{ margin: '10px', padding: '10px' }}>
-              <label htmlFor="Language">Language:</label>
+              <label className='mt-[7px]' htmlFor="Language">Language:</label>
               <input
                 name="Language"
-                style={{ border: "none", backgroundColor: 'black', color: 'white', marginLeft: '10px' }}
+                style={{ border: "none", backgroundColor: 'white', color: 'white', marginLeft: '10px' }}
                 type="text"
                 placeholder="Select your language"
                 value={formData.Language}
                 onChange={handleInputChange}
+                className='py-2 px-2'
               />
             </div>
           </div>

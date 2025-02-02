@@ -13,7 +13,7 @@ const OrderMembershipCard = () => {
     <>
       <AfterLoginLayout>
       <div className="container-fluid order-container pe-0 ps-0">
-        <div className="container-fluid order-container-banner">
+        <div className="text-black bg-white order-container-banner">
           <div className="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 ">
             <div className="row order-container-banner-row">
               {/* For mobile */}
@@ -26,10 +26,10 @@ const OrderMembershipCard = () => {
               </div>
               {/* For mobile */}
 
-              <div className="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-12 order-container-left">
+              <div className="col-xxl-5 col-xl-5 col-lg-5 col-md-12 col-12 order-container-left bg-white">
                 <div>
-                  <h1>Bring Your Benefits Everywhere You Go</h1>
-                  <p>
+                  <h1  className="text-black">Bring Your Benefits Everywhere You Go</h1>
+                  <p className="text-black">
                     Order your custom- engraved stainless steel Ceo card
                     to receive it before the end of your complimentary
                     limited-access trial.
@@ -37,7 +37,7 @@ const OrderMembershipCard = () => {
                 </div>
                 <div>
                   <Link to='/payment'>
-                  <button className="btn btn-orderMembership">
+                  <button className="btn btn-orderMembership ">
                     PURCHASE FOR $39
                   </button></Link>
                 </div>
@@ -46,7 +46,7 @@ const OrderMembershipCard = () => {
 
                   <Link
                     onClick={() => member1.current?.scrollIntoView()}
-                    className="btn-orderMembership-anchor"
+                    className="btn-orderMembership-anchor text-black"
                   >
                     Receive my card for free with All Access Elite Membership
                   </Link>
@@ -75,10 +75,10 @@ const OrderMembershipCard = () => {
                 />
               </div>
               <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-12 	complem-container-right">
-                <h1 className="comple-heading">
+                <h1 className="comple-heading text-black">
                   Receive Your Complimentary Card with All Access Elite
                 </h1>
-                <p className="comple-para">
+                <p className="comple-para text-black">
                   Upgrade now to get your custom-engraved black stainless steel
                   card, which is completely free with our highest tier of
                   Membership.
@@ -306,7 +306,7 @@ const OrderMembershipCard = () => {
         <div className="container-fluid benefit-container">
           <div className="col-xl-12 col-12 benefit-container-child">
             <h1 className="benefit-title">Explore the Benefits</h1>
-            <div className="elite-upgrade-member-benefits-table">
+            <div className="elite-upgrade-member-benefits-table text-black">
               <div className="row">
                 <div className="col-xl-6 col-lg-6 col-md-6 col-sm-3 col-3"></div>
                 <div className="col-xl-3 col-lg-3 col-md-3 col-sm-5 col-5">

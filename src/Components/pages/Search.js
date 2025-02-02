@@ -6,7 +6,7 @@ const Search = () => {
   return (
     <>
 
-        <div className="container-fluid menusearch-container">
+        <div className=" menusearch-container" style={{filter:"invert(1)"}}>
             <div className="col-xl-12 col-12">
                 <Link  to="/homeafterlogin" class="search-close-icon d-xl-block d-lg-block d-md-block d-sm-none d-none">
                     <h4>CLOSE</h4>
@@ -21,7 +21,7 @@ const Search = () => {
                         <Link to="/#">
                             <img alt="search" class="menusearch-search-icon" src="././assets/img/Search/Search.svg"/>
                         </Link>
-                        <input name="focus" className="menusearch-form-input" type="text" placeholder="What are you looking for?" required />
+                        <input name="focus" className="menusearch-form-input bg-black text-white" type="text" placeholder="What are you looking for?" required />
                         <button className="menusearch-close-icon" type="reset"></button>
                     </div>
                 </form>

@@ -10,7 +10,7 @@ const Notifications = () => {
   return (
     <>
       <AfterLoginLayout>
-      <div className="container-fluid notify-container ps-0 pe-0">
+      <div className="container-fluid notify-container ps-0 pe-0" style={{filter:"invert(1)"}}>
         <div className="container-fluid">
           <div className="row">
             <div className="col-xl-12 col-lg-12 col-md-12 col-12">
@@ -78,9 +78,9 @@ const Notifications = () => {
                 >
                   {/* Inbox notifications */}
                   <div className="row">
-                    <div className="notify-accordian">
+                    <div className="notify-accordian " style={{filter:"invert(1)"}}>
                       <div className="accordion " id="accordionFlush1">
-                        <div className="accordion-item notify-accordian-item">
+                        <div className="accordion-item notify-accordian-item" >
                           <h2
                             className="accordion-header"
                             id="flush-headingOne1"
@@ -337,7 +337,7 @@ const Notifications = () => {
                 >
                   {/* starred notifications */}
                   <div className="row">
-                    <div className="notify-accordian">
+                    <div className="notify-accordian" style={{filter:"invert(1)"}}>
                       <div className="accordion " id="accordionFlush2">
                         <div className="accordion-item notify-accordian-item">
                           <h2
@@ -434,7 +434,7 @@ const Notifications = () => {
                 >
                   {/* Trash notifications */}
                   <div className="row">
-                    <div className="notify-accordian">
+                    <div className="notify-accordian" style={{filter:"invert(1)"}}>
                       <div className="accordion " id="accordionFlush3">
                         <div className="accordion-item notify-accordian-item">
                           <h2

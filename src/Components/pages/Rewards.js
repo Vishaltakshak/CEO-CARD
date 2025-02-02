@@ -12,14 +12,14 @@ const Rewards = () => {
           <div className="container pe-0 ps-0">
             <div className="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 text-center">
               <h1
-                className="home-heading"
+                className="home-heading text-black"
                 style={{ textTransform: "capitalize" }}
               >
                 Redeem Your CCPoints<sup>TM</sup>
               </h1>
               <Link
                 style={{ textDecoration: "none" }}
-                className="home-heading-anchor"
+                className="home-heading-anchor text-black"
                 onClick={() => {
                   const element = document.getElementById("earnpts");
                   element?.scrollIntoView({
@@ -29,7 +29,7 @@ const Rewards = () => {
                 }}
               >
                 Learn more about how you can{" "}
-                <span style={{ textDecoration: "underline" }}>
+                <span className="text-black" style={{ textDecoration: "underline" }}>
                   earn FCPoints
                 </span>
               </Link>
@@ -53,7 +53,7 @@ const Rewards = () => {
                           &#8377;200 - &#8377;500 Gift Cards
                         </p>
                         <p
-                          style={{ color: "#8f8f8f" }}
+                          style={{ color: "#000" }}
                           className="reward-details-subheading"
                         >
                           50,000 - 100,000 POINTS
@@ -80,7 +80,7 @@ const Rewards = () => {
                           &#8377;200 - &#8377;500 Gift Cards
                         </p>
                         <p
-                          style={{ color: "#8f8f8f" }}
+                          style={{ color: "#000" }}
                           className="reward-details-subheading"
                         >
                           50,000 - 100,000 POINTS
@@ -106,7 +106,7 @@ const Rewards = () => {
                           &#8377;200 - &#8377;500 Gift Cards
                         </p>
                         <p
-                          style={{ color: "#8f8f8f" }}
+                          style={{ color: "#000" }}
                           className="reward-details-subheading"
                         >
                           50,000 - 100,000 POINTS
@@ -132,7 +132,7 @@ const Rewards = () => {
                           &#8377;200 - &#8377;500 Gift Cards
                         </p>
                         <p
-                          style={{ color: "#8f8f8f" }}
+                          style={{ color: "#000" }}
                           className="reward-details-subheading"
                         >
                           50,000 - 100,000 POINTS
@@ -158,7 +158,7 @@ const Rewards = () => {
                           &#8377;200 - &#8377;500 Gift Cards
                         </p>
                         <p
-                          style={{ color: "#8f8f8f" }}
+                          style={{ color: "#000" }}
                           className="reward-details-subheading"
                         >
                           50,000 - 100,000 POINTS
@@ -171,11 +171,11 @@ const Rewards = () => {
             </div>
           </div>
         </div>
-        <div id="earnpts" className="container-fluid earnpt-block-parent">
-          <div className="container-fluid pe-0 ps-0">
+        <div id="earnpts" className="text-black bg-white earnpt-block-parent">
+          <div className="bg-white pe-0 ps-0">
             <div className="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 text-center">
               <h1
-                className="home-heading"
+                className="home-heading text-black"
                 style={{ textTransform: "capitalize" }}
               >
                 How You Can Earn Points
@@ -184,17 +184,17 @@ const Rewards = () => {
             <div className="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 earnpt-block-child">
               <div className="row">
                 {/* repeate block */}
-                <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 earn-more-column earnpt-block-parent-left0">
+                <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 earn-more-column earnpt-block-parent-left0 bg-white">
                   <img
                     alt="earn points"
                     className="earn-more-image d-xl-block d-lg-block d-md-none d-sm-none d-none "
                     src="../assets/img/reward/earn-point-1.png"
                   />
                   <div className="earn-more-details">
-                    <h5 className="earn-more-details-title">
+                    <h5 className="earn-more-details-title text-black">
                       Add your Spouse or Significant Other
                     </h5>
-                    <p className="earn-more-details-p">
+                    <p className="earn-more-details-p text-black">
                       Earn 10,000 CCPoints when you purchase a companion
                       Membership
                     </p>
@@ -204,36 +204,36 @@ const Rewards = () => {
                   </div>
                 </div>
                 {/* repeate block */}
-                <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 earn-more-column earnpt-block-parent-left0-right0">
+                <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 earn-more-column earnpt-block-parent-left0-right0 bg-white">
                   <img
                     alt="earn points"
                     className="earn-more-image d-xl-block d-lg-block d-md-none d-sm-none d-none "
                     src="../assets/img/reward/earn-point-2.jpg"
                   />
                   <div className="earn-more-details">
-                    <h5 className="earn-more-details-title">
+                    <h5 className="earn-more-details-title text-black">
                       Invite New CC Members
                     </h5>
-                    <p className="earn-more-details-p">
+                    <p className="earn-more-details-p text-black">
                       Earn 20,000 CCPoints for each Member referral that joins
                       CeoCard
                     </p>
-                    <Link className="btn btn-earn-points" to="/Payment">
+                    <Link className="btn btn-earn-points " to="/Payment">
                       SEND A REFERRAL
                     </Link>
                   </div>
                 </div>
-                <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 earn-more-column earnpt-block-parent-right0">
+                <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 earn-more-column earnpt-block-parent-right0 bg-white">
                   <img
                     alt="earn points"
                     className="earn-more-image d-xl-block d-lg-block d-md-none d-sm-none d-none "
                     src="../assets/img/reward/earn-point-3.jpg"
                   />
                   <div className="earn-more-details">
-                    <h5 className="earn-more-details-title">
+                    <h5 className="earn-more-details-title text-black">
                       Gift Memberships
                     </h5>
-                    <p className="earn-more-details-p">
+                    <p className="earn-more-details-p text-black">
                       Earn 20,000 FCPoints for each Gift Membership purchased
                     </p>
                     <Link className="btn btn-earn-points" to="/payment">
@@ -247,7 +247,7 @@ const Rewards = () => {
         </div>
 
         <div className="container-fluid rewards-block-parent pts-container">
-          <div className="container pe-0 ps-0">
+          <div className="container pe-0 ps-0 filter-invert(1)" style={{filter:"invert(1)"}}>
             <div className="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 text-center">
               <h1
                 className="home-heading"

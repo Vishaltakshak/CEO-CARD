@@ -235,7 +235,7 @@ const BusinessResults = () => {
                                     <div key={i} className="bg-white rounded-lg overflow-hidden">
                                         <Link to='/BusinessInfo' state={{item}}>
                                             <div className="benefit-image-wrapper">
-                                                <img alt={item.ContentTitle} className="w-full min-h-48 object-contain" src={item.VendorImages} />
+                                                <img alt={item.ContentTitle} className="w-full min-h-[16vh] object-cover" src={item.VendorImages} />
                                             </div>
                                             <div>
                                                 <div className="mb-2">

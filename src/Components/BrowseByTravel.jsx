@@ -171,7 +171,7 @@ const TravelResults = () => {
                     filteredData.map((service, index) => (
                         <div key={index} className="bg-white rounded-lg overflow-hidden">
                             <Link to="/TravelInfo" state={{ service }}>
-                                <div className="relative h-48">
+                                <div className="relative h-[16vh]">
                                     <img
                                         src={service.VendorImages || "/api/placeholder/400/200"}
                                         alt={service.VendorName}

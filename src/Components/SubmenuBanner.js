@@ -42,6 +42,7 @@ const SubmenuBanner = ({ service }) => {
                   alt="Website Visit"
                   style={{ height: "10px", width: "auto" }}
                   src="././assets/img/Submenu/visit-website-icon.svg"
+                  
                 ></img>
               </Link>
             </div>

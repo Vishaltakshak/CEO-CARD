@@ -97,12 +97,12 @@ import { Clock, MapPin, Phone, Mail, FileText } from 'lucide-react';
 
 const VendorDescription = ({ service }) => {
   return (
-    <div className="min-h-screen bg-black text-white p-4 md:p-6">
+    <div className="min-h-screen bg-white text-black p-4 md:p-6">
       <div className="max-w-3xl mx-auto">
-        <div className="bg-black rounded-lg shadow-xl overflow-hidden">
+        <div className="bg-white rounded-lg overflow-hidden">
           {/* Header */}
           <div className="p-4 md:p-6 border-b border-gray-700">
-            <h1 className="text-xl md:text-2xl font-bold text-white">
+            <h1 className="text-xl md:text-2xl font-bold text-black">
               {service.VendorName}
             </h1>
           </div>
@@ -111,10 +111,10 @@ const VendorDescription = ({ service }) => {
           <div className="p-4 md:p-6 space-y-6">
             {/* Description */}
             <div className="flex items-start gap-3">
-              <FileText className="w-5 h-5 mt-1 text-gray-400 flex-shrink-0" />
+              <FileText className="w-5 h-5 mt-1 text-gray-800 flex-shrink-0" />
               <div>
-                <h3 className="font-semibold text-white">Description</h3>
-                <p className="text-gray-300 mt-1 break-words">
+                <h3 className="font-semibold text-black">Description</h3>
+                <p className="text-black mt-1 break-words">
                   {service.VendorDescription}
                 </p>
               </div>
@@ -122,10 +122,10 @@ const VendorDescription = ({ service }) => {
 
             {/* Address */}
             <div className="flex items-start gap-3">
-              <MapPin className="w-5 h-5 mt-1 text-gray-400 flex-shrink-0" />
+              <MapPin className="w-5 h-5 mt-1 text-black flex-shrink-0" />
               <div>
-                <h3 className="font-semibold text-white">Address</h3>
-                <p className="text-gray-300 mt-1 break-words">
+                <h3 className="font-semibold text-black">Address</h3>
+                <p className="text-black mt-1 break-words">
                   {service.VendorAddress}
                 </p>
               </div>
@@ -133,10 +133,10 @@ const VendorDescription = ({ service }) => {
 
             {/* Operating Hours */}
             <div className="flex items-start gap-3">
-              <Clock className="w-5 h-5 mt-1 text-gray-400 flex-shrink-0" />
+              <Clock className="w-5 h-5 mt-1 text-black flex-shrink-0" />
               <div>
-                <h3 className="font-semibold text-white">Operating Hours</h3>
-                <p className="text-gray-300 mt-1">
+                <h3 className="font-semibold text-black">Operating Hours</h3>
+                <p className="text-black mt-1">
                   {service.VendorOpenHours}
                 </p>
               </div>
@@ -145,10 +145,10 @@ const VendorDescription = ({ service }) => {
             {/* Pricing Information */}
             {service.VendorPricingInfo && (
               <div className="flex items-start gap-3">
-                <span className="w-5 h-5 mt-1 text-gray-400 flex-shrink-0 font-semibold">₹</span>
+                <span className="w-5 h-5 mt-1 text-black flex-shrink-0 font-semibold">₹</span>
                 <div>
-                  <h3 className="font-semibold text-white">Pricing Information</h3>
-                  <p className="text-gray-300 mt-1">
+                  <h3 className="font-semibold text-black">Pricing Information</h3>
+                  <p className="text-black mt-1">
                     Currency: {service.VendorPricingInfo.Currency}
 					<br/>
 					Minimum-Amount:  {service.VendorPricingInfo.PriceRange.Min}
@@ -161,14 +161,14 @@ const VendorDescription = ({ service }) => {
 
             {/* Contact Details Section */}
             <div className="pt-4 border-t">
-              <h2 className="text-lg font-semibold text-white mb-4">Contact Information</h2>
+              <h2 className="text-lg font-semibold text-black mb-4">Contact Information</h2>
               
               {/* Contact Number */}
               <div className="flex items-start gap-3 mb-4">
-                <Phone className="w-5 h-5 mt-1 text-gray-400 flex-shrink-0" />
+                <Phone className="w-5 h-5 mt-1 text-black flex-shrink-0" />
                 <div>
-                  <h3 className="font-semibold text-white">Phone</h3>
-                  <p className="text-gray-300 mt-1">
+                  <h3 className="font-semibold text-black">Phone</h3>
+                  <p className="text-black mt-1">
                     {service.ContactNumber}
                   </p>
                 </div>
@@ -176,10 +176,10 @@ const VendorDescription = ({ service }) => {
 
               {/* Email */}
               <div className="flex items-start gap-3">
-                <Mail className="w-5 h-5 mt-1 text-gray-400 flex-shrink-0" />
+                <Mail className="w-5 h-5 mt-1 text-black flex-shrink-0" />
                 <div>
-                  <h3 className="font-semibold text-white">Email</h3>
-                  <p className="text-gray-300 mt-1 break-words">
+                  <h3 className="font-semibold text-black">Email</h3>
+                  <p className="text-black mt-1 break-words">
                     {service.ContactMail}
                   </p>
                 </div>

@@ -24,11 +24,11 @@ const ServiceInfoBanner = ({ service }) => {
     <>
       <div className="container-fluid submenu-banner">
         <div className="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 pe-0 ps-0 submenu-banner-child">
-                <div className="visible-large-size">
-                     <img alt="Full width Banner" src={service.VendorImages}></img>
+                <div className="visible-large-size ">
+                     <img alt="Full width Banner " style={{ height: "60vh", objectFit: "cover", width: "100%" }}  src={service.VendorImages}></img>
                 </div>
           <div className="visible-small-size">
-            <img alt="Full width Banner" src={service.VendorImages}></img>
+            <img alt="Full width Banner" style={{ height: "50vh", objectFit: "cover", width: "100%" }} src={service.VendorImages}></img>
           </div>
           <div className="submenu-banner-child-overlay">
             <div className="external-information">

@@ -7,7 +7,7 @@ import '../css/aboutsubmenu.css';
 const AboutSubMenu = ({service}) => {
 	return (
 		<>
-			<div className="container-fluid submenu-container about-submenu">
+			<div className="bg-white text-black submenu-container about-submenu">
 				<div className="container pe-0 ps-0">
 					<div className="row">
 						<div className="col-xl-7 col-lg-7 col-md-12 col-sm-12 col-12">

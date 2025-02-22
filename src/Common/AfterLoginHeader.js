@@ -203,14 +203,16 @@ const AfterLoginHeader = ({ allMenu, service }) => {
                     <a className="text-black" href="/Rewards">7,500 CCPoints™</a>
                   </li>
                   <li className="account-menu-li">
-                    <a href="/Notifications">
+                    <Link to='/Notifications'>
+                   
                       <img
                         alt="Notification"
                         src="././assets/img/notification.svg"
                         style={{filter:"invert(1)"}}
                       />
-                      <span className="badge">9</span>
-                    </a>
+                      
+                    </Link>
+                    
                   </li>
                   {/* <li className="account-menu-li d-xl-block d-lg-block d-md-block d-sm-none d-none">
                     <Link to="/homeafterlogin">
@@ -276,7 +278,7 @@ const AfterLoginHeader = ({ allMenu, service }) => {
                    
                     
                     <div className="dropdown-menu megamenu bg-white text-black" role="menu">
-                      <div className="container ml-2">
+                      <div className="bg-white text-black ml-2">
                         <div className="row g-3 ">
                           <div className="col-xxl-8 col-xl-8 col-lg-8 col-md-8 col-sm-8 col-8 ml-4">
                             <div className="row">

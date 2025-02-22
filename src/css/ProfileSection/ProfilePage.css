@@ -1,81 +1,175 @@
-.Profile-main{
-    width: 80%;
+/* Sidebar (aside) styles */
+.Proile-page-aside {
+    background-color: #ffffff;
+
+    margin: 20px 10px 50px 10px;
+    border-radius: 10px;
+
+    width: 20%;
+
+    height: calc(100vh - 40px);
+
+
+
+    padding-top: 20px;
+
+}
+
+
+
+.Proile-page-aside li {
+    padding: 15px 20px;
+
+    color: #333;
+    /* Dark text color for readability */
+    cursor: pointer;
+    font-size: 16px;
+    /* Slightly larger text */
+    font-weight: 500;
+    border-top: 1px solid #ddd;
+    /* Light divider line */
+    transition: background-color 0.3s ease;
+    /* Smooth transition for hover */
+}
+
+.Proile-page-aside li:hover {
+    background-color: #007bff95;
+
+    color: white;
+
+    border-radius: 5px;
+}
+
+.aside-divider {
+    height: 1px;
+    background-color: #ddd;
     margin: 10px 0;
 }
-.aside-toggler{
-    display: none;
 
+
+.Profile-main {
+    width: 80%;
+    /* Takes up 80% of the space next to the sidebar */
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+
+    border-radius: 12px;
+    /* Rounded corners */
 }
-.margin-20{
+
+.Profile-main h1 {
+    font-size: 24px;
+    /* Large header for sections */
     margin-bottom: 20px;
 }
-.Proile-page-aside{
-    
-    background-color: #f4f4f4;
-    margin: 10px 10px 50px 10px;
-    border-radius: 8px;
-    width: 20%;
-    height: 51vh;
 
+.Profile-main p {
+    font-size: 16px;
+    /* Standard text size */
+    color: #555;
+    line-height: 1.6;
 }
-.profile4-main{
-    justify-content: space-between;
-}
-.Proile-page-aside li{
-    padding: 10px;
-    color: black;
-    border-top: 1px solid black;
-    cursor: pointer;
-}
-.profile-page3 p {
-    width: 100%;
 
-}
-.profile-page3{
-    width: 100%;
-}
-.profile-page3 .Password-con, .Two-Factor-authentication, .Active-session, .Delete-account{
-    justify-content: space-between;
-}
-.Profile3-btn{
-    background-color: black;
-    color:white;
-    text-align: center;
-    border: none;
-    padding: 3px;
-    &:hover{
-        background-color: #2e2d2d;
-    }
-
-}
- .heading {
-    padding-right: 10px;
-    width: 20% ;
-}
-@media only screen and (max-width: 767px) 
-{
-    .Proile-page-aside{
+/* Mobile and tablet responsiveness */
+@media only screen and (max-width: 767px) {
+    .Proile-page-aside {
         display: none;
+        /* Hide sidebar on smaller screens */
     }
-    .Profile-main{
+
+    .Profile-main {
         width: 100%;
-        margin: 10px 0;
+        /* Take up full width in mobile view */
+        margin-top: 20px;
     }
-    .aside-toggler{
+
+    .aside-toggler {
         display: block;
+        /* Show the toggle button for sidebar */
     }
-    .heading{
-        width: 31%;
+
+    .navbar-toggler-icon {
+        font-size: 28px;
+        /* Larger toggle icon */
     }
-  
 
-
-
+    .heading {
+        width: 100%;
+        /* Expand heading area on small screens */
+    }
 }
-@media only screen and (min-width:350px) and (max-width:450px) {
-    .Personal-details-profile-con{
+
+/* Adjustments for tablet (350px to 450px width) */
+@media only screen and (min-width: 350px) and (max-width: 450px) {
+    .Personal-details-profile-con {
         height: 66px;
         width: 86px;
     }
-    
+}
+
+/* For large screens, ensuring the layout remains nice */
+@media only screen and (min-width: 1200px) {
+    .Proile-page-aside {
+        width: 18%;
+        /* Slightly smaller sidebar */
+    }
+
+    .Profile-main {
+        width: 75%;
+        /* Content area takes 75% on large screens */
+    }
+}
+
+/* Add some space between links for visual appeal */
+.Proile-page-aside li+li {
+    margin-top: 10px;
+}
+
+/* Styles for the toggler (hamburger menu) button */
+.aside-toggler {
+    display: none;
+    /* Hide by default, only shown on small screens */
+}
+
+/* Add a hover effect for buttons or actions inside the profile pages */
+.Profile3-btn {
+    background-color: #000;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.Profile3-btn:hover {
+    background-color: #333;
+}
+
+/* Spacing and design improvements for all the profile sections */
+.margin-20 {
+    margin-bottom: 20px;
+}
+
+.profile-page3 .Password-con,
+.profile-page3 .Two-Factor-authentication,
+.profile-page3 .Active-session,
+.profile-page3 .Delete-account {
+    display: flex;
+    justify-content: space-between;
+}
+
+.heading {
+    padding-right: 10px;
+    width: 25%;
+}
+
+/* Add more padding to links on hover to improve clickability */
+.Proile-page-aside li:hover {
+    padding-left: 30px;
+    padding-right: 30px;
+    background-color: #007bff;
+    color: white;
+    transition: all 0.3s ease;
 }

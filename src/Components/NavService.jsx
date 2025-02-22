@@ -5,7 +5,7 @@ const NavService = ({ service }) => {
   return (
     <div className="min-h-screen bg-white text-black p-4 md:p-6">
       <div className="max-w-3xl mx-4">
-        <div className="bg-black rounded-lg shadow-xl overflow-hidden">
+        <div className="bg-white text-black rounded-lg shadow-xl overflow-hidden">
           {/* Header */}
           <div className="p-4 md:p-6 border-b border-gray-700">
             <h1 className="text-xl md:text-2xl font-bold text-black">

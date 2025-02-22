@@ -32,7 +32,7 @@ export const TwofactorOnclick = ({ Active, setActive }) => {
 export const DeleteAccountOnClick = () => {
     return (
         <div className='text-black bg-white'>
-            Please check your email. We have sent you the mail.
+            APi integration required
         </div>
     );
 };

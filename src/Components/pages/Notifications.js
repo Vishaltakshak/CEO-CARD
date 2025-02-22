@@ -6,7 +6,7 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import io from "socket.io-client";
 import axios from "axios";
 import { UserContext } from "../../UserContext";
-const backEnd = 'http://localhost:4500';
+const backEnd = process.env.REACT_APP_BACKEND_URL;
 
 const socket = io(backEnd, {
   withCredentials: true,

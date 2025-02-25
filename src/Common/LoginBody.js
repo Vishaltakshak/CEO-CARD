@@ -154,9 +154,7 @@ const LoginBody = () => {
         Password: formData.password,
       },
       { withCredentials: true },
-       headers: {
-            "Content-Type": "application/json",
-          },
+       
     );
 
    

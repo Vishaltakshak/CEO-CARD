@@ -24,7 +24,13 @@ const AllBenifitsHome = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/Vendor/vendors`);
+                const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/Vendor/vendors`,{
+                    method:"GET",
+                    credentials:"include",
+                    headers:{
+                        "content-Type":"application/json",
+                    }
+                });
                 if (!response.ok) {
                     throw new Error('Failed to fetch data');
                 }

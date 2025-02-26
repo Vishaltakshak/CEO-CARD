@@ -86,7 +86,13 @@ const BusinessResults = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/Vendor/vendors`);
+                const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/Vendor/vendors`,{
+                    credentials:"include",
+                    method:"GET",
+                    headers:{
+                        'Content-Type':"application/json",
+                    }
+                });
                 if (!response.ok) {
                     throw new Error('Failed to fetch data');
                 }
@@ -116,7 +122,13 @@ const BusinessResults = () => {
 
         const fetchBrands = async () => {
             try {
-                const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/Vendor/brands`);
+                const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/Vendor/brands`,{
+                    method:'GET',
+                    credentials:"include",
+                    headers:{
+                        'Content-Type':'application/json'
+                    }
+                });
                 if (!response.ok) {
                     throw new Error('Failed to fetch brands');
                 }

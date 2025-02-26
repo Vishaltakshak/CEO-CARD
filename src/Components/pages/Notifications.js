@@ -53,7 +53,7 @@ const Notifications = () => {
   const deleteNotification = async (e, id) => {
     e.stopPropagation();
     try {
-      await axios.delete(`/api/notifications/${id}`);
+      await axios.delete(`/api/notifications/${id}`,{withCredentials:true});
       setNotifications(notifications.filter((notification) => notification._id !== id));
     } catch (error) {
       console.error("Error deleting notification:", error);
@@ -63,7 +63,7 @@ const Notifications = () => {
   const markAsRead = async (e, id) => {
     e.stopPropagation();
     try {
-      await axios.put(`/api/notifications/${id}/mark-as-read`);
+      await axios.put(`/api/notifications/${id}/mark-as-read`,{withCredentials:true});
       setNotifications(notifications.map((notification) =>
         notification._id === id ? { ...notification, isUnread: false } : notification
       ));

@@ -10,7 +10,7 @@ const useMenuData = () => {
     const fetchMenuData = async () => {
       try {
         const url = `${process.env.REACT_APP_BACKEND_URL}/api/Nav/hover/view`;
-        const response = await axios.get(url);
+        const response = await axios.get(url,{withCredentials:true});
         const data = response.data.Data;
         
         const storedData = data.map((item) => ({
@@ -23,7 +23,7 @@ const useMenuData = () => {
         const onHoverLinksUrl =`${process.env.REACT_APP_BACKEND_URL}/api/subnav/link/view` ;
 
         try {
-          const response = await axios.get(onHoverLinksUrl);
+          const response = await axios.get(onHoverLinksUrl, {withCredentials:true});
           const links = response.data.Data;
           
           const subCategories = links.map(data=>data);

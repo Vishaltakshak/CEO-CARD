@@ -132,7 +132,8 @@ const LoginBody = () => {
     password: "",
   });
   const { setUserId } = useContext(UserContext);
-  const API_BASE_URL = process.env.REACT_APP_BACKEND_URL;
+  const API_BASE_URL = process.env.REACT_APP_BACKEND_URL || "https://ceo-backend-vhnw.vercel.app";
+
   // const API_BASE_URL = "http://localhost:4500";
   const handleFormInput = (e) => {
     const { name, value } = e.target;
@@ -152,7 +153,8 @@ const LoginBody = () => {
         Mail: formData.email,
         Password: formData.password,
       },
-      { withCredentials: true } 
+      { withCredentials: true },
+       
     );
 
    

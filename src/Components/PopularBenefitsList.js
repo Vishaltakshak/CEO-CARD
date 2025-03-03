@@ -31,7 +31,10 @@ const PopularBenefitsList = () => {
                 if (!response.ok) {
                     throw new Error('Failed to fetch data');
                 }
-                const result = await response.json();
+                const res = await response.json();
+                
+                const result = res.Data.filter((item) => item.VendorCategory === "LifeStyle");
+                console.log(result)
 				
                 
                 // Extract unique cities and brands

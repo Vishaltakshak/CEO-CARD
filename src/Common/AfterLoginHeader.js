@@ -255,7 +255,7 @@ const AfterLoginHeader = ({ allMenu, service }) => {
             <div
               className="collapse navbar-collapse afterlogin-navbar-collapse bg-white"
               id="navbarTogglerDemo01"
-              style={{visibility:"visible"}}
+              style={{visibility:"visible", marginBottom:"10px"}}
             >
               <ul className="navbar-nav beforelogin-navbar dropdown-menu-start mx-auto mb-2 mb-lg-0">
                 {Object.entries(groupedMenu).map(([category, items]) => (

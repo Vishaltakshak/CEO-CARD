@@ -88,7 +88,8 @@ const AfterLoginHeader = ({ allMenu, service }) => {
         >
           <Link className="navbar-brand" to="/homeafterlogin">
             <div className="logo-size-setting md:hidden sm:block">
-           <p className="text-black">Ceo Card</p>
+              <img className="h-[50px]" src={`${process.env.PUBLIC_URL}/assets/img/ceo-logo-black.png`} alt="ceo-logo"></img>
+           {/* <p className="text-black">Ceo Card</p> */}
             </div>
           </Link>
 

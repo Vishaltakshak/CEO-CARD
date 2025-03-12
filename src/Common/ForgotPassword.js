@@ -5,7 +5,7 @@ import "../css/forgotpassword.css";
 const ForgotPassword = () => {
   return (
     <>
-      <div className="container-fluid forgotpw-container top-spacing">
+      <div className=" text-black bg-white  forgotpw-container top-spacing">
         <div className="container forgotpw-container-child">
           <div className="row d-flex justify-content-center">
             <div className="col-xl-8 col-lg-10 col-md-10 col-sm-12 col-12">
@@ -13,7 +13,7 @@ const ForgotPassword = () => {
                 <h1 className="forgot-text">FORGOT YOUR PASSWORD?</h1>
                 <br></br>
                 <h2 className="forgot-subtext">
-                  Please enter the email address or Membership Number associated
+                  Please enter the email address 
                   with your CeoCard account to reset your password:
                 </h2>
               </div>
@@ -26,7 +26,7 @@ const ForgotPassword = () => {
                         autofocus="autofocus"
                         type="text"
                         className="form-control"
-                        placeholder="Enter Your Email or Membership Number"
+                        placeholder="Enter Your Email"
                         name="email"
                         required
                       />
@@ -41,7 +41,7 @@ const ForgotPassword = () => {
                   </div>
                   <div className="row">
                     <div className="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-12 form-group">
-                      <p className="form-group trouble-text">
+                      <p className="form-group trouble-text text-black">
                         Having trouble resetting your password? <br></br>
                         Contact us at{" "}
                         <Link
@@ -52,6 +52,7 @@ const ForgotPassword = () => {
                         </Link>
                         <br></br>
                         or 212-343-9800
+                      
                       </p>
                     </div>
                   </div>

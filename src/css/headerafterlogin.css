@@ -411,6 +411,7 @@ a:focus {
     float: left;
     width: 35px;
     z-index: 99;
+    /* padding-top: 0.5rem; */
 }
 
 .nav-container .afterlogin-nav.thin-navbar .text-center-desktop {
@@ -591,7 +592,7 @@ a:focus {
 
     .nav-container {
         padding: 10px 0;
-        height: 52px;
+        height: 82px;
     }
 
     .nav-container .afterlogin-nav {

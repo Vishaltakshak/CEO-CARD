@@ -225,6 +225,8 @@ const LoginBody = () => {
                   </button>
                 </div>
               </form>
+              <Link  to='/ForgotPasswordPage'>
+              <div className="text-blue-600"> Forgot Password? </div> </Link>
             </div>
           </div>
         </div>

@@ -118,6 +118,7 @@
 // };
 
 // export default LoginBody;
+
 import React, { useEffect, useState, useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
@@ -158,7 +159,7 @@ const LoginBody = () => {
     );
 
     const { token, user } = response.data;
-    
+    console.log("response.data",response.data,"user is: ",user, "token is: ", token)
 
     if (user && token) {
 
@@ -171,6 +172,7 @@ const LoginBody = () => {
 
     } else {
       toast.error("Invalid email or password");
+      console.log("login failed")
     }
   } catch (error) {
     console.error("Login failed:", error);

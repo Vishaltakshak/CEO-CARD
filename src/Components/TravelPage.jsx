@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import AfterLoginLayout from "./layouts/AfterLoginLayout";
 import ScrollTotop from "./ScrollTotop";
-import TravelResults from "./TravelResults";
+import TravelResults from "./BrowseByTravel";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";

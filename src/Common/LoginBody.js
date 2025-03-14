@@ -158,9 +158,9 @@ const LoginBody = () => {
        
     );
 
-    const { user } = response.data;
+    const  user = response.data;
 
-    const token = response.token
+    const token = response.data.token;
     console.log("response.data",response)
 
     if (user && token) {

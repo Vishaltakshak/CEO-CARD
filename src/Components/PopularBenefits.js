@@ -73,18 +73,18 @@ const PopularBenefits = () => {
                     <div key={key} className="mb-8">
                         <div className="flex justify-between items-center mb-4">
                             <h2 className="text-xl font-bold">{title}</h2>
-                            <Link to={link} className="text-blue-500 hover:underline">
+                            <Link to={link} className="text-blue-500 hover:underline hover:text-blue-600">
                                 View All
                             </Link>
                         </div>
                         <Slider {...sliderSettings}>
                             {categoryVendors.map((datab) => (
                                 <div key={datab._id} className="p-2">
-                                    <Link to={`/SubMenu`} state={datab} className="block bg-white shadow-md rounded-lg overflow-hidden">
+                                    <Link to={`/ServiceInfo`} state={{datab}} className="block bg-white shadow-md rounded-lg overflow-hidden">
                                         <img src={datab.VendorImages || "/default.jpg"} alt={datab.VendorName} className="w-full h-40 object-cover" />
                                         <div className="p-3">
-                                            <h3 className="font-semibold text-lg">{datab.VendorName}</h3>
-                                            <p className="text-sm text-gray-600">{datab.VendorDescription}</p>
+                                            <h3 className="font-semibold text-lg text-gray-800 hover:text-gray-900">{datab.VendorName}</h3>
+                                            <p className="text-sm text-gray-600 hover:text-gray-700 line-clamp-2">{datab.VendorDescription}</p>
                                         </div>
                                     </Link>
                                 </div>

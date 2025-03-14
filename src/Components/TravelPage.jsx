@@ -6,7 +6,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../css/memberbenefits.css";
-
+import { Link } from "react-router-dom";
 const TravelPage = () => {
   const [premiumData, setPremiumData] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -86,20 +86,39 @@ const TravelPage = () => {
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
           >
-            {premiumData.map((item, index) => (
-              <div key={index} className="p-2">
-                <div className="bg-white shadow-md rounded-lg overflow-hidden">
-                  <img
-                    src={item.VendorImages}
-                    alt={item.ContentTitle}
-                    className="w-full h-[200px] object-cover"
-                  />
-                  <div className="p-3">
-                    <h5 className="text-black font-bold text-lg">{item.VendorName}</h5>
-                    <p className="text-black text-sm line-clamp-2">{item.VendorDescription}</p>
-                  </div>
-                </div>
-              </div>
+            {premiumData.map((datab, index) => (
+                <Link key={index} to="/ServiceInfo" state={{datab}} >
+               <div className="relative rounded-lg overflow-hidden mr-[0.9rem]">
+                      {/* Dark Overlay */}
+                      <div className="absolute inset-0 bg-black opacity-35"></div>
+
+                      {/* Vendor Image */}
+                      <img
+                        className="w-full h-[250px] object-cover"
+                        src={datab.VendorImages}
+                        alt={datab.VendorName}
+                      />
+
+                      {/* Vendor Name & Description */}
+                      <div className="absolute bottom-4 left-4 text-white">
+                        <h2 className="text-lg font-bold">{datab.VendorName}</h2>
+                        <p className="text-sm line-clamp-2">{datab.VendorDescription}</p>
+                      </div>
+                    </div>
+              </Link>
+              // <div key={index} className="p-2">
+              //   <div className="bg-white shadow-md rounded-lg overflow-hidden">
+              //     <img
+              //       src={item.VendorImages}
+              //       alt={item.ContentTitle}
+              //       className="w-full h-[200px] object-cover"
+              //     />
+              //     <div className="p-3">
+              //       <h5 className="text-black font-bold text-lg">{item.VendorName}</h5>
+              //       <p className="text-black text-sm line-clamp-2">{item.VendorDescription}</p>
+              //     </div>
+              //   </div>
+              // </div>
             ))}
           </Slider>
         )}

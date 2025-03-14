@@ -99,12 +99,12 @@ const Search = () => {
                 <div className="col-12 search-results">
                     <h5>Search Results</h5>
                     <div className="search-grid">
-                        {searchResults.map((service, index) => (
-                            <Link to={`/SubMenu`} state={service} key={index} className="search-card">
-                                <img src={service.VendorImages } alt={service.VendorName} />
+                        {searchResults.map((datab, index) => (
+                            <Link to='/ServiceInfo' state={{datab}} key={index} className="search-card">
+                                <img src={datab.VendorImages } alt={datab.VendorName} />
                                 <div className="vendor-info">
-                                    <h4>{service.VendorName}</h4>
-                                    <p className="text-gray-800" >{service.VendorCategory}</p>
+                                    <h4 className="text-gray-900">{datab.VendorName}</h4>
+                                    <p className="text-gray-700" >{datab.VendorCategory}</p>
                                 </div>
                             </Link>
                         ))}

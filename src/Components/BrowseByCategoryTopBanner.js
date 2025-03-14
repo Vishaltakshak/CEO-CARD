@@ -72,7 +72,7 @@ const BrowseByCategoryTopBanner = () => {
             <div className="browse-category-video !h-auto ml-2">
               <Slider {...settings}>
                 {data.map((datab, index) => (
-                  <Link key={index} to="/ServiceInfo" state={datab} target="_blank">
+                <Link key={index} to="/ServiceInfo" state={{datab}} target="_blank">
                     <div className="relative rounded-lg overflow-hidden mr-[0.9rem]">
                       {/* Dark Overlay */}
                       <div className="absolute inset-0 bg-black opacity-35"></div>

@@ -48,7 +48,8 @@
   background: transparent;
   outline: none;
   font-size: 16px;
-  padding: 5px;
+  padding: 8px;
+  min-width: 60%;
 }
 
 .menusearch-clear-btn {

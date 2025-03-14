@@ -78,13 +78,13 @@ const PopularBenefits = () => {
                             </Link>
                         </div>
                         <Slider {...sliderSettings}>
-                            {categoryVendors.map((vendor) => (
-                                <div key={vendor._id} className="p-2">
-                                    <Link to={`/vendor/${vendor._id}`} className="block bg-white shadow-md rounded-lg overflow-hidden">
-                                        <img src={vendor.ImageUrl || "/default.jpg"} alt={vendor.VendorName} className="w-full h-40 object-cover" />
+                            {categoryVendors.map((service) => (
+                                <div key={service._id} className="p-2">
+                                    <Link to={`/SubMenu`} state={service} className="block bg-white shadow-md rounded-lg overflow-hidden">
+                                        <img src={service.VendorImages || "/default.jpg"} alt={service.VendorName} className="w-full h-40 object-cover" />
                                         <div className="p-3">
-                                            <h3 className="font-semibold text-lg">{vendor.VendorName}</h3>
-                                            <p className="text-sm text-gray-600">{vendor.VendorDescription}</p>
+                                            <h3 className="font-semibold text-lg">{service.VendorName}</h3>
+                                            <p className="text-sm text-gray-600">{service.VendorDescription}</p>
                                         </div>
                                     </Link>
                                 </div>

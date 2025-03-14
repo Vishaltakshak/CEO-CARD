@@ -10,7 +10,7 @@ const BrowseHotelsFavourites = () => {
   const [brands, setBrands] = useState([]);
   const [filters, setFilters] = useState({
     searchQuery: "",
-    priceRange: [1000, 30000],
+    priceRange: [0, 30000],
     city: "",
     brand: ""
   });
@@ -138,7 +138,7 @@ const BrowseHotelsFavourites = () => {
           <h4 className="text-black mb-2">Price Range</h4>
           <Slider
             range
-            min={1000}
+            min={0}
             max={30000}
             step={1000}
             value={filters.priceRange}

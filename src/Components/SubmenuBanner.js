@@ -177,23 +177,23 @@ const SubmenuBanner = ({ service }) => {
                       <tbody>
                         <tr>
                           <td>Harbour View King &nbsp;</td>
-                          <td>$335-$585&nbsp;</td>
+                          <td>&#8377;335-&#8377;585&nbsp;</td>
                           <td>
-                            <del>$575-$1,025</del>&nbsp;
+                            <del>75-&#8377;1,025</del>&nbsp;
                           </td>
                         </tr>
                         <tr>
                           <td>super King &nbsp;</td>
-                          <td>$335-$585&nbsp;</td>
+                          <td>&#8377;335-&#8377;585&nbsp;</td>
                           <td>
-                            <del>$575-$1,025</del>&nbsp;
+                            <del>&#8377;575-&#8377;1,025</del>&nbsp;
                           </td>
                         </tr>
                         <tr>
                           <td>Ocean View King &nbsp;</td>
-                          <td>$335-$585&nbsp;</td>
+                          <td>&#8377;335-&#8377;585&nbsp;</td>
                           <td>
-                            <del>$575-$1,025</del>&nbsp;
+                            <del>&#8377;575-&#8377;1,025</del>&nbsp;
                           </td>
                         </tr>
                       </tbody>

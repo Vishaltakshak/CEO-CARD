@@ -14,7 +14,7 @@ const Reactivate = () => {
 							<h1><strong>
 								Preferred Reactivation
 								<br></br>
-								Rate for Raghavendra: Only $395
+								Rate for Raghavendra: Only &#8377;395
 							</strong>
 							</h1>
 							<p className="">
@@ -68,10 +68,10 @@ const Reactivate = () => {
 								</div>
 								<br></br>
 								<div>
-									<button type="submit" class="btn reactivation-submit">REJOIN FOR $395</button>
+									<button type="submit" class="btn reactivation-submit">REJOIN FOR &#8377;395</button>
 								</div>
 								<label className="reactivation-note">
-									By clicking "Rejoin for $395" you agree that the credit card provided will be charged a non-refundable $395. You also agree to the <Link style={{textDecoration:"underline"}} target="_blank" to="/TermsOfServices">Terms of Service</Link>, and that your Membership will automatically renew for $395 every 12 months, unless canceled.
+									By clicking "Rejoin for &#8377;395" you agree that the credit card provided will be charged a non-refundable &#8377;395. You also agree to the <Link style={{textDecoration:"underline"}} target="_blank" to="/TermsOfServices">Terms of Service</Link>, and that your Membership will automatically renew for &#8377;395 every 12 months, unless canceled.
 								</label>
 								
 							</form>

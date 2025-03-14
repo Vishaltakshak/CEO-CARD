@@ -25,7 +25,7 @@ const SpouseMembership = () => {
 						</h1>
 						<br></br>
 						<p className="headerpage-title-p">
-						Add your Spouse or Significant Other to your Membership for a one-time fee of $495! Upon approval, they will receive full access to Standard Membership, along with their own login credentials and stainless steel Membership card.
+						Add your Spouse or Significant Other to your Membership for a one-time fee of &#8377;495! Upon approval, they will receive full access to Standard Membership, along with their own login credentials and stainless steel Membership card.
           				</p>
 						<p className="headerpage-title-p">
 						Please provide the following for your Spouse or Significant Other:
@@ -78,14 +78,14 @@ const SpouseMembership = () => {
 									</div>
 									<div className="col-xl-11 col-lg-11 col-md-11 col-sm-10 col-10 ps-0">
 										<label className="col-xl-11 checkbox-text">
-										By checking this box, I confirm that I accept the Terms of Service and Membership Agreement. All applications are subject to review and approval. If this application is approved, I understand I will be charged a one-time, non-refundable fee of $495.
+										By checking this box, I confirm that I accept the Terms of Service and Membership Agreement. All applications are subject to review and approval. If this application is approved, I understand I will be charged a one-time, non-refundable fee of &#8377;495.
 										</label>
 									</div>
 								</div>
 							</div>
 
 							<div className="col-xl-12 col-12 pe-0 ps-0 checkbox-spacing text-center">
-								<button className="btn btn-purchase">PURCHASE FOR $<span>495</span></button>
+								<button className="btn btn-purchase">PURCHASE FOR &#8377;<span>495</span></button>
 							</div>
 						</form>
 					</div>

@@ -8,7 +8,7 @@ const HotelCollection = () => {
 		<>
 			<div className="container-fluid benefits-block-parent-white bg-white text-black">
 				<div className="container-fluid pe-0 ps-0 bg-white text-black">
-					<HomePageHeading pagetopic="2024 FC HOTEL COLLECTION" pagetopiclink=""></HomePageHeading>
+					<HomePageHeading pagetopic="2025 CC HOTEL COLLECTION" pagetopiclink=""></HomePageHeading>
 					<div className="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 member-benefit-block-parent">
 						<div className="row">
 								<HotelCollectionSlider></HotelCollectionSlider>

@@ -24,7 +24,7 @@ const TeamMembership = () => {
 						</h1>
 						<br></br>
 						<p className="headerpage-title-p">
-							Add Team Members to your Membership for $495 annually. Upon approval, they will receive full access to membership, along with their own login credentials and stainless steel Membership card.
+							Add Team Members to your Membership for &#8377;495 annually. Upon approval, they will receive full access to membership, along with their own login credentials and stainless steel Membership card.
           				</p>
 						<p className="headerpage-title-p">
 							Please provide the following information for your Team Member:
@@ -73,7 +73,7 @@ const TeamMembership = () => {
 
 							<div className="col-xl-12 col-12 pe-0 ps-0 checkbox-spacing text-center">
 								<Link to='/Payment'>
-								<button className="btn btn-purchase">PURCHASE FOR $<span>495</span></button></Link>
+								<button className="btn btn-purchase">PURCHASE FOR &#8377;<span>495</span></button></Link>
 							</div>
 						</form>
 					</div>

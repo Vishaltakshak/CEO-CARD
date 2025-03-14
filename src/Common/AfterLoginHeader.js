@@ -278,7 +278,7 @@ const AfterLoginHeader = ({ allMenu, service }) => {
                    
                    
                     
-                    <div className="dropdown-menu megamenu bg-white text-black" role="menu">
+                    <div className="dropdown-menu megamenu bg-white text-black mt-[0.85rem]" role="menu">
                       <div className="bg-white text-black ml-2">
                         <div className="row g-3 ">
                           <div className="col-xxl-8 col-xl-8 col-lg-8 col-md-8 col-sm-8 col-8 ml-4">
@@ -396,7 +396,7 @@ const AfterLoginHeader = ({ allMenu, service }) => {
 
       <div
         id="mobile-category-navbar"
-        className="d-xl-none d-lg-none d-md-none d-sm-block d-block"
+        className="d-xl-none d-lg-none d-md-block d-sm-block d-block"
       >
         <div id="mobile-category-link-container">
           <ul style={{

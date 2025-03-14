@@ -240,7 +240,7 @@ const RejoinHome = () => {
 											<Link to="/BrowseByCategory">
 												<h3 className="rejoin-h3-heading">Complimentary Credits and Subscriptions</h3>
 											</Link>
-											<h1 className="rejoin-h1-heading">$25,000+
+											<h1 className="rejoin-h1-heading">&#8377;25,000+
 											In Value</h1>
 											{/* <p className="rejoin-p-heading">Receive up to 15% off online and in-store</p> */}
 										</div>
@@ -628,7 +628,7 @@ const RejoinHome = () => {
 												<img alt="Nelson G., CEO @ For The Earth Corp" src="../assets/img/rejoin-home/people3.png"/>
 											</div>
 											<h3 class="quote-text-bold">
-												““This benefit alone saved me $671 in cell service fees.””
+												““This benefit alone saved me &#8377;671 in cell service fees.””
 											</h3>
 											<p class="quote-text-para">David H., Founder & Chief Scientist @ Hanson Robotics</p>
 										</div>

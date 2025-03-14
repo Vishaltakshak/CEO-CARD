@@ -30,7 +30,7 @@ const Rewards = () => {
               >
                 Learn more about how you can{" "}
                 <span className="text-black" style={{ textDecoration: "underline" }}>
-                  earn FCPoints
+                  earn CCPoints
                 </span>
               </Link>
             </div>
@@ -234,7 +234,7 @@ const Rewards = () => {
                       Gift Memberships
                     </h5>
                     <p className="earn-more-details-p text-black">
-                      Earn 20,000 FCPoints for each Gift Membership purchased
+                      Earn 20,000 cCPoints for each Gift Membership purchased
                     </p>
                     <Link className="btn btn-earn-points" to="/payment">
                       GIFT A MEMBERSHIP

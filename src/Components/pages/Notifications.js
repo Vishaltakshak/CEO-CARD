@@ -15,7 +15,7 @@ const socket = io(backEnd, {
 const Notifications = () => {
   const [expandedId, setExpandedId] = useState(null);
   const [notifications, setNotifications] = useState([]);
-  const userId = localStorage.getItem("userId");
+   const {userId}=useContext(UserContext)
   console.log("userid is",userId)
   useEffect(() => {
     

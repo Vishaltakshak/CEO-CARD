@@ -17,7 +17,7 @@ const SubmenuBadges = () => {
 						Hii, I am a simple tooltip information!!!
 					</Tooltip>)}>
 					<span class="submenu-bedges-child span-bold">
-						$150 Average Savings*
+						&#8377;150 Average Savings*
 					</span>
 				</OverlayTrigger>
 				

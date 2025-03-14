@@ -86,11 +86,13 @@ const BusinessResults = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
+                const token = localStorage.getItem("token")
                 const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/Vendor/vendors`,{
                     credentials:"include",
                     method:"GET",
                     headers:{
                         'Content-Type':"application/json",
+                         "Authorization": `Bearer ${token}`,
                     }
                 });
                 if (!response.ok) {
@@ -122,11 +124,13 @@ const BusinessResults = () => {
 
         const fetchBrands = async () => {
             try {
+                const token = localStorage.getItem("token")
                 const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/Vendor/brands`,{
                     method:'GET',
                     credentials:"include",
                     headers:{
-                        'Content-Type':'application/json'
+                        'Content-Type':'application/json',
+                         "Authorization": `Bearer ${token}`,
                     }
                 });
                 if (!response.ok) {

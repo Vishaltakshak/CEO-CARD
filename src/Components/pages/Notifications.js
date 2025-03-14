@@ -15,14 +15,19 @@ const socket = io(backEnd, {
 const Notifications = () => {
   const [expandedId, setExpandedId] = useState(null);
   const [notifications, setNotifications] = useState([]);
-  const {userId}=useContext(UserContext)
+  const userId = localStorage.getItem("userId");
   console.log("userid is",userId)
   useEffect(() => {
     
     const fetchNotifications = async () => {
       try {
+        const token = localStorage.getItem("token")
         const response = await axios.get(`${backEnd}/api/notifications/${userId}`, 
-          {withCredentials:true}
+          {withCredentials:true,
+             headers: {
+        "Authorization": `Bearer ${token}` // Add token in the Authorization header
+    }
+          }
         );
         console.log(response)
         setNotifications(response.data);
@@ -53,7 +58,12 @@ const Notifications = () => {
   const deleteNotification = async (e, id) => {
     e.stopPropagation();
     try {
-      await axios.delete(`/api/notifications/${id}`,{withCredentials:true});
+      const token = localStorage.getItem("token")
+      await axios.delete(`/api/notifications/${id}`,{withCredentials:true,
+         headers: {
+        "Authorization": `Bearer ${token}` // Add token in the Authorization header
+    }
+      });
       setNotifications(notifications.filter((notification) => notification._id !== id));
     } catch (error) {
       console.error("Error deleting notification:", error);
@@ -63,7 +73,10 @@ const Notifications = () => {
   const markAsRead = async (e, id) => {
     e.stopPropagation();
     try {
-      await axios.put(`/api/notifications/${id}/mark-as-read`,{withCredentials:true});
+      const token = localStorage.getItem("token")
+      await axios.put(`/api/notifications/${id}/mark-as-read`,{withCredentials:true,  headers: {
+        "Authorization": `Bearer ${token}` // Add token in the Authorization header
+    }});
       setNotifications(notifications.map((notification) =>
         notification._id === id ? { ...notification, isUnread: false } : notification
       ));

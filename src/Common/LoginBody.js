@@ -157,11 +157,14 @@ const LoginBody = () => {
        
     );
 
-   
-    const user = response.data.user;
+    const { token, user } = response.data;
+    
 
-    if (user) {
+    if (user && token) {
+
       setUserId(user.id);
+      localStorage.setItem("token", token);
+      localStorage.setItem("userId", user.id);
       
       toast.success("Login Successful");
       navigate("/homeafterlogin"); // Navigate after successful login

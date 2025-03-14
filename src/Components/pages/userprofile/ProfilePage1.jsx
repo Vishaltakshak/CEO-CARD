@@ -39,7 +39,12 @@ export const ProfilePage1 = () => {
     });
     try {
         if (userId) {
-            const updatedUser= axios.put(`http://localhost:4500/api/user/view/${userId}`,{ withCredentials: true })
+            const token = localStorage.getItem("toekn");
+            const updatedUser= axios.put(`${process.env.REACT_APP_BACKEND_URL}/user/view/${userId}`,{ withCredentials: true,
+          headers: {
+        "Authorization": `Bearer ${token}` // Add token in the Authorization header
+    }
+             })
           console.log('User data updated successfully', updatedUser);
         } 
       } catch (error) {
@@ -59,7 +64,12 @@ export const ProfilePage1 = () => {
     useEffect(() => {
         const fetchdata = async () => {
             try {
-                const response = await axios.get(`https://ceo-card-back-end-1wob.vercel.app/api/user/view/${userId}`,{ withCredentials: true });
+                const token = localStorage.getItem("token");
+                const response = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/${userId}`,{ withCredentials: true,
+                     headers: {
+        "Authorization": `Bearer ${token}` // Add token in the Authorization header
+    }
+                 });
                 const data =  response.data.Users;
                 console.log(response)
              

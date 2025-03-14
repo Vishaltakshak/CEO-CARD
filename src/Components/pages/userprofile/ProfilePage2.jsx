@@ -3,7 +3,7 @@ import { UserContext } from '../../../UserContext';
 import axios from 'axios';
 
 export const ProfilePage2 = () => {
-  const { userId } = useContext(UserContext);
+  const userId = localStorage.getItem("userId")
 
   const [formData, setFormData] = useState({
     Currency: '',
@@ -13,7 +13,12 @@ export const ProfilePage2 = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get(`https://ceo-card-back-end-1wob.vercel.app/api/user/view/${userId}`,{ withCredentials: true });
+        const token = localStorage.getItem("token");
+        const response = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/${userId}`,{ withCredentials: true,
+           headers: {
+        "Authorization": `Bearer ${token}` // Add token in the Authorization header
+    }
+        });
         const data = response.data.Users;
 
         setFormData({

@@ -9,7 +9,7 @@ import AllBenifitsHome from "./AllBenifitsHome";
 import { useContext } from "react";
 import { UserContext } from "../UserContext";
 
-const HomeAfterLogin = () => {
+const     HomeAfterLogin = () => {
 
   return (
     <AfterLoginLayout>

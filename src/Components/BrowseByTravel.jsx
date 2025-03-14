@@ -9,7 +9,7 @@ const TravelResults = () => {
     const [brands, setBrands] = useState([]);
     const [filters, setFilters] = useState({
         searchQuery: "",
-        priceRange: [0, 10000],
+        priceRange: [0, 20000],
         rating: "",
         brand: ""
     });
@@ -17,11 +17,13 @@ const TravelResults = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
+                const token = localStorage.getItem("token")
                 const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/Vendor/vendors`,{
                     method:"GET",
                     credentials:"include",
                     headers:{
-                        'Content-Type':'application/json'
+                        'Content-Type':'application/json',
+                         "Authorization": `Bearer ${token}`,
                     }
                 });
                 if (!response.ok) throw new Error("Failed to fetch data");
@@ -126,7 +128,7 @@ const TravelResults = () => {
                     <Slider
                         range
                         min={0}
-                        max={10000}
+                        max={20000}
                         step={100}
                         value={filters.priceRange}
                         onChange={(value) => handleFilterChange("priceRange", value)}

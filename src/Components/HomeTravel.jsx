@@ -14,11 +14,13 @@ const HomeTravel = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
+                 const token = localStorage.getItem("token");
                 const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/Vendor/vendors`,{
                     method:"GET",
                     credentials:"include",
                     headers:{
-                        "Content-Type":"application/json"
+                        "Content-Type":"application/json",
+                         "Authorization": `Bearer ${token}`,
                     }
                 });
                 if (!response.ok) throw new Error('Failed to fetch data');

@@ -20,11 +20,13 @@ const BrowseHotelsFavourites = () => {
   useEffect(() => {
     const fetchHotels = async () => {
       try {
+        const token = localStorage.getItem("token")
         const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/Vendor/vendors`,{
           method:'GET',
           credentials:"include",
           headers:{
-            'Content-Type':'application/json'
+            'Content-Type':'application/json',
+             "Authorization": `Bearer ${token}`,
           }
         });
         if (!response.ok) {

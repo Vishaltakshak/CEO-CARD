@@ -9,8 +9,15 @@ const useMenuData = () => {
   useEffect(() => {
     const fetchMenuData = async () => {
       try {
+        const token = localStorage.getItem("token");
         const url = `${process.env.REACT_APP_BACKEND_URL}/api/Nav/hover/view`;
-        const response = await axios.get(url,{withCredentials:true});
+        const response = await axios.get(url,{withCredentials:true,
+          headers: {
+        "Authorization": `Bearer ${token}` // Add token in the Authorization header
+          }
+        },
+         
+        );
         const data = response.data.Data;
         
         const storedData = data.map((item) => ({
@@ -23,7 +30,12 @@ const useMenuData = () => {
         const onHoverLinksUrl =`${process.env.REACT_APP_BACKEND_URL}/api/subnav/link/view` ;
 
         try {
-          const response = await axios.get(onHoverLinksUrl, {withCredentials:true});
+          const token = localStorage.getItem("token");
+          const response = await axios.get(onHoverLinksUrl, {withCredentials:true,
+            headers: {
+        "Authorization": `Bearer ${token}` // Add token in the Authorization header
+    }
+          });
           const links = response.data.Data;
           
           const subCategories = links.map(data=>data);

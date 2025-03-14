@@ -1,11 +1,14 @@
 const LoginApi = async (userData) => {
+    const token = localStorage.getItem("token")
     let isLoggedIn = false;
     const url = 'https://admin.speedsoftware.site/Api/login';
     
     await fetch(url, {
         method: "POST",
         headers: {
-            'content-type': 'application/json'
+            'content-type': 'application/json',
+             "Authorization": `Bearer ${token}`,
+
         },
         body: JSON.stringify(userData)
     })

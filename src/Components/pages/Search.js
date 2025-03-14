@@ -101,10 +101,10 @@ const Search = () => {
                     <div className="search-grid">
                         {searchResults.map((service, index) => (
                             <Link to={`/SubMenu`} state={service} key={index} className="search-card">
-                                <img src={service.VendorImages || "./assets/img/default-placeholder.png"} alt={service.VendorName} />
+                                <img src={service.VendorImages } alt={service.VendorName} />
                                 <div className="vendor-info">
                                     <h4>{service.VendorName}</h4>
-                                    <p>{service.VendorCategory}</p>
+                                    <p className="text-gray-800" >{service.VendorCategory}</p>
                                 </div>
                             </Link>
                         ))}

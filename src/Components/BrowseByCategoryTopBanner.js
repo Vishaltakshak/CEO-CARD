@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const BrowseByCategoryTopBanner = () => {
   const [data, setData] = useState([]);
@@ -7,13 +10,13 @@ const BrowseByCategoryTopBanner = () => {
   useEffect(() => {
     const fetchCategories = async () => {
       try {
-        const token = localStorage.getItem("token")
-        const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/Vendor/vendors`,{
-          credentials:"include",
-          method:"GET",
-          headers:{
-            'Content-Type':'application/json',
-             "Authorization": `Bearer ${token}`,
+        const token = localStorage.getItem("token");
+        const response = await fetch(`${process.env.REACT_APP_BACKEND_URL}/api/Vendor/vendors`, {
+          credentials: "include",
+          method: "GET",
+          headers: {
+            'Content-Type': 'application/json',
+            "Authorization": `Bearer ${token}`,
           }
         });
         if (!response.ok) {
@@ -21,9 +24,8 @@ const BrowseByCategoryTopBanner = () => {
         }
         const result = await response.json();
 
-        // Filter for Paid vendors & Get first 2 only
-        const lifestyleVendors = result.Data.filter((item) => item.Paid === "true").slice(0, 2);
-
+        // Filter for Paid vendors
+        const lifestyleVendors = result.Data.filter((item) => item.Paid === "true");
         setData(lifestyleVendors);
       } catch (error) {
         console.error("Error fetching categories:", error);
@@ -33,6 +35,32 @@ const BrowseByCategoryTopBanner = () => {
     fetchCategories();
   }, []);
 
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 2,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      }
+    ]
+  };
+
   return (
     <>
       <div className="container-fluid browse-category-item">
@@ -41,28 +69,30 @@ const BrowseByCategoryTopBanner = () => {
             <h1 className="browse-category-title text-[1.5rem] text-center mt-4 text-black">Featured Lifestyle Benefits</h1>
             <p className="font-bold text-black text-center mb-4">Exclusive perks for extraordinary experiences</p>
 
-            <div className="browse-category-video !h-auto grid grid-cols-2 ml-2">
-              {data.map((vendor, index) => (
-                <Link key={index} to="/#" target="_blank">
-                  <div className="relative rounded-lg overflow-hidden mr-[0.9rem]">
-                    {/* Dark Overlay */}
-                    <div className="absolute inset-0 bg-black opacity-35"></div>
+            <div className="browse-category-video !h-auto ml-2">
+              <Slider {...settings}>
+                {data.map((datab, index) => (
+                  <Link key={index} to="/ServiceInfo" state={datab} target="_blank">
+                    <div className="relative rounded-lg overflow-hidden mr-[0.9rem]">
+                      {/* Dark Overlay */}
+                      <div className="absolute inset-0 bg-black opacity-35"></div>
 
-                    {/* Vendor Image */}
-                    <img
-                      className="w-full h-[250px] object-cover"
-                      src={vendor.VendorImages}
-                      alt={vendor.VendorName}
-                    />
+                      {/* Vendor Image */}
+                      <img
+                        className="w-full h-[250px] object-cover"
+                        src={datab.VendorImages}
+                        alt={datab.VendorName}
+                      />
 
-                    {/* Vendor Name & Description */}
-                    <div className="absolute bottom-4 left-4 text-white">
-                      <h2 className="text-lg font-bold">{vendor.VendorName}</h2>
-                      <p className="text-sm line-clamp-2">{vendor.VendorDescription}</p>
+                      {/* Vendor Name & Description */}
+                      <div className="absolute bottom-4 left-4 text-white">
+                        <h2 className="text-lg font-bold">{datab.VendorName}</h2>
+                        <p className="text-sm line-clamp-2">{datab.VendorDescription}</p>
+                      </div>
                     </div>
-                  </div>
-                </Link>
-              ))}
+                  </Link>
+                ))}
+              </Slider>
             </div>
           </div>
         </div>

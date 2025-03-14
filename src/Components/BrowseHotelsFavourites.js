@@ -128,7 +128,7 @@ const BrowseHotelsFavourites = () => {
           <input
             type="text"
             placeholder="Search hotels..."
-            className="w-full p-2 bg-white rounded text-black"
+            className="w-full p-2 bg-200 rounded text-black"
             value={filters.searchQuery}
             onChange={(e) => handleFilterChange("searchQuery", e.target.value)}
           />

@@ -248,16 +248,15 @@ import "slick-carousel/slick/slick-theme.css";
 
 const PopularBenefitsList = () => {
     const [data, setData] = useState([]);
-     const [premiumData, setPremiumData] = useState([]);
     const [filteredData, setFilteredData] = useState([]);
     const [cities, setCities] = useState([]);
     const [brands, setBrands] = useState([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState('');
-     const [isHovered, setIsHovered] = useState(false);
+   
     const [filters, setFilters] = useState({
         searchQuery: "",
-        priceRange: [0, 3000000],
+        priceRange: [0, 40000],
         city: "",
         brand: ""
     });
@@ -355,35 +354,7 @@ const PopularBenefitsList = () => {
 
 
     
-  const settings = {
-        dots: true,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        autoplay: !isHovered,
-        autoplaySpeed: 2000,
-        centerMode: true,
-        centerPadding: "40px", // Adds spacing between slides
-        responsive: [
-            {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                    centerPadding: "30px",
-                },
-            },
-            {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 1,
-                    slidesToScroll: 1,
-                    centerPadding: "20px",
-                },
-            },
-        ],
-    };
+  
 
     return (
         <div className="min-h-screen bg-white text-black flex flex-col md:flex-row">
@@ -427,7 +398,7 @@ const PopularBenefitsList = () => {
                     <Slider
                         range
                         min={10}
-                        max={30000}
+                        max={40000}
                         step={100}
                         value={filters.priceRange}
                         onChange={(value) => handleFilterChange("priceRange", value)}
@@ -471,34 +442,7 @@ const PopularBenefitsList = () => {
 
            
             <div className="w-full">
-                {premiumData.length > 0 && (
-                <div className="w-full px-6 my-6">
-                    <h2 className="text-center text-xl font-bold mb-4">Premium Members</h2>
-                    <Slider
-                        {...settings}
-                        onMouseEnter={() => setIsHovered(true)}
-                        onMouseLeave={() => setIsHovered(false)}
-                    >
-                        {premiumData.map((item, i) => (
-                            <div key={i} className="p-3">
-                                <Link to='/ServiceInfo' state={{ item }}>
-                                    <div className="bg-white shadow-md rounded-lg overflow-hidden">
-                                        <img 
-                                            src={item.VendorImages} 
-                                            alt={item.ContentTitle || "Benefit Image"} 
-                                            className="w-full h-[200px] object-cover"
-                                        />
-                                        <div className="p-3">
-                                            <h5 className="text-black font-bold text-lg">{item.VendorName}</h5>
-                                            <p className="text-black text-sm line-clamp-2">{item.VendorDescription}</p>
-                                        </div>
-                                    </div>
-                                </Link>
-                            </div>
-                        ))}
-                    </Slider>
-                </div>
-            )}
+               
                 <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 bg-white">
                     {filteredData.map((datab, i) => (
                         <div key={i} className="w-[42vw] md:w-[16vw] mb-[2rem]">

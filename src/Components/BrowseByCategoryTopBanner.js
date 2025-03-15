@@ -25,7 +25,7 @@ const BrowseByCategoryTopBanner = () => {
         const result = await response.json();
 
         // Filter for Paid vendors
-        const lifestyleVendors = result.Data.filter((item) => item.Paid === "true").filter((item)=>item.VendorCategory==="LifeStyle");
+        const lifestyleVendors = result.Data.filter((item) => item.Paid === true).filter((item)=>item.VendorCategory==="LifeStyle");
         setData(lifestyleVendors);
       } catch (error) {
         console.error("Error fetching categories:", error);
@@ -37,7 +37,7 @@ const BrowseByCategoryTopBanner = () => {
 
   const settings = {
     dots: true,
-    infinite: true,
+    infinite: false,
     speed: 500,
     slidesToShow: 2,
     slidesToScroll: 1,
@@ -72,7 +72,7 @@ const BrowseByCategoryTopBanner = () => {
             <div className="browse-category-video !h-auto ml-2">
               <Slider {...settings}>
                 {data.map((datab, index) => (
-                <Link key={index} to="/ServiceInfo" state={{datab}} >
+                <Link key={`${datab.VendorName}-${index}`} to="/ServiceInfo" state={{datab}} >
                     <div className="relative rounded-lg overflow-hidden mr-[0.9rem]">
                       {/* Dark Overlay */}
                       <div className="absolute inset-0 bg-black opacity-35"></div>

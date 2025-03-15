@@ -15,12 +15,14 @@ const socket = io(backEnd, {
 const Notifications = () => {
   const [expandedId, setExpandedId] = useState(null);
   const [notifications, setNotifications] = useState([]);
-   const {userId}=useContext(UserContext)
-  console.log("userid is",userId)
+  //  const {userId}=useContext(UserContext)
+  // console.log("userid is",userId)
+  const userId = localStorage.getItem("userId");
   useEffect(() => {
     
     const fetchNotifications = async () => {
       try {
+        
         const token = localStorage.getItem("token")
         const response = await axios.get(`${backEnd}/api/notifications/${userId}`, 
           {withCredentials:true,

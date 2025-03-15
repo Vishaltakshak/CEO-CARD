@@ -452,7 +452,7 @@ a:focus {
 
 .navbar.afterlogin-nav ul.beforelogin-navbar li.dropdown:hover>.dropdown-menu.megamenu {
     display: block;
-    margin-top: 0;
+    margin-top: 20px;
 }
 
 
@@ -759,12 +759,12 @@ a:focus {
 
     .navbar.afterlogin-nav ul.beforelogin-navbar li.dropdown:hover>.dropdown-menu.megamenu {
         display: none;
-        margin-top: 0;
+        margin-top: 20px;
     }
 
     .navbar.afterlogin-nav ul.beforelogin-navbar li.dropdown:hover>.dropdown-menu.megamenu.show {
         display: block;
-        margin-top: 0;
+        margin-top: 20px;
     }
 
     /* css for menu display after membership expired */
@@ -1004,12 +1004,12 @@ a:focus {
 
     .navbar.afterlogin-nav ul.beforelogin-navbar li.dropdown:hover>.dropdown-menu.megamenu {
         display: none;
-        margin-top: 0;
+        margin-top: 20px;
     }
 
     .navbar.afterlogin-nav ul.beforelogin-navbar li.dropdown:hover>.dropdown-menu.megamenu.show {
         display: block;
-        margin-top: 0;
+        margin-top: 20px;
     }
 
     /* css for menu display after membership expired */
@@ -1249,12 +1249,12 @@ a:focus {
 
     .navbar.afterlogin-nav ul.beforelogin-navbar li.dropdown:hover>.dropdown-menu.megamenu {
         display: none;
-        margin-top: 0;
+        margin-top: 20px;
     }
 
     .navbar.afterlogin-nav ul.beforelogin-navbar li.dropdown:hover>.dropdown-menu.megamenu.show {
         display: block;
-        margin-top: 0;
+        margin-top: 20px;
     }
 
 

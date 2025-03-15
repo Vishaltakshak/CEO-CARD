@@ -30,7 +30,7 @@ const TravelPage = () => {
 
         const result = await response.json();
         const TravelData = result.Data.filter((item) => item.VendorCategory === "Travel");
-        const PremiumData = TravelData.filter((item) => item.Paid === "true");
+        const PremiumData = TravelData.filter((item) => item.Paid === "true").filter(Boolean);
         setPremiumData(PremiumData);
       } catch (err) {
         setError(err.message);
@@ -80,6 +80,7 @@ const TravelPage = () => {
         ) : error ? (
           <p className="text-center text-red-500">{error}</p>
         ) : (
+          <div className="browse-category-video !h-auto ml-2">
           <Slider
             {...settings}
             className="travel-slider"
@@ -88,7 +89,7 @@ const TravelPage = () => {
           >
             {premiumData.map((datab, index) => (
                 <Link key={index} to="/ServiceInfo" state={{datab}} >
-               <div className="relative rounded-lg overflow-hidden mr-[0.9rem]">
+               <div className="relative rounded-lg  overflow-hidden mr-[0.9rem]">
                       {/* Dark Overlay */}
                       <div className="absolute inset-0 bg-black opacity-35"></div>
 
@@ -121,7 +122,8 @@ const TravelPage = () => {
               // </div>
             ))}
           </Slider>
-        )}
+          </div>
+            )}
       </div>
 
       {/* Travel Results Section */}

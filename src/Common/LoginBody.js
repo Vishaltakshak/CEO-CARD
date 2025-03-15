@@ -168,7 +168,8 @@ const LoginBody = () => {
       setUserId(user.id);
       localStorage.setItem("token", token);
       localStorage.setItem("userId", user.id);
-      
+      console.log(user.id)
+      console.log(user)
       toast.success("Login Successful");
       navigate("/homeafterlogin"); // Navigate after successful login
 

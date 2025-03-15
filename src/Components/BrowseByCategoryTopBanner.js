@@ -25,7 +25,7 @@ const BrowseByCategoryTopBanner = () => {
         const result = await response.json();
 
         // Filter for Paid vendors
-        const lifestyleVendors = result.Data.filter((item) => item.Paid === "true");
+        const lifestyleVendors = result.Data.filter((item) => item.Paid === "true").filter((item)=>item.VendorCategory==="LifeStyle");
         setData(lifestyleVendors);
       } catch (error) {
         console.error("Error fetching categories:", error);

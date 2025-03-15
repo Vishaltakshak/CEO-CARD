@@ -40,7 +40,7 @@ export const ProfilePage1 = () => {
     try {
         if (userId) {
             const token = localStorage.getItem("toekn");
-            const updatedUser= axios.put(`${process.env.REACT_APP_BACKEND_URL}/user/view/${userId}`,{ withCredentials: true,
+            const updatedUser= axios.put(`${process.env.REACT_APP_BACKEND_URL}/api/user/view/${userId}`,{ withCredentials: true,
           headers: {
         "Authorization": `Bearer ${token}` // Add token in the Authorization header
     }

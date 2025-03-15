@@ -40,11 +40,11 @@ export const ProfilePage1 = () => {
     try {
         if (userId) {
             const token = localStorage.getItem("toekn");
-            const updatedUser= axios.put(`${process.env.REACT_APP_BACKEND_URL}/api/user/view/${userId}`,{ withCredentials: true,
+            const updatedUser= axios.put(`${process.env.REACT_APP_BACKEND_URL}/api/user/update/${userId}`,{ withCredentials: true,
           headers: {
         "Authorization": `Bearer ${token}` // Add token in the Authorization header
     }
-             })
+             }, formPayload)
           console.log('User data updated successfully', updatedUser);
         } 
       } catch (error) {
@@ -65,7 +65,7 @@ export const ProfilePage1 = () => {
         const fetchdata = async () => {
             try {
                 const token = localStorage.getItem("token");
-                const response = await axios.get(`${process.env.REACT_APP_BACKEND_URL}/${userId}`,{ withCredentials: true,
+                const response = await axios.get(`https://ceo-backend-ibws.onrender.com/api/user/view/${userId}`,{ withCredentials: true,
                      headers: {
         "Authorization": `Bearer ${token}` // Add token in the Authorization header
     }

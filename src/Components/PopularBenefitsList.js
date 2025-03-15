@@ -454,6 +454,17 @@ const PopularBenefitsList = () => {
                                         src={datab.VendorImages || "/default-image.jpg"}
                                     />
                                 </div>
+                                <div >
+                    <h3 className="text-xl font-bold mb-2 text-black">{datab.VendorName}</h3>
+                    <p className="text-sm mb-2 line-clamp-2 text-black">{datab.VendorDescription}</p>
+                    {datab.VendorPricingInfo && (
+                      <p className="text-sm font-semibold text-black">
+                        ₹{datab.VendorPricingInfo.PriceRange?.Min?.toLocaleString()} - 
+                        ₹{datab.VendorPricingInfo.PriceRange?.Max?.toLocaleString()}
+                      </p>
+                    )}
+                   
+                  </div>
                             </Link>
                         </div>
                     ))}

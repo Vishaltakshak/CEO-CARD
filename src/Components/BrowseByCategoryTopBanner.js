@@ -22,10 +22,13 @@ const BrowseByCategoryTopBanner = () => {
         if (!response.ok) {
           throw new Error("Failed to fetch data");
         }
-        const result = await response.json();
-        console.log("response is: ",response)
-        // Filter for Paid vendors
-        const lifestyleVendors = result.Data.filter((item) => item.Paid === true).filter((item)=>item.VendorCategory==="LifeStyle");
+        const res = await response.json();
+         const result = res?.Data?.filter(item => item.VendorCategory === "Lifestyle") || [];
+       
+        console.log("response is: ",res)
+         const lifestyleVendors = result.filter((item) => item.Paid === "true").filter(Boolean);
+        
+        // const lifestyleVendors = result.Data.filter((item) => item.Paid === true).filter((item)=>item.VendorCategory==="LifeStyle");
         console.log("lifestyle vendors are: ",lifestyleVendors)
         setData(lifestyleVendors);
       } catch (error) {
@@ -38,9 +41,9 @@ const BrowseByCategoryTopBanner = () => {
 
   const settings = {
     dots: true,
-    infinite: false,
+    infinite: true,
     speed: 500,
-    slidesToShow: 2,
+    slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
@@ -48,7 +51,7 @@ const BrowseByCategoryTopBanner = () => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
           slidesToScroll: 1,
         }
       },

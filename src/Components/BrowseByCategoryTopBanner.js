@@ -22,10 +22,12 @@ const BrowseByCategoryTopBanner = () => {
         if (!response.ok) {
           throw new Error("Failed to fetch data");
         }
-        const result = await response.json();
-        console.log("response is: ",response)
-        // Filter for Paid vendors
-        const lifestyleVendors = result.Data.filter((item) => item.Paid === true).filter((item)=>item.VendorCategory==="LifeStyle");
+        const res = await response.json();
+        console.log("response is: ",res)
+          const result = res?.Data?.filter(item => item.VendorCategory === "Lifestyle") || [];
+       const lifestyleVendors = result.filter((item) => item.Paid === "true").filter(Boolean);
+      
+        // const lifestyleVendors = result.Data.filter((item) => item.Paid === true).filter((item)=>item.VendorCategory==="LifeStyle");
         console.log("lifestyle vendors are: ",lifestyleVendors)
         setData(lifestyleVendors);
       } catch (error) {

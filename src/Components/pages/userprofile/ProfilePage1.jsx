@@ -65,7 +65,7 @@ export const ProfilePage1 = () => {
         const fetchdata = async () => {
             try {
                 const token = localStorage.getItem("token");
-                const response = await axios.get(`https://ceo-backend-ibws.onrender.com/api/user/view/${userId}`,{ withCredentials: true,
+                const response = await axios.get(`_nrender.com/api/user/view/${userId}`,{ withCredentials: true,
                      headers: {
         "Authorization": `Bearer ${token}` // Add token in the Authorization header
     }

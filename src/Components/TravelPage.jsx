@@ -46,7 +46,7 @@ const TravelPage = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 2,
     slidesToScroll: 1,
     autoplay: !isHovered,
     autoplaySpeed: 2000,

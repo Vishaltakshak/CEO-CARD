@@ -43,7 +43,7 @@ const BrowseByCategoryTopBanner = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 2,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
@@ -51,7 +51,7 @@ const BrowseByCategoryTopBanner = () => {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2,
           slidesToScroll: 1,
         }
       },

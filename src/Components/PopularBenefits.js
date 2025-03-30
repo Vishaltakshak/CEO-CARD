@@ -40,7 +40,7 @@ const PopularBenefits = () => {
 
     const categories = [
         { title: "Travel Benefits", key: "Travel", link: "/travel" },
-        { title: "Hotel Benefits", key: "hotels", link: "/browse_hotels" },
+        { title: "Hotel Benefits", key: "Hotel", link: "/browse_hotels" },
         { title: "Lifestyle Benefits", key: "Lifestyle", link: "/BrowseByCategory" },
         { title: "Business Benefits", key: "Business", link: "/business" },
     ];

@@ -2,6 +2,7 @@ import React from "react";
 import "../../css/pages/allbenifits.css";
 import PopularBenefits from "../PopularBenefits";
 import AfterLoginLayout from "../layouts/AfterLoginLayout";
+import ScrollTotop from "../ScrollTotop";
 const About = () => {
   return (
     <>
@@ -22,12 +23,13 @@ const About = () => {
               <br />
               Elite to unlock all benefits
             </div>
-            <a id="referral-hero-button" href="/pages/elite_upgrade">
+            <a id="referral-hero-button" href="/OrderMembershipCard">
               UPGRADE TO ELITE
             </a>
           </div>
         </div>
         <PopularBenefits />
+        <ScrollTotop/>
       </AfterLoginLayout>
     </>
   );

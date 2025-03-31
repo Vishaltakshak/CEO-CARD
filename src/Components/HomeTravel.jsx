@@ -63,7 +63,7 @@ const HomeTravel = () => {
     };
 
     return (
-        <div className="w-full bg-white px-6 !overflow-hidden"> 
+        <div className="w-full bg-white px-6"> 
             <h1 className="text-center text-[20px] font-bold py-4">TRAVEL PARTNERS</h1>
             <div className="w-full">
                 <Slider {...settings} 

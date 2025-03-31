@@ -638,6 +638,10 @@ a:focus {
 
     .navbar.afterlogin-nav .megamenu {
         background-color: transparent;
+        margin-top: 14px;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
+
     }
 
     .col-megamenu .megamenu-heading-links p.megamenu-p a,
@@ -886,6 +890,9 @@ a:focus {
 
     .navbar.afterlogin-nav .megamenu {
         background-color: transparent;
+        margin-top: 14px;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
     }
 
 
@@ -1133,6 +1140,9 @@ a:focus {
 
     .navbar.afterlogin-nav .megamenu {
         background-color: transparent;
+        margin-top: 14px;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
     }
 
     .col-megamenu .megamenu-heading-links p.megamenu-p a,
@@ -1307,6 +1317,9 @@ a:focus {
 
     .navbar.afterlogin-nav .megamenu {
         background-color: #ffffff;
+        margin-top: 14px;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
     }
 
     /* .col-megamenu .megamenu-heading-links p.megamenu-p a {
@@ -1457,8 +1470,9 @@ a:focus {
         left: 0;
         right: 0;
         width: 98%;
-        margin-top: 20px;
-        border-radius: 8px;
+        margin-top: 14px;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
     }
 
 }
@@ -1472,10 +1486,12 @@ a:focus {
     .navbar.sticky-top .navbar-collapse {
         overflow-y: auto;
         max-height: 90vh;
-        margin-top: 10px;
+        margin-top: 14px;
         position: absolute;
         width: 100%;
         background: #222222;
+        border-bottom-left-radius: 8px;
+        border-bottom-right-radius: 8px;
     }
 
     /* .navbar.afterlogin-nav ul.beforelogin-navbar li.dropdown:hover >  .dropdown-menu.megamenu

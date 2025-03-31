@@ -71,8 +71,8 @@ const TravelPage = () => {
 
   return (
     <AfterLoginLayout>
-      <ScrollTotop />
-      <div className="w-full bg-white px-6 !overflow-hidden">
+    
+      <div className="w-full bg-white px-6">
         <h1 className="text-center text-[20px] font-bold py-4">PREMIUM TRAVEL BENEFITS</h1>
 
         {loading ? (

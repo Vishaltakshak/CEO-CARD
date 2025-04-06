@@ -72,42 +72,46 @@ const TravelPage = () => {
   return (
     <AfterLoginLayout>
     
-      <div className="w-full bg-white px-6">
-        <h1 className="text-center text-[20px] font-bold py-4">PREMIUM TRAVEL BENEFITS</h1>
+          <div className="container-fluid browse-category-item">
+          <div className="row">
+            <div className="col-xl-12 col-xxl-12 col-lg-12 col-md-12 col-12 browse-category-item-right h-auto md:h-[47vh] bg-white">
+              <h1 className="browse-category-title text-[1.5rem] text-center mt-4 text-black">
+                Premium Travel Benefits
+              </h1>
+              
 
-        {loading ? (
-          <p className="text-center">Loading...</p>
-        ) : error ? (
-          <p className="text-center text-red-500">{error}</p>
-        ) : (
-          <div className="browse-category-video !h-auto ml-2">
-          <Slider
-            {...settings}
-            className="travel-slider"
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
-          >
-            {premiumData.map((datab, index) => (
-                <Link key={`${datab.VendorName}-${index}`} to="/ServiceInfo" state={{datab}} >
-               <div className="relative rounded-lg  overflow-hidden mr-[0.9rem]">
-                      <div className="absolute inset-0 bg-black opacity-35"></div>
-                      <img
-                        className="w-full h-[250px] object-cover"
-                        src={datab.VendorImages}
-                        alt={datab.VendorName}
-                      />
-                      <div className="absolute bottom-4 left-4 text-white">
-                        <h2 className="text-lg font-bold">{datab.VendorName}</h2>
-                        <p className="text-sm line-clamp-2">{datab.VendorDescription}</p>
-                      </div>
-                    </div>
-              </Link>
-             
-            ))}
-          </Slider>
+              {loading ? (
+                <p className="text-center text-black">Loading...</p>
+              ) : (
+                <div className="browse-category-video !h-auto ml-2">
+                  <Slider
+                    {...settings}
+                    className="travel-slider"
+                    onMouseEnter={() => setIsHovered(true)}
+                    onMouseLeave={() => setIsHovered(false)}
+                  >
+                    {premiumData.map((datab, index) => (
+                      <Link key={`${datab.VendorName}-${index}`} to="/ServiceInfo" state={{ datab }}>
+                        <div className="relative rounded-lg overflow-hidden mr-[0.9rem] hover:scale-105 transition-transform duration-300">
+                          <div className="absolute inset-0 bg-black opacity-35"></div>
+                          <img
+                            className="w-full h-[250px] object-cover"
+                            src={datab.VendorImages}
+                            alt={datab.VendorName}
+                          />
+                          <div className="absolute bottom-4 left-4 text-white">
+                            <h2 className="text-lg font-bold">{datab.VendorName}</h2>
+                            <p className="text-sm line-clamp-2">{datab.VendorDescription}</p>
+                          </div>
+                        </div>
+                      </Link>
+                    ))}
+                  </Slider>
+                </div>
+              )}
+            </div>
           </div>
-            )}
-      </div>
+        </div>
 
       {/* Travel Results Section */}
       <TravelResults />

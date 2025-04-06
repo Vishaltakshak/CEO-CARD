@@ -262,9 +262,9 @@ const BusinessResults = () => {
                                                 <div className="text-gray-800 text-sm mb-2">
                                                     Price: ₹{item.Price}
                                                 </div>
-                                                <div className="text-yellow-400 mb-2">
+                                                {/* <div className="text-yellow-400 mb-2">
                                                     {'★'.repeat(item.Rating)}{'☆'.repeat(5 - item.Rating)}
-                                                </div>
+                                                </div> */}
                                                 <div className="text-black text-sm" style={{maxHeight: "60px", overflow: "hidden"}}>
                                                     {item.VendorDescription}
                                                 </div>

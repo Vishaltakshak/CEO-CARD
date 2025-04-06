@@ -188,20 +188,20 @@ const TravelResults = () => {
                                 </div>
                                 <div className="p-2">
                                     <h3 className="text-xl font-bold mb-2 text-black">{service.VendorName}</h3>
-                                    <div className="flex items-center mb-2">
+                                    {/* <div className="flex items-center mb-2">
                                         {[...Array(5)].map((_, i) => (
                                             <span
                                                 key={i}
                                                 className={`text-lg ${
                                                     i < parseInt(service.VendorRating)
                                                         ? "text-yellow-400"
-                                                        : "text-gray-800"
+                                                        : "text-white"
                                                 }`}
                                             >
                                                 ★
                                             </span>
                                         ))}
-                                    </div>
+                                    </div> */}
                                     <p className="text-sm mb-2 line-clamp-2 text-black">{service.VendorDescription}</p>
                                     <p className="text-sm font-semibold text-black">
                                         {service.VendorPricingInfo.Currency + " "}

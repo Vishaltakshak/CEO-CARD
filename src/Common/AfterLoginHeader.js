@@ -87,7 +87,7 @@ const AfterLoginHeader = ({ allMenu, service }) => {
           }`}
         >
           <Link className="navbar-brand" to="/homeafterlogin">
-            <div className="logo-size-setting md:hidden sm:block">
+            <div className="logo-size-setting md:block sm:block">
               <img className="h-[50px]" src={`${process.env.PUBLIC_URL}/assets/img/ceo-logo-black.png`} alt="ceo-logo"></img>
            {/* <p className="text-black">Ceo Card</p> */}
             </div>
@@ -102,7 +102,7 @@ const AfterLoginHeader = ({ allMenu, service }) => {
 
               <div className="account-menu">
                 <ul className="nav navbar-nav ">
-                  <li className="account-menu-li d-xl-block d-lg-block d-md-none d-sm-block d-none">
+                  <li className="account-menu-li d-xl-block d-lg-block d-md-block d-sm-block d-none">
                     <div className="dropdown custom-nav-dropdown">
                       <a
                         className="dropdown-toggle"
@@ -220,7 +220,7 @@ const AfterLoginHeader = ({ allMenu, service }) => {
                       <i className="bi bi-suit-heart" aria-hidden="true"></i>
                     </Link>
                   </li> */}
-                  <li className="account-menu-li d-xl-block d-lg-block d-md-none d-sm-block d-block">
+                  <li className="account-menu-li d-xl-block d-lg-block d-md-block d-sm-block d-block">
                     <Link to="/Search">
                       <i className="bi bi-search text-black" aria-hidden="true"></i>
                     </Link>
